@@ -467,6 +467,8 @@ typedef struct
     tdble	fuel;                   /**< remaining fuel (liters) */
     tdble   fuel_consumption_total; /**< l */
     tdble   fuel_consumption_instant; /**< l/100km (>100 means infinity) */
+    tdble   batterySOC;         /**< 0.0-1.0 state of charge (EV only) */
+    tdble   batteryTemp;        /**< deg C battery temperature (EV only) */
     tdble	enginerpm;
     tdble	enginerpmRedLine;
     tdble	enginerpmMax;
@@ -522,6 +524,8 @@ typedef struct
 #define _gearNb         priv.gearNb
 #define _gearOffset     priv.gearOffset
 #define _fuel           priv.fuel
+#define _batterySOC     priv.batterySOC
+#define _batteryTemp    priv.batteryTemp
 #define _gear           priv.gear
 #define _gearNext       priv.gearNext
 #define _debug          priv.debug
