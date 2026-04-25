@@ -91,18 +91,13 @@ SimBrakeUpdate(tCar *car, tWheel *wheel, tBrake *brake)
                     / (effective_capacity * 3600.0f);
         bat->soc = MIN(bat->soc, 1.0f);
 
-        tdble actualRatio = (theoretical_kW > 0.0f)
-                            ? (regenPower_kW / theoretical_kW)
-                            : 0.0f;
-        brake->Tq *= (1.0f - actualRatio);
-
         // Throttled console debug: print once per second per wheel
         static float s_regenLogTimer = 0.0f;
         s_regenLogTimer += SimDeltaTime;
         if (s_regenLogTimer >= 1.0f) {
             s_regenLogTimer = 0.0f;
-            GfLogInfo("[EV-Regen]   SOC %.3f->%.3f  Theoretical=%.2f kW  Actual=%.2f kW  Ratio=%.2f  BrakePressure=%.1f\n",
-                      soc_before, bat->soc, theoretical_kW, regenPower_kW, actualRatio, brake->pressure);
+            GfLogInfo("[EV-Regen]   SOC %.3f->%.3f  Theoretical=%.2f kW  Captured=%.2f kW  BrakePressure=%.1f\n",
+                      soc_before, bat->soc, theoretical_kW, regenPower_kW, brake->pressure);
         }
     }
 
