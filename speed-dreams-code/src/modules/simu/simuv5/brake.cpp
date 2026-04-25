@@ -86,6 +86,7 @@ SimBrakeUpdate(tCar *car, tWheel *wheel, tBrake *brake)
 
         tdble tempFactor = 1.0f - 0.005f * MAX(0.0f, bat->temperature - 25.0f);
         tdble effective_capacity = bat->capacity * MAX(tempFactor, 0.5f);
+        tdble soc_before = bat->soc;
         bat->soc += (regenPower_kW * bat->regenFactor * SimDeltaTime)
                     / (effective_capacity * 3600.0f);
         bat->soc = MIN(bat->soc, 1.0f);
@@ -94,6 +95,15 @@ SimBrakeUpdate(tCar *car, tWheel *wheel, tBrake *brake)
                             ? (regenPower_kW / theoretical_kW)
                             : 0.0f;
         brake->Tq *= (1.0f - actualRatio);
+
+        // Throttled console debug: print once per second per wheel
+        static float s_regenLogTimer = 0.0f;
+        s_regenLogTimer += SimDeltaTime;
+        if (s_regenLogTimer >= 1.0f) {
+            s_regenLogTimer = 0.0f;
+            GfLogInfo("[EV-Regen]   SOC %.3f->%.3f  Theoretical=%.2f kW  Actual=%.2f kW  Ratio=%.2f  BrakePressure=%.1f\n",
+                      soc_before, bat->soc, theoretical_kW, regenPower_kW, actualRatio, brake->pressure);
+        }
     }
 
     brake->temp -= (tdble) (fabs(car->DynGC.vel.x) * 0.0001 + 0.0002);

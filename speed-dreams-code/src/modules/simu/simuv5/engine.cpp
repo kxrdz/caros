@@ -283,6 +283,15 @@ SimEngineUpdateTq(tCar *car)
             tdble effective_capacity = bat->capacity * MAX(tempFactor, 0.5f);
             bat->soc -= (power_kW * SimDeltaTime) / (effective_capacity * 3600.0f);
             bat->soc = MAX(bat->soc, 0.0f);
+
+            // Throttled console debug: print once per second
+            static float s_evLogTimer = 0.0f;
+            s_evLogTimer += SimDeltaTime;
+            if (s_evLogTimer >= 1.0f) {
+                s_evLogTimer = 0.0f;
+                GfLogInfo("[EV-Battery] SOC=%.3f (%.1f%%)  Power=%.2f kW  EffCap=%.2f kWh  Temp=%.1f C\n",
+                          bat->soc, bat->soc * 100.0f, power_kW, effective_capacity, bat->temperature);
+            }
         } else {
             tdble cons = Tq_cur * 0.75f;
             if (cons > 0)
