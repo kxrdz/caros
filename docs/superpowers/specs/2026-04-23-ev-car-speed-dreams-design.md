@@ -42,51 +42,98 @@ typedef struct CarElt {
 } tCar;
 ```
 
-### 3. engine.cpp – soft torque limit at low SOC
+### 3. engine.cpp – fuel ≤ 0 early-exit blocks EV code ⚠️
 
-Instead of hard cutoff, reduce power gradually:
+In the real `SimEngineUpdateTq()` the very first guard is:
 
 ```c
-if (battery.isEV) {
-    if (battery.soc < 0.05) {
-        // Below 5% SOC: linearly reduce torque
-        torque *= (battery.soc / 0.05);
-    }
-    if (battery.soc <= 0.0) {
-        torque = 0.0;
-        car->pub.state |= RM_CAR_STATE_OUTOFGAS;
-    }
-
-    // Discharge battery
-    tdble power_kW = torque * rpm_rads / 1000.0;
-    battery.soc -= (power_kW * dt) / (battery.capacity * 3600.0);
-    battery.soc = MAX(battery.soc, 0.0);
+if ((car->fuel <= 0.0f) || (car->carElt->_state & ...))
+{
+    engine->rads = 0;
+    engine->Tq   = 0;
+    return;   // ← EXITS BEFORE EV CODE RUNS
 }
 ```
 
-### 4. More precise regen formula
+Because the EV XML sets `tank = 0`, `car->fuel` is `0.0` from lap 1 and the function returns immediately — the discharge logic never executes.
+
+**Fix:** make the fuel check EV-aware:
 
 ```c
-// brake.cpp
-if (battery.isEV && brakePressure > 0 && wheelSpeed > 0) {
-
-    tdble regenPower_kW = wheelSpeed * brakeTorque / 1000.0;
-
-    // Cap at maxRegen:
-    regenPower_kW = MIN(regenPower_kW, battery.maxRegen);
-
-    // Add energy back to battery:
-    battery.soc += (regenPower_kW * battery.regenFactor * dt)
-                   / (battery.capacity * 3600.0);
-
-    // Clamp SOC to 1.0:
-    battery.soc = MIN(battery.soc, 1.0);
-
-    // Reduce mechanical brake torque proportionally:
-    brakeTorque *= (1.0 - battery.regenFactor);
+if ((car->fuel <= 0.0f && !car->battery.isEV) || (car->carElt->_state & ...))
+{
+    engine->rads = 0;
+    engine->Tq   = 0;
+    return;
 }
 ```
-when i am wrong with that tell me. why iam wrong 
+
+This guard must be applied before any other EV logic is added to the function.
+
+---
+
+### 4. engine.cpp – same fuel ≤ 0 guard in SimEngineUpdateRpm() ⚠️
+
+`SimEngineUpdateRpm()` has an identical early-exit on `car->fuel <= 0.0f`. It controls clutch torque transfer and RPM integration. Without the same fix, the EV's RPM stays at zero even after the Tq guard is patched.
+
+**Fix:** apply the same EV-aware guard:
+
+```c
+if ((car->fuel <= 0.0f && !car->battery.isEV) || (car->carElt->_state & ...))
+{
+    engine->rads = 0;
+    return;
+}
+```
+
+---
+
+### 5. engine.cpp – soft torque limit at low SOC (variable names corrected)
+
+Instead of hard cutoff, reduce power gradually. Early drafts used `torque`, `rpm_rads`, and `dt` — the real `simuv5` variable names are `engine->Tq_cur`, `engine->rads`, and `SimDeltaTime`:
+
+```c
+if (car->battery.isEV) {
+    tBattery *bat = &car->battery;
+    
+    /* Soft power taper below 5% SOC */
+    if (bat->soc < 0.05f) {
+        engine->Tq *= (bat->soc / 0.05f);
+    }
+    if (bat->soc <= 0.0f) {
+        engine->Tq = 0.0f;
+        car->carElt->_state |= RM_CAR_STATE_OUTOFGAS;
+    }
+
+    /* Discharge battery based on torque output */
+    tdble power_kW = engine->Tq * engine->rads / 1000.0f;
+    tdble tempFactor = 1.0f - 0.005f * MAX(0.0f, bat->temperature - 25.0f);
+    tdble effective_capacity = bat->capacity * MAX(tempFactor, 0.5f);
+    bat->soc -= (power_kW * SimDeltaTime) / (effective_capacity * 3600.0f);
+    bat->soc = MAX(bat->soc, 0.0f);
+}
+```
+
+### 6. brake.cpp – regen: add fabs() safety net and document capping behaviour
+
+`wheel->spinVel` is signed (positive = forward, negative = reverse). The `spinVel > 0.0f` guard already prevents regen in reverse and prevents `theoretical_kW` from going negative. However, `fabs()` is a cheap defensive guard worth adding:
+
+```c
+tdble theoretical_kW = (fabs(wheel->spinVel) * brake->Tq) / 1000.0f;
+```
+
+The capping behaviour to understand: when `theoretical_kW` exceeds `bat->maxRegen / 4.0f`, `actualRatio` drops below 1.0. This means mechanical braking absorbs the uncaptured fraction — which is physically correct. The torque reduction formula `brake->Tq *= (1.0f - actualRatio)` correctly represents the fraction of total braking power that is transferred to regen. The `regenFactor` separately controls battery efficiency (energy recovered vs. heat dissipated in the motor), not torque reduction.
+
+### 7. car.cpp – recalculate Minv after adding battery mass ⚠️
+
+`car->Minv` (inverse mass, used in dynamics integration) must be updated after the battery mass addition, otherwise the car handles as if it weighs less than it does:
+
+```c
+if (car->battery.isEV) {
+    car->mass += car->battery.capacity * 5.0f;  /* ~5 kg/kWh, Tesla-scale */
+    car->Minv  = 1.0f / car->mass;              /* ← must follow mass change */
+}
+```
 ---
 
 ## Architecture
@@ -138,30 +185,42 @@ These are written each physics tick alongside the existing `fuel` fields.
 
 ## Motor Discharge (engine.cpp)
 
-Inside `SimEngineUpdateTq()`, after torque is computed:
+Both `SimEngineUpdateTq()` and `SimEngineUpdateRpm()` have identical `fuel <= 0` early-exits that must be patched (see issues #3 and #4). Inside `SimEngineUpdateTq()`, after the patched guard, the EV discharge block runs:
 
 ```c
+/* Patched guard — must come before EV logic */
+if ((car->fuel <= 0.0f && !car->battery.isEV) || (car->carElt->_state & ...))
+{
+    engine->rads = 0;
+    engine->Tq   = 0;
+    return;
+}
+
 if (car->battery.isEV) {
     tBattery *bat = &car->battery;
 
     /* Soft power taper below 5% SOC */
     if (bat->soc < 0.05f) {
-        engine->Tq_cur *= (bat->soc / 0.05f);
+        engine->Tq *= (bat->soc / 0.05f);
     }
     if (bat->soc <= 0.0f) {
-        engine->Tq_cur = 0.0f;
-        car->pub.state |= RM_CAR_STATE_OUTOFGAS;
+        engine->Tq = 0.0f;
+        car->carElt->_state |= RM_CAR_STATE_OUTOFGAS;
     }
 
-    /* Discharge */
-    tdble power_kW = engine->Tq_cur * engine->rads / 1000.0f;
+    /* Discharge battery based on actual torque output */
+    tdble power_kW = engine->Tq * engine->rads / 1000.0f;
     tdble tempFactor = 1.0f - 0.005f * MAX(0.0f, bat->temperature - 25.0f);
     tdble effective_capacity = bat->capacity * MAX(tempFactor, 0.5f);
     bat->soc -= (power_kW * SimDeltaTime) / (effective_capacity * 3600.0f);
     bat->soc = MAX(bat->soc, 0.0f);
 
     /* Suppress fuel deduction */
-    /* (existing fuel line is skipped via else branch) */
+    /* (fuel deduction skipped via if-else guard at function start) */
+}
+else {
+    /* Existing combustion fuel deduction */
+    /* tdble cons = ... existing calc ... */
 }
 ```
 
@@ -177,8 +236,8 @@ Inside `SimBrakeUpdate()`, after brake torque is computed, before it is applied 
 if (car->battery.isEV && brake->pressure > 0.0f && wheel->spinVel > 0.0f) {
     tBattery *bat = &car->battery;
 
-    /* Power available from regen: P = ω × T */
-    tdble theoretical_kW = (wheel->spinVel * brake->Tq) / 1000.0f;
+    /* Power available from regen: P = ω × T — fabs() guards against negative spinVel slip-through */
+    tdble theoretical_kW = (fabs(wheel->spinVel) * brake->Tq) / 1000.0f;
 
     /* Cap at battery's max regen power (split across 4 wheels) */
     tdble regenPower_kW = MIN(theoretical_kW, bat->maxRegen / 4.0f);
@@ -190,15 +249,19 @@ if (car->battery.isEV && brake->pressure > 0.0f && wheel->spinVel > 0.0f) {
                 / (effective_capacity * 3600.0f);
     bat->soc = MIN(bat->soc, 1.0f);
 
-    /* Reduce mechanical brake torque by the fraction actually captured */
+    /* Reduce mechanical brake torque by the fraction actually captured by regen.
+       Energy partitions as: regen captured → battery × regenFactor,
+       + motor regen heat losses × (1 - regenFactor), + remaining mechanical braking. */
     tdble actualRatio = (theoretical_kW > 0.0f)
                         ? (regenPower_kW / theoretical_kW)
                         : 0.0f;
-    brake->Tq *= (1.0f - actualRatio * bat->regenFactor);
+    brake->Tq *= (1.0f - actualRatio);
 }
 ```
 
 Regen only runs when `spinVel > 0` (wheel moving) and brake is pressed. At zero speed, full mechanical braking applies normally.
+
+When `theoretical_kW` exceeds `maxRegen / 4.0f`, `actualRatio < 1.0` and the uncaptured fraction remains as mechanical braking — this is correct physics. The torque reduction is determined solely by `actualRatio`, which represents the fraction of total braking captured by regen. The `regenFactor` affects only battery energy storage efficiency, not torque reduction.
 
 ---
 
@@ -219,11 +282,12 @@ if (GfParmSectionExists(hdle, "Battery")) {
 }
 ```
 
-Battery mass is added to car mass:
+Battery mass is added to car mass. `Minv` (inverse mass used by the dynamics integrator) must be recalculated immediately after — forgetting it leaves the car with wrong inertia:
 ```c
 if (car->battery.isEV) {
     /* Tesla Model S ~500 kg pack for 100 kWh; scale linearly */
     car->mass += car->battery.capacity * 5.0f;
+    car->Minv  = 1.0f / car->mass;  /* must follow mass change */
 }
 ```
 
