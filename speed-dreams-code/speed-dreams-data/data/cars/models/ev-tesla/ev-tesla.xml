@@ -34,7 +34,7 @@
         <attnum name="tachometer max value" val="18000" unit="rpm"/>
         <attstr name="speedometer texture" val="sc-cavallo-360-speed.png"/>
         <attnum name="speedometer min value" val="0" unit="km/h"/>
-        <attnum name="speedometer max value" val="322" unit="km/h"/>
+        <attnum name="speedometer max value" val="250" unit="km/h"/>
 
         <section name="Ranges">
             <section name="1">
@@ -115,8 +115,8 @@
     <section name="Battery">
         <attnum name="capacity"     unit="kWh" val="100"/>
         <attnum name="initial soc"             val="1.0"/>
-        <attnum name="max power"    unit="kW"  val="350"/>
-        <attnum name="max regen"    unit="kW"  val="150"/>
+        <attnum name="max power"    unit="kW"  val="250"/>
+        <attnum name="max regen"    unit="kW"  val="100"/>
         <attnum name="regen factor"            val="0.7"/>
     </section>
 
@@ -138,15 +138,15 @@
         <attnum name="turbo lag" val="0.0"/>
         <attnum name="enable tcl" min="0" max="1" val="1"/>
         <section name="data points">
-            <section name="1"><attnum name="rpm" unit="rpm" val="0"/><attnum name="Tq" unit="N.m" val="300.0"/></section>
-            <section name="2"><attnum name="rpm" unit="rpm" val="2000"/><attnum name="Tq" unit="N.m" val="500.0"/></section>
-            <section name="3"><attnum name="rpm" unit="rpm" val="4000"/><attnum name="Tq" unit="N.m" val="700.0"/></section>
-            <section name="4"><attnum name="rpm" unit="rpm" val="6000"/><attnum name="Tq" unit="N.m" val="900.0"/></section>
-            <section name="5"><attnum name="rpm" unit="rpm" val="8000"/><attnum name="Tq" unit="N.m" val="900.0"/></section>
-            <section name="6"><attnum name="rpm" unit="rpm" val="10000"/><attnum name="Tq" unit="N.m" val="850.0"/></section>
-            <section name="7"><attnum name="rpm" unit="rpm" val="12000"/><attnum name="Tq" unit="N.m" val="750.0"/></section>
-            <section name="8"><attnum name="rpm" unit="rpm" val="14000"/><attnum name="Tq" unit="N.m" val="600.0"/></section>
-            <section name="9"><attnum name="rpm" unit="rpm" val="16000"/><attnum name="Tq" unit="N.m" val="450.0"/></section>
+            <section name="1"><attnum name="rpm" unit="rpm" val="0"/><attnum name="Tq" unit="N.m" val="430.0"/></section>
+            <section name="2"><attnum name="rpm" unit="rpm" val="2000"/><attnum name="Tq" unit="N.m" val="430.0"/></section>
+            <section name="3"><attnum name="rpm" unit="rpm" val="4000"/><attnum name="Tq" unit="N.m" val="430.0"/></section>
+            <section name="4"><attnum name="rpm" unit="rpm" val="6000"/><attnum name="Tq" unit="N.m" val="400.0"/></section>
+            <section name="5"><attnum name="rpm" unit="rpm" val="8000"/><attnum name="Tq" unit="N.m" val="320.0"/></section>
+            <section name="6"><attnum name="rpm" unit="rpm" val="10000"/><attnum name="Tq" unit="N.m" val="260.0"/></section>
+            <section name="7"><attnum name="rpm" unit="rpm" val="12000"/><attnum name="Tq" unit="N.m" val="215.0"/></section>
+            <section name="8"><attnum name="rpm" unit="rpm" val="14000"/><attnum name="Tq" unit="N.m" val="185.0"/></section>
+            <section name="9"><attnum name="rpm" unit="rpm" val="16000"/><attnum name="Tq" unit="N.m" val="160.0"/></section>
             <section name="10"><attnum name="rpm" unit="rpm" val="18000"/><attnum name="Tq" unit="N.m" val="0.0"/></section>
         </section>
     </section>
@@ -181,7 +181,7 @@
 
     <section name="Brake System">
         <attnum name="front-rear brake repartition" min="0.4" max="0.7" val="0.55"/>
-        <attnum name="max pressure" unit="kPa" min="100" max="50000" val="18000"/>
+        <attnum name="max pressure" unit="kPa" min="100" max="50000" val="10000"/>
         <attnum name="emergency brake pressure" unit="kPa" val="5000"/>
     </section>
 
@@ -232,7 +232,7 @@
         <attnum name="dynamic friction" unit="%" val="35"/>
         <attnum name="elasticity factor" val="0.86"/>
         <attnum name="operating load" unit="N" val="3300"/>
-        <attnum name="mu" val="1.3"/>
+        <attnum name="mu" val="1.1"/>
         <attnum name="initial temperature" unit="C" val="30.0"/>
         <attnum name="optimal temperature" unit="C" val="80.0"/>
         <attnum name="hysteresis" val="1.00"/>
@@ -259,7 +259,7 @@
         <attnum name="dynamic friction" unit="%" val="35"/>
         <attnum name="elasticity factor" val="0.86"/>
         <attnum name="operating load" unit="N" val="3300"/>
-        <attnum name="mu" val="1.3"/>
+        <attnum name="mu" val="1.1"/>
         <attnum name="initial temperature" unit="C" val="30.0"/>
         <attnum name="optimal temperature" unit="C" val="80.0"/>
         <attnum name="hysteresis" val="1.00"/>
@@ -286,7 +286,7 @@
         <attnum name="dynamic friction" unit="%" val="35"/>
         <attnum name="elasticity factor" val="0.86"/>
         <attnum name="operating load" unit="N" val="3900"/>
-        <attnum name="mu" val="1.3"/>
+        <attnum name="mu" val="1.1"/>
         <attnum name="initial temperature" unit="C" val="30.0"/>
         <attnum name="optimal temperature" unit="C" val="80.0"/>
         <attnum name="hysteresis" val="1.00"/>
@@ -313,7 +313,7 @@
         <attnum name="dynamic friction" unit="%" val="35"/>
         <attnum name="elasticity factor" val="0.86"/>
         <attnum name="operating load" unit="N" val="3900"/>
-        <attnum name="mu" val="1.3"/>
+        <attnum name="mu" val="1.1"/>
         <attnum name="initial temperature" unit="C" val="30.0"/>
         <attnum name="optimal temperature" unit="C" val="80.0"/>
         <attnum name="hysteresis" val="1.00"/>
@@ -326,62 +326,62 @@
     </section>
 
     <section name="Front Anti-Roll Bar">
-        <attnum name="spring" unit="N/m" val="0"/>
-        <attnum name="suspension course" unit="m" val="0.0"/>
+        <attnum name="spring" unit="N/m" val="15000"/>
+        <attnum name="suspension course" unit="m" val="0.02"/>
         <attnum name="bellcrank" val="1.0"/>
     </section>
 
     <section name="Rear Anti-Roll Bar">
-        <attnum name="spring" unit="N/m" val="0"/>
-        <attnum name="suspension course" unit="m" val="0.0"/>
+        <attnum name="spring" unit="N/m" val="10000"/>
+        <attnum name="suspension course" unit="m" val="0.02"/>
         <attnum name="bellcrank" val="1.0"/>
     </section>
 
     <section name="Front Right Suspension">
-        <attnum name="spring" unit="kN/m" val="67.0"/>
-        <attnum name="suspension course" unit="m" val="0.160"/>
+        <attnum name="spring" unit="kN/m" val="28.0"/>
+        <attnum name="suspension course" unit="m" val="0.220"/>
         <attnum name="bellcrank" val="1"/>
         <attnum name="packers" unit="mm" val="0"/>
-        <attnum name="slow bump" unit="kN/m/s" val="7"/>
-        <attnum name="slow rebound" unit="kN/m/s" val="14"/>
-        <attnum name="fast bump" unit="kN/m/s" val="2.5"/>
-        <attnum name="fast rebound" unit="kN/m/s" val="5"/>
+        <attnum name="slow bump" unit="kN/m/s" val="3.5"/>
+        <attnum name="slow rebound" unit="kN/m/s" val="7.0"/>
+        <attnum name="fast bump" unit="kN/m/s" val="1.5"/>
+        <attnum name="fast rebound" unit="kN/m/s" val="3.0"/>
         <attnum name="bump limit velocity" unit="m/s" val="0.1"/>
         <attnum name="rebound limit velocity" unit="m/s" val="0.1"/>
     </section>
     <section name="Front Left Suspension">
-        <attnum name="spring" unit="kN/m" val="67.0"/>
-        <attnum name="suspension course" unit="m" val="0.160"/>
+        <attnum name="spring" unit="kN/m" val="28.0"/>
+        <attnum name="suspension course" unit="m" val="0.220"/>
         <attnum name="bellcrank" val="1"/>
         <attnum name="packers" unit="mm" val="0"/>
-        <attnum name="slow bump" unit="kN/m/s" val="7"/>
-        <attnum name="slow rebound" unit="kN/m/s" val="14"/>
-        <attnum name="fast bump" unit="kN/m/s" val="2.5"/>
-        <attnum name="fast rebound" unit="kN/m/s" val="5"/>
+        <attnum name="slow bump" unit="kN/m/s" val="3.5"/>
+        <attnum name="slow rebound" unit="kN/m/s" val="7.0"/>
+        <attnum name="fast bump" unit="kN/m/s" val="1.5"/>
+        <attnum name="fast rebound" unit="kN/m/s" val="3.0"/>
         <attnum name="bump limit velocity" unit="m/s" val="0.1"/>
         <attnum name="rebound limit velocity" unit="m/s" val="0.1"/>
     </section>
     <section name="Rear Right Suspension">
-        <attnum name="spring" unit="kN/m" val="69.0"/>
-        <attnum name="suspension course" unit="m" val="0.160"/>
+        <attnum name="spring" unit="kN/m" val="30.0"/>
+        <attnum name="suspension course" unit="m" val="0.220"/>
         <attnum name="bellcrank" val="1"/>
         <attnum name="packers" unit="mm" val="0"/>
-        <attnum name="slow bump" unit="kN/m/s" val="7"/>
-        <attnum name="slow rebound" unit="kN/m/s" val="14"/>
-        <attnum name="fast bump" unit="kN/m/s" val="2.5"/>
-        <attnum name="fast rebound" unit="kN/m/s" val="5"/>
+        <attnum name="slow bump" unit="kN/m/s" val="3.5"/>
+        <attnum name="slow rebound" unit="kN/m/s" val="7.0"/>
+        <attnum name="fast bump" unit="kN/m/s" val="1.5"/>
+        <attnum name="fast rebound" unit="kN/m/s" val="3.0"/>
         <attnum name="bump limit velocity" unit="m/s" val="0.1"/>
         <attnum name="rebound limit velocity" unit="m/s" val="0.1"/>
     </section>
     <section name="Rear Left Suspension">
-        <attnum name="spring" unit="kN/m" val="69.0"/>
-        <attnum name="suspension course" unit="m" val="0.160"/>
+        <attnum name="spring" unit="kN/m" val="30.0"/>
+        <attnum name="suspension course" unit="m" val="0.220"/>
         <attnum name="bellcrank" val="1"/>
         <attnum name="packers" unit="mm" val="0"/>
-        <attnum name="slow bump" unit="kN/m/s" val="7"/>
-        <attnum name="slow rebound" unit="kN/m/s" val="14"/>
-        <attnum name="fast bump" unit="kN/m/s" val="2.5"/>
-        <attnum name="fast rebound" unit="kN/m/s" val="5"/>
+        <attnum name="slow bump" unit="kN/m/s" val="3.5"/>
+        <attnum name="slow rebound" unit="kN/m/s" val="7.0"/>
+        <attnum name="fast bump" unit="kN/m/s" val="1.5"/>
+        <attnum name="fast rebound" unit="kN/m/s" val="3.0"/>
         <attnum name="bump limit velocity" unit="m/s" val="0.1"/>
         <attnum name="rebound limit velocity" unit="m/s" val="0.1"/>
     </section>
