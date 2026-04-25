@@ -585,7 +585,7 @@ SimUpdate(tSituation *s, double deltaTime)
             continue;
         }
         else if (((s->_maxDammage) && (car->dammage > s->_maxDammage)) ||
-            (car->fuel == 0) ||
+            (car->fuel == 0 && !car->battery.isEV) ||
             (car->carElt->_state & RM_CAR_STATE_ELIMINATED))
         {
             RemoveCar(car, s);
@@ -712,6 +712,8 @@ SimUpdate(tSituation *s, double deltaTime)
         carElt->_gearNext = car->transmission.gearbox.gearNext;
         carElt->_enginerpm = car->engine.rads;
         carElt->_fuel = car->fuel;
+        carElt->_batterySOC  = car->battery.soc;
+        carElt->_batteryTemp = car->battery.temperature;
         carElt->_engineTempWater = car->engine.temp_water;
         carElt->priv.collision |= car->collision;
         carElt->_dammage = car->dammage;
@@ -845,6 +847,8 @@ SimUpdateSingleCar(int index, double deltaTime,tSituation *s)
     carElt->_gearNext = car->transmission.gearbox.gearNext;
     carElt->_enginerpm = car->engine.rads;
     carElt->_fuel = car->fuel;
+    carElt->_batterySOC  = car->battery.soc;
+    carElt->_batteryTemp = car->battery.temperature;
     carElt->priv.collision |= car->collision;
     carElt->_dammage = car->dammage;
     carElt->_airtemp = Tair;
