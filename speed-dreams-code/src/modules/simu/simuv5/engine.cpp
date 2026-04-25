@@ -193,7 +193,7 @@ SimEngineUpdateTq(tCar *car)
     tTransmission	*trans = &(car->transmission);
     tClutch		*clutch = &(trans->clutch);
 
-    if ((car->fuel <= 0.0f) || (car->carElt->_state & (RM_CAR_STATE_BROKEN | RM_CAR_STATE_ELIMINATED)))
+    if ((car->fuel <= 0.0f && !car->battery.isEV) || (car->carElt->_state & (RM_CAR_STATE_BROKEN | RM_CAR_STATE_ELIMINATED)))
     {
         engine->rads = 0;
         engine->Tq = 0;
@@ -267,13 +267,30 @@ SimEngineUpdateTq(tCar *car)
             engine->Tq -= engine->brakeCoeff;
         }
 
-        tdble cons = Tq_cur * 0.75f;
-        if (cons > 0)
-        {
-            car->fuel -= (tdble) (cons * engine->rads * engine->fuelcons * 0.0000001 * SimDeltaTime);
-        }
+        if (car->battery.isEV) {
+            tBattery *bat = &car->battery;
 
-        car->fuel = (tdble) MAX(car->fuel, 0.0);
+            if (bat->soc < 0.05f) {
+                engine->Tq *= (bat->soc / 0.05f);
+            }
+            if (bat->soc <= 0.0f) {
+                engine->Tq = 0.0f;
+                car->carElt->_state |= RM_CAR_STATE_OUTOFGAS;
+            }
+
+            tdble power_kW = engine->Tq * engine->rads / 1000.0f;
+            tdble tempFactor = 1.0f - 0.005f * MAX(0.0f, bat->temperature - 25.0f);
+            tdble effective_capacity = bat->capacity * MAX(tempFactor, 0.5f);
+            bat->soc -= (power_kW * SimDeltaTime) / (effective_capacity * 3600.0f);
+            bat->soc = MAX(bat->soc, 0.0f);
+        } else {
+            tdble cons = Tq_cur * 0.75f;
+            if (cons > 0)
+            {
+                car->fuel -= (tdble) (cons * engine->rads * engine->fuelcons * 0.0000001 * SimDeltaTime);
+            }
+            car->fuel = (tdble) MAX(car->fuel, 0.0);
+        }
     }
 }
 
@@ -303,7 +320,7 @@ SimEngineUpdateRpm(tCar *car, tdble axleRpm)
     if(car->options->engine_temperature)
         SimEngineUpdateWater(car);
 
-    if (car->fuel <= 0.0)
+    if (car->fuel <= 0.0 && !car->battery.isEV)
     {
         engine->rads = 0;
         clutch->state = CLUTCH_APPLIED;
