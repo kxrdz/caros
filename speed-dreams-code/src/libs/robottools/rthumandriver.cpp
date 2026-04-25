@@ -114,6 +114,7 @@ typedef struct HumanContext
     bool		mouseControlUsed;
     int			lightCmd;
     int         dashboardCounter;
+    tdble       lastConsoleDebugTime;
     int			lastForceFeedbackIndex;
     int			lastForceFeedbackLevel;
     int			lastForceFeedbackDir;
@@ -332,6 +333,7 @@ void HumanDriver::init_context(int index, int updater_index)
 
     HCtx[idx]->antiLock = 1.0;
     HCtx[idx]->antiSlip = 1.0;
+    HCtx[idx]->lastConsoleDebugTime = -1.0;
 
     // simuV4 ...
     HCtx[idx]->useESP = false;
@@ -2211,6 +2213,22 @@ void HumanDriver::drive_at(int index, tCarElt* car, tSituation *s)
     /* Automatic clutch mode */
     if (HCtx[idx]->autoClutch && car->_clutchCmd == 0.0f)
         car->_clutchCmd = getAutoClutch(idx, car->_gear, car->_gearCmd, car);
+
+    if (HCtx[idx]->lastConsoleDebugTime < 0
+        || (s->currentTime - HCtx[idx]->lastConsoleDebugTime) >= 1.0)
+    {
+        HCtx[idx]->lastConsoleDebugTime = s->currentTime;
+        GfOut("[TORCS DEBUG] car=%s speed=%.2f m/s (%.1f km/h) gear=%d rpm=%.0f throttle=%.2f brake=%.2f tcs=%s abs=%s\n",
+              car->_name,
+              car->_speed_xy,
+              car->_speed_xy * 3.6,
+              car->_gear,
+              car->_enginerpm,
+              car->_accelCmd,
+              car->_brakeCmd,
+              HCtx[idx]->paramAsr ? "on" : "off",
+              HCtx[idx]->paramAbs ? "on" : "off");
+    }
 
     common_brake(idx, car, s);
 }

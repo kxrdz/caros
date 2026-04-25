@@ -158,13 +158,13 @@
     <section name="Gearbox">
         <attnum name="shift time" val="0.05" unit="s"/>
         <section name="gears">
-            <section name="r"><attnum name="ratio" val="-9.0"/><attnum name="inertia" val="0.0037"/><attnum name="efficiency" val="0.95"/></section>
-            <section name="1"><attnum name="ratio" val="9.0"/><attnum name="inertia" val="0.003"/><attnum name="efficiency" val="0.97"/></section>
-            <section name="2"><attnum name="ratio" val="6.0"/><attnum name="inertia" val="0.0037"/><attnum name="efficiency" val="0.97"/></section>
-            <section name="3"><attnum name="ratio" val="4.0"/><attnum name="inertia" val="0.0048"/><attnum name="efficiency" val="0.97"/></section>
-            <section name="4"><attnum name="ratio" val="2.7"/><attnum name="inertia" val="0.0064"/><attnum name="efficiency" val="0.97"/></section>
-            <section name="5"><attnum name="ratio" val="1.9"/><attnum name="inertia" val="0.0107"/><attnum name="efficiency" val="0.97"/></section>
-            <section name="6"><attnum name="ratio" val="1.3"/><attnum name="inertia" val="0.0150"/><attnum name="efficiency" val="0.97"/></section>
+            <section name="r"><attnum name="ratio" val="-3.0"/><attnum name="inertia" val="0.0037"/><attnum name="efficiency" val="0.95"/></section>
+            <section name="1"><attnum name="ratio" val="3.6"/><attnum name="inertia" val="0.003"/><attnum name="efficiency" val="0.97"/></section>
+            <section name="2"><attnum name="ratio" val="2.16"/><attnum name="inertia" val="0.0037"/><attnum name="efficiency" val="0.97"/></section>
+            <section name="3"><attnum name="ratio" val="1.61"/><attnum name="inertia" val="0.0048"/><attnum name="efficiency" val="0.97"/></section>
+            <section name="4"><attnum name="ratio" val="1.27"/><attnum name="inertia" val="0.0064"/><attnum name="efficiency" val="0.97"/></section>
+            <section name="5"><attnum name="ratio" val="1.03"/><attnum name="inertia" val="0.0107"/><attnum name="efficiency" val="0.97"/></section>
+            <section name="6"><attnum name="ratio" val="0.85"/><attnum name="inertia" val="0.0150"/><attnum name="efficiency" val="0.97"/></section>
         </section>
     </section>
 
@@ -197,7 +197,7 @@
 
     <section name="Central Differential">
         <attstr name="type" in="SPOOL,FREE,LIMITED SLIP" val="FREE"/>
-        <attnum name="ratio" val="9.0"/>
+        <attnum name="ratio" val="4.1"/>
         <attnum name="inertia" unit="kg.m2" val="0.0488"/>
         <attnum name="efficiency" val="0.95"/>
     </section>
@@ -213,7 +213,7 @@
         <attnum name="locking input torque" unit="N.m" val="25"/>
         <attnum name="max slip bias" val="0.3"/>
         <attnum name="inertia" unit="kg.m2" val="0.0488"/>
-        <attnum name="ratio" val="9.0"/>
+        <attnum name="ratio" val="4.1"/>
         <attnum name="efficiency" val="0.949"/>
     </section>
 
