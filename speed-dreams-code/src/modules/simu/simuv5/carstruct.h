@@ -32,6 +32,16 @@
 #include "engine.h"
 #include "simulationOptions.h"
 
+typedef struct {
+    tdble capacity;     /* kWh -- total usable capacity */
+    tdble soc;          /* 0.0-1.0 state of charge */
+    tdble maxPower;     /* kW -- peak motor output */
+    tdble maxRegen;     /* kW -- peak regenerative braking power */
+    tdble regenFactor;  /* 0.0-1.0 -- regen efficiency (e.g. 0.7) */
+    tdble temperature;  /* deg C -- battery temperature */
+    int   isEV;         /* 1 = EV mode, 0 = combustion (default) */
+} tBattery;
+
 typedef struct
 {
     /* driver's interface */
@@ -85,6 +95,7 @@ typedef struct
     DtShapeRef	shape;		/* for collision */
     int		blocked;		// Flag to show if the car has had already a collision in the same timestep.
     int		dammage;
+    tBattery    battery;   /* only active when battery.isEV == 1 */
 
     /* enabling features */
     int     features;
