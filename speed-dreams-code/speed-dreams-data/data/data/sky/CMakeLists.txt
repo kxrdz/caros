@@ -1,0 +1,25 @@
+install(FILES
+    broken_n.png
+    broken.png
+    cirrus_n.png
+    cirrus.png
+    cumulus_n.png
+    cumulus.png
+    few_n.png
+    few.png
+    halo.png
+    inner_halo.png
+    many_n.png
+    many.png
+    moon.png
+    outer_halo.png
+    overcast_n.png
+    overcast.png
+    overcast_top_n.png
+    overcast_top.png
+    Planets.txt
+    scattered_n.png
+    scattered.png
+    stars.txt
+    DESTINATION ${datadir}/data/sky
+)

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Speed Dreams, a free and open source motorsport simulator.            -->
+<!-- Copyright (C) 2025 Xavier Del Campo Romero                            -->
+<!-- This program is free software; you can redistribute it and/or modify  -->
+<!-- it under the terms of the GNU General Public License as published by  -->
+<!-- the Free Software Foundation; either version 2 of the License, or     -->
+<!-- (at your option) any later version.                                   -->
+<!DOCTYPE params SYSTEM "../tgf/params.dtd">
+<params name="confirmmenu">
+	<section name="dynamic controls">
+		<section name="back">
+			<attstr name="type" val="text button"/>
+			<attstr name="show box" val="no"/>
+			<attstr name="text" val="No"/>
+			<attstr name="text-fra" val="Non"/>
+			<attstr name="text-cat" val="No"/>
+			<attstr name="text-spa" val="No"/>
+			<attstr name="text-ru" val="Нет"/>
+			<attstr name="tip" val="Back to downloads menu"/>
+			<attstr name="tip-cat" val="Torneu al menú de baixades"/>
+			<attstr name="tip-spa" val="Volver al menú de descargas"/>
+			<attstr name="tip-ru" val="Вернуться в меню загрузок"/>
+			<attstr name="h align" val="left"/>
+			<attnum name="x" val="200"/>
+			<attnum name="y" val="45"/>
+			<attnum name="width" val="110"/>
+			<attstr name="font" val="big"/>
+			<attstr name="color" val="0xa6a6a6"/>
+			<attstr name="focused color" val="0xFFFFFF"/>
+			<attstr name="pushed color" val="0xFFFFFF"/>
+			<attnum name="image x" val="-48"/>
+			<attnum name="image y" val="0"/>
+			<attnum name="image width" val="160"/>
+			<attnum name="image height" val="33"/>
+			<attstr name="focused image" val="data/img/bg-button-big-focused.png"/>
+			<attstr name="enabled image" val="data/img/bg-button-big.png"/>
+			<attstr name="pushed image" val="data/img/bg-button-big-pushed.png"/>
+		</section>
+		<section name="accept">
+			<attstr name="type" val="text button"/>
+			<attstr name="show box" val="no"/>
+			<attstr name="text" val="Yes"/>
+			<attstr name="text-fra" val="Oui"/>
+			<attstr name="text-cat" val="Sí"/>
+			<attstr name="text-spa" val="Sí"/>
+			<attstr name="text-ru" val="Да"/>
+			<attstr name="tip" val="Exit downloads menu"/>
+			<attstr name="tip-cat" val="Sortiu del menú de baixades"/>
+			<attstr name="tip-spa" val="Salir del menu de descargas"/>
+			<attstr name="tip-ru" val="Выйти из меню загрузок"/>
+			<attstr name="h align" val="left"/>
+			<attnum name="x" val="375"/>
+			<attnum name="y" val="45"/>
+			<attnum name="width" val="110"/>
+			<attstr name="font" val="big"/>
+			<attstr name="color" val="0xa6a6a6"/>
+			<attstr name="focused color" val="0xFFFFFF"/>
+			<attstr name="pushed color" val="0xFFFFFF"/>
+			<attnum name="image x" val="-48"/>
+			<attnum name="image y" val="0"/>
+			<attnum name="image width" val="160"/>
+			<attnum name="image height" val="33"/>
+			<attstr name="focused image" val="data/img/bg-button-big-focused.png"/>
+			<attstr name="enabled image" val="data/img/bg-button-big.png"/>
+			<attstr name="pushed image" val="data/img/bg-button-big-pushed.png"/>
+		</section>
+	</section>
+	<section name="static controls">
+		<section name="1">
+			<attstr name="type" val="static image"/>
+			<attnum name="x" val="-10"/>
+			<attnum name="y" val="375"/>
+			<attnum name="width" val="130"/>
+			<attnum name="height" val="95"/>
+			<attstr name="image" val="data/img/sd-logo-big.png"/>
+		</section>
+		<section name="2">
+			<attstr name="type" val="gallery"/>
+			<attstr name="directory" val="data/gallery/"/>
+		</section>
+		<section name="3">
+			<attstr name="type" val="label"/>
+			<attstr name="text" val="Confirm exit"/>
+			<attstr name="text-fra" val="Confirmer la sortie"/>
+			<attstr name="text-cat" val="Confirmeu sortida"/>
+			<attstr name="text-spa" val="Confirme salida"/>
+			<attstr name="text-ru" val="Подтвердить выход"/>
+			<attnum name="x" val="300"/>
+			<attnum name="y" val="430"/>
+			<attnum name="width" val="400"/>
+			<attstr name="color" val="0xFFFFFF"/>
+			<attstr name="font" val="medium_t"/>
+			<attstr name="h align" val="left"/>
+			<attstr name="bg image" val="data/img/header-background.png"/>
+			<attnum name="bg image padding top" val="15"/>
+			<attnum name="bg image padding bottom" val="15"/>
+			<attnum name="bg image padding left" val="30"/>
+			<attnum name="bg image padding right" val="15"/>
+		</section>
+		<section name="4">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="0"/>
+			<attnum name="y" val="250"/>
+			<attstr name="text" val="Exit and cancel ongoing downloads?"/>
+			<attstr name="text-fra" val="Sortir et annuler les téléchargements en cours?"/>
+			<attstr name="text-cat" val="Sortir i cancel·lar les baixades pendents?"/>
+			<attstr name="text-spa" val="¿Salir y cancelar las descargas pendientes?"/>
+			<attstr name="text-ru" val="Выйти и отменить текущие загрузки?"/>
+			<attstr name="h align" val="center"/>
+			<attnum name="width" val="640"/>
+			<attstr name="font" val="big"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+	</section>
+</params>

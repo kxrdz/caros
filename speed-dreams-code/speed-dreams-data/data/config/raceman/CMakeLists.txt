@@ -1,0 +1,30 @@
+install(FILES
+    championship-24h.xml
+    championship-36gp.xml
+    championship-67gp.xml
+    championship-ls-gt1.xml
+    championship-mp1.xml
+    championship-mp5.xml
+    championship-mpa11.xml
+    championship-mpa1.xml
+    championship-online.xml
+    championship-supercars.xml
+    championship-trb1.xml
+    championship.xml
+    netclient.xml
+    netserver.xml
+    netwatcher.xml
+    networkrace.xml
+    optimizationMT.xml
+    practice.xml
+    quickrace.xml
+    singleevent-36gp.xml
+    singleevent-challenge.xml
+    singleevent-endurance.xml
+    singleevent-ls-gt1.xml
+    singleevent-mp5.xml
+    singleevent-mpa1.xml
+    DESTINATION ${datadir}/config/raceman
+)
+
+add_subdirectory(extra)

@@ -1,0 +1,19 @@
+install(FILES
+alicante.xml
+auriac.xml
+charmey.xml
+corkscrew.xml
+default.xml
+espie.xml
+e-track-2.xml
+forza.xml
+inuksuk.xml
+lombaro.xml
+longday.xml
+mile.xml
+peters.xml
+petit.xml
+salty.xml
+street-1.xml
+    DESTINATION ${datadir}/drivers/usr/sc-spirit-300
+)

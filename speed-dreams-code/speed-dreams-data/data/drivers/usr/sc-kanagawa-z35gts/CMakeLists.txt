@@ -1,0 +1,23 @@
+install(FILES
+alicante.xml
+auriac.xml
+brondehach.xml
+bueno.xml
+charmey.xml
+corkscrew.xml
+default.xml
+espie.xml
+e-track-2.xml
+forza.xml
+hidden-valley.xml
+inuksuk.xml
+karwada.xml
+lombaro.xml
+longday.xml
+mile.xml
+peters.xml
+petit.xml
+salty.xml
+street-1.xml
+    DESTINATION ${datadir}/drivers/usr/sc-kanagawa-z35gts
+)

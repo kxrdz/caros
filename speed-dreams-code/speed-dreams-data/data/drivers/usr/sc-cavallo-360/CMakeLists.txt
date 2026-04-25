@@ -1,0 +1,23 @@
+install(FILES
+alicante.xml
+auriac.xml
+brondehach.xml
+charmey.xml
+chemisay.xml
+corkscrew.xml
+default.xml
+espie.xml
+e-track-2.xml
+forza.xml
+inuksuk.xml
+karwada.xml
+longday.xml
+mile.xml
+nordschleife.xml
+peters.xml
+petit.xml
+salty.xml
+sao-paulo.xml
+street-1.xml
+    DESTINATION ${datadir}/drivers/usr/sc-cavallo-360
+)

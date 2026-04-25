@@ -1,0 +1,12 @@
+services:
+  speed-dreams-build:
+    build: .
+    container_name: sd-build
+    volumes:
+      - ./speed-dreams-code:/workspace/source    # ← dein Repo hier
+      - ./build-output:/workspace/build
+      - ./install-output:/workspace/install
+    environment:
+      - BUILD_TYPE=Debug
+    stdin_open: true
+    tty: true

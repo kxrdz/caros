@@ -1,0 +1,23 @@
+#! /bin/sh
+
+set -e
+
+gen()
+{
+    dir="$1"
+    driver="$(basename $(pwd))"
+
+    (cd "$dir" &&
+    cat > CMakeLists.txt <<EOF
+install(FILES
+$(ls *.xml)
+    DESTINATION \${datadir}/drivers/$driver/$1
+)
+EOF
+    )
+}
+
+for d in *
+do
+    test -d "$d" && gen "$d"
+done

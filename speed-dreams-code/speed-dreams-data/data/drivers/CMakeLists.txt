@@ -1,0 +1,7 @@
+add_subdirectory(human)
+add_subdirectory(networkhuman)
+add_subdirectory(usr)
+add_subdirectory(dandroid)
+add_subdirectory(shadow)
+add_subdirectory(simplix)
+add_subdirectory(urbanski)

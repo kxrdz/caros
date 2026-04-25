@@ -1,0 +1,203 @@
+.TH "Speed Dreams 2 translation tool" "6" "December 2025" "Speed Dreams 2.x" "Games"
+.SH NAME
+sd2-translate \- Translation tool for Speed Dreams 2
+.SH SYNOPSIS
+\fBsd2-translate\fP  [-v|--version] [-h|--help]
+              [-l|--localdir <dir path>] [-L|--libdir <dir path>]
+              [-B|--bindir <dir path>] [-D|--datadir <dir path>]
+              [-e|--tracelevel <integer>] [-t|--tracestream stdout|stderr|<file name>]
+              [-m|--hardmouse]
+              t|--target <target> [-l|--language <language>]
+              [-r|--ref <ref=cat>] [-i|--input <infile>] [-o|--output <outfile>]
+
+.SH DESCRIPTION
+\fBsd2-translate\fP is a command-line translation tool, specifically tailored
+for Speed Dreams 2. It cannot be used as a generic translation tool for other
+applications since it is designed to perform several heuristics required by
+Speed Dreams' design.
+
+By default, \fBsd2-translate\fP runs in interactive mode, which means the
+user shall be prompted with strings to translate, and the tool shall then
+read the translated strings over standard input, one per line.
+
+The example below shows \fBsd2-translate\fP asking for a translation of the
+string \fBLaps\fP:
+
+.PP
+.in +4n
+.EX
+File: <data-prefix>/data/config/osghudconfig.xml
+Section: widgets/carstatusWidget/fuel-info-laps-description
+Key: text
+Original text: "Laps"
+Reference language text (cat): "Voltes"
+.EE
+.in
+.PP
+
+Following the example above, a Spanish translation would require the user
+to insert the string \fBVueltas\fP over standard input.
+
+A typical interactive session tells the user the number of total
+translatable strings, how many of them are unique (i.e., not repeated accross
+the data prefix) and how many have been already translated:
+
+.PP
+.in +4n
+.EX
+Info    649 entries, 506 of them unique, 0 translated (0.0%)
+.EE
+.in
+.PP
+
+Every time the user provides a new translated string, the stats are
+reported again.
+
+A session ends when either all strings have been translated or the user decides
+to exit by inserting an end-of-file character over standard input. On Unix-like
+systems, this can be achieved by pressing \fBCtrl+D\fP, or \fBEnter\fP and then
+\fBCtrl+Z\fP on Windows systems. When a session ends, \fBsd2-translate\fP
+automatically updates any required parameter files inside the data prefix,
+and inserts the language code/name pair into \fBdata/menu/languagemenu.xml\fP
+if not already present.
+
+Perhaps more interestingly, \fBsd2-translate\fP can be also used
+non-interactively. In other words, it can read a line-separated list of
+translated entries over standard input, with a reference list provided via the
+\fB-i|--input\fP flag. A reference list can be obtained via the
+\fB-o|--output\fP flag.
+
+This makes it easier to perform translations with automatic tools, such as
+LibreTranslate. This flag tells \fBsd2-translate\fP to read another
+line-separated list of translated entries over standard input. For example,
+assuming the following list of untranslated entries:
+
+.PP
+.in +4n
+.EX
+Hello
+Goodbye
+Race
+Laps
+.EE
+.in
+.PP
+
+The list of translated entries shall be matched against the untranslated
+entries. Following the example above, a Spanish translation could look like
+this:
+
+.PP
+.in +4n
+.EX
+Hola
+Adiós
+Carrera
+Vueltas
+.EE
+.in
+.PP
+
+Apart from translations, \fBsd2-translate\fP also takes care of other low-level
+details required by the engine, such as bumping version numbers on parameter
+files inside the \fBconfig/\fP directory. Also, it avoids changing the layout
+and comments in parameter files, as a way to keep diffs small and readable.
+
+In order to achieve this, \fBsd2-translate\fP implements a limited and
+somewhat naive XML parser that injects XML nodes while respecting the original
+indentation, since traditional XML parsers would instead rewrite the file
+entirely to their own liking.
+
+.SH OPTIONS
+.TP
+\fB-h\fP, \fB--help\fP
+Show a short manual about options
+.TP
+\fB-v\fP, \fB--version\fP
+Show the actual game version
+.TP
+\fB-l\fP, \fB--localdir\fP local dir
+Set the run-time user settings folder
+(default = ~/.speed-dreams-2, unless not using the default CMake configuration for building)
+.TP
+\fB-L\fP, \fB--libdir\fP lib dir
+Set the run-time library folder (default = /usr/local/lib[64]/games/speed-dreams-2,
+unless not using the default CMake configuration for building)
+.TP
+\fB-D\fP, \fB--datadir\fP data dir
+Set the run-time data folder (default = /usr/local/share/games/speed-dreams-2,
+ unless not using the default CMake configuration for building)
+.TP
+\fB-B\fP, \fB--bindir\fP bin dir
+Set the run-time binary data folder
+(default = /usr/local/games, unless not using the default CMake configuration for building)
+.TP
+\fB-m\fP, \fB--hardmouse\fP
+Use hardware mouse cursor
+.TP
+\fB-e\fP, \fB--tracelevel\fP trace level threshold
+Set the trace level threshold to the given integer value
+(0=Fatal, 1=Error, 2=Warning, 3=Info, 4=Trace, 5=Debug, ... ;
+ default = Debug, unless not using the default CMake configuration for building)
+Only traces with lower or equal level will appear in the trace stream
+Note: May be disabled if CMake option 'OPTION_DEBUG' is not true at build time)
+.TP
+\fB-t\fP, \fB--tracestream\fP target trace stream
+Set the target stream for the traces (among 'stdout', 'stderr' or <file name>) ;
+ default = stderr, unless not using the default CMake configuration for building))
+Note: May be disabled if CMake option 'OPTION_DEBUG' is not true at build time)
+.TP
+\fB-t\fP, \fB--target\fP
+Set target language. Although not required, the use of three-letter language
+codes, such as those defined by ISO 639-3, is recommended.
+.TP
+\fB-l\fP, \fB--language\fP
+Set common name for the target language (e.g.: Esperanto, English, Russian, etc.),
+as displayed by \fBdata/menu/languagemenu.xml\fP.
+Required unless \fB-o\fP, \fB--output\fP is used.
+.TP
+\fB-r\fP, \fB--ref\fP
+Sets the reference language code, defaults to \fBcat\fP. This is required since
+Speed Dreams does not provide a list of translatable strings, and therefore
+\fBsd2-translate\fP must rely on a previous translation (Catalan being the most
+complete as of the time of this writing) to perform heuristics and determine
+which strings are translatable.
+.TP
+\fB-i\fP, \fB--input\fP
+Sets the input file to a line-separated list of untranslated entries, as
+previously returned by the \fB-o|--output\fP flag.
+.TP
+\fB-o\fP, \fB--output\fP
+Tells \fBsd2-translate\fP not to translate any entries and, instead, sets the
+output file to a line-separated list of untranslated entries, that can be later
+fed as \fB-i|--input\fP.
+
+.SH LICENSE
+\fBsd2-translate\fP is licensed under the GNU General Public License,
+version 2 or later.
+.SH COPYRIGHT
+Copyright (C) 2025 Xavier Del Campo Romero
+.P
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+.SH AUTHOR
+This manual page was written by Xavier Del Campo Romero <xavi92@disroot.org>,
+based on previous work by Jean-Philippe Meuret <pouillot@users.sourceforge.net>
+and TORCS 1.2.2 version by Rudy Godoy <rudy@kernel-panik.org>,
+for the Debian project ; of course, it may be used by any other.
+.SH BUG REPORTS
+Please submit fixes and/or improvements to:
+.br
+https://forge.a-lec.org/speed-dreams/speed-dreams-code/issues
+.SH SEE ALSO
+Web site: http://www.speed-dreams.net/
+.br
+Forgejo: http://forge.a-lec.org/speed-dreams/
+.br
+ISO 639-3: https://en.wikipedia.org/wiki/ISO_639-3
+.br
+LibreTranslate: https://libretranslate.com
+.br
+speed-dreams-2(6), sd2-trackgen(6), sd2-accc(6), sd2-nfs2ac(6), sd2-nfsperf(6)

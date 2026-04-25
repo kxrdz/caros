@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    file                 : controlconfigmenu.xml
+    created              : 2009
+    copyright            : (C) 2009 by Brian Gavin, Eckhard M. Jaeger
+    web                  : speed-dreams.sourceforge.net
+-->
+<!--    This program is free software; you can redistribute it and/or modify  -->
+<!--    it under the terms of the GNU General Public License as published by  -->
+<!--    the Free Software Foundation; either version 2 of the License, or     -->
+<!--    (at your option) any later version.                                   -->
+<!--
+
+	Forcefeedback config screen
+
+-->
+<!DOCTYPE params SYSTEM "../tgf/params.dtd">
+<params name="forcefeedbackconfigmenu" version="1.2">
+  <section name="dynamic controls">
+    <!-- global effect -->
+    <!-- checkbox -->
+    <section name="globalEffectenabled">
+      <attstr name="type" val="check box"/>
+      <attstr name="text" val=""/>
+      <attstr name="tip" val=""/>
+      <attnum name="x" val="220"/>
+      <attnum name="y" val="325"/>
+      <attnum name="image width" val="24"/>
+      <attnum name="image height" val="24"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="checked" val="yes"/>
+    </section>
+    <!-- checkbox -->
+    <section name="globalEffectreverse">
+      <attstr name="type" val="check box"/>
+      <attstr name="text" val=""/>
+      <attstr name="tip" val=""/>
+      <attnum name="x" val="220"/>
+      <attnum name="y" val="295"/>
+      <attnum name="image width" val="24"/>
+      <attnum name="image height" val="24"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="checked" val="yes"/>
+    </section>
+    <!-- input fields -->
+    <section name="globalEffectmultiplier">
+      <attstr name="type" val="edit box"/>
+      <attnum name="max len" val="6"/>
+      <attnum name="x" val="220"/>
+      <attnum name="y" val="265"/>
+      <attnum name="width" val="60"/>
+      <attstr name="h align" val="right"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium"/>
+    </section>
+    <section name="globalEffectminimum">
+      <attstr name="type" val="edit box"/>
+      <attnum name="max len" val="6"/>
+      <attnum name="x" val="220"/>
+      <attnum name="y" val="235"/>
+      <attnum name="width" val="60"/>
+      <attstr name="h align" val="right"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium"/>
+    </section>
+    <!-- autocenter effect -->
+    <!-- checkbox -->
+    <section name="autocenterEffectenabled">
+      <attstr name="type" val="check box"/>
+      <attstr name="text" val=""/>
+      <attstr name="tip" val=""/>
+      <attnum name="x" val="510"/>
+      <attnum name="y" val="325"/>
+      <attnum name="image width" val="24"/>
+      <attnum name="image height" val="24"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="checked" val="yes"/>
+    </section>
+    <!-- input fields -->
+    <section name="autocenterEffectfrontwheelsmultiplier">
+      <attstr name="type" val="edit box"/>
+      <attnum name="max len" val="6"/>
+      <attnum name="x" val="510"/>
+      <attnum name="y" val="295"/>
+      <attnum name="width" val="80"/>
+      <attstr name="h align" val="right"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium"/>
+    </section>
+    <section name="autocenterEffectrearwheelsmultiplier">
+      <attstr name="type" val="edit box"/>
+      <attnum name="max len" val="6"/>
+      <attnum name="x" val="510"/>
+      <attnum name="y" val="265"/>
+      <attnum name="width" val="80"/>
+      <attstr name="h align" val="right"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium"/>
+    </section>
+    <section name="autocenterEffectsmoothing">
+      <attstr name="type" val="edit box"/>
+      <attnum name="max len" val="6"/>
+      <attnum name="x" val="510"/>
+      <attnum name="y" val="235"/>
+      <attnum name="width" val="80"/>
+      <attstr name="h align" val="right"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium"/>
+    </section>
+    <!-- engineRevving effect -->
+    <!-- checkbox -->
+    <section name="engineRevvingEffectenabled">
+      <attstr name="type" val="check box"/>
+      <attstr name="text" val=""/>
+      <attstr name="tip" val=""/>
+      <attnum name="x" val="510"/>
+      <attnum name="y" val="205"/>
+      <attnum name="image width" val="24"/>
+      <attnum name="image height" val="24"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="checked" val="yes"/>
+    </section>
+    <!-- input fields -->
+    <section name="engineRevvingEffectmultiplier">
+      <attstr name="type" val="edit box"/>
+      <attnum name="max len" val="6"/>
+      <attnum name="x" val="510"/>
+      <attnum name="y" val="175"/>
+      <attnum name="width" val="80"/>
+      <attstr name="h align" val="right"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium"/>
+    </section>
+    <!-- lowSpeedConstantForce effect -->
+    <!-- checkbox -->
+    <section name="lowSpeedConstantForceEffectenabled">
+      <attstr name="type" val="check box"/>
+      <attstr name="text" val=""/>
+      <attstr name="tip" val=""/>
+      <attnum name="x" val="510"/>
+      <attnum name="y" val="145"/>
+      <attnum name="image width" val="24"/>
+      <attnum name="image height" val="24"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="checked" val="yes"/>
+    </section>
+    <!-- input fields -->
+    <section name="lowSpeedConstantForceEffectmaxForce">
+      <attstr name="type" val="edit box"/>
+      <attnum name="max len" val="6"/>
+      <attnum name="x" val="510"/>
+      <attnum name="y" val="115"/>
+      <attnum name="width" val="80"/>
+      <attstr name="h align" val="right"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium"/>
+    </section>
+    <!-- input fields -->
+    <section name="lowSpeedConstantForceEffectmaxSpeedAtWhichForceIsApplied">
+      <attstr name="type" val="edit box"/>
+      <attnum name="max len" val="6"/>
+      <attnum name="x" val="510"/>
+      <attnum name="y" val="85"/>
+      <attnum name="width" val="80"/>
+      <attstr name="h align" val="right"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium"/>
+    </section>
+    <!-- cancel / save buttons -->
+    <section name="CancelButton">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Cancel"/>
+      <attstr name="text-fra" val="Annuler"/>
+      <attstr name="text-ru" val="Отменить"/>
+      <attstr name="tip" val="Cancel changes"/>
+      <attstr name="tip-ru" val="Отменить изменения"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="x" val="400"/>
+      <attnum name="y" val="44"/>
+      <attnum name="width" val="80"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-10"/>
+      <attnum name="image y" val="-2"/>
+      <attnum name="image width" val="100"/>
+      <attnum name="image height" val="30"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="ApplyButton">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Apply"/>
+      <attstr name="text-fra" val="Appliquer"/>
+      <attstr name="text-ru" val="Применить"/>
+      <attstr name="tip" val="Accept and save changes"/>
+      <attstr name="tip-ru" val="Принять и сохранить изменения"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="x" val="500"/>
+      <attnum name="y" val="44"/>
+      <attnum name="width" val="80"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-10"/>
+      <attnum name="image y" val="-2"/>
+      <attnum name="image width" val="100"/>
+      <attnum name="image height" val="30"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+  </section>
+  <section name="static controls">
+    <!-- page decoration -->
+    <section name="1">
+      <attstr name="type" val="gallery"/>
+      <attstr name="directory" val="data/gallery/"/>
+    </section>
+    <section name="2">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="-10"/>
+      <attnum name="y" val="375"/>
+      <attnum name="width" val="130"/>
+      <attnum name="height" val="95"/>
+      <attstr name="image" val="data/img/sd-logo-big.png"/>
+    </section>
+    <!--
+		<section name="3">
+			<attstr name="type" val="static image"/>
+			<attnum name="x" val="212"/>
+			<attnum name="y" val="400"/>
+			<attnum name="width" val="450"/>
+			<attnum name="height" val="20"/>
+			<attstr name="image" val="data/img/head-forcefeedbackconfig.png"/>
+		</section>
+-->
+    <section name="3">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val="Force-feedback configuration"/>
+      <attstr name="text-fra" val="Configuration du retour haptique"/>
+      <attstr name="text-ru" val="Настройки обратной связи"/>
+      <attnum name="x" val="300"/>
+      <attnum name="y" val="430"/>
+      <attnum name="width" val="400"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium_t"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="bg image" val="data/img/header-background.png"/>
+      <attnum name="bg image padding top" val="15"/>
+      <attnum name="bg image padding bottom" val="15"/>
+      <attnum name="bg image padding left" val="30"/>
+      <attnum name="bg image padding right" val="15"/>
+    </section>
+    <!-- descriptions of input fields that are defined in dynamic section-->
+    <!-- global effect -->
+    <section name="4">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="30"/>
+      <attnum name="y" val="360"/>
+      <attstr name="text" val="Global settings"/>
+      <attstr name="text-fra" val="Paramètres globaux"/>
+      <attstr name="text-ru" val="Общие настройки"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="width" val="250"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xffffff"/>
+      <attstr name="bg image" val="data/img/header-background.png"/>
+      <attnum name="bg image padding top" val="0"/>
+      <attnum name="bg image padding bottom" val="5"/>
+      <attnum name="bg image padding left" val="20"/>
+      <attnum name="bg image padding right" val="5"/>
+    </section>
+    <!-- labels backgrounds -->
+    <!-- column one -->
+    <section name="5">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="15"/>
+      <attnum name="y" val="325"/>
+      <attnum name="width" val="200"/>
+      <attnum name="height" val="24"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="6">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="15"/>
+      <attnum name="y" val="295"/>
+      <attnum name="width" val="200"/>
+      <attnum name="height" val="24"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="7">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="15"/>
+      <attnum name="y" val="265"/>
+      <attnum name="width" val="200"/>
+      <attnum name="height" val="24"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="8">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="15"/>
+      <attnum name="y" val="235"/>
+      <attnum name="width" val="200"/>
+      <attnum name="height" val="24"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <!-- column two -->
+    <section name="9">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="300"/>
+      <attnum name="y" val="325"/>
+      <attnum name="width" val="200"/>
+      <attnum name="height" val="24"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="10">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="300"/>
+      <attnum name="y" val="295"/>
+      <attnum name="width" val="200"/>
+      <attnum name="height" val="24"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="11">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="300"/>
+      <attnum name="y" val="265"/>
+      <attnum name="width" val="200"/>
+      <attnum name="height" val="24"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="12">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="300"/>
+      <attnum name="y" val="235"/>
+      <attnum name="width" val="200"/>
+      <attnum name="height" val="24"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="13">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="300"/>
+      <attnum name="y" val="205"/>
+      <attnum name="width" val="200"/>
+      <attnum name="height" val="24"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="14">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="300"/>
+      <attnum name="y" val="175"/>
+      <attnum name="width" val="200"/>
+      <attnum name="height" val="24"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="15">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="300"/>
+      <attnum name="y" val="145"/>
+      <attnum name="width" val="200"/>
+      <attnum name="height" val="24"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="16">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="300"/>
+      <attnum name="y" val="115"/>
+      <attnum name="width" val="200"/>
+      <attnum name="height" val="24"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="17">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="300"/>
+      <attnum name="y" val="85"/>
+      <attnum name="width" val="200"/>
+      <attnum name="height" val="24"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <!-- column 2 labels -->
+    <section name="18">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="40"/>
+      <attnum name="y" val="330"/>
+      <attstr name="text" val="Enable Force Feedback:"/>
+      <attstr name="text-fra" val="Activer le retour haptique:"/>
+      <attstr name="text-ru" val="Включить обратную связь:"/>
+      <attstr name="tip" val="Check to enable force-feedback"/>
+      <attstr name="tip-ru" val="Отметьте для включения обратной связи"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="19">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="40"/>
+      <attnum name="y" val="300"/>
+      <attstr name="text" val="Reverse Force Feedback:"/>
+      <attstr name="tip" val="Check to enable force-feedback"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="20">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="40"/>
+      <attnum name="y" val="270"/>
+      <attstr name="text" val="Wheel strength:"/>
+      <attstr name="text-fra" val="Force du volant:"/>
+      <attstr name="text-ru" val="Усилие на руле:"/>
+      <attstr name="tip" val="Augment/reduce the force that will be globally used by force feedback effects"/>
+      <attstr name="tip-ru" val="Увеличьте или уменьшайте силу, используемую эффектами обратной связи"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="21">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="40"/>
+      <attnum name="y" val="240"/>
+      <attstr name="text" val="Wheel minimum strength:"/>
+      <attstr name="text-fra" val="Force minimale du volant:"/>
+      <attstr name="text-ru" val="Минимальное усилие на руле:"/>
+      <attstr name="tip" val="Augment/reduce the minimum force that will be globally used by force feedback effects"/>
+      <attstr name="tip-ru" val="Увеличьте или уменьшайте минимальную силу, используемую эффектами обратной связи"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="22">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="320"/>
+      <attnum name="y" val="360"/>
+      <attstr name="text" val="Car specific settings"/>
+      <attstr name="text-fra" val="Paramètres propres au véhicule"/>
+      <attstr name="text-ru" val="Настройки для опред. автомобиля"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="width" val="270"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xffffff"/>
+      <attstr name="bg image" val="data/img/header-background.png"/>
+      <attnum name="bg image padding top" val="0"/>
+      <attnum name="bg image padding bottom" val="5"/>
+      <attnum name="bg image padding left" val="20"/>
+      <attnum name="bg image padding right" val="5"/>
+    </section>
+    <!-- autocenter effect -->
+    <section name="23">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="350"/>
+      <attnum name="y" val="300"/>
+      <attstr name="text" val="Autocenter Front wheels multiplier:"/>
+      <attstr name="text-fra" val="Multiplicateur de la force de re-centrage routes av.:"/>
+      <attstr name="text-ru" val="Множитель выравнивания передних колес:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="tip" val="Multiplier for the FRONT wheels forces"/>
+      <attstr name="tip-ru" val="Множитель для сил на передних колесах"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="24">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="350"/>
+      <attnum name="y" val="270"/>
+      <attstr name="text" val="Autocenter Rear wheels multiplier:"/>
+      <attstr name="text-fra" val="Multiplicateur de la force de re-centrage routes arr.:"/>
+      <attstr name="text-ru" val="Множитель выравнивания задних колес:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="tip" val="Multiplier for the REAR wheels forces"/>
+      <attstr name="tip-ru" val="Множитель для сил на задних колесах"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="25">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="350"/>
+      <attnum name="y" val="240"/>
+      <attstr name="text" val="Autocenter Smoothing:"/>
+      <attstr name="text-fra" val="Lissage de l'auto-recentrage:"/>
+      <attstr name="text-ru" val="Сглаживание выравнивания:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="tip" val="Smooth the forces produced by the align effect"/>
+      <attstr name="tip-ru" val="Сглаживание сил, созданных эффектом выравнивания"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <!-- engineRevving effect -->
+    <section name="26">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="350"/>
+      <attnum name="y" val="180"/>
+      <attstr name="text" val="Engine Revving multiplier:"/>
+      <attstr name="text-ru" val="Множитель эффекта работающего двигателя:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="tip" val="Multiplier for the vibration forces"/>
+      <attstr name="tip-ru" val="Множитель для сил вибрации"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <!-- lowSpeedConstantForce effect -->
+    <section name="27">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="350"/>
+      <attnum name="y" val="120"/>
+      <attstr name="text" val="Force when standing:"/>
+      <attstr name="text-ru" val="Сила на руле в покое:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="tip" val="Max resistance applied while still standing"/>
+      <attstr name="tip-ru" val="Максимальное сопротивление руля в покое"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="28">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="350"/>
+      <attnum name="y" val="90"/>
+      <attstr name="text" val="Disable at speed:"/>
+      <attstr name="text-ru" val="Выкл. на скорости:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="tip" val="Speed at which this effect produce zero forces"/>
+      <attstr name="tip-ru" val="Скорость, на которой эффект не создает силу"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="29">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="350"/>
+      <attnum name="y" val="330"/>
+      <attstr name="text" val="Enable align effect:"/>
+      <attstr name="text-ru" val="Эффект выравнивания:"/>
+      <attstr name="tip" val="Check to enable align effect"/>
+      <attstr name="tip-ru" val="Отметьте для включения эффекта выравнивания"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="30">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="350"/>
+      <attnum name="y" val="210"/>
+      <attstr name="text" val="Enable engine revving effect:"/>
+      <attstr name="text-ru" val="Эффект работающего двигателя:"/>
+      <attstr name="tip" val="Check to enable engine revving effect (produce engine vibrations at low RPMs)"/>
+      <attstr name="tip-ru" val="Отметьте для включения эффекта работающего двигателя (создает вибрации на низких оборотах)"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="31">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="350"/>
+      <attnum name="y" val="150"/>
+      <attstr name="text" val="Enable low speed force effect:"/>
+      <attstr name="text-ru" val="Enable low speed force effect:"/>
+      <attstr name="tip" val="Check to enable low speed constant force effect: make the wheel resist to turning when still standing/low speeds"/>
+      <attstr name="tip-ru" val="Отметьте для включения постоянной силы сопротивления рулению на низкой скорости или в покое"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+  </section>
+</params>

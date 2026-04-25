@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE params SYSTEM "params.dtd">
+
+
+<params name="mpa12-deckard">
+  <section name="Brake System">
+    <attnum name="front-rear brake repartition" unit="%" min="15" max="85" val="61"/>
+  </section>
+
+  <section name="Front Anti-Roll Bar">
+    <attnum name="spring" unit="kN/m" min="25" max="125" val="90"/>
+  </section>
+
+  <section name="Front Wing">
+    <attnum name="angle" unit="deg" min="0" max="26" val="10.5"/>
+  </section>
+
+  <section name="Rear Wing">
+    <attnum name="angle" unit="deg" min="-8" max="25" val="7.5"/>
+  </section>
+
+  <section name="Steer">
+	<attnum name="steer lock" unit="deg" min="12" max="35" val="16.00"/>
+    <attnum name="steering wheel rotation" unit="deg" min="15.4699" max="154.699" val="82.5"/>
+  </section>
+
+  <section name="Rear Differential">
+    <attnum name="ratio" unit="" min="0" max="10" val="5.701"/>
+    <attstr name="type" in="SPOOL" val="SPOOL"/>
+  </section>
+
+  <section name="Tires Set">
+    <attnum name="compound set" unit="" min="1" max="5" val="3"/>
+  </section>
+
+  <section name="Front Left Wheel">
+    <attnum name="ride height" unit="mm" min="45" max="75" val="52"/>
+    <attnum name="toe" unit="deg" min="-5" max="5" val="-0.1"/>
+    <attnum name="camber" unit="deg" min="-5" max="5" val="2.0"/>
+    <attnum name="pressure" unit="PSI" min="19" max="48" val="32.5"/>
+  </section>
+
+  <section name="Front Right Wheel">
+    <attnum name="toe" unit="deg" min="-5" max="5" val="0.1"/>
+    <attnum name="camber" unit="deg" min="-5" max="5" val="-3.2"/>
+    <attnum name="pressure" unit="PSI" min="19" max="48" val="25.5"/>
+  </section>
+
+  <section name="Rear Left Wheel">
+    <attnum name="pressure" unit="PSI" min="19" max="48" val="32.5"/>
+  </section>
+
+  <section name="Rear Right Wheel">
+    <attnum name="ride height" unit="mm" min="40" max="100" val="76.0"/>
+    <attnum name="camber" unit="deg" min="-5" max="5" val="-3"/>
+    <attnum name="pressure" unit="PSI" min="19" max="48" val="35.5"/>
+  </section>
+
+  <section name="Front Left Suspension">
+    <attnum name="spring" unit="kN/M" min="100" max="350" val="200"/>
+  </section>
+
+  <section name="Front Right Suspension">
+    <attnum name="spring" unit="kN/M" min="100" max="350" val="330"/>
+  </section>
+
+  <section name="Rear Right Suspension">
+    <attnum name="spring" unit="kN/M" min="50" max="350" val="280"/>
+  </section>
+
+  <section name="private">
+    <!-- Others -->
+    <attnum name="test line" min="0" max="3" val="0"/> <!-- test line: 1 left, 2 right -->
+    <attnum name="message on" min="0" max="1" val="0"/>
+    <attnum name="data log on" min="0" max="1" val="1"/>
+
+    <attnum name="ABS slip" val="8.0"/>
+	<attnum name="TCL side slip" val="35.0"/>
+	<attnum name="TCL side slip qualy" val="40.0"/>
+	<attnum name="TCL side slip factor" val="0.03"/>
+	<attnum name="shift up point" min="0.01" max="1.0" val="0.89"/>
+    <attnum name="brake mu factor" val="0.90"/>
+    <attnum name="LR mu scale" val="0.95"/>
+    <attnum name="mu factor" val="0.90"/>
+    <attnum name="brakepressrace" val="21000"/>
+    <attnum name="brakepressnorm" val="21000"/>
+    <attnum name="bump speed factor" val="0.001"/>
+    <attnum name="fuel per meter" val="0.00072"/>
+	<attnum name="fuel weight factor" val="1.0"/>
+	<attnum name="tire wear per meter" val="0.128"/>
+	<attnum name="max fuel" val="83"/>
+	<attnum name="Pit Tire Wear Threshold" val="35.0"/>
+	
+    <attnum name="pitdamage" val="5000"/>
+    <attnum name="pitgripfactor" val="1.0"/>
+    <attnum name="pitentrymargin" val="200.0"/>
+    <attnum name="pitentryspeed" val="280.0"/>
+    <attnum name="pitexitspeed" val="120.0"/>
+    <attnum name="pittest" val="0"/>
+
+    <attnum name="targetfactor" val="0.32"/>
+    <attnum name="targetwalldist" val="1.0"/>
+	<attnum name="lookahead" val="50.0"/>
+	<attnum name="hottemp" val="115.0"/>
+    <!-- Race line ClothoidPath -->
+    <attnum name="maxleft" val="8.0"/>
+    <attnum name="maxright" val="8.0"/>
+    <attnum name="clothoidfactor" val="1.025"/>
+    <attnum name="seglen" val="8.0"/>
+	<attnum name="vmaxk" val="0.00183"/>
+  </section>
+</params>

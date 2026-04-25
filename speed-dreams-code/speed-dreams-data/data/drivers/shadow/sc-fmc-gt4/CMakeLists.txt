@@ -1,0 +1,21 @@
+install(FILES
+aalborg.xml
+alicante.xml
+atlanta.xml
+auriac.xml
+brondehach.xml
+chemisay.xml
+corkscrew.xml
+default.xml
+espie.xml
+forza.xml
+inuksuk.xml
+karwada.xml
+lombaro.xml
+longday.xml
+peters.xml
+salty.xml
+sao-paulo.xml
+torino.xml
+    DESTINATION ${datadir}/drivers/shadow/sc-fmc-gt4
+)

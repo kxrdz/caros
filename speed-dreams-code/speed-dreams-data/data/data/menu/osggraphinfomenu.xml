@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Speed Dreams, a free and open source motorsport simulator.            -->
+<!-- Copyright (C) 2026 Xavier Del Campo Romero                            -->
+<!-- This program is free software; you can redistribute it and/or modify  -->
+<!-- it under the terms of the GNU General Public License as published by  -->
+<!-- the Free Software Foundation; either version 2 of the License, or     -->
+<!-- (at your option) any later version.                                   -->
+<!DOCTYPE params SYSTEM "../tgf/params.dtd">
+<params name="graphconfigmenu">
+	<section name="dynamic controls">
+		<section name="back">
+			<attstr name="type" val="text button"/>
+			<attstr name="show box" val="no"/>
+			<attstr name="text" val="Back"/>
+			<attstr name="text-spa" val="Atrás"/>
+			<attstr name="text-cat" val="Tornar"/>
+			<attstr name="text-ru" val="Назад"/>
+			<attstr name="tip" val="Go back to previous menu"/>
+			<attstr name="tip-spa" val="Volver al menú anterior"/>
+			<attstr name="tip-cat" val="Torneu al menú anterior"/>
+			<attstr name="tip-ru" val="Вернуться к предыдущему меню"/>
+			<attstr name="h align" val="left"/>
+			<attnum name="x" val="500"/>
+			<attnum name="y" val="44"/>
+			<attnum name="width" val="80"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xa6a6a6"/>
+			<attstr name="focused color" val="0xFFFFFF"/>
+			<attstr name="pushed color" val="0xFFFFFF"/>
+			<attnum name="image x" val="-10"/>
+			<attnum name="image y" val="-2"/>
+			<attnum name="image width" val="100"/>
+			<attnum name="image height" val="30"/>
+			<attstr name="focused image" val="data/img/button-left-focused.png"/>
+			<attstr name="enabled image" val="data/img/button-left.png"/>
+			<attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+		</section>
+	</section>
+	<section name="static controls">
+		<section name="1">
+			<attstr name="type" val="gallery"/>
+			<attstr name="directory" val="data/gallery/"/>
+		</section>
+		<section name="2">
+			<attstr name="type" val="static image"/>
+			<attnum name="x" val="190"/>
+			<attnum name="y" val="125"/>
+			<attnum name="width" val="415"/>
+			<attnum name="height" val="215"/>
+			<attstr name="image" val="data/img/black-square.png"/>
+		</section>
+		<section name="3">
+			<attstr name="type" val="static image"/>
+			<attnum name="x" val="-10"/>
+			<attnum name="y" val="375"/>
+			<attnum name="width" val="130"/>
+			<attnum name="height" val="95"/>
+			<attstr name="image" val="data/img/sd-logo-big.png"/>
+		</section>
+		<section name="4">
+			<attstr name="type" val="label"/>
+			<attstr name="text" val="Osggraph engine information"/>
+			<attstr name="text-spa" val="Información del motor gráfico Osggraph"/>
+			<attstr name="text-cat" val="Informació del motor gràfic Osggraph"/>
+			<attstr name="text-ru" val="Информация о движке Osggraph"/>
+			<attnum name="x" val="300"/>
+			<attnum name="y" val="430"/>
+			<attnum name="width" val="400"/>
+			<attstr name="color" val="0xFFFFFF"/>
+			<attstr name="font" val="medium_t"/>
+			<attstr name="h align" val="left"/>
+			<attstr name="bg image" val="data/img/header-background.png"/>
+			<attnum name="bg image padding top" val="15"/>
+			<attnum name="bg image padding bottom" val="15"/>
+			<attnum name="bg image padding left" val="30"/>
+			<attnum name="bg image padding right" val="15"/>
+		</section>
+		<section name="5">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="200"/>
+			<attnum name="y" val="315"/>
+			<attstr name="text" val="Osggraph is Speed Dreams' next-generation graphics engine, based on"/>
+			<attstr name="text-ru" val="Osggraph - графический движок Speed Dreams нового поколения,"/>
+			<attstr name="text-spa" val="Osggraph es el motor gráfico de nueva generación de Speed Dreams,"/>
+			<attstr name="text-cat" val="L'Osggraph és el motor de nova generació de l'Speed Dreams, basat"/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="400"/>
+			<attstr name="font" val="small"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="6">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="200"/>
+			<attnum name="y" val="300"/>
+			<attstr name="text" val="the OSGPL-licensed OpenSceneGraph library. It was aimed to replace the"/>
+			<attstr name="text-ru" val="основанный на OSGPL-лицензированной библиотеке OpenSceneGraph."/>
+			<attstr name="text-spa" val="basado en el proyecto OpenSceneGraph. Se destinó a reemplazar la"/>
+			<attstr name="text-cat" val="en la llibreria OpenSceneGraph. Tenia l'objectiu de substituir el motor"/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="400"/>
+			<attstr name="font" val="small"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="7">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="200"/>
+			<attnum name="y" val="285"/>
+			<attstr name="text" val="Ssggraph graphics engine over concerns on PLib's end-of-life, but"/>
+			<attstr name="text-ru" val="Он призван заменить графический движок Ssggraph из-за"/>
+			<attstr name="text-spa" val="librería gráfica Ssggraph a causa del fin de su mantenimiento,"/>
+			<attstr name="text-cat" val="gràfic Ssggraph a causa del fi de suport del PLib, però finalment"/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="400"/>
+			<attstr name="font" val="small"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="8">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="200"/>
+			<attnum name="y" val="270"/>
+			<attstr name="text" val="ultimately both engines have co-existed for many years in the project."/>
+			<attstr name="text-ru" val="возможного завершения поддержки PLib. Тем не менее, оба движка"/>
+			<attstr name="text-spa" val="pero finalmente ambos motores han coexistido durante varios años."/>
+			<attstr name="text-cat" val="ambdós motors hi han estat presents durant molts anys."/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="400"/>
+			<attstr name="font" val="small"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="9">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="200"/>
+			<attnum name="y" val="255"/>
+			<attstr name="text" val=""/>
+			<attstr name="text-ru" val="сосуществуют в проекте много лет."/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="400"/>
+			<attstr name="font" val="small"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="10">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="200"/>
+			<attnum name="y" val="240"/>
+			<attstr name="text" val="Osggraph has higher visual fidelity compared to Ssggraph, with support"/>
+			<attstr name="text-ru" val="Osggraph обладает повышенной визуальной четкостью в сравнении"/>
+			<attstr name="text-spa" val="Osggraph tiene mayor fidelidad visual en comparación a Ssggraph,"/>
+			<attstr name="text-cat" val="L'Osggraph té millor fidelitat visual comparat amb l'Ssggraph, amb suport"/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="400"/>
+			<attstr name="font" val="small"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="11">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="200"/>
+			<attnum name="y" val="225"/>
+			<attstr name="text" val="for OpenGL shaders and dynamic shadows, as well as"/>
+			<attstr name="text-ru" val="с Ssggraph, поддерживает шейдеры OpenGL, динамические тени и"/>
+			<attstr name="text-spa" val="con soporte para shaders OpenGL y sombras dinámicas, así como"/>
+			<attstr name="text-cat" val="per a shaders OpenGL i ombres dinàmiques, així com elements del HUD"/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="400"/>
+			<attstr name="font" val="small"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="12">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="200"/>
+			<attnum name="y" val="210"/>
+			<attstr name="text" val="configurable HUD elements. On the other hand, it has a higher memory"/>
+			<attstr name="text-ru" val="настраиваемые элементы интерфейса. С другой стороны, он"/>
+			<attstr name="text-spa" val="elementos del HUD configurables. Por otro lado, tiene un consumo mayor"/>
+			<attstr name="text-cat" val="configurables. D'altra banda, té un major consum de memòria i requereix"/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="400"/>
+			<attstr name="font" val="small"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="13">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="200"/>
+			<attnum name="y" val="195"/>
+			<attstr name="text" val="footprint and requires a more powerful CPU and GPU, specially since the"/>
+			<attstr name="text-ru" val="требователен к объему ОЗУ, процессору и видеокарте, особенно"/>
+			<attstr name="text-spa" val="de memoria y requiere una CPU y GPU más potentes, ya que para"/>
+			<attstr name="text-cat" val="una CPU i GPU més potents, ja que per a l'Osggraph sempre hi ha activat"/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="400"/>
+			<attstr name="font" val="small"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="14">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="200"/>
+			<attnum name="y" val="180"/>
+			<attstr name="text" val="dynamic sky dome is always enabled for Osggraph."/>
+			<attstr name="text-ru" val="потому, что динамическое небо всегда включено для Osggraph."/>
+			<attstr name="text-spa" val="Osggraph siempre se habilita el cielo dinámico."/>
+			<attstr name="text-cat" val="el cel dinàmic."/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="400"/>
+			<attstr name="font" val="small"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="15">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="200"/>
+			<attnum name="y" val="150"/>
+			<attstr name="text" val="Choose Osggraph for higher visual fidelity on higher-end hardware."/>
+			<attstr name="text-ru" val="Выбирайте Osggraph для улучшенного качества картинки"/>
+			<attstr name="text-spa" val="Elija Osggraph para mayor fidelidad visual en hardware de gama alta."/>
+			<attstr name="text-cat" val="Escolliu l'Osggraph per a millors gràfics amb hardware més potent."/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="400"/>
+			<attstr name="font" val="small"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="16">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="200"/>
+			<attnum name="y" val="135"/>
+			<attstr name="text" val=""/>
+			<attstr name="text-ru" val="на производительном железе."/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="400"/>
+			<attstr name="font" val="small"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="17">
+			<attstr name="type" val="static image"/>
+			<attnum name="x" val="30"/>
+			<attnum name="y" val="125"/>
+			<attnum name="width" val="130"/>
+			<attnum name="height" val="90"/>
+			<attstr name="image" val="data/img/osggraph-demo.jpg"/>
+		</section>
+		<section name="18">
+			<attstr name="type" val="static image"/>
+			<attnum name="x" val="30"/>
+			<attnum name="y" val="250"/>
+			<attnum name="width" val="130"/>
+			<attnum name="height" val="90"/>
+			<attstr name="image" val="data/img/osggraph-demo2.jpg"/>
+		</section>
+	</section>
+</params>

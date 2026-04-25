@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    file                 : mpa12-murasamar.xml
+    created              : Thu Aug 22 18:46:37 CET 2023
+    copyright            : (C) 2023 by Xavier Bertaux
+    email                : bertauxx@gmail.com
+-->
+
+<!--    This program is free software; you can redistribute it and/or modify  -->
+<!--    it under the terms of the GNU General Public License as published by  -->
+<!--    the Free Software Foundation; either version 2 of the License, or     -->
+<!--    (at your option) any later version.                                   -->
+
+<!DOCTYPE params SYSTEM "../../../../src/libs/tgf/params.dtd">
+
+<params name="mpa12-murasama" type="template">
+	<section name="Front Wing">
+		<attnum name="angle" unit="deg" val="4"/>
+	</section>
+
+	<section name="Rear Wing">
+		<attnum name="angle" unit="deg" val="2"/>
+	</section>
+
+	<section name="Gearbox">
+		<section name="gears">
+			<section name="r">
+				<attnum name="ratio" min="-3" max="0" val="-2"/>
+			</section>
+
+			<section name="1">
+				<attnum name="ratio" min="0" max="5" val="2.3"/>
+			</section>
+
+			<section name="2">
+				<attnum name="ratio" min="0" max="5" val="1.52"/>
+			</section>
+
+			<section name="3">
+				<attnum name="ratio" min="0" max="5" val="1.186"/>
+			</section>
+
+			<section name="4">
+				<attnum name="ratio" min="0" max="5" val="0.955"/>
+			</section>
+
+			<section name="5">
+				<attnum name="ratio" min="0" max="5" val="0.799"/>
+			</section>
+
+			<section name="6">
+				<attnum name="ratio" min="0" max="5" val="0.755"/>
+			</section>
+		</section>
+	</section>
+
+	<section name="Tires Set">
+		<attnum name="compound set" min="1" max="5" val="1" />
+	</section>
+
+	<section name="private">
+		<attnum name="muscale" val="1.05"/>
+		<attnum name="brakescale" val="1.90"/>
+	</section>
+</params>

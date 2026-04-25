@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    file                 : exitmenu.xml
+    created              : 2009
+    copyright            : (C) 2009 by Brian Gavin, Eckhard M. Jaeger
+    web                  : speed-dreams.sourceforge.net
+-->
+<!--    This program is free software; you can redistribute it and/or modify  -->
+<!--    it under the terms of the GNU General Public License as published by  -->
+<!--    the Free Software Foundation; either version 2 of the License, or     -->
+<!--    (at your option) any later version.                                   -->
+<!--
+
+        Exit confirmation / cancellation menu
+
+-->
+<!DOCTYPE params SYSTEM "../tgf/params.dtd">
+<params name="exitmenu">
+  <section name="dynamic controls">
+    <section name="yesquit">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Yes, let's quit"/>
+      <attstr name="text-fra" val="Oui, quitter."/>
+      <attstr name="text-spa" val="Sí, salir"/>
+      <attstr name="text-cat" val="Sí, sortiu-ne"/>
+      <attstr name="text-ru" val="Да, выйти"/>
+      <attstr name="tip" val="Exit from the game"/>
+      <attstr name="tip-fra" val="Quitter le simulateur"/>
+      <attstr name="tip-spa" val="Salir del videojuego"/>
+      <attstr name="tip-cat" val="Sortiu del videojoc"/>
+      <attstr name="tip-ru" val="Выход из игры"/>
+      <attnum name="x" val="200"/>
+      <attnum name="y" val="237"/>
+      <attnum name="width" val="320"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="font" val="big"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-48"/>
+      <attnum name="image y" val="0"/>
+      <attnum name="image width" val="320"/>
+      <attnum name="image height" val="44"/>
+      <attstr name="focused image" val="data/img/bg-button-big-focused.png"/>
+      <attstr name="enabled image" val="data/img/bg-button-big.png"/>
+      <attstr name="pushed image" val="data/img/bg-button-big-pushed.png"/>
+    </section>
+    <section name="nobacktogame">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="No, back to game"/>
+      <attstr name="text-fra" val="Non, rester."/>
+      <attstr name="text-spa" val="No, volver al juego"/>
+      <attstr name="text-cat" val="No, torneu-hi"/>
+      <attstr name="text-ru" val="Нет, вернуться в игру"/>
+      <attstr name="tip" val="Return to previous menu"/>
+      <attstr name="tip-fra" val="Retourner au menu précédent"/>
+      <attstr name="tip-spa" val="Volver al menú anterior"/>
+      <attstr name="tip-cat" val="Torneu al menú anterior"/>
+      <attstr name="tip-ru" val="Вернуться к предыдущему меню"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="x" val="200"/>
+      <attnum name="y" val="187"/>
+      <attnum name="width" val="320"/>
+      <attstr name="font" val="big"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-48"/>
+      <attnum name="image y" val="0"/>
+      <attnum name="image width" val="320"/>
+      <attnum name="image height" val="44"/>
+      <attstr name="focused image" val="data/img/bg-button-big-focused.png"/>
+      <attstr name="enabled image" val="data/img/bg-button-big.png"/>
+      <attstr name="pushed image" val="data/img/bg-button-big-pushed.png"/>
+    </section>
+  </section>
+  <section name="static controls">
+    <section name="1">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="-10"/>
+      <attnum name="y" val="375"/>
+      <attnum name="width" val="130"/>
+      <attnum name="height" val="95"/>
+      <attstr name="image" val="data/img/sd-logo-big.png"/>
+    </section>
+    <section name="2">
+      <attstr name="type" val="gallery"/>
+      <attstr name="directory" val="data/gallery/"/>
+    </section>
+    <section name="3">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val="Exit Speed-Dreams?"/>
+      <attstr name="text-fra" val="Quitter Speed Dreams?"/>
+      <attstr name="text-spa" val="¿Salir de Speed Dreams?"/>
+      <attstr name="text-cat" val="Sortir de l'Speed Dreams?"/>
+      <attstr name="text-ru" val="Выйти из Speed Dreams?"/>
+      <attnum name="x" val="300"/>
+      <attnum name="y" val="430"/>
+      <attnum name="width" val="400"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium_t"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="bg image" val="data/img/header-background.png"/>
+      <attnum name="bg image padding top" val="15"/>
+      <attnum name="bg image padding bottom" val="15"/>
+      <attnum name="bg image padding left" val="30"/>
+      <attnum name="bg image padding right" val="15"/>
+    </section>
+  </section>
+</params>

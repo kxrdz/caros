@@ -1,0 +1,86 @@
+July 16, 2003 steve@borho.org
+    Updated autoconf files to fix several build issues.
+ 
+January 03, 2003 msripada@evl.uic.edu
+	Fixed a bug in Object.cpp at void Object::do_broadphase of a
+	type mismatch bug.
+	Fixed the names of of some Standard C++ header includes
+	to prevent g++ 3.2.1 from complaining.
+	Lots of minor fixes for all the files in the directory include/3D 
+	to bring the library up to date with g++ 3.2.1 standards.
+	Fixed some header file names in sample/ directory.
+	Added a check for qhull_a.h header file and fixed config.h include 
+	in Polyhedron.cpp.
+	Added a check for qhull library and now depending on its presence
+	the -lqhull switch is added during compilation.
+
+October 19, 2002 gino@dtecta.com 
+	Renamed SOLID to FreeSOLID, in order to avoid confusion with the
+	commercial SOLID at www.libsolid.com.
+	Added autoconf/automake files.
+	Added broad phase library from SOLID-3.1 and hooked it to the
+	Added MoTo library from SOLID-3.1 (for broad phase). 
+	This should fix the bug dtDeleteObject!!!!! 
+	Created MSVC++ 6.0 project files.
+	
+August 30, 2001 alok.menghrajani@epfl.ch
+	Set the versin number to 2.1.0
+	Added a dtTestObjects routine to test collision between
+	two specified objects.  It is useful if you are using a
+	pre-collision engine.  It was  programmed due to memory
+	leaks in the original cache and frame coherence system.
+	
+	This  routine  will  probably  become  obsolete in  the
+	future.
+
+November 3, 2000 Olivier.Michel@cyberbotics.com
+	Set the version number to 2.0.2
+	Reworked the Makefile so that it works on Windows w/ GCC and creates
+	lib/libsolid.a and lib/solid.dll files from the lib/solid.def file.
+
+June 1, 2000, Olivier.Michel@cyberbotics.com
+	Set the version number to 2.0.1
+	Fixed a couple of memory leaks in src/Object.cpp.
+	Reworked the Makefile to create more easily a libsolid.so on Linux
+	and added -O3 optimisation level.
+	Added a solid.spec file for creating an RPM package.
+
+August 13, 1999
+	Fixed the setRotation method and <<-operator in Matrix.h. These
+	were still for column-major matrices, however in SOLID 2.0 matrices
+	are supposed to be row-major. Also, I modified the setEuler method
+	in Quaternion.h. `Yaw' now corresponds with rotation around the
+	Y-axis, `pitch' with the X-axis, and `roll' with the Z-axis.
+
+January 24, 1999
+	Added a safety margin to the extents of the bounding boxes for
+	primitives in correspondence with the absolute error tolerance of
+	the GJK intersection test, in order to avoid problems where objects
+	are found intersecting whereas their bounding boxes are
+	disjoint. Problem spotted by Arthur Johnson Jr.
+
+January 8, 1999
+	Renamed some variables and function names. Visual C++ 6.0 is
+	troubled by too much variables or functions having the same name.
+	Also, dtDeleteObject now removes the responses defined for the
+	deleted object. Problems spotted, and fixes suggested by 
+	Arthur Johnson Jr. 
+
+December 21, 1998
+	Streamlined bounding box computation routines.
+
+December 11, 1998
+	Bug fixed in `Basic.h'. Under Linux Redhat 5.2, `RAND_MAX + 1' used
+	in the function `rnd()' is a negative number. Bug spotted and
+	solved by Jason Surratt. 
+
+September 23, 1998
+	Bug fixed in `C-api.cpp' in the computation of the normal in smart
+	response, spotted and fix suggested by Arthur Johnson Jr.  
+
+September 14, 1998
+	Bug fixed in `C-api.cpp' which prevented the use of multiple
+	complex shapes, spotted and solved by Adam Machnik.
+ 
+August 28, 1998 
+	Public release of SOLID version 2.0

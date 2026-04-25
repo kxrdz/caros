@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    file                 : newton.xml
+    created              : Sat Mar  3 18:46:37 CET 2001
+    copyright            : (C) 2001 by Eric Espié
+    email                : Eric.Espie@torcs.org
+-->
+
+<!--    This program is free software; you can redistribute it and/or modify  -->
+<!--    it under the terms of the GNU General Public License as published by  -->
+<!--    the Free Software Foundation; either version 2 of the License, or     -->
+<!--    (at your option) any later version.                                   -->
+
+<!DOCTYPE params SYSTEM "../../../../src/libs/tgf/params.dtd">
+
+<params name="mpa12-murasama">
+	<section name="Tires Set">
+		<attnum name="compound set" min="1" max="5" val="3" />
+	</section>
+
+	<section name="Front Wing">
+		<attnum name="angle" unit="deg" min="8" max="26" val="6.0"/>
+	</section>
+
+	<section name="Rear Wing">
+		<attnum name="angle" unit="deg" min="6" max="25" val="5.0"/>
+	</section>
+
+	<section name="Gearbox">
+		<section name="gears">
+			<section name="r">
+				<attnum name="ratio" min="-3" max="0" val="-2"/>
+			</section>
+			<section name="1">
+				<attnum name="ratio" min="0" max="5" val="2.6"/>
+			</section>
+			<section name="2">
+				<attnum name="ratio" min="0" max="5" val="1.82"/>
+			</section>
+			<section name="3">
+				<attnum name="ratio" min="0" max="5" val="1.386"/>
+			</section>
+			<section name="4">
+				<attnum name="ratio" min="0" max="5" val="1.055"/>
+			</section>
+			<section name="5">
+				<attnum name="ratio" min="0" max="5" val="0.980"/>
+			</section>
+			<section name="6">
+				<attnum name="ratio" min="0" max="5" val="0.775"/>
+			</section>
+		</section>
+	</section>
+
+  <section name="private">
+        <attnum name="save paths" min="0" max="1" val="0"/>
+        <attnum name="carmodel flags" min="0" max="65535" val="10"/>
+        <attnum name="mu scale" min="0" max="2" val="0.95"/>
+        <attnum name="brake mu scale" min="0" max="2" val="0.90"/>
+        <attnum name="kz scale" min="0" max="1" val="0.166"/>
+        <attnum name="kv scale" min="0" max="2" val="1.0"/>
+        <attnum name="fly height" unit="m" min="0" max="0.5" val="0.06"/>
+        <attnum name="bump mod" min="0" max="2" val="1"/>
+        <attnum name="quad smooth iters" min="0" max="999" val="5"/>
+        <attnum name="apex factor" min="0" max="2" val="0.1"/>
+        <attnum name="factor 0" min="0" max="1.2" val="1.027"/>
+        <attnum name="steer k acc" min="-10" max="10" val="0"/>
+        <attnum name="steer k dec" min="-10" max="10" val="0"/>
+        <attnum name="spd ctrl normal" min="0" max="9" val="4"/>
+        <attnum name="spd ctrl traffic" min="0" max="9" val="4"/>
+        <attnum name="stay together" unit="m" min="0" max="2000" val="0"/>
+        <attnum name="safety limit" min="0" max="4" val="2.5"/>
+        <attnum name="safety multiplier" min="0" max="500" val="250"/>
+        <attnum name="limit side use" min="2.0" max="2.5" val="2.3" />
+        <attnum name="pit entry offset" unit="m" min="-250" max="250" val="0"/>
+        <attnum name="pit exit offset" unit="m" min="-250" max="250" val="0"/>
+        <!--attnum name="practice init fuel" val="10.0"/-->
+        <attnum name="pit test stop" min="0" max="1" val="0"/>
+        <attnum name="gear up rpm" unit="rpm" min="0" max="10000" val="10350"/>
+        <attnum name="fuel per m" min="0" max="0.01" val="0.000960"/>
+        <attnum name="rear lat slip factor" min="0" max="5" val="2.5"/>
+        <attnum name="rear lat slip limit" min="0" max="1" val="0.19"/>
+        <attnum name="rear lat slip dscale" min="0" max="1" val="0.1"/>
+  </section>
+</params>

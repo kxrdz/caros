@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    file                 : raceglscreen.xml
+    created              : 2009
+    copyright            : (C) 2009 by Brian Gavin, Eckhard M. Jaeger
+    web                  : speed-dreams.sourceforge.net
+-->
+<!--    This program is free software; you can redistribute it and/or modify  -->
+<!--    it under the terms of the GNU General Public License as published by  -->
+<!--    the Free Software Foundation; either version 2 of the License, or     -->
+<!--    (at your option) any later version.                                   -->
+<!--
+
+	Normal race screen (real-time animated virtual 3D world)
+
+-->
+<!DOCTYPE params SYSTEM "../tgf/params.dtd">
+<params name="raceglscreen">
+  <section name="translatable">
+    <section name="soft">
+      <attstr name="text" val="Soft"/>
+      <attstr name="text-ru" val="Мягкие"/>
+      <attstr name="text-cat" val="Tous"/>
+      <attstr name="text-spa" val="Blandos"/>
+    </section>
+    <section name="medium">
+      <attstr name="text" val="Medium"/>
+      <attstr name="text-ru" val="Средние"/>
+      <attstr name="text-cat" val="Mitjos"/>
+      <attstr name="text-spa" val="Medios"/>
+    </section>
+    <section name="hard">
+      <attstr name="text" val="Hard"/>
+      <attstr name="text-ru" val="Жесткие"/>
+      <attstr name="text-cat" val="Durs"/>
+      <attstr name="text-spa" val="Duros"/>
+    </section>
+    <section name="wet">
+      <attstr name="text" val="Wet"/>
+      <attstr name="text-ru" val="Промежуточные"/>
+      <attstr name="text-cat" val="Pluja"/>
+      <attstr name="text-spa" val="Lluvia"/>
+    </section>
+    <section name="extrem wet">
+      <attstr name="text" val="Extreme wet"/>
+      <attstr name="text-ru" val="Дождевые"/>
+      <attstr name="text-cat" val="Pluja extrema"/>
+      <attstr name="text-spa" val="Lluvia extrema"/>
+    </section>
+    <section name="unsupported">
+      <attstr name="text" val="Unsupported"/>
+      <attstr name="text-ru" val="Не поддерживается"/>
+      <attstr name="text-cat" val="No suportat"/>
+      <attstr name="text-spa" val="No suportado"/>
+    </section>
+    <section name="laps">
+      <attstr name="text" val="laps"/>
+      <attstr name="text-cat" val="voltes"/>
+      <attstr name="text-spa" val="vueltas"/>
+    </section>
+  </section>
+  <section name="dynamic controls">
+    <section name="message">
+      <attstr name="type" val="label"/>
+      <attnum name="max len" val="64"/>
+      <attnum name="x" val="20"/>
+      <attnum name="y" val="420"/>
+      <attnum name="width" val="600"/>
+      <attstr name="h align" val="center"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium_t"/>
+    </section>
+    <section name="message-bg">
+			<attstr name="type" val="static image"/>
+			<attnum name="x" val="130"/>
+			<attnum name="y" val="416"/>
+			<attnum name="width" val="380"/>
+			<attnum name="height" val="24"/>
+      <attstr name="h align" val="center"/>
+			<attstr name="image" val="data/img/black-square.png"/>
+		</section>
+    <section name="bigmessage">
+      <attstr name="type" val="label"/>
+      <attnum name="max len" val="32"/>
+      <attnum name="x" val="20"/>
+      <attnum name="y" val="360"/>
+      <attnum name="width" val="600"/>
+      <attstr name="h align" val="center"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="large_c"/>
+    </section>
+    <section name="bigmessage-bg">
+			<attstr name="type" val="static image"/>
+			<attnum name="x" val="110"/>
+			<attnum name="y" val="356"/>
+			<attnum name="width" val="420"/>
+			<attnum name="height" val="28"/>
+      <attstr name="h align" val="center"/>
+			<attstr name="image" val="data/img/black-square.png"/>
+		</section>
+    <section name="pause">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val="Game Paused"/>
+      <attstr name="text-cat" val="Joc en pausa"/>
+      <attstr name="text-spa" val="Juego en pausa"/>
+      <attstr name="text-ru" val="Пауза"/>
+      <attnum name="x" val="20"/>
+      <attnum name="y" val="250"/>
+      <attnum name="width" val="600"/>
+      <attstr name="h align" val="center"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="big_c"/>
+      <attstr name="bg image" val="data/img/label-bg.png"/>
+      <attnum name="bg image padding top" val="15"/>
+      <attnum name="bg image padding bottom" val="15"/>
+      <attnum name="bg image padding left" val="15"/>
+      <attnum name="bg image padding right" val="15"/>
+    </section>
+    <section name="config">
+      <section name="bg">
+        <attstr name="type" val="static image"/>
+        <attnum name="x" val="160"/>
+        <attnum name="y" val="132"/>
+        <attnum name="width" val="320"/>
+        <attnum name="height" val="192"/>
+        <attstr name="image" val="data/img/black-square.png"/>
+      </section>
+      <section name="player">
+        <section name="label">
+          <attstr name="type" val="label"/>
+          <attnum name="x" val="160"/>
+          <attnum name="y" val="302"/>
+          <attstr name="text" val="Player:"/>
+          <attstr name="text-ru" val="Игрок:"/>
+          <attstr name="text-cat" val="Jugador:"/>
+          <attstr name="text-spa" val="Jugador:"/>
+          <attstr name="h align" val="center"/>
+          <attnum name="width" val="320"/>
+          <attstr name="font" val="medium"/>
+          <attstr name="color" val="0xFFFFFF"/>
+        </section>
+        <section name="combo">
+          <attstr name="type" val="combo box"/>
+          <attnum name="x" val="236"/>
+          <attnum name="y" val="280"/>
+          <attstr name="tip" val="Select player to configure"/>
+          <attstr name="tip-ru" val="Выберите игрока для настройки"/>
+          <attstr name="tip-spa" val="Selecciona el jugador a configurar"/>
+          <attstr name="tip-cat" val="Seleccioneu el jugador a configurar"/>
+          <attnum name="width" val="172"/>
+          <attstr name="h align" val="center"/>
+          <attnum name="arrows width" val="18"/>
+          <attnum name="arrows height" val="18"/>
+          <attnum name="max len" val="30"/>
+          <attstr name="color" val="0xFFFFFF"/>
+          <attstr name="focused color" val="0xFFCC00"/>
+          <attstr name="pushed color" val="0xFFCC00"/>
+          <attstr name="font" val="medium"/>
+        </section>
+      </section>
+      <section name="tyres">
+        <section name="label">
+          <attstr name="type" val="label"/>
+          <attnum name="x" val="160"/>
+          <attnum name="y" val="262"/>
+          <attstr name="text" val="Tyres compound:"/>
+          <attstr name="text-ru" val="Состав шин:"/>
+          <attstr name="text-cat" val="Compost pneumàtics:"/>
+          <attstr name="text-spa" val="Compuesto neumáticos:"/>
+          <attstr name="h align" val="center"/>
+          <attnum name="width" val="320"/>
+          <attstr name="font" val="medium"/>
+          <attstr name="color" val="0xFFFFFF"/>
+        </section>
+        <section name="combo">
+          <attstr name="type" val="combo box"/>
+          <attnum name="x" val="236"/>
+          <attnum name="y" val="240"/>
+          <attstr name="tip" val="Select tyre compounds"/>
+          <attstr name="tip-ru" val="Выберите состав шин"/>
+          <attstr name="tip-spa" val="Selecciona compuesto de neumáticos"/>
+          <attstr name="tip-cat" val="Seleccioneu compost dels pneumàtics"/>
+          <attnum name="width" val="172"/>
+          <attstr name="h align" val="center"/>
+          <attnum name="arrows width" val="18"/>
+          <attnum name="arrows height" val="18"/>
+          <attnum name="max len" val="30"/>
+          <attstr name="color" val="0xFFFFFF"/>
+          <attstr name="focused color" val="0xFFCC00"/>
+          <attstr name="pushed color" val="0xFFCC00"/>
+          <attstr name="font" val="medium"/>
+        </section>
+      </section>
+      <section name="fuel">
+        <section name="label">
+          <attstr name="type" val="label"/>
+          <attnum name="x" val="160"/>
+          <attnum name="y" val="222"/>
+          <attstr name="text" val="Fuel:"/>
+          <attstr name="text-ru" val="Топливо:"/>
+          <attstr name="text-cat" val="Combustible:"/>
+          <attstr name="text-spa" val="Combustible:"/>
+          <attstr name="h align" val="center"/>
+          <attnum name="width" val="320"/>
+          <attstr name="font" val="medium"/>
+          <attstr name="color" val="0xFFFFFF"/>
+        </section>
+        <section name="progress">
+          <attstr name="type" val="progress bar"/>
+          <attstr name="image" val="data/img/progressbar.png"/>
+          <attstr name="bg image" val="data/img/progressbar-bg.png"/>
+          <attnum name="x" val="236"/>
+          <attnum name="y" val="200"/>
+          <attnum name="width" val="172"/>
+          <attnum name="height" val="18"/>
+          <attnum name="min" val="0"/>
+          <attnum name="max" val="100"/>
+          <attnum name="value" val="0"/>
+        </section>
+        <section name="qty">
+          <attstr name="type" val="label"/>
+          <attnum name="x" val="160"/>
+          <attnum name="y" val="180"/>
+          <attstr name="h align" val="center"/>
+          <attnum name="width" val="320"/>
+          <attstr name="font" val="medium"/>
+          <attstr name="color" val="0xFFFFFF"/>
+        </section>
+        <section name="fill">
+          <section name="less">
+            <attstr name="type" val="image button"/>
+            <attstr name="tip" val="Add some fuel to the tank"/>
+            <attstr name="tip-ru" val="Добавление топлива в бак"/>
+            <attstr name="tip-spa" val="Vacía algo el tanque de combustible"/>
+            <attstr name="tip-cat" val="Buidar una mica el tanc de combustible"/>
+            <attnum name="x" val="206"/>
+            <attnum name="y" val="200"/>
+            <attnum name="width" val="26"/>
+            <attnum name="height" val="18"/>
+            <attstr name="disabled image" val="data/img/icon-delete-disabled.png"/>
+            <attstr name="enabled image" val="data/img/icon-delete.png"/>
+            <attstr name="focused image" val="data/img/icon-delete-focused.png"/>
+            <attstr name="pushed image" val="data/img/icon-delete-pushed.png"/>
+          </section>
+          <section name="empty">
+            <attstr name="type" val="image button"/>
+            <attstr name="tip" val="Drain the fuel tank to its minimum"/>
+            <attstr name="tip-ru" val="Слить топливо до минимума"/>
+            <attstr name="tip-spa" val="Vacía el tanque de combustible al mínimo"/>
+            <attstr name="tip-cat" val="Buidar el tanc de combustible al mínim"/>
+            <attnum name="x" val="178"/>
+            <attnum name="y" val="200"/>
+            <attnum name="width" val="26"/>
+            <attnum name="height" val="18"/>
+            <attstr name="disabled image" val="data/img/icon-movedown-disabled.png"/>
+            <attstr name="enabled image" val="data/img/icon-movedown.png"/>
+            <attstr name="focused image" val="data/img/icon-movedown-focused.png"/>
+            <attstr name="pushed image" val="data/img/icon-movedown-pushed.png"/>
+          </section>
+          <section name="more">
+            <attstr name="type" val="image button"/>
+            <attstr name="tip" val="Add some fuel to the tank"/>
+            <attstr name="tip-ru" val="Добавление топлива в бак"/>
+            <attstr name="tip-spa" val="Llena algo el tanque de combustible"/>
+            <attstr name="tip-cat" val="Ompliu una mica el tanc de combustible"/>
+            <attnum name="x" val="412"/>
+            <attnum name="y" val="200"/>
+            <attnum name="width" val="26"/>
+            <attnum name="height" val="18"/>
+            <attstr name="disabled image" val="data/img/icon-new-disabled.png"/>
+            <attstr name="enabled image" val="data/img/icon-new.png"/>
+            <attstr name="focused image" val="data/img/icon-new-focused.png"/>
+            <attstr name="pushed image" val="data/img/icon-new-pushed.png"/>
+          </section>
+          <section name="max">
+            <attstr name="type" val="image button"/>
+            <attstr name="tip" val="Fill the fuel tank completely"/>
+            <attstr name="tip-ru" val="Полностью заполнить топливный бак"/>
+            <attstr name="tip-spa" val="Llena el tanque de combustible al máximo"/>
+            <attstr name="tip-cat" val="Ompliu el tanc de combustible al màxim"/>
+            <attnum name="x" val="440"/>
+            <attnum name="y" val="200"/>
+            <attnum name="width" val="26"/>
+            <attnum name="height" val="18"/>
+            <attstr name="disabled image" val="data/img/icon-moveup-disabled.png"/>
+            <attstr name="enabled image" val="data/img/icon-moveup.png"/>
+            <attstr name="focused image" val="data/img/icon-moveup-focused.png"/>
+            <attstr name="pushed image" val="data/img/icon-moveup-pushed.png"/>
+          </section>
+        </section>
+      </section>
+      <section name="apply">
+        <attstr name="type" val="text button"/>
+        <attstr name="show box" val="no"/>
+        <attstr name="text" val="Apply"/>
+        <attstr name="text-spa" val="Aplicar"/>
+        <attstr name="text-cat" val="Aplicar"/>
+        <attstr name="text-ru" val="Применить"/>
+        <attstr name="tip" val="Accept and save changes"/>
+        <attstr name="tip-spa" val="Aceptar y guardar cambios"/>
+        <attstr name="tip-cat" val="Apliqueu i deseu els canvis"/>
+        <attstr name="tip-ru" val="Принять и сохранить изменения"/>
+        <attstr name="h align" val="left"/>
+        <attnum name="x" val="275"/>
+        <attnum name="y" val="140"/>
+        <attnum name="width" val="120"/>
+        <attstr name="font" val="large"/>
+        <attstr name="color" val="0xFFFFFF"/>
+        <attstr name="focused color" val="0xFFFFFF"/>
+        <attstr name="pushed color" val="0xFFFFFF"/>
+        <attnum name="image x" val="-20"/>
+        <attnum name="image y" val="-2"/>
+        <attnum name="image width" val="120"/>
+        <attnum name="image height" val="32"/>
+        <attstr name="focused image" val="data/img/button-left-focused.png"/>
+        <attstr name="enabled image" val="data/img/button-left.png"/>
+        <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+      </section>
+    </section>
+  </section>
+  <section name="static controls">
+
+  </section>
+  <section name="music">
+    <attstr name="music file" val="None"/>
+  </section>
+</params>

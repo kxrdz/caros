@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    file                 : viper-gts-r.xml
+    created              : Sat Mar  3 18:46:37 CET 2001
+    copyright            : (C) 2001 by Eric Espié
+    email                : Eric.Espie@torcs.org
+-->
+
+<!--    This program is free software; you can redistribute it and/or modify  -->
+<!--    it under the terms of the GNU General Public License as published by  -->
+<!--    the Free Software Foundation; either version 2 of the License, or     -->
+<!--    (at your option) any later version.                                   -->
+
+<!DOCTYPE params SYSTEM "../../../../src/libs/tgf/params.dtd">
+
+<params name="mpa12-murasama" type="template">
+	<section name="Tires Set">
+		<attnum name="compound set" min="1" max="5" val="3" />
+	</section>
+
+  <section name="private">
+    <attnum name="fuelpermeter" val="0.0001"/>
+    <attnum name="muscale" val="0.90"/>
+    <attnum name="brakescale" val="1.90"/>
+  </section>
+</params>

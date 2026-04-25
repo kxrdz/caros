@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    file                 : driverselectmenu.xml
+    created              : 2009
+    copyright            : (C) 2009 by Brian Gavin, Eckhard M. Jaeger
+    web                  : speed-dreams.sourceforge.net
+-->
+<!--    This program is free software; you can redistribute it and/or modify  -->
+<!--    it under the terms of the GNU General Public License as published by  -->
+<!--    the Free Software Foundation; either version 2 of the License, or     -->
+<!--    (at your option) any later version.                                   -->
+<!--
+
+	Human driver(s) and AI opponnent(s) selection menu
+
+-->
+<!DOCTYPE params SYSTEM "../tgf/params.dtd">
+<params name="driverselectmenu">
+  <section name="translatable">
+    <section name="anycarcategory">
+      <attstr name="text" val="--- Any car category ---"/>
+      <attstr name="text-fra" val="Toutes catégories"/>
+      <attstr name="text-spa" val="Cualquier categoría"/>
+      <attstr name="text-cat" val="Qualsevol categoria"/>
+      <attstr name="text-ru" val="Любая категория"/>
+    </section>
+    <section name="anydrivertype">
+      <attstr name="text" val="--- Any driver type ---"/>
+      <attstr name="text-fra" val="--- Tous types de pilotes ---"/>
+      <attstr name="text-spa" val="--- Cualquier piloto ---"/>
+      <attstr name="text-cat" val="Qualsevol conductor"/>
+      <attstr name="text-ru" val="Любой тип пилота"/>
+    </section>
+    <section name="anycarmodel">
+      <attstr name="text" val="--- Any car model ---"/>
+      <attstr name="text-fra" val="--- Tous les modèles ---"/>
+      <attstr name="text-spa" val="--- Cualquier modelo ---"/>
+      <attstr name="text-cat" val="Qualsevol cotxe"/>
+      <attstr name="text-ru" val="Любая модель авто"/>
+    </section>
+    <section name="competitors">
+      <attstr name="text" val="COMPETITORS (%d)"/>
+      <attstr name="text-fra" val="COMPÉTITEURS (%d)"/>
+      <attstr name="text-spa" val="COMPETIDORES (%d)"/>
+      <attstr name="text-cat" val="COMPETIDORS (%d)"/>
+      <attstr name="text-ru" val="УЧАСТНИКИ (%d)"/>
+    </section>
+    <section name="candidates">
+      <attstr name="text" val="CANDIDATES (%d)"/>
+      <attstr name="text-fra" val="CANDIDATS (%d)"/>
+      <attstr name="text-spa" val="CANDIDATOS (%d)"/>
+      <attstr name="text-cat" val="CANDIDATS (%d)"/>
+      <attstr name="text-ru" val="КАНДИДАТЫ (%d)"/>
+    </section>
+  </section>
+  <section name="dynamic controls">
+    <!-- Labels -->
+    <section name="competitorslabel">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val=""/>
+      <attstr name="font" val="small"/>
+      <attnum name="x" val="436"/>
+      <attnum name="y" val="366"/>
+      <attnum name="width" val="160"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="h align" val="center"/>
+      <attstr name="bg image" val="data/img/header-background.png"/>
+      <attnum name="bg image padding top" val="2"/>
+      <attnum name="bg image padding bottom" val="2"/>
+      <attnum name="bg image padding left" val="1"/>
+      <attnum name="bg image padding right" val="0"/>
+    </section>
+    <section name="candidateslabel">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val=""/>
+      <attstr name="font" val="small"/>
+      <attnum name="x" val="40"/>
+      <attnum name="y" val="366"/>
+      <attnum name="width" val="160"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="h align" val="center"/>
+      <attstr name="bg image" val="data/img/header-background.png"/>
+      <attnum name="bg image padding top" val="2"/>
+      <attnum name="bg image padding bottom" val="2"/>
+      <attnum name="bg image padding left" val="1"/>
+      <attnum name="bg image padding right" val="0"/>
+    </section>
+    <!-- Scroll lists -->
+    <section name="competitorsscrolllist">
+      <attstr name="type" val="scroll list"/>
+      <attnum name="x" val="438"/>
+      <attnum name="y" val="85"/>
+      <attnum name="width" val="160"/>
+      <attnum name="height" val="275"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="selected color" val="0xFFCC00"/>
+      <attstr name="scrollbar pos" val="right"/>
+    </section>
+    <section name="candidatesscrolllist">
+      <attstr name="type" val="scroll list"/>
+      <attnum name="x" val="40"/>
+      <attnum name="y" val="85"/>
+      <attnum name="width" val="160"/>
+      <attnum name="height" val="180"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="selected color" val="0xFFCC00"/>
+      <attstr name="scrollbar pos" val="left"/>
+    </section>
+    <!-- Car preview image -->
+    <section name="carpreviewimage">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="210"/>
+      <attnum name="y" val="200"/>
+      <attnum name="width" val="218"/>
+      <attnum name="height" val="136"/>
+      <attstr name="can deform" val="yes"/>
+      <attstr name="image" val="data/img/nocarpreview.png"/>
+    </section>
+    <!-- Skin combo-box -->
+    <section name="skinleftarrow">
+      <attstr name="type" val="image button"/>
+      <attstr name="tip" val="Previous available skin"/>
+      <attstr name="tip-spa" val="Previo piel disponible"/>
+      <attstr name="tip-cat" val="Anterior pintura disponible"/>
+      <attstr name="tip-ru" val="Предыдущая доступная ливрея"/>
+      <attnum name="x" val="208"/>
+      <attnum name="y" val="337"/>
+      <attnum name="width" val="24"/>
+      <attnum name="height" val="25"/>
+      <attstr name="disabled image" val="data/img/arrowleft-disabled.png"/>
+      <attstr name="enabled image" val="data/img/arrowleft-normal.png"/>
+      <attstr name="focused image" val="data/img/arrowleft-focused.png"/>
+      <attstr name="pushed image" val="data/img/arrowleft-pushed.png"/>
+    </section>
+    <section name="skinrightarrow">
+      <attstr name="type" val="image button"/>
+      <attstr name="tip" val="Next available skin"/>
+      <attstr name="tip-spa" val="Siguiente piel disponible"/>
+      <attstr name="tip-cat" val="Següent pintura disponible"/>
+      <attstr name="tip-ru" val="Следующая доступная ливрея"/>
+      <attnum name="x" val="410"/>
+      <attnum name="y" val="337"/>
+      <attnum name="width" val="24"/>
+      <attnum name="height" val="25"/>
+      <attstr name="disabled image" val="data/img/arrowright-disabled.png"/>
+      <attstr name="enabled image" val="data/img/arrowright-normal.png"/>
+      <attstr name="focused image" val="data/img/arrowright-focused.png"/>
+      <attstr name="pushed image" val="data/img/arrowright-pushed.png"/>
+    </section>
+    <section name="skintext">
+      <attstr name="type" val="label"/>
+      <attnum name="max len" val="16"/>
+      <attstr name="tip" val=""/>
+      <attnum name="x" val="224"/>
+      <attnum name="y" val="344"/>
+      <attnum name="width" val="196"/>
+      <attstr name="h align" val="center"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="small"/>
+    </section>
+    <!-- Filtering combo-boxes -->
+    <section name="carcategoryleftarrow">
+      <attstr name="type" val="image button"/>
+      <attstr name="tip" val="Previous car category"/>
+      <attstr name="tip-spa" val="Categoría anterior del coche"/>
+      <attstr name="tip-cat" val="Anterior categoria de cotxe"/>
+      <attstr name="tip-ru" val="Предыдущая категория автомобилей"/>
+      <attnum name="x" val="36"/>
+      <attnum name="y" val="337"/>
+      <attnum name="width" val="24"/>
+      <attnum name="height" val="25"/>
+      <attstr name="disabled image" val="data/img/arrow-left-top-disabled.png"/>
+      <attstr name="enabled image" val="data/img/arrowleft-normal.png"/>
+      <attstr name="focused image" val="data/img/arrowleft-focused.png"/>
+      <attstr name="pushed image" val="data/img/arrowleft-pushed.png"/>
+    </section>
+    <section name="carcategoryrightarrow">
+      <attstr name="type" val="image button"/>
+      <attstr name="tip" val="Next car category"/>
+      <attstr name="tip-spa" val="Siguiente categoría de coches"/>
+      <attstr name="tip-cat" val="Següent categoria de cotxe"/>
+      <attstr name="tip-ru" val="Следующая категория автомобилей"/>
+      <attnum name="x" val="184"/>
+      <attnum name="y" val="337"/>
+      <attnum name="width" val="24"/>
+      <attnum name="height" val="25"/>
+      <attstr name="disabled image" val="data/img/arrow-left-top-disabled.png"/>
+      <attstr name="enabled image" val="data/img/arrowright-normal.png"/>
+      <attstr name="focused image" val="data/img/arrowright-focused.png"/>
+      <attstr name="pushed image" val="data/img/arrowright-pushed.png"/>
+    </section>
+    <section name="carcategorytext">
+      <attstr name="type" val="label"/>
+      <attnum name="max len" val="30"/>
+      <attstr name="tip" val="Car category"/>
+      <attstr name="tip-spa" val="Categoría de coches"/>
+      <attstr name="tip-cat" val="Categoria de cotxe"/>
+      <attstr name="tip-ru" val="Категория автомобиля"/>
+      <attnum name="x" val="54"/>
+      <attnum name="y" val="337"/>
+      <attnum name="width" val="130"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="h align" val="center"/>
+      <attstr name="font" val="small"/>
+    </section>
+    <section name="drivertypeleftarrow">
+      <attstr name="type" val="image button"/>
+      <attstr name="tip" val="Previous driver type"/>
+      <attstr name="tip-spa" val="Tipo de piloto anterior"/>
+      <attstr name="tip-cat" val="Anterior tipus de conductor"/>
+      <attstr name="tip-ru" val="Предыдущий тип пилота"/>
+      <attnum name="x" val="36"/>
+      <attnum name="y" val="310"/>
+      <attnum name="width" val="24"/>
+      <attnum name="height" val="25"/>
+      <attstr name="disabled image" val="data/img/arrow-left-top-disabled.png"/>
+      <attstr name="enabled image" val="data/img/arrowleft-normal.png"/>
+      <attstr name="focused image" val="data/img/arrowleft-focused.png"/>
+      <attstr name="pushed image" val="data/img/arrowleft-pushed.png"/>
+    </section>
+    <section name="drivertyperightarrow">
+      <attstr name="type" val="image button"/>
+      <attstr name="tip" val="Next driver type"/>
+      <attstr name="tip-spa" val="Siguiente tipo de conductor"/>
+      <attstr name="tip-cat" val="Següent tipus de conductor"/>
+      <attstr name="tip-ru" val="Следующий тип пилота"/>
+      <attnum name="x" val="184"/>
+      <attnum name="y" val="310"/>
+      <attnum name="width" val="24"/>
+      <attnum name="height" val="25"/>
+      <attstr name="disabled image" val="data/img/arrow-left-top-disabled.png"/>
+      <attstr name="enabled image" val="data/img/arrowright-normal.png"/>
+      <attstr name="focused image" val="data/img/arrowright-focused.png"/>
+      <attstr name="pushed image" val="data/img/arrowright-pushed.png"/>
+    </section>
+    <section name="drivertypetext">
+      <attstr name="type" val="label"/>
+      <attnum name="max len" val="30"/>
+      <attstr name="tip" val="Driver type"/>
+      <attstr name="tip-spa" val="Tipo de conductor"/>
+      <attstr name="tip-cat" val="Tipus de conductor"/>
+      <attstr name="tip-ru" val="Тип пилота"/>
+      <attnum name="x" val="54"/>
+      <attnum name="y" val="310"/>
+      <attnum name="width" val="130"/>
+      <attstr name="h align" val="center"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="small"/>
+    </section>
+    <section name="cartypecb">
+      <attstr name="type" val="combo box"/>
+      <attnum name="max len" val="20"/>
+      <attstr name="tip" val="Select car model"/>
+      <attstr name="tip-spa" val="Seleccione modelo de coche"/>
+      <attstr name="tip-cat" val="Escolliu el model de cotxe"/>
+      <attstr name="tip-ru" val="Выберите модель автомобиля"/>
+      <attnum name="x" val="35"/>
+      <attnum name="y" val="280"/>
+      <attnum name="arrows width" val="24"/>
+      <attnum name="arrows height" val="24"/>
+      <attnum name="width" val="170"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="font" val="small"/>
+    </section>
+    <!-- Comp buttons -->
+    <!-- Remove all competitors button -->
+    <section name="deselectbutton">
+      <attstr name="type" val="image button"/>
+      <attstr name="tip" val="Remove the highlighted driver from the competitors"/>
+      <attstr name="tip-spa" val="Eliminar el piloto resaltado de los competidores"/>
+      <attstr name="tip-cat" val="Elimineu el conductor seleccionat del llistat de competidors"/>
+      <attstr name="tip-ru" val="Удалить выделенного пилота из участников"/>
+      <attnum name="x" val="250"/>
+      <attnum name="y" val="116"/>
+      <attnum name="width" val="32"/>
+      <attnum name="height" val="28"/>
+      <attstr name="disabled image" val="data/img/icon-delete-disabled.png"/>
+      <attstr name="enabled image" val="data/img/icon-delete.png"/>
+      <attstr name="focused image" val="data/img/icon-delete-focused.png"/>
+      <attstr name="pushed image" val="data/img/icon-delete-pushed.png"/>
+    </section>
+    <section name="removeallbutton">
+      <attstr name="type" val="image button"/>
+      <attstr name="tip" val="Remove all the competitors from the race"/>
+      <attstr name="tip-spa" val="Quitar todos los competidores de la carrera"/>
+      <attstr name="tip-cat" val="Elimineu tots els competidors de la cursa"/>
+      <attstr name="tip-ru" val="Удалить всех участников из гонки"/>
+      <attnum name="x" val="280"/>
+      <attnum name="y" val="116"/>
+      <attnum name="width" val="32"/>
+      <attnum name="height" val="28"/>
+      <attstr name="disabled image" val="data/img/icon-deleteall-disabled.png"/>
+      <attstr name="enabled image" val="data/img/icon-deleteall.png"/>
+      <attstr name="focused image" val="data/img/icon-deleteall-focused.png"/>
+      <attstr name="pushed image" val="data/img/icon-deleteall-pushed.png"/>
+    </section>
+    <!-- Shuffle competitors button -->
+    <section name="shufflebutton">
+      <attstr name="type" val="image button"/>
+      <attstr name="tip" val="Shuffle the current competitors"/>
+      <attstr name="tip-spa" val="Saque a los competidores actuales"/>
+      <attstr name="tip-cat" val="Barregeu els competidors actuals"/>
+      <attstr name="tip-ru" val="Перетасовать текущих участников"/>
+      <attnum name="x" val="310"/>
+      <attnum name="y" val="116"/>
+      <attnum name="width" val="32"/>
+      <attnum name="height" val="28"/>
+      <attstr name="disabled image" val="data/img/icon-shuffle-disabled.png"/>
+      <attstr name="enabled image" val="data/img/icon-shuffle.png"/>
+      <attstr name="focused image" val="data/img/icon-shuffle-focused.png"/>
+      <attstr name="pushed image" val="data/img/icon-shuffle-pushed.png"/>
+    </section>
+    <!-- Move competitors button -->
+    <section name="moveupbutton">
+      <attstr name="type" val="image button"/>
+      <attstr name="tip" val="Move the highlighted driver up"/>
+      <attstr name="tip-spa" val="Mueva el piloto resaltado"/>
+      <attstr name="tip-cat" val="Moveu el conductor seleccionat amunt"/>
+      <attstr name="tip-ru" val="Переместить выделенного пилота вверх"/>
+      <attnum name="x" val="340"/>
+      <attnum name="y" val="116"/>
+      <attnum name="width" val="32"/>
+      <attnum name="height" val="28"/>
+      <attstr name="disabled image" val="data/img/icon-moveup-disabled.png"/>
+      <attstr name="enabled image" val="data/img/icon-moveup.png"/>
+      <attstr name="focused image" val="data/img/icon-moveup-focused.png"/>
+      <attstr name="pushed image" val="data/img/icon-moveup-pushed.png"/>
+    </section>
+    <section name="movedownbutton">
+      <attstr name="type" val="image button"/>
+      <attstr name="tip" val="Move the highlighted driver down"/>
+      <attstr name="tip-spa" val="Mueva el piloto resaltado hacia abajo"/>
+      <attstr name="tip-cat" val="Moveu el conductor seleccionat avall"/>
+      <attstr name="tip-ru" val="Переместить выделенного пилота вниз"/>
+      <attnum name="x" val="370"/>
+      <attnum name="y" val="116"/>
+      <attnum name="width" val="32"/>
+      <attnum name="height" val="28"/>
+      <attstr name="disabled image" val="data/img/icon-movedown-disabled.png"/>
+      <attstr name="enabled image" val="data/img/icon-movedown.png"/>
+      <attstr name="focused image" val="data/img/icon-movedown-focused.png"/>
+      <attstr name="pushed image" val="data/img/icon-movedown-pushed.png"/>
+    </section>
+    <!-- Select/deselect buttons candidates -->
+    <section name="selectbutton">
+      <attstr name="type" val="image button"/>
+      <attstr name="tip" val="Make the highlighted driver a competitor for the race"/>
+      <attstr name="tip-spa" val="Haz que el piloto destacado sea un competidor para la carrera"/>
+      <attstr name="tip-cat" val="Feu del conductor seleccionat un competidor per a la cursa"/>
+      <attstr name="tip-ru" val="Сделать выделенного пилота участником гонки"/>
+      <attnum name="x" val="290"/>
+      <attnum name="y" val="160"/>
+      <attnum name="width" val="32"/>
+      <attnum name="height" val="28"/>
+      <attstr name="disabled image" val="data/img/icon-new-disabled.png"/>
+      <attstr name="enabled image" val="data/img/icon-new.png"/>
+      <attstr name="focused image" val="data/img/icon-new-focused.png"/>
+      <attstr name="pushed image" val="data/img/icon-new-pushed.png"/>
+    </section>
+    <!-- Select random candidates button -->
+    <section name="selectrandombutton">
+      <attstr name="type" val="image button"/>
+      <attstr name="tip" val="Select 5 random candidates for the race"/>
+      <attstr name="tip-spa" val="Seleccione 5 candidatos aleatorios para la carrera"/>
+      <attstr name="tip-cat" val="Escolliu 5 candidats aleatoris per a la cursa"/>
+      <attstr name="tip-ru" val="Выбрать 5 случайных кандидатов для гонки"/>
+      <attnum name="x" val="320"/>
+      <attnum name="y" val="160"/>
+      <attnum name="width" val="32"/>
+      <attnum name="height" val="28"/>
+      <attstr name="disabled image" val="data/img/icon-new5-disabled.png"/>
+      <attstr name="enabled image" val="data/img/icon-new5.png"/>
+      <attstr name="focused image" val="data/img/icon-new5-focused.png"/>
+      <attstr name="pushed image" val="data/img/icon-new5-pushed.png"/>
+    </section>
+    <!-- Current driver info -->
+    <section name="currentdrivertypelabel">
+      <attstr name="type" val="label"/>
+      <attnum name="max len" val="20"/>
+      <attnum name="x" val="212"/>
+      <attnum name="y" val="224"/>
+      <attstr name="color" val="0xd1d1d1"/>
+      <attstr name="font" val="small_t"/>
+    </section>
+    <section name="currentdrivercarcategorylabel">
+      <attstr name="type" val="label"/>
+      <attnum name="max len" val="20"/>
+      <attnum name="x" val="212"/>
+      <attnum name="y" val="214"/>
+      <attstr name="color" val="0xd1d1d1"/>
+      <attstr name="font" val="small_t"/>
+    </section>
+    <section name="currentdrivercarlabel">
+      <attstr name="type" val="label"/>
+      <attnum name="max len" val="20"/>
+      <attnum name="x" val="212"/>
+      <attnum name="y" val="204"/>
+      <attstr name="color" val="0xd1d1d1"/>
+      <attstr name="font" val="small_t"/>
+    </section>
+    <!-- Car edit/view button -->
+    <section name="carselectbutton">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Garage"/>
+      <attstr name="text-spa" val="Garaje"/>
+      <attstr name="text-cat" val="Garatge"/>
+      <attstr name="text-ru" val="Гараж"/>
+      <attstr name="tip" val="Open car selection and settings menus"/>
+      <attstr name="tip-spa" val="Abrir menús de selección y configuración"/>
+      <attstr name="tip-cat" val="Obriu el menú de selecció i configuració del cotxe"/>
+      <attstr name="tip-ru" val="Открыть выбор автомобиля и меню настроек"/>
+      <attnum name="x" val="338"/>
+      <attnum name="y" val="202"/>
+      <attnum name="width" val="80"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-10"/>
+      <attnum name="image y" val="-2"/>
+      <attnum name="image width" val="100"/>
+      <attnum name="image height" val="30"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <!-- Next button -->
+    <section name="nextmenubutton">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Next"/>
+      <attstr name="text-fra" val="Suivant"/>
+      <attstr name="text-spa" val="Siguiente"/>
+      <attstr name="text-cat" val="Següent"/>
+      <attstr name="text-ru" val="Далее"/>
+      <attstr name="tip" val="Apply changes and go on with race configuration menu"/>
+      <attstr name="tip-spa" val="Aplicar cambios y seguir con el menú de configuración de la carrera"/>
+      <attstr name="tip-cat" val="Apliqueu els canvis i continueu cap al menú de configuració de la cursa"/>
+      <attstr name="tip-ru" val="Принять изменения и продолжить настройку гонки"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="x" val="500"/>
+      <attnum name="y" val="44"/>
+      <attnum name="width" val="80"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-10"/>
+      <attnum name="image y" val="-2"/>
+      <attnum name="image width" val="100"/>
+      <attnum name="image height" val="30"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <!-- Back button -->
+    <section name="backbutton">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Back"/>
+      <attstr name="text-fra" val="Retour"/>
+      <attstr name="text-spa" val="Atrás"/>
+      <attstr name="text-cat" val="Tornar"/>
+      <attstr name="text-ru" val="Назад"/>
+      <attstr name="tip" val="Cancel changes and get back to track selection menu"/>
+      <attstr name="tip-spa" val="Cancelar cambios y volver al menú de selección de pistas"/>
+      <attstr name="tip-cat" val="Cancel·leu els canvis i torneu al menú de selecció de circuit"/>
+      <attstr name="tip-ru" val="Отменить изменения и вернуться к выбору трассы"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="x" val="400"/>
+      <attnum name="y" val="44"/>
+      <attnum name="width" val="80"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-10"/>
+      <attnum name="image y" val="-2"/>
+      <attnum name="image width" val="100"/>
+      <attnum name="image height" val="30"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <!-- Generate button -->
+    <section name="generatebutton">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Generate"/>
+      <attstr name="text-fra" val="Générer"/>
+      <attstr name="text-spa" val="Generar"/>
+      <attstr name="text-cat" val="Generar"/>
+      <attstr name="text-ru" val="Создать"/>
+      <attstr name="tip" val="Generate a random driver using the selected driver type, car category and car model"/>
+      <attstr name="tip-spa" val="Generar un piloto aleatorio utilizando el tipo de piloto seleccionado, categoría de coche y modelo de coche"/>
+      <attstr name="tip-cat" val="Genereu un conductor aleatori amb el tipus de conductor, categoria i model de cotxe seleccionats"/>
+      <attstr name="tip-ru" val="Сгенерировать случайного пилота, используя выбранный тип пилота, категорию и модель автомобиля"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="x" val="120"/>
+      <attnum name="y" val="44"/>
+      <attnum name="width" val="90"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-10"/>
+      <attnum name="image y" val="-2"/>
+      <attnum name="image width" val="100"/>
+      <attnum name="image height" val="30"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <!-- Delete button -->
+    <section name="deletebutton">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Delete"/>
+      <attstr name="text-fra" val="Supprimer"/>
+      <attstr name="text-spa" val="Suprimir"/>
+      <attstr name="text-cat" val="Eliminar"/>
+      <attstr name="text-ru" val="Удалить"/>
+      <attstr name="tip" val="Delete the selected driver"/>
+      <attstr name="tip-spa" val="Eliminar el piloto seleccionado"/>
+      <attstr name="tip-cat" val="Elimineu el conductor seleccionat"/>
+      <attstr name="tip-ru" val="Удалить выбранного пилота"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="x" val="20"/>
+      <attnum name="y" val="44"/>
+      <attnum name="width" val="80"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-10"/>
+      <attnum name="image y" val="-2"/>
+      <attnum name="image width" val="90"/>
+      <attnum name="image height" val="30"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <!-- Number of drivers to generate -->
+    <section name="numdrivergen">
+      <attstr name="type" val="combo box"/>
+      <attnum name="max len" val="2"/>
+      <attstr name="tip" val="Select number of drivers to be generated"/>
+      <attstr name="tip-spa" val="Seleccione el número de pilotos a generar"/>
+      <attstr name="tip-cat" val="Seleccioneu el nombre de conductors a generar"/>
+      <attstr name="tip-ru" val="Выбрать количество пилотов для генерации"/>
+      <attnum name="x" val="210"/>
+      <attnum name="y" val="44"/>
+      <attnum name="arrows width" val="24"/>
+      <attnum name="arrows height" val="24"/>
+      <attnum name="width" val="80"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="font" val="small"/>
+    </section>
+  </section>
+  <section name="static controls">
+    <section name="1">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val="Select drivers for the race"/>
+      <attstr name="text-fra" val="Sélectionner pilotes pour la course"/>
+      <attstr name="text-spa" val="Seleccione pilotos para la carrera"/>
+      <attstr name="text-cat" val="Escolliu els conductors per a la cursa"/>
+      <attstr name="text-ru" val="Выбрать пилотов на гонку"/>
+      <attnum name="x" val="300"/>
+      <attnum name="y" val="430"/>
+      <attnum name="width" val="400"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium_t"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="bg image" val="data/img/header-background.png"/>
+      <attnum name="bg image padding top" val="15"/>
+      <attnum name="bg image padding bottom" val="15"/>
+      <attnum name="bg image padding left" val="30"/>
+      <attnum name="bg image padding right" val="15"/>
+    </section>
+    <section name="2">
+      <attstr name="type" val="gallery"/>
+      <attstr name="directory" val="data/gallery/"/>
+    </section>
+    <section name="3">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="-10"/>
+      <attnum name="y" val="375"/>
+      <attnum name="width" val="130"/>
+      <attnum name="height" val="95"/>
+      <attstr name="image" val="data/img/sd-logo-big.png"/>
+    </section>
+    <!-- Current driver info -->
+    <section name="4">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val="Driver type:"/>
+      <attstr name="text-fra" val="Type de pilote:"/>
+      <attstr name="text-spa" val="Tipo de conductor:"/>
+      <attstr name="text-cat" val="Tipus de conductor:"/>
+      <attstr name="text-ru" val="Тип пилота:"/>
+      <attnum name="x" val="256"/>
+      <attnum name="y" val="244"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="small_t"/>
+    </section>
+    <section name="5">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val="Category:"/>
+      <attstr name="text-fra" val="Catégorie:"/>
+      <attstr name="text-spa" val="Categoría:"/>
+      <attstr name="text-cat" val="Categoria:"/>
+      <attstr name="text-ru" val="Категория:"/>
+      <attnum name="x" val="256"/>
+      <attnum name="y" val="224"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="small_t"/>
+    </section>
+    <section name="6">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val="Car Model:"/>
+      <attstr name="text-fra" val="Modèle de voiture:"/>
+      <attstr name="text-spa" val="Modelo de coche:"/>
+      <attstr name="text-cat" val="Model de cotxe:"/>
+      <attstr name="text-ru" val="Модель авто:"/>
+      <attnum name="x" val="256"/>
+      <attnum name="y" val="204"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="small_t"/>
+    </section>
+    <!--combobox background -->
+    <section name="7">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="60"/>
+      <attnum name="y" val="337"/>
+      <attnum name="width" val="124"/>
+      <attnum name="height" val="25"/>
+      <attstr name="image" val="data/img/label-background.png"/>
+    </section>
+    <section name="8">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="60"/>
+      <attnum name="y" val="310"/>
+      <attnum name="width" val="124"/>
+      <attnum name="height" val="25"/>
+      <attstr name="image" val="data/img/label-background.png"/>
+    </section>
+    <section name="9">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="232"/>
+      <attnum name="y" val="337"/>
+      <attnum name="width" val="178"/>
+      <attnum name="height" val="25"/>
+      <attstr name="image" val="data/img/label-background.png"/>
+    </section>
+  </section>
+</params>

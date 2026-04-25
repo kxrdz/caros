@@ -1,0 +1,4 @@
+.vscode/
+/build*/
+/packaging/3rdParty-devel/build*/
+/.cache/

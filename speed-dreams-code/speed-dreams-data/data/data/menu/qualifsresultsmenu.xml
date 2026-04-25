@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    file                 : qualifresultsmenu.xml
+    created              : 2009
+    copyright            : (C) 2009 by Brian Gavin, Eckhard M. Jaeger
+    web                  : speed-dreams.sourceforge.net
+-->
+<!--    This program is free software; you can redistribute it and/or modify  -->
+<!--    it under the terms of the GNU General Public License as published by  -->
+<!--    the Free Software Foundation; either version 2 of the License, or     -->
+<!--    (at your option) any later version.                                   -->
+<!--
+
+	Qualifications results menu
+
+-->
+<!DOCTYPE params SYSTEM "../tgf/params.dtd">
+<params name="qualifresultsmenu">
+  <section name="properties">
+    <!-- Number of lines in the result table (header excluded) -->
+    <attnum name="nMaxResultLines" val="15"/>
+    <!-- Y coordinate of the top line of the table (header excluded),
+         and number of pixels separating the lines -->
+    <attnum name="yTopLine" val="320"/>
+    <attnum name="yLineShift" val="16"/>
+  </section>
+  <section name="template controls">
+    <!-- Each column of each line of the results table -->
+    <section name="Rank">
+      <attstr name="type" val="label"/>
+      <attnum name="max len" val="3"/>
+      <attnum name="x" val="60"/>
+      <attnum name="width" val="30"/>
+      <attstr name="h align" val="right"/>
+      <attstr name="color" val="0xFFFFFFFF"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="bg image" val="data/img/bg-button-big-normal.png"/>
+      <attnum name="bg image padding top" val="1"/>
+      <attnum name="bg image padding bottom" val="2"/>
+      <attnum name="bg image padding left" val="2"/>
+      <attnum name="bg image padding right" val="4"/>
+    </section>
+    <section name="DriverName">
+      <attstr name="type" val="label"/>
+      <attnum name="max len" val="25"/>
+      <attnum name="x" val="115"/>
+      <attnum name="width" val="160"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="color" val="0xFFFFFFFF"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="bg image" val="data/img/bg-button-big-normal.png"/>
+      <attnum name="bg image padding top" val="1"/>
+      <attnum name="bg image padding bottom" val="2"/>
+      <attnum name="bg image padding left" val="13"/>
+      <attnum name="bg image padding right" val="2"/>
+    </section>
+    <section name="Nation">
+      <attstr name="type" val="label"/>
+      <attnum name="max len" val="5"/>
+      <attnum name="x" val="290"/>
+      <attnum name="width" val="50"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="color" val="0xFFFFFFFF"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="bg image" val="data/img/bg-button-big-normal.png"/>
+      <attnum name="bg image padding top" val="1"/>
+      <attnum name="bg image padding bottom" val="2"/>
+      <attnum name="bg image padding left" val="10"/>
+      <attnum name="bg image padding right" val="2"/>
+    </section>
+    <section name="DriverType">
+      <attstr name="type" val="label"/>
+      <attnum name="max len" val="10"/>
+      <attnum name="x" val="360"/>
+      <attnum name="width" val="50"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="color" val="0xFFFFFFFF"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="bg image" val="data/img/bg-button-big-normal.png"/>
+      <attnum name="bg image padding top" val="1"/>
+      <attnum name="bg image padding bottom" val="2"/>
+      <attnum name="bg image padding left" val="10"/>
+      <attnum name="bg image padding right" val="2"/>
+    </section>
+    <section name="CarModel">
+      <attstr name="type" val="label"/>
+      <attnum name="max len" val="25"/>
+      <attnum name="x" val="425"/>
+      <attnum name="width" val="100"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="color" val="0xFFFFFFFF"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="bg image" val="data/img/bg-button-big-normal.png"/>
+      <attnum name="bg image padding top" val="1"/>
+      <attnum name="bg image padding bottom" val="2"/>
+      <attnum name="bg image padding left" val="6"/>
+      <attnum name="bg image padding right" val="2"/>
+    </section>
+    <section name="BestLapTime">
+      <attstr name="type" val="label"/>
+      <attnum name="max len" val="15"/>
+      <attnum name="x" val="523"/>
+      <attnum name="width" val="60"/>
+      <attstr name="h align" val="right"/>
+      <attstr name="color" val="0xFFFFFFFF"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="bg image" val="data/img/bg-button-big-normal.png"/>
+      <attnum name="bg image padding top" val="1"/>
+      <attnum name="bg image padding bottom" val="2"/>
+      <attnum name="bg image padding left" val="-5"/>
+      <attnum name="bg image padding right" val="9"/>
+    </section>
+  </section>
+  <section name="dynamic controls">
+    <section name="Title">
+      <attstr name="type" val="label"/>
+      <attnum name="max len" val="64"/>
+      <attstr name="text" val="Qualification at (possibly very long track name)"/>
+      <attstr name="text-ru" val="Квалификация: (possibly very long track name)"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="x" val="300"/>
+      <attnum name="y" val="418"/>
+      <attstr name="color" val="0xFFFFFFFF"/>
+      <attstr name="font" val="medium_t"/>
+    </section>
+    <!-- Navigation buttons -->
+    <section name="NextPageArrow">
+      <attstr name="type" val="image button"/>
+      <attstr name="tip" val="Next results page"/>
+      <attstr name="tip-ru" val="Следующая страница результатов"/>
+      <attnum name="x" val="600"/>
+      <attnum name="y" val="28"/>
+      <attnum name="width" val="24"/>
+      <attnum name="height" val="24"/>
+      <attstr name="disabled image" val="data/img/arrow-down-disabled.png"/>
+      <attstr name="enabled image" val="data/img/arrow-down.png"/>
+      <attstr name="focused image" val="data/img/arrow-down-focused.png"/>
+      <attstr name="pushed image" val="data/img/arrow-down-pushed.png"/>
+    </section>
+    <section name="PreviousPageArrow">
+      <attstr name="type" val="image button"/>
+      <attstr name="tip" val="Previous results page"/>
+      <attstr name="tip-ru" val="Предыдущая страница результатов"/>
+      <attnum name="x" val="600"/>
+      <attnum name="y" val="58"/>
+      <attnum name="width" val="24"/>
+      <attnum name="height" val="24"/>
+      <attstr name="disabled image" val="data/img/arrow-up-disabled.png"/>
+      <attstr name="enabled image" val="data/img/arrow-up.png"/>
+      <attstr name="focused image" val="data/img/arrow-up-focused.png"/>
+      <attstr name="pushed image" val="data/img/arrow-up-pushed.png"/>
+    </section>
+    <section name="ContinueButton">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Continue"/>
+      <attstr name="text-ru" val="Продолжить"/>
+      <attstr name="tip" val="Go on with next session of this event, if any"/>
+      <attstr name="tip-ru" val="Перейти к следующей сессии события, при наличии"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="x" val="500"/>
+      <attnum name="y" val="44"/>
+      <attnum name="width" val="80"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-10"/>
+      <attnum name="image y" val="-2"/>
+      <attnum name="image width" val="100"/>
+      <attnum name="image height" val="30"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <!--
+    <section name="SaveButton">
+		<attstr name="type" val="text button"/>
+		<attstr name="show box" val="no"/>
+		<attstr name="text" val="Save"/>
+		<attstr name="tip" val="Save race results"/>
+		<attstr name="h align" val="left"/>
+		<attnum name="x" val="260"/>
+		<attnum name="y" val="44"/>
+		<attnum name="width" val="150"/>
+		<attstr name="font" val="medium"/>
+		<attstr name="color" val="0xFFFFFF"/>
+		<attstr name="focused color" val="0xFFFFFF"/>
+		<attstr name="pushed color" val="0xFFFFFF"/>
+		<attnum name="image x" val="-10"/>
+		<attnum name="image y" val="4"/>
+		<attnum name="image width" val="60"/>
+		<attnum name="image height" val="16"/>
+		<attstr name="focused image" val="data/img/button-left-focused.png"/>
+		<attstr name="enabled image" val="data/img/button-left.png"/>
+		<attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+-->
+  </section>
+  <section name="static controls">
+    <section name="1">
+      <attstr name="type" val="gallery"/>
+      <attstr name="directory" val="data/gallery/"/>
+    </section>
+    <section name="2">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="-10"/>
+      <attnum name="y" val="375"/>
+      <attnum name="width" val="130"/>
+      <attnum name="height" val="95"/>
+      <attstr name="image" val="data/img/sd-logo-big.png"/>
+    </section>
+    <section name="3">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val="Results"/>
+      <attstr name="text-ru" val="Результаты"/>
+      <attnum name="x" val="300"/>
+      <attnum name="y" val="430"/>
+      <attnum name="width" val="400"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium_t"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="bg image" val="data/img/header-background.png"/>
+      <attnum name="bg image padding top" val="15"/>
+      <attnum name="bg image padding bottom" val="15"/>
+      <attnum name="bg image padding left" val="30"/>
+      <attnum name="bg image padding right" val="15"/>
+    </section>
+    <!-- Header of the results table -->
+    <section name="4">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val="Rk"/>
+      <attstr name="text-ru" val="Поз."/>
+      <attstr name="tip" val="Rank of the competitor"/>
+      <attstr name="tip-ru" val="Позиция участника"/>
+      <attnum name="x" val="60"/>
+      <attnum name="y" val="340"/>
+      <attnum name="width" val="35"/>
+      <attstr name="color" val="0xFFCC00"/>
+      <attstr name="font" val="medium_t"/>
+      <attstr name="bg image" val="data/img/bg-button-big-normal.png"/>
+      <attnum name="bg image padding top" val="1"/>
+      <attnum name="bg image padding bottom" val="2"/>
+      <attnum name="bg image padding left" val="2"/>
+      <attnum name="bg image padding right" val="2"/>
+    </section>
+    <section name="5">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val="Driver"/>
+      <attstr name="text-ru" val="Пилот"/>
+      <attstr name="tip" val="Name of the competitor"/>
+      <attstr name="tip-ru" val="Имя пилота"/>
+      <attnum name="x" val="115"/>
+      <attnum name="y" val="340"/>
+      <attnum name="width" val="170"/>
+      <attstr name="color" val="0xFFCC00"/>
+      <attstr name="font" val="medium_t"/>
+      <attstr name="bg image" val="data/img/bg-button-big-normal.png"/>
+      <attnum name="bg image padding top" val="1"/>
+      <attnum name="bg image padding bottom" val="2"/>
+      <attnum name="bg image padding left" val="12"/>
+      <attnum name="bg image padding right" val="-8"/>
+    </section>
+    <section name="6">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val="Nation"/>
+      <attstr name="text-ru" val="Страна"/>
+      <attstr name="tip" val="Nationality of the competitor"/>
+      <attstr name="tip-ru" val="Страна участника"/>
+      <attnum name="x" val="290"/>
+      <attnum name="y" val="340"/>
+      <attnum name="width" val="50"/>
+      <attstr name="color" val="0xFFCC00"/>
+      <attstr name="font" val="medium_t"/>
+      <attstr name="bg image" val="data/img/bg-button-big-normal.png"/>
+      <attnum name="bg image padding top" val="1"/>
+      <attnum name="bg image padding bottom" val="2"/>
+      <attnum name="bg image padding left" val="10"/>
+      <attnum name="bg image padding right" val="2"/>
+    </section>
+    <section name="7">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val="Type"/>
+      <attstr name="text-ru" val="Тип"/>
+      <attstr name="tip" val="Type of driver"/>
+      <attstr name="tip-ru" val="Тип пилота"/>
+      <attnum name="x" val="360"/>
+      <attnum name="y" val="340"/>
+      <attnum name="width" val="50"/>
+      <attstr name="color" val="0xFFCC00"/>
+      <attstr name="font" val="medium_t"/>
+      <attstr name="bg image" val="data/img/bg-button-big-normal.png"/>
+      <attnum name="bg image padding top" val="1"/>
+      <attnum name="bg image padding bottom" val="2"/>
+      <attnum name="bg image padding left" val="10"/>
+      <attnum name="bg image padding right" val="2"/>
+    </section>
+    <section name="8">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val="Car"/>
+      <attstr name="text-ru" val="Автомобиль"/>
+      <attstr name="tip" val="Car model"/>
+      <attstr name="tip-ru" val="Модель авто"/>
+      <attnum name="x" val="425"/>
+      <attnum name="y" val="340"/>
+      <attnum name="width" val="108"/>
+      <attstr name="color" val="0xFFCC00"/>
+      <attstr name="font" val="medium_t"/>
+      <attstr name="bg image" val="data/img/bg-button-big-normal.png"/>
+      <attnum name="bg image padding top" val="1"/>
+      <attnum name="bg image padding bottom" val="2"/>
+      <attnum name="bg image padding left" val="7"/>
+      <attnum name="bg image padding right" val="-3"/>
+    </section>
+    <section name="9">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val="Time"/>
+      <attstr name="text-ru" val="Время"/>
+      <attstr name="tip" val="Best lap time"/>
+      <attstr name="tip-ru" val="Лучшее время круга"/>
+      <attnum name="x" val="535"/>
+      <attnum name="y" val="340"/>
+      <attnum name="width" val="60"/>
+      <attstr name="color" val="0xFFCC00"/>
+      <attstr name="font" val="medium_t"/>
+      <attstr name="bg image" val="data/img/bg-button-big-normal.png"/>
+      <attnum name="bg image padding top" val="1"/>
+      <attnum name="bg image padding bottom" val="2"/>
+      <attnum name="bg image padding left" val="7"/>
+      <attnum name="bg image padding right" val="-3"/>
+    </section>
+  </section>
+  <section name="music">
+    <attstr name="music file" val="data/music/qualifications.ogg"/>
+  </section>
+</params>

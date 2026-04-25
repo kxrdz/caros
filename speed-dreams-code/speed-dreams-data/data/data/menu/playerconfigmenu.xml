@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    file                 : playerconfigmenu.xml
+    created              : 2009
+    copyright            : (C) 2009 by Brian Gavin, Eckhard M. Jaeger
+    web                  : speed-dreams.sourceforge.net
+-->
+<!--    This program is free software; you can redistribute it and/or modify  -->
+<!--    it under the terms of the GNU General Public License as published by  -->
+<!--    the Free Software Foundation; either version 2 of the License, or     -->
+<!--    (at your option) any later version.                                   -->
+<!--
+
+	Player (human driver) config menu
+
+-->
+<!DOCTYPE params SYSTEM "../tgf/params.dtd">
+<params name="playerconfigmenu">
+  <section name="dynamic controls">
+    <!-- Player's name editbox -->
+    <section name="nameedit">
+      <attstr name="type" val="edit box"/>
+      <attstr name="tip" val="Enter your driver name"/>
+      <attstr name="tip-fra" val="Saisir votre nom de pilote"/>
+      <attstr name="tip-spa" val="Introduzca su nombre de conductor"/>
+      <attstr name="tip-cat" val="Editeu el nom del vostre conductor"/>
+      <attstr name="tip-ru" val="Введите ваше имя пилота"/>
+      <attnum name="max len" val="16"/>
+      <attnum name="x" val="270"/>
+      <attnum name="y" val="379"/>
+      <attnum name="width" val="130"/>
+      <attstr name="h align" val="center"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium"/>
+    </section>
+	<!-- nationality chooser left/right buttons -->
+	<section name="nationleftarrow">
+	  <attstr name="type" val="image button"/>
+	  <attnum name="width" val="24"/>
+	  <attnum name="height" val="24"/>
+	  <attstr name="tip" val=""/>
+	  <attnum name="x" val="265"/>
+	  <attnum name="y" val="346"/>
+	  <attstr name="disabled image" val="data/img/arrowleft-disabled.png"/>
+	  <attstr name="enabled image" val="data/img/arrowleft-normal.png"/>
+	  <attstr name="focused image" val="data/img/arrowleft-focused.png"/>
+	  <attstr name="pushed image" val="data/img/arrowleft-pushed.png"/>
+	</section>
+	<section name="nationrightarrow">
+	  <attstr name="type" val="image button"/>
+	  <attnum name="width" val="24"/>
+	  <attnum name="height" val="24"/>
+	  <attstr name="tip" val=""/>
+	  <attnum name="x" val="380"/>
+	  <attnum name="y" val="346"/>
+	  <attstr name="disabled image" val="data/img/arrowright-disabled.png"/>
+	  <attstr name="enabled image" val="data/img/arrowright-normal.png"/>
+	  <attstr name="focused image" val="data/img/arrowright-focused.png"/>
+	  <attstr name="pushed image" val="data/img/arrowright-pushed.png"/>
+	</section>
+	<!-- nationality showing ( XX ) -->
+	<section name="nationtext">
+	  <attstr name="type" val="label"/>
+	  <attstr name="tip" val="Choose your nationality"/>
+	  <attstr name="tip-fra" val="Choisir sa nationalité"/>
+	  <attstr name="tip-spa" val="Elija su nacionalidad"/>
+	  <attstr name="tip-cat" val="Escolliu la vostra nacionalitat"/>
+	  <attstr name="tip-ru" val="Выберите страну"/>
+	  <attnum name="max len" val="15"/>
+	  <attnum name="x" val="290"/>
+	  <attnum name="y" val="350"/>
+      <attnum name="width" val="90"/>
+      <attstr name="h align" val="center"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="bg image" val="data/img/label-background.png"/>
+      <attnum name="bg image padding top" val="4"/>
+      <attnum name="bg image padding bottom" val="4"/>
+      <attnum name="bg image padding left" val="1"/>
+      <attnum name="bg image padding right" val="0"/>
+	</section>
+    <!-- Skill level chooser left/right buttons -->
+    <section name="skillleftarrow">
+      <attstr name="type" val="image button"/>
+      <attnum name="width" val="24"/>
+      <attnum name="height" val="24"/>
+      <attstr name="tip" val=""/>
+      <attnum name="x" val="265"/>
+      <attnum name="y" val="316"/>
+      <attstr name="disabled image" val="data/img/arrowleft-disabled.png"/>
+      <attstr name="enabled image" val="data/img/arrowleft-normal.png"/>
+      <attstr name="focused image" val="data/img/arrowleft-focused.png"/>
+      <attstr name="pushed image" val="data/img/arrowleft-pushed.png"/>
+    </section>
+    <section name="skillrightarrow">
+      <attstr name="type" val="image button"/>
+      <attnum name="width" val="24"/>
+      <attnum name="height" val="24"/>
+      <attstr name="tip" val=""/>
+      <attnum name="x" val="380"/>
+      <attnum name="y" val="316"/>
+      <attstr name="disabled image" val="data/img/arrowright-disabled.png"/>
+      <attstr name="enabled image" val="data/img/arrowright-normal.png"/>
+      <attstr name="focused image" val="data/img/arrowright-focused.png"/>
+      <attstr name="pushed image" val="data/img/arrowright-pushed.png"/>
+    </section>
+    <!-- Skill level name showing (rookie, amateur, semi-pro, pro) -->
+    <section name="skilltext">
+      <attstr name="type" val="label"/>
+      <attstr name="tip" val="Setup your driving skill level"/>
+      <attstr name="tip-fra" val="Configurer son niveau d'habileté de conduite"/>
+      <attstr name="tip-spa" val="Configura tu nivel de habilidad de conducción"/>
+      <attstr name="tip-cat" val="Escolliu el vostre nivell d'habilitat de conducció"/>
+      <attstr name="tip-ru" val="Укажите ваш уровень навыка вождения"/>
+      <attnum name="max len" val="12"/>
+      <attnum name="x" val="290"/>
+      <attnum name="y" val="320"/>
+      <attnum name="width" val="90"/>
+      <attstr name="h align" val="center"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="bg image" val="data/img/label-background.png"/>
+      <attnum name="bg image padding top" val="4"/>
+      <attnum name="bg image padding bottom" val="4"/>
+      <attnum name="bg image padding left" val="1"/>
+      <attnum name="bg image padding right" val="0"/>
+    </section>
+	<!-- Gear shifting mode chooser left/right buttons -->
+    <section name="gearleftarrow">
+      <attstr name="type" val="image button"/>
+      <attnum name="width" val="24"/>
+      <attnum name="height" val="24"/>
+      <attstr name="tip" val=""/>
+      <attnum name="x" val="265"/>
+      <attnum name="y" val="286"/>
+      <attstr name="disabled image" val="data/img/arrowleft-disabled.png"/>
+      <attstr name="enabled image" val="data/img/arrowleft-normal.png"/>
+      <attstr name="focused image" val="data/img/arrowleft-focused.png"/>
+      <attstr name="pushed image" val="data/img/arrowleft-pushed.png"/>
+    </section>
+    <section name="gearrightarrow">
+      <attstr name="type" val="image button"/>
+      <attnum name="width" val="24"/>
+      <attnum name="height" val="24"/>
+      <attstr name="tip" val=""/>
+      <attnum name="x" val="380"/>
+      <attnum name="y" val="286"/>
+      <attstr name="disabled image" val="data/img/arrowright-disabled.png"/>
+      <attstr name="enabled image" val="data/img/arrowright-normal.png"/>
+      <attstr name="focused image" val="data/img/arrowright-focused.png"/>
+      <attstr name="pushed image" val="data/img/arrowright-pushed.png"/>
+    </section>
+    <!-- Gear shifting mode showing (auto, sequential, grid) -->
+    <section name="geartext">
+      <attstr name="type" val="label"/>
+      <attstr name="tip" val="Choose your gear shifting mode"/>
+      <attstr name="tip-fra" val="Choisir son mode de changement de vitesses"/>
+      <attstr name="tip-spa" val="Elija el modo de cambio de equipo"/>
+      <attstr name="tip-cat" val="Escolliu el mode de canvi de marxes"/>
+      <attstr name="tip-ru" val="Выберите режим переключения передач"/>
+      <attnum name="max len" val="12"/>
+      <attnum name="x" val="290"/>
+      <attnum name="y" val="290"/>
+      <attnum name="width" val="90"/>
+      <attstr name="h align" val="center"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="bg image" val="data/img/label-background.png"/>
+      <attnum name="bg image padding top" val="4"/>
+      <attnum name="bg image padding bottom" val="4"/>
+      <attnum name="bg image padding left" val="1"/>
+      <attnum name="bg image padding right" val="0"/>
+    </section>
+    <!-- Autoreverse label, only shown when gear type is ''auto' -->
+    <section name="autoreversetext">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val="Auto reverse:"/>
+      <attstr name="text-spa" val="Auto inverso:"/>
+      <attstr name="text-cat" val="Marxa enrere automàtica:"/>
+      <attstr name="text-ru" val="Автореверс:"/>
+      <attnum name="x" val="60"/>
+      <attnum name="y" val="262"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="175"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="bg image" val="data/img/bg-button-big-normal.png"/>
+      <attnum name="bg image padding top" val="6"/>
+      <attnum name="bg image padding bottom" val="6"/>
+      <attnum name="bg image padding left" val="0"/>
+      <attnum name="bg image padding right" val="30"/>
+    </section>
+    <!-- Autoreverse chooser left/right buttons -->
+    <section name="autoleftarrow">
+      <attstr name="type" val="image button"/>
+      <attnum name="width" val="24"/>
+      <attnum name="height" val="24"/>
+      <attstr name="tip" val=""/>
+      <attnum name="x" val="265"/>
+      <attnum name="y" val="256"/>
+      <attstr name="disabled image" val="data/img/arrowleft-disabled.png"/>
+      <attstr name="enabled image" val="data/img/arrowleft-normal.png"/>
+      <attstr name="focused image" val="data/img/arrowleft-focused.png"/>
+      <attstr name="pushed image" val="data/img/arrowleft-pushed.png"/>
+    </section>
+    <section name="autorightarrow">
+      <attstr name="type" val="image button"/>
+      <attnum name="width" val="24"/>
+      <attnum name="height" val="24"/>
+      <attstr name="tip" val=""/>
+      <attnum name="x" val="380"/>
+      <attnum name="y" val="256"/>
+      <attstr name="disabled image" val="data/img/arrowright-disabled.png"/>
+      <attstr name="enabled image" val="data/img/arrowright-normal.png"/>
+      <attstr name="focused image" val="data/img/arrowright-focused.png"/>
+      <attstr name="pushed image" val="data/img/arrowright-pushed.png"/>
+    </section>
+    <!-- Autoreverse on/off display -->
+    <section name="autotext">
+      <attstr name="type" val="label"/>
+      <attstr name="tip" val="Toggle inverted throttle / brake and auto-reverse shifting when stopped"/>
+      <attstr name="tip-fra" val="Basculer l'accélécateur / freinage et auto-reculon à l'arrêt"/>
+      <attstr name="tip-spa" val="Toggle inverted throttle / freno y cambio automático al detenerse"/>
+      <attstr name="tip-cat" val="Habiliteu acceleració / fre inversos i canvi a marxa enrere automàtics si esteu aturats"/>
+      <attstr name="tip-ru" val="Инверсия газа и тормоза, а также автопереключение на передачу заднего хода при остановке"/>
+      <attnum name="max len" val="12"/>
+      <attnum name="x" val="290"/>
+      <attnum name="y" val="260"/>
+      <attnum name="width" val="90"/>
+      <attstr name="h align" val="center"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="bg image" val="data/img/label-background.png"/>
+      <attnum name="bg image padding top" val="4"/>
+      <attnum name="bg image padding bottom" val="4"/>
+      <attnum name="bg image padding left" val="1"/>
+      <attnum name="bg image padding right" val="0"/>
+    </section>
+    <!-- Race number editbox -->
+    <section name="racenumedit">
+      <attstr name="type" val="edit box"/>
+      <attstr name="tip" val="Your preferred racing number"/>
+      <attstr name="tip-fra" val="Votre numéro de course préféré"/>
+      <attstr name="tip-spa" val="Tu número de carreras preferido"/>
+      <attstr name="tip-cat" val="Escolliu el vostre dorsal"/>
+      <attstr name="tip-ru" val="Желаемый гоночный номер"/>
+      <attnum name="max len" val="2"/>
+      <attnum name="x" val="270"/>
+      <attnum name="y" val="230"/>
+      <attnum name="width" val="130"/>
+      <attstr name="h align" val="right"/>
+      <attstr name="font" val="medium"/>
+    </section>
+    <!-- Pit stop editbox -->
+    <section name="pitstopedit">
+      <attstr name="type" val="edit box"/>
+      <attstr name="tip" val="Number of scheduled pit-stops"/>
+      <attstr name="tip-fra" val="Nombre d'arrêts aux stands programmé"/>
+      <attstr name="tip-spa" val="Número de paradas programadas"/>
+      <attstr name="tip-cat" val="Escolliu el nombre d'aturades previstes a boxes"/>
+      <attstr name="tip-ru" val="Количество запланированных пит-стопов"/>
+      <attnum name="max len" val="2"/>
+      <attnum name="x" val="270"/>
+      <attnum name="y" val="200"/>
+      <attnum name="width" val="130"/>
+      <attstr name="h align" val="right"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium"/>
+    </section>
+    <!-- Players scroll-list -->
+    <section name="playerscrolllist">
+      <attstr name="type" val="scroll list"/>
+      <attstr name="tip" val="Choose a player profile"/>
+      <attstr name="tip-fra" val="Choisir un profil de joueur"/>
+      <attstr name="tip-spa" val="Elija un perfil de jugador"/>
+      <attstr name="tip-cat" val="Escolliu un perfil de jugador"/>
+      <attstr name="tip-ru" val="Выберите профиль игрока"/>
+      <attnum name="x" val="450"/>
+      <attnum name="y" val="230"/>
+      <attnum name="width" val="130"/>
+      <attnum name="height" val="138"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="selected color" val="0xFF0000"/>
+      <attstr name="scrollbar pos" val="right"/>
+      <attnum name="image width" val="16"/>
+      <attnum name="image height" val="16"/>
+    </section>
+    <!-- New player button -->
+    <section name="new">
+      <attstr name="type" val="image button"/>
+      <attstr name="tip" val="Create a new player"/>
+      <attstr name="tip-fra" val="Créer un nouveau joueur"/>
+      <attstr name="tip-spa" val="Crear un nuevo jugador"/>
+      <attstr name="tip-cat" val="Creeu un nou jugador"/>
+      <attstr name="tip-ru" val="Создать нового игрока"/>
+      <attnum name="x" val="450"/>
+      <attnum name="y" val="200"/>
+      <attnum name="width" val="28"/>
+      <attnum name="height" val="28"/>
+      <attstr name="disabled image" val="data/img/icon-new-disabled.png"/>
+      <attstr name="enabled image" val="data/img/icon-new.png"/>
+      <attstr name="focused image" val="data/img/icon-new-focused.png"/>
+      <attstr name="pushed image" val="data/img/icon-new-pushed.png"/>
+    </section>
+    <!-- Copy player button -->
+    <section name="copy">
+      <attstr name="type" val="image button"/>
+      <attstr name="tip" val="Copy selected player"/>
+      <attstr name="tip-fra" val="Cloner le joueur sélectionné"/>
+      <attstr name="tip-spa" val="Copiar el reproductor seleccionado"/>
+      <attstr name="tip-cat" val="Copieu el jugador seleccionat"/>
+      <attstr name="tip-ru" val="Копировать выбранного игрока"/>
+      <attnum name="x" val="500"/>
+      <attnum name="y" val="200"/>
+      <attnum name="width" val="28"/>
+      <attnum name="height" val="28"/>
+      <attstr name="disabled image" val="data/img/icon-copy-disabled.png"/>
+      <attstr name="enabled image" val="data/img/icon-copy.png"/>
+      <attstr name="focused image" val="data/img/icon-copy-focused.png"/>
+      <attstr name="pushed image" val="data/img/icon-copy-pushed.png"/>
+    </section>
+    <!-- Delete player button -->
+    <section name="delete">
+      <attstr name="type" val="image button"/>
+      <attstr name="tip" val="Delete selected player"/>
+      <attstr name="tip-fra" val="Supprimer le joueur sélectionné"/>
+      <attstr name="tip-spa" val="Eliminar el jugador seleccionado"/>
+      <attstr name="tip-cat" val="Esborreu el jugador seleccionat"/>
+      <attstr name="tip-ru" val="Удалить выбранного игрока"/>
+      <attnum name="x" val="550"/>
+      <attnum name="y" val="200"/>
+      <attnum name="width" val="28"/>
+      <attnum name="height" val="28"/>
+      <attstr name="disabled image" val="data/img/icon-delete-disabled.png"/>
+      <attstr name="enabled image" val="data/img/icon-delete.png"/>
+      <attstr name="focused image" val="data/img/icon-delete-focused.png"/>
+      <attstr name="pushed image" val="data/img/icon-delete-pushed.png"/>
+    </section>
+    <!-- Player controls button -->
+    <section name="controls">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Controls"/>
+      <attstr name="text-fra" val="Contrôles"/>
+      <attstr name="text-spa" val="Controles"/>
+      <attstr name="text-cat" val="Controls"/>
+      <attstr name="text-ru" val="Управление"/>
+      <attstr name="tip" val="Configure selected player's controls"/>
+      <attstr name="tip-fra" val="Configurer les contrôles du joueur sélectionné"/>
+      <attstr name="tip-spa" val="Configurar los controles del jugador seleccionado"/>
+      <attstr name="tip-cat" val="Configureu els controls del jugador seleccionat"/>
+      <attstr name="tip-ru" val="Настроить управление выбранного игрока"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="x" val="475"/>
+      <attnum name="y" val="170"/>
+      <attnum name="width" val="80"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-10"/>
+      <attnum name="image y" val="-2"/>
+      <attnum name="image width" val="100"/>
+      <attnum name="image height" val="30"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="CancelButton">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Cancel"/>
+      <attstr name="text-fra" val="Annuler"/>
+      <attstr name="text-spa" val="Cancelar"/>
+      <attstr name="text-cat" val="Cancel·lar"/>
+      <attstr name="text-ru" val="Отменить"/>
+      <attstr name="tip" val="Cancel changes"/>
+      <attstr name="tip-fra" val="Annuler les changements"/>
+      <attstr name="tip-spa" val="Cancela los cambios"/>
+      <attstr name="tip-cat" val="Cancel·leu els canvis"/>
+      <attstr name="tip-ru" val="Отменить изменения"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="x" val="400"/>
+      <attnum name="y" val="44"/>
+      <attnum name="width" val="80"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-10"/>
+      <attnum name="image y" val="-2"/>
+      <attnum name="image width" val="100"/>
+      <attnum name="image height" val="30"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="ApplyButton">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Apply"/>
+      <attstr name="text-fra" val="Appliquer"/>
+      <attstr name="text-spa" val="Aplicar"/>
+      <attstr name="text-cat" val="Aplicar"/>
+      <attstr name="text-ru" val="Применить"/>
+      <attstr name="tip" val="Accept and save changes"/>
+      <attstr name="tip-fra" val="Accepter et sauvegarder les changements"/>
+      <attstr name="tip-spa" val="Aceptar y guardar cambios"/>
+      <attstr name="tip-cat" val="Apliqueu i deseu els canvis"/>
+      <attstr name="tip-ru" val="Принять и сохранить изменения"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="x" val="500"/>
+      <attnum name="y" val="44"/>
+      <attnum name="width" val="80"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-10"/>
+      <attnum name="image y" val="-2"/>
+      <attnum name="image width" val="100"/>
+      <attnum name="image height" val="30"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <!-- Webserver username editbox -->
+    <section name="webusernameedit">
+      <attstr name="type" val="edit box"/>
+      <attstr name="tip" val="Enter your username"/>
+      <attstr name="tip-fra" val="Saisir votre nom d'usager"/>
+      <attstr name="tip-spa" val="Introduzca su nombre de usuario"/>
+      <attstr name="tip-cat" val="Introduïu el vostre nom d'usuari"/>
+      <attstr name="tip-ru" val="Введите ваше имя пользователя"/>
+      <attnum name="max len" val="16"/>
+      <attnum name="x" val="270"/>
+      <attnum name="y" val="140"/>
+      <attnum name="width" val="130"/>
+      <attstr name="h align" val="center"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium"/>
+    </section>
+    <!-- Webserver password editbox -->
+    <section name="webpasswordedit">
+      <attstr name="type" val="edit box"/>
+      <attstr name="tip" val="Enter your password"/>
+      <attstr name="tip-fra" val="Saisir votre mot de passe"/>
+      <attstr name="tip-car" val="Introduïu la vostra contrasenya"/>
+      <attstr name="tip-ru" val="Введите пароль"/>
+      <attnum name="max len" val="16"/>
+      <attnum name="x" val="270"/>
+      <attnum name="y" val="110"/>
+      <attnum name="width" val="130"/>
+      <attstr name="h align" val="center"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="mask text" val="true"/>
+    </section>
+    <!-- Webserver test login button -->
+    <section name="weblogintest">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Test Login"/>
+      <attstr name="text-spa" val="Acceder"/>
+      <attstr name="text-cat" val="Autenticar"/>
+      <attstr name="text-ru" val="Войти"/>
+      <attstr name="tip" val="Test the login with current username and password"/>
+      <attstr name="tip-fra" val="Valider la connexion pour le nom d'usager et mot de passe"/>
+      <attstr name="tip-spa" val="Pruebe a registrarse con el nombre de usuario actual y contraseña"/>
+      <attstr name="tip-cat" val="Comproveu l'autenticació amb l'usuari i contrasenya donats"/>
+      <attstr name="tip-ru" val="Проверить вход с текущим именем пользователя и паролем"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="x" val="275"/>
+      <attnum name="y" val="75"/>
+      <attnum name="width" val="150"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-5"/>
+      <attnum name="image y" val="-2"/>
+      <attnum name="image width" val="100"/>
+      <attnum name="image height" val="30"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+      <attstr name="pushed image" val="data/img/button-left-disabled.png"/>
+    </section>
+    <section name="webservercheckbox">
+      <attstr name="type" val="check box"/>
+      <attstr name="text" val=""/>
+      <attstr name="tip" val="Check to enable webServer features (Pro level only)"/>
+      <attstr name="tip-fra" val="Cocher pour activer les fonctionnalités webServer (niveau pro uniquement)"/>
+      <attstr name="tip-spa" val="Habilitar el servidor web (sólo disponible en nivel Pro)"/>
+      <attstr name="tip-cat" val="Habiliteu el servidor web (només disponible al nivell Pro)"/>
+      <attstr name="tip-ru" val="Включение веб-сервера (только для уровня навыка Про)"/>
+      <attnum name="x" val="267"/>
+      <attnum name="y" val="168"/>
+      <attnum name="image width" val="24"/>
+      <attnum name="image height" val="24"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="checked" val="no"/>
+    </section>
+  </section>
+  <section name="static controls">
+    <section name="1">
+      <attstr name="type" val="gallery"/>
+      <attstr name="directory" val="data/gallery/"/>
+    </section>
+    <section name="2">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="-10"/>
+      <attnum name="y" val="375"/>
+      <attnum name="width" val="130"/>
+      <attnum name="height" val="95"/>
+      <attstr name="image" val="data/img/sd-logo-big.png"/>
+    </section>
+    <!-- labels descriptions -->
+    <section name="3">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val="Name:"/>
+      <attstr name="text-spa" val="Nombre:"/>
+      <attstr name="text-fra" val="Nom:"/>
+      <attstr name="text-cat" val="Nom:"/>
+      <attstr name="text-ru" val="Имя:"/>
+      <attstr name="tip" val="Enter your driver name"/>
+      <attstr name="tip-fra" val="Saisir votre nom de pilote"/>
+      <attstr name="tip-spa" val="Introduzca su nombre de conductor"/>
+      <attstr name="tip-cat" val="Introduïu el nom del vostre conductor"/>
+      <attstr name="tip-ru" val="Введите ваше имя пилота"/>
+      <attnum name="x" val="60"/>
+      <attnum name="y" val="382"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="175"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="bg image" val="data/img/bg-button-big-normal.png"/>
+      <attnum name="bg image padding top" val="6"/>
+      <attnum name="bg image padding bottom" val="6"/>
+      <attnum name="bg image padding left" val="0"/>
+      <attnum name="bg image padding right" val="30"/>
+    </section>
+	<section name="4">
+	  <attstr name="type" val="label"/>
+	  <attstr name="text" val="Nationality:"/>
+	  <attstr name="text-fra" val="Nationalité:"/>
+	  <attstr name="text-spa" val="Nacionalidad:"/>
+	  <attstr name="text-cat" val="Nacionalitat:"/>
+	  <attstr name="text-ru" val="Страна:"/>
+	  <attnum name="x" val="60"/>
+	  <attnum name="y" val="352"/>
+	  <attstr name="color" val="0xa6a6a6"/>
+	  <attstr name="h align" val="right"/>
+	  <attnum name="width" val="175"/>
+	  <attstr name="font" val="small_t"/>
+	  <attstr name="bg image" val="data/img/bg-button-big-normal.png"/>
+	  <attnum name="bg image padding top" val="6"/>
+	  <attnum name="bg image padding bottom" val="6"/>
+	  <attnum name="bg image padding left" val="0"/>
+	  <attnum name="bg image padding right" val="30"/>
+	</section>
+	<section name="5">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val="Skill level:"/>
+      <attstr name="text-fra" val="Niveau d'habileté:"/>
+      <attstr name="text-spa" val="Nivel de habilidad:"/>
+      <attstr name="text-cat" val="Nivell d'habilitat:"/>
+      <attstr name="text-ru" val="Уровень навыка:"/>
+      <attnum name="x" val="60"/>
+      <attnum name="y" val="322"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="175"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="bg image" val="data/img/bg-button-big-normal.png"/>
+      <attnum name="bg image padding top" val="6"/>
+      <attnum name="bg image padding bottom" val="6"/>
+      <attnum name="bg image padding left" val="0"/>
+      <attnum name="bg image padding right" val="30"/>
+    </section>
+    <section name="6">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val="Gear change:"/>
+      <attstr name="text-fra" val="Changement de vitesses:"/>
+      <attstr name="text-spa" val="Cambio de marchas:"/>
+      <attstr name="text-cat" val="Canvi de marxes:"/>
+      <attstr name="text-ru" val="Переключение передач:"/>
+      <attnum name="x" val="60"/>
+      <attnum name="y" val="292"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="175"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="bg image" val="data/img/bg-button-big-normal.png"/>
+      <attnum name="bg image padding top" val="6"/>
+      <attnum name="bg image padding bottom" val="6"/>
+      <attnum name="bg image padding left" val="0"/>
+      <attnum name="bg image padding right" val="30"/>
+    </section>
+    <section name="7">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val="Racing number:"/>
+      <attstr name="text-fra" val="Numéro de course:"/>
+      <attstr name="text-spa" val="Dorsal:"/>
+      <attstr name="text-cat" val="Dorsal:"/>
+      <attstr name="text-ru" val="Гоночный номер:"/>
+      <attstr name="tip" val="Your preferred racing number (for the number plate on the car ; 0 = auto)"/>
+      <attstr name="tip-fra" val="Votre numéro de course favori (pour le numéro de plaque de la voiture ; 0 = auto)"/>
+      <attstr name="tip-spa" val="Escoja su dorsal (para la matrícula en el coche ; 0 = auto)"/>
+      <attstr name="tip-cat" val="Escolliu el vostre dorsal (per a la matrícula del cotxe ; 0 = automàtic)"/>
+      <attstr name="tip-ru" val="Предпочитаемый гоночный номер (на номерной табличке; 0 = авто)"/>
+      <attnum name="x" val="60"/>
+      <attnum name="y" val="232"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="175"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="bg image" val="data/img/bg-button-big-normal.png"/>
+      <attnum name="bg image padding top" val="6"/>
+      <attnum name="bg image padding bottom" val="6"/>
+      <attnum name="bg image padding left" val="0"/>
+      <attnum name="bg image padding right" val="30"/>
+    </section>
+    <section name="8">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val="Pit stops:"/>
+      <attstr name="text-fra" val="Numéro de stands:"/>
+      <attstr name="text-spa" val="Número de paradas:"/>
+      <attstr name="text-cat" val="Nombre d'aturades:"/>
+      <attstr name="text-ru" val="Пит-стопы:"/>
+      <attstr name="tip" val="Number of scheduled pit-stops (for optimized refueling ; 0 = auto)"/>
+      <attstr name="tip-fra" val="Nombre d'arrêts aux stands programmés (pour mise à niveau optimale du carburant ; 0 = auto)"/>
+      <attstr name="tip-spa" val="Número de paradas en boxes previstas (para repostar de forma óptima ; 0 = auto)"/>
+      <attstr name="tip-cat" val="Nombre d'aturades previstes a boxes (per repostar de forma òptima ; 0 = automàtic)"/>
+      <attstr name="tip-ru" val="Количество запланированных пит-стопов (для оптимизации заправки ; 0 = авто)"/>
+      <attnum name="x" val="60"/>
+      <attnum name="y" val="202"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="175"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="bg image" val="data/img/bg-button-big-normal.png"/>
+      <attnum name="bg image padding top" val="6"/>
+      <attnum name="bg image padding bottom" val="6"/>
+      <attnum name="bg image padding left" val="0"/>
+      <attnum name="bg image padding right" val="30"/>
+    </section>
+    <!-- player selection start -->
+    <section name="9">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val="Available players:"/>
+      <attstr name="text-spa" val="Jugadores disponibles:"/>
+      <attstr name="text-cat" val="Jugadors disponibles:"/>
+      <attstr name="text-ru" val="Доступные игроки:"/>
+      <attnum name="x" val="450"/>
+      <attnum name="y" val="375"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attnum name="width" val="175"/>
+      <attstr name="font" val="small_t"/>
+    </section>
+    <!-- player selection end -->
+    <!--
+		<section name="9">
+			<attstr name="type" val="static image"/>
+			<attnum name="x" val="212"/>
+			<attnum name="y" val="400"/>
+			<attnum name="width" val="450"/>
+			<attnum name="height" val="40"/>
+			<attstr name="image" val="data/img/head-playerconfig.png"/>
+		</section>
+-->
+    <!-- screen header label -->
+    <section name="10">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val="Player configuration"/>
+      <attstr name="text-fra" val="Configuration du joueur"/>
+      <attstr name="text-spa" val="Configuración del jugador"/>
+      <attstr name="text-cat" val="Configuració del jugador"/>
+      <attstr name="text-ru" val="Настройки игрока"/>
+      <attnum name="x" val="300"/>
+      <attnum name="y" val="430"/>
+      <attnum name="width" val="400"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium_t"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="bg image" val="data/img/header-background.png"/>
+      <attnum name="bg image padding top" val="15"/>
+      <attnum name="bg image padding bottom" val="15"/>
+      <attnum name="bg image padding left" val="30"/>
+      <attnum name="bg image padding right" val="15"/>
+    </section>
+    <section name="11">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val="WebServer (Pro level only):"/>
+      <attstr name="text-spa" val="Servidor web (sólo Pro):"/>
+      <attstr name="text-cat" val="Servidor web (només Pro):"/>
+      <attstr name="text-ru" val="Веб-сервер (только для Про):"/>
+      <attnum name="x" val="60"/>
+      <attnum name="y" val="172"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attnum name="width" val="175"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="h align" val="right"/>
+      <attstr name="bg image" val="data/img/bg-button-big-normal.png"/>
+      <attnum name="bg image padding top" val="6"/>
+      <attnum name="bg image padding bottom" val="6"/>
+      <attnum name="bg image padding left" val="0"/>
+      <attnum name="bg image padding right" val="30"/>
+    </section>
+    <section name="12">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val="WebServer Username:"/>
+      <attstr name="text-spa" val="Usuario servidor web:"/>
+      <attstr name="text-cat" val="Nom d'usuari servidor web:"/>
+      <attstr name="text-ru" val="Логин для веб-сервера:"/>
+      <attnum name="x" val="60"/>
+      <attnum name="y" val="142"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attnum name="width" val="175"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="h align" val="right"/>
+      <attstr name="bg image" val="data/img/bg-button-big-normal.png"/>
+      <attnum name="bg image padding top" val="6"/>
+      <attnum name="bg image padding bottom" val="6"/>
+      <attnum name="bg image padding left" val="0"/>
+      <attnum name="bg image padding right" val="30"/>
+    </section>
+    <section name="13">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val="WebServer password:"/>
+      <attstr name="text-spa" val="Contraseña servidor web:"/>
+      <attstr name="text-cat" val="Contrasenya servidor web:"/>
+      <attstr name="text-ru" val="Пароль:"/>
+      <attnum name="x" val="60"/>
+      <attnum name="y" val="112"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attnum name="width" val="175"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="h align" val="right"/>
+      <attstr name="bg image" val="data/img/bg-button-big-normal.png"/>
+      <attnum name="bg image padding top" val="6"/>
+      <attnum name="bg image padding bottom" val="6"/>
+      <attnum name="bg image padding left" val="0"/>
+      <attnum name="bg image padding right" val="30"/>
+    </section>
+  </section>
+</params>

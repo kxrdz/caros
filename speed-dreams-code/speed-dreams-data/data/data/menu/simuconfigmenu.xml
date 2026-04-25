@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    file                 : simulationoptionsmenu.xml
+    created              : 2009
+    copyright            : (C) 2009 by Brian Gavin, Eckhard M. Jaeger
+    web                  : speed-dreams.sourceforge.net
+-->
+<!--    This program is free software; you can redistribute it and/or modify  -->
+<!--    it under the terms of the GNU General Public License as published by  -->
+<!--    the Free Software Foundation; either version 2 of the License, or     -->
+<!--    (at your option) any later version.                                   -->
+<!--
+
+	Simulation options menu
+
+-->
+<!DOCTYPE params SYSTEM "../tgf/params.dtd">
+<params name="simulationoptionsmenu">
+  <section name="dynamic controls">
+    <section name="simuleftarrow">
+      <attstr name="type" val="image button"/>
+      <attnum name="width" val="24"/>
+      <attnum name="height" val="24"/>
+      <attstr name="tip" val=""/>
+      <attnum name="x" val="265"/>
+      <attnum name="y" val="348"/>
+      <attstr name="disabled image" val="data/img/arrowleft-disabled.png"/>
+      <attstr name="enabled image" val="data/img/arrowleft-normal.png"/>
+      <attstr name="focused image" val="data/img/arrowleft-focused.png"/>
+      <attstr name="pushed image" val="data/img/arrowleft-pushed.png"/>
+    </section>
+    <section name="simurightarrow">
+      <attstr name="type" val="image button"/>
+      <attnum name="width" val="24"/>
+      <attnum name="height" val="24"/>
+      <attstr name="tip" val=""/>
+      <attnum name="x" val="465"/>
+      <attnum name="y" val="348"/>
+      <attstr name="disabled image" val="data/img/arrowright-disabled.png"/>
+      <attstr name="enabled image" val="data/img/arrowright-normal.png"/>
+      <attstr name="focused image" val="data/img/arrowright-focused.png"/>
+      <attstr name="pushed image" val="data/img/arrowright-pushed.png"/>
+    </section>
+    <section name="simulabel">
+      <attstr name="type" val="label"/>
+      <attnum name="max len" val="6"/>
+      <attstr name="tip" val="Choose your simulation engine"/>
+      <attstr name="tip-spa" val="Elija la versión del motor de simulación"/>
+      <attstr name="tip-cat" val="Escull la versió del motor de simulació"/>
+      <attstr name="tip-ru" val="Выберите движок симуляции"/>
+      <attnum name="x" val="295"/>
+      <attnum name="y" val="352"/>
+      <attnum name="width" val="160"/>
+      <attstr name="h align" val="center"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium"/>
+    </section>
+    <section name="replayrateleftarrow">
+      <attstr name="type" val="image button"/>
+      <attnum name="width" val="24"/>
+      <attnum name="height" val="24"/>
+      <attstr name="tip" val=""/>
+      <attnum name="x" val="265"/>
+      <attnum name="y" val="318"/>
+      <attstr name="disabled image" val="data/img/arrowleft-disabled.png"/>
+      <attstr name="enabled image" val="data/img/arrowleft-normal.png"/>
+      <attstr name="focused image" val="data/img/arrowleft-focused.png"/>
+      <attstr name="pushed image" val="data/img/arrowleft-pushed.png"/>
+    </section>
+    <section name="replayraterightarrow">
+      <attstr name="type" val="image button"/>
+      <attnum name="width" val="24"/>
+      <attnum name="height" val="24"/>
+      <attstr name="tip" val=""/>
+      <attnum name="x" val="465"/>
+      <attnum name="y" val="318"/>
+      <attstr name="disabled image" val="data/img/arrowright-disabled.png"/>
+      <attstr name="enabled image" val="data/img/arrowright-normal.png"/>
+      <attstr name="focused image" val="data/img/arrowright-focused.png"/>
+      <attstr name="pushed image" val="data/img/arrowright-pushed.png"/>
+    </section>
+    <section name="replayratelabel">
+      <attstr name="type" val="label"/>
+      <attnum name="max len" val="8"/>
+      <attstr name="tip" val="Determines the quality (and size) of the replay file"/>
+      <attstr name="tip-spa" val="Determina la calidad (y tamaño) del archivo de repetición"/>
+      <attstr name="tip-cat" val="Determina la qualitat (i mida) de l'arxiu de repetició"/>
+      <attstr name="tip-ru" val="Определяет качество и размер файла повтора"/>
+      <attnum name="x" val="295"/>
+      <attnum name="y" val="322"/>
+      <attnum name="width" val="160"/>
+      <attstr name="h align" val="center"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium"/>
+    </section>
+    <section name="startpausedleftarrow">
+      <attstr name="type" val="image button"/>
+      <attnum name="width" val="24"/>
+      <attnum name="height" val="24"/>
+      <attstr name="tip" val=""/>
+      <attnum name="x" val="265"/>
+      <attnum name="y" val="288"/>
+      <attstr name="disabled image" val="data/img/arrowleft-disabled.png"/>
+      <attstr name="enabled image" val="data/img/arrowleft-normal.png"/>
+      <attstr name="focused image" val="data/img/arrowleft-focused.png"/>
+      <attstr name="pushed image" val="data/img/arrowleft-pushed.png"/>
+    </section>
+    <section name="startpausedrightarrow">
+      <attstr name="type" val="image button"/>
+      <attnum name="width" val="24"/>
+      <attnum name="height" val="24"/>
+      <attstr name="tip" val=""/>
+      <attnum name="x" val="465"/>
+      <attnum name="y" val="288"/>
+      <attstr name="disabled image" val="data/img/arrowright-disabled.png"/>
+      <attstr name="enabled image" val="data/img/arrowright-normal.png"/>
+      <attstr name="focused image" val="data/img/arrowright-focused.png"/>
+      <attstr name="pushed image" val="data/img/arrowright-pushed.png"/>
+    </section>
+    <section name="startpausedlabel">
+      <attstr name="type" val="label"/>
+      <attnum name="max len" val="5"/>
+      <attstr name="tip" val="Start the race in the Paused state"/>
+      <attstr name="tip-spa" val="Comienza la carrera en pausa"/>
+      <attstr name="tip-cat" val="Comença la cursa pausada"/>
+      <attstr name="tip-ru" val="Начинать гонку в статусе Пауза"/>
+      <attnum name="x" val="295"/>
+      <attnum name="y" val="292"/>
+      <attnum name="width" val="160"/>
+      <attstr name="h align" val="center"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium"/>
+    </section>
+    <section name="startpausedstaticlabel">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="20"/>
+      <attnum name="y" val="232"/>
+      <attstr name="text" val="Pause before race start:"/>
+      <attstr name="text-fra" val="Suspendre avant le début de la course:"/>
+      <attstr name="text-spa" val="Pausar al inicio de carrera:"/>
+      <attstr name="text-cat" val="Pausa la cursa abans de començar:"/>
+      <attstr name="text-ru" val="Пауза перед началом гонки:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="220"/>
+      <attstr name="font" val="small_t"/>
+    </section>
+    <section name="cooldownleftarrow">
+      <attstr name="type" val="image button"/>
+      <attnum name="width" val="24"/>
+      <attnum name="height" val="24"/>
+      <attstr name="tip" val=""/>
+      <attnum name="x" val="265"/>
+      <attnum name="y" val="258"/>
+      <attstr name="disabled image" val="data/img/arrowleft-disabled.png"/>
+      <attstr name="enabled image" val="data/img/arrowleft-normal.png"/>
+      <attstr name="focused image" val="data/img/arrowleft-focused.png"/>
+      <attstr name="pushed image" val="data/img/arrowleft-pushed.png"/>
+    </section>
+    <section name="cooldownrightarrow">
+      <attstr name="type" val="image button"/>
+      <attnum name="width" val="24"/>
+      <attnum name="height" val="24"/>
+      <attstr name="tip" val=""/>
+      <attnum name="x" val="465"/>
+      <attnum name="y" val="258"/>
+      <attstr name="disabled image" val="data/img/arrowright-disabled.png"/>
+      <attstr name="enabled image" val="data/img/arrowright-normal.png"/>
+      <attstr name="focused image" val="data/img/arrowright-focused.png"/>
+      <attstr name="pushed image" val="data/img/arrowright-pushed.png"/>
+    </section>
+    <section name="cooldownlabel">
+      <attstr name="type" val="label"/>
+      <attnum name="max len" val="5"/>
+      <attstr name="tip" val="Allow post-race cooldown driving"/>
+      <attstr name="tip-spa" val="Permitir la conducción de refrigeración post-carrera"/>
+      <attstr name="tip-cat" val="Permet la conducció de refredament post-cursa"/>
+      <attstr name="tip-ru" val="Разрешить вождение после гонки"/>
+      <attnum name="x" val="295"/>
+      <attnum name="y" val="260"/>
+      <attnum name="width" val="160"/>
+      <attstr name="h align" val="center"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium"/>
+    </section>
+    <section name="cooldownstaticlabel">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="20"/>
+      <attnum name="y" val="266"/>
+      <attstr name="text" val="Cooldown driving:"/>
+      <attstr name="text-fra" val="Conduite de refroidissement:"/>
+      <attstr name="text-spa" val="Conducción de enfriamiento:"/>
+      <attstr name="text-cat" val="Conducció de refredament:"/>
+      <attstr name="text-ru" val="Вождение после гонки:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="220"/>
+      <attstr name="font" val="small_t"/>
+    </section>
+    <section name="aiskillcombo">
+      <attstr name="type" val="combo box"/>
+      <attnum name="max len" val="11"/>
+      <attstr name="tip" val="AI driver skill, from Rookie (slowest) to Pro (fastest)"/>
+      <attstr name="tip-ru" val="Навык вождения ИИ, от Новичка (самый медленный) до Про (самый быстрый)"/>
+      <attstr name="tip-spa" val="Habilidad de los jugadores IA, des de Rookie (el más lento) hasta Pro (el más rápido)"/>
+      <attstr name="tip-cat" val="Habilitat dels jugadors IA, des de Rookie (el més lent) fins a Pro (el més ràpid)"/>
+      <attnum name="x" val="265"/>
+      <attnum name="y" val="229"/>
+      <attnum name="width" val="220"/>
+      <attnum name="arrows width" val="24"/>
+      <attnum name="arrows height" val="24"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFCC00"/>
+      <attstr name="font" val="medium"/>
+      <attnum name="image width" val="24"/>
+      <attnum name="image height" val="24"/>
+    </section>
+    <!-- cancel and confirm buttons -->
+    <section name="CancelButton">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Cancel"/>
+      <attstr name="text-fra" val="Annuler"/>
+      <attstr name="text-spa" val="Cancelar"/>
+      <attstr name="text-cat" val="Cancel·lar"/>
+      <attstr name="text-ru" val="Отменить"/>
+      <attstr name="tip" val="Cancel changes"/>
+      <attstr name="tip-spa" val="Cancela los cambios"/>
+      <attstr name="tip-cat" val="Cancel·lar canvis"/>
+      <attstr name="tip-ru" val="Отменить изменения"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="x" val="400"/>
+      <attnum name="y" val="44"/>
+      <attnum name="width" val="80"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-10"/>
+      <attnum name="image y" val="-2"/>
+      <attnum name="image width" val="100"/>
+      <attnum name="image height" val="30"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="ApplyButton">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Apply"/>
+      <attstr name="text-fra" val="Appliquer"/>
+      <attstr name="text-spa" val="Aplicar"/>
+      <attstr name="text-cat" val="Aplicar"/>
+      <attstr name="text-ru" val="Применить"/>
+      <attstr name="tip" val="Accept and save changes"/>
+      <attstr name="tip-spa" val="Aceptar y guardar cambios"/>
+      <attstr name="tip-cat" val="Aplicar i salvar els canvis"/>
+      <attstr name="tip-ru" val="Принять и сохранить изменения"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="x" val="500"/>
+      <attnum name="y" val="44"/>
+      <attnum name="width" val="80"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-10"/>
+      <attnum name="image y" val="-2"/>
+      <attnum name="image width" val="100"/>
+      <attnum name="image height" val="30"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+  </section>
+  <section name="static controls">
+    <section name="1">
+      <attstr name="type" val="gallery"/>
+      <attstr name="directory" val="data/gallery/"/>
+    </section>
+    <section name="2">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="-10"/>
+      <attnum name="y" val="375"/>
+      <attnum name="width" val="130"/>
+      <attnum name="height" val="95"/>
+      <attstr name="image" val="data/img/sd-logo-big.png"/>
+    </section>
+    <section name="3">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val="Simulation configuration"/>
+      <attstr name="text-fra" val="Configuration de la simulation"/>
+      <attstr name="text-spa" val="Configuración de la simulación"/>
+      <attstr name="text-cat" val="Configuració de la simulació"/>
+      <attstr name="text-ru" val="Настройка симуляции"/>
+      <attnum name="x" val="300"/>
+      <attnum name="y" val="430"/>
+      <attnum name="width" val="400"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium_t"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="bg image" val="data/img/header-background.png"/>
+      <attnum name="bg image padding top" val="15"/>
+      <attnum name="bg image padding bottom" val="15"/>
+      <attnum name="bg image padding left" val="30"/>
+      <attnum name="bg image padding right" val="15"/>
+    </section>
+    <!-- labels backgrounds -->
+    <section name="4">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="70"/>
+      <attnum name="y" val="349"/>
+      <attnum name="width" val="200"/>
+      <attnum name="height" val="24"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="5">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="70"/>
+      <attnum name="y" val="319"/>
+      <attnum name="width" val="200"/>
+      <attnum name="height" val="24"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="6">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="70"/>
+      <attnum name="y" val="289"/>
+      <attnum name="width" val="200"/>
+      <attnum name="height" val="24"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="7">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="70"/>
+      <attnum name="y" val="259"/>
+      <attnum name="width" val="200"/>
+      <attnum name="height" val="24"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <!-- labels descriptions -->
+    <section name="8">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="20"/>
+      <attnum name="y" val="354"/>
+      <attstr name="text" val="Physics engine:"/>
+      <attstr name="text-fra" val="Moteur physique:"/>
+      <attstr name="text-spa" val="Motor de físicas:"/>
+      <attstr name="text-cat" val="Motor de físiques:"/>
+      <attstr name="text-ru" val="Физический движок:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="220"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="9">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="20"/>
+      <attnum name="y" val="324"/>
+      <attstr name="text" val="Replay Quality:"/>
+      <attstr name="text-spa" val="Calidad de la repetición:"/>
+      <attstr name="text-cat" val="Qualitat de la repetició:"/>
+      <attstr name="text-ru" val="Качество повтора:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="220"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="10">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="20"/>
+      <attnum name="y" val="294"/>
+      <attstr name="text" val="Pause before race start:"/>
+      <attstr name="text-fra" val="Suspendre avant le début de la course:"/>
+      <attstr name="text-spa" val="Pausar al inicio de carrera:"/>
+      <attstr name="text-cat" val="Pausar cursa en iniciar:"/>
+      <attstr name="text-ru" val="Пауза перед началом гонки:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="220"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="11">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="20"/>
+      <attnum name="y" val="264"/>
+      <attstr name="text" val="Cooldown driving:"/>
+      <attstr name="text-fra" val="Conduite de refroidissement:"/>
+      <attstr name="text-spa" val="Conducción de enfriamiento:"/>
+      <attstr name="text-cat" val="Conducció de refredament:"/>
+      <attstr name="text-ru" val="Вождение после гонки:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="220"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <!-- combobox backgrounds-->
+    <section name="12">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="289"/>
+      <attnum name="y" val="348"/>
+      <attnum name="width" val="176"/>
+      <attnum name="height" val="24"/>
+      <attstr name="image" val="data/img/label-background.png"/>
+    </section>
+    <section name="13">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="289"/>
+      <attnum name="y" val="318"/>
+      <attnum name="width" val="176"/>
+      <attnum name="height" val="24"/>
+      <attstr name="image" val="data/img/label-background.png"/>
+    </section>
+    <section name="14">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="289"/>
+      <attnum name="y" val="288"/>
+      <attnum name="width" val="176"/>
+      <attnum name="height" val="24"/>
+      <attstr name="image" val="data/img/label-background.png"/>
+    </section>
+    <section name="15">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="289"/>
+      <attnum name="y" val="258"/>
+      <attnum name="width" val="176"/>
+      <attnum name="height" val="24"/>
+      <attstr name="image" val="data/img/label-background.png"/>
+    </section>
+    <section name="16">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="70"/>
+      <attnum name="y" val="229"/>
+      <attnum name="width" val="200"/>
+      <attnum name="height" val="24"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="17">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="20"/>
+      <attnum name="y" val="234"/>
+      <attstr name="text" val="AI driver skill level:"/>
+      <attstr name="text-fra" val="Habilité de conduite IA:"/>
+      <attstr name="text-spa" val="Nivel de habilidad IA:"/>
+      <attstr name="text-cat" val="Nivell d'habilitat jugadors IA:"/>
+      <attstr name="text-ru" val="Навык вождения ИИ:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="220"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+  </section>
+</params>

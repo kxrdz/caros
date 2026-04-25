@@ -1,0 +1,25 @@
+install(FILES
+alamo.xml
+alicante.xml
+arizona.xml
+auriac.xml
+braga.xml
+brondehach.xml
+bueno.xml
+chemisay.xml
+corkscrew.xml
+default.xml
+dijon.xml
+espie.xml
+forza.xml
+jarama.xml
+karwada.xml
+kurpfalzring.xml
+longday.xml
+manton.xml
+melbourne.xml
+ole-road-1.xml
+ruudskogen.xml
+sao-paulo.xml
+    DESTINATION ${datadir}/drivers/dandroid/sc-fmc-gt4
+)

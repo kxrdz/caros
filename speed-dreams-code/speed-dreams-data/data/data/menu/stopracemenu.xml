@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    file                 : stopracemenu.xml
+    created              : 2009
+    copyright            : (C) 2009 by Brian Gavin, Eckhard M. Jaeger
+    web                  : speed-dreams.sourceforge.net
+-->
+<!--    This program is free software; you can redistribute it and/or modify  -->
+<!--    it under the terms of the GNU General Public License as published by  -->
+<!--    the Free Software Foundation; either version 2 of the License, or     -->
+<!--    (at your option) any later version.                                   -->
+<!--
+
+	Stop race menu (behind the Escape key, in the race screen)
+
+-->
+<!DOCTYPE params SYSTEM "../tgf/params.dtd">
+<params name="stopracemenu">
+  <section name="properties">
+    <!-- button placing constants -->
+    <attnum name="xButton" val="260"/>
+    <attnum name="yTopButton" val="290"/>
+    <attnum name="buttonShift" val="32"/>
+    <!-- button texts and tips -->
+    <attstr name="restart.text" val="Restart Race"/>
+    <attstr name="restart.text-fra" val="Redémarrer la course"/>
+    <attstr name="restart.text-spa" val="Reiniciar carrera"/>
+    <attstr name="restart.text-cat" val="Reiniciar cursa"/>
+    <attstr name="restart.text-ru" val="Начать гонку заново"/>
+    <attstr name="restart.tip" val="Restart the current race"/>
+    <attstr name="restart.tip-spa" val="Reinicie la carrera actual"/>
+    <attstr name="restart.tip-cat" val="Reinicieu la cursa actual"/>
+    <attstr name="restart.tip-ru" val="Начать текущую гонку заново"/>
+    <attstr name="abort.text" val="Abandon Race"/>
+    <attstr name="abort.text-fra" val="Abandonner la course"/>
+    <attstr name="abort.text-spa" val="Abandonar carrera"/>
+    <attstr name="abort.text-cat" val="Abandonar cursa"/>
+    <attstr name="abort.text-ru" val="Покинуть гонку"/>
+    <attstr name="abort.tip" val="Abort the current race"/>
+    <attstr name="abort.tip-spa" val="Abortar la carrera actual"/>
+    <attstr name="abort.tip-cat" val="Abandoneu la cursa actual"/>
+    <attstr name="abort.tip-ru" val="Покинуть текущую гонку"/>
+    <attstr name="resume.text" val="Resume Race"/>
+    <attstr name="resume.text-fra" val="Continuer la course"/>
+    <attstr name="resume.text-spa" val="Reanudar carrera"/>
+    <attstr name="resume.text-cat" val="Continuar cursa"/>
+    <attstr name="resume.text-ru" val="Продолжить гонку"/>
+    <attstr name="resume.tip" val="Return to the race"/>
+    <attstr name="resume.tip-spa" val="Volver a la carrera"/>
+    <attstr name="resume.tip-cat" val="Torneu a la cursa"/>
+    <attstr name="resume.tip-ru" val="Вернуться в гонку"/>
+    <attstr name="controls.text" val="Adjust Controls"/>
+    <attstr name="controls.text-fra" val="Ajuster les contrôles"/>
+    <attstr name="controls.text-spa" val="Ajustar controles"/>
+    <attstr name="controls.text-cat" val="Ajustar controls"/>
+    <attstr name="controls.text-ru" val="Настроить управление"/>
+    <attstr name="controls.tip" val="Adjust the Player's Controls"/>
+    <attstr name="controls.tip-spa" val="Ajuste los controles del jugador"/>
+    <attstr name="controls.tip-cat" val="Ajusteu els controls del jugador"/>
+    <attstr name="controls.tip-ru" val="Настроить управление игрока"/>
+    <attstr name="forcefeedback.text" val="Adjust Force Feedback"/>
+    <attstr name="forcefeedback.text-fra" val="Ajuster retour haptique"/>
+    <attstr name="forcefeedback.text-spa" val="Ajustar Force Feedback"/>
+    <attstr name="forcefeedback.text-cat" val="Ajusteu vibració"/>
+    <attstr name="forcefeedback.text-ru" val="Настроить обр. связь"/>
+    <attstr name="forcefeedback.tip" val="Adjust the Force Feedback configuration for the current car"/>
+    <attstr name="forcefeedback.tip-spa" val="Ajuste la configuración de Force Feedback para el coche actual"/>
+    <attstr name="forcefeedback.tip-cat" val="Configureu la vibració del cotxe actual"/>
+    <attstr name="forcefeedback.tip-ru" val="Настроить обратную связь для текущего автомобиля"/>
+    <attstr name="skip.text" val="Skip Session"/>
+    <attstr name="skip.text-fra" val="Sauter cette session"/>
+    <attstr name="skip.text-spa" val="Saltar sesión"/>
+    <attstr name="skip.text-cat" val="Saltar sessió"/>
+    <attstr name="skip.text-ru" val="Пропустить сессию"/>
+    <attstr name="skip.tip" val="Skip the current session"/>
+    <attstr name="skip.tip-spa" val="Saltar la sesión actual"/>
+    <attstr name="skip.tip-cat" val="Saltar la sessió actual"/>
+    <attstr name="skip.tip-ru" val="Пропустить текущую сессию"/>
+    <attstr name="quit.text" val="Quit Game"/>
+    <attstr name="quit.text-fra" val="Quitter le simulateur"/>
+    <attstr name="quit.text-spa" val="Salir del juego"/>
+    <attstr name="quit.text-cat" val="Sortir del joc"/>
+    <attstr name="quit.text-ru" val="Выйти из игры"/>
+    <attstr name="quit.tip" val="Quit the game"/>
+    <attstr name="quit.tip-spa" val="Salir de Speed Dreams"/>
+    <attstr name="quit.tip-cat" val="Sortiu de l'Speed Dreams"/>
+    <attstr name="quit.tip-ru" val="Выйти из Speed Dreams"/>
+  </section>
+  <section name="template controls">
+    <section name="button">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attnum name="width" val="320"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="font" val="big"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-48"/>
+      <attnum name="image y" val="0"/>
+      <attnum name="image width" val="320"/>
+      <attnum name="image height" val="31"/>
+      <attstr name="focused image" val="data/img/bg-button-big-focused.png"/>
+      <attstr name="enabled image" val="data/img/bg-button-big.png"/>
+      <attstr name="pushed image" val="data/img/bg-button-big-pushed.png"/>
+    </section>
+  </section>
+  <section name="dynamic controls">
+
+	</section>
+  <section name="static controls">
+    <section name="1">
+      <attstr name="type" val="gallery"/>
+      <attstr name="directory" val="data/gallery/"/>
+    </section>
+    <section name="2">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="-10"/>
+      <attnum name="y" val="375"/>
+      <attnum name="width" val="130"/>
+      <attnum name="height" val="95"/>
+      <attstr name="image" val="data/img/sd-logo-big.png"/>
+    </section>
+    <section name="3">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val="Race stopped"/>
+      <attstr name="text-spa" val="Carrera en pausa"/>
+      <attstr name="text-cat" val="Cursa aturada"/>
+      <attstr name="text-ru" val="Гонка остановлена"/>
+      <attnum name="x" val="300"/>
+      <attnum name="y" val="430"/>
+      <attnum name="width" val="400"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium_t"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="bg image" val="data/img/header-background.png"/>
+      <attnum name="bg image padding top" val="15"/>
+      <attnum name="bg image padding bottom" val="15"/>
+      <attnum name="bg image padding left" val="30"/>
+      <attnum name="bg image padding right" val="15"/>
+    </section>
+  </section>
+</params>

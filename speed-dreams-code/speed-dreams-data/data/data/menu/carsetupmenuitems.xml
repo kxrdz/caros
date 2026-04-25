@@ -1,0 +1,1413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    file                 : carsetupmenuitems.xml
+    created              : March 2020
+    copyright            : (C) 2020 by Robert Reif
+    web                  : speed-dreams.sourceforge.net
+-->
+<!--    This program is free software; you can redistribute it and/or modify  -->
+<!--    it under the terms of the GNU General Public License as published by  -->
+<!--    the Free Software Foundation; either version 2 of the License, or     -->
+<!--    (at your option) any later version.                                   -->
+<!--
+
+	Car settup menu items
+
+	page and index are zero based (first one is 0)
+
+-->
+<!DOCTYPE params SYSTEM "../tgf/params.dtd">
+<params name="carsetupmenuitems">
+  <!-- Initial fuel -->
+  <section name="InitialFuel">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Car"/>
+    <attstr name="param" val="initial fuel"/>
+    <attstr name="unit" val="l"/>
+    <attstr name="unit-ru" val="л"/>
+    <attnum name="page" val="0"/>
+    <attnum name="index" val="0"/>
+    <attstr name="label" val="Initial Fuel"/>
+    <attstr name="label-fra" val="Carburant initial"/>
+    <attstr name="label-spa" val="Combustible inicial"/>
+    <attstr name="label-cat" val="Combustible inicial"/>
+    <attstr name="label-ru" val="Топливо на старте"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <!-- Compounds Tire-->
+  <section name="CompoundSet">
+    <attstr name="type" val="combo"/>
+    <attstr name="section" val="Tires Set"/>
+    <attstr name="param" val="compound set"/>
+    <attnum name="page" val="0"/>
+    <attnum name="index" val="1"/>
+    <attstr name="label" val="Compound"/>
+    <attstr name="label-fra" val="Gomme pneus"/>
+    <attstr name="label-spa" val="Compuestos ruedas"/>
+    <attstr name="label-cat" val="Compost de les rodes"/>
+    <attstr name="label-ru" val="Компаунд"/>
+  </section>
+  <!-- Brake bias -->
+  <section name="BrakeBias">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Brake System"/>
+    <attstr name="param" val="front-rear brake repartition"/>
+    <attstr name="unit" val="%"/>
+    <attnum name="page" val="0"/>
+    <attnum name="index" val="2"/>
+    <attstr name="label" val="Brake Bias"/>
+    <attstr name="label-fra" val="Répartition des freins"/>
+    <attstr name="label-spa" val="Reparto de frenos"/>
+    <attstr name="label-cat" val="Repartiment dels frens"/>
+    <attstr name="label-ru" val="Тормозной баланс"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <section name="BrakeMaxPressure">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Brake System"/>
+    <attstr name="param" val="max pressure"/>
+    <attstr name="unit" val="kPa"/>
+    <attnum name="page" val="0"/>
+    <attnum name="index" val="3"/>
+    <attstr name="label" val="Brake Max Pressure"/>
+    <attstr name="label-fra" val="Pression max. des freins"/>
+    <attstr name="label-spa" val="Máxima presión de frenos"/>
+    <attstr name="label-cat" val="Màxima pressió dels frens"/>
+    <attstr name="label-ru" val="Макс. давл. в тормозной системе"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <!-- Front Anti-Roll Bar -->
+  <section name="FrontARB">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Front Anti-Roll Bar"/>
+    <attstr name="param" val="spring"/>
+    <attstr name="unit" val="kN/m"/>
+    <attnum name="page" val="0"/>
+    <attnum name="index" val="5"/>
+    <attstr name="label" val="Front Anti-Roll Bar"/>
+    <attstr name="label-fra" val="Barre anti-roulis avant"/>
+    <attstr name="label-spa" val="Barra frontal anti-vuelco"/>
+    <attstr name="label-cat" val="Barra frontal anti-bolc"/>
+    <attstr name="label-ru" val="Передний стабилизатор"/>
+    <attnum name="precision" val="2"/>
+  </section>
+  <!-- Rear Anti-Roll Bar -->
+  <section name="RearARB">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Rear Anti-Roll Bar"/>
+    <attstr name="param" val="spring"/>
+    <attstr name="unit" val="kN/m"/>
+    <attnum name="page" val="0"/>
+    <attnum name="index" val="6"/>
+    <attstr name="label" val="Rear Anti-Roll Bar"/>
+    <attstr name="label-fra" val="Barre anti-toulis arrière"/>
+    <attstr name="label-spa" val="Barra posterior anti-vuelco"/>
+    <attstr name="label-cat" val="Barra posterior anti-bolc"/>
+    <attstr name="label-ru" val="Задний стабилизатор"/>
+    <attnum name="precision" val="2"/>
+  </section>
+  <!-- Front Wing angle -->
+  <section name="FrontWing">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Front Wing"/>
+    <attstr name="param" val="angle"/>
+    <attstr name="unit" val="deg"/>
+    <attnum name="page" val="0"/>
+    <attnum name="index" val="8"/>
+    <attstr name="label" val="Front Wing Angle"/>
+    <attstr name="label-fra" val="Angle aileron avant"/>
+    <attstr name="label-spa" val="Ángulo alerón frontal"/>
+    <attstr name="label-cat" val="Angle frontal de l'aleró"/>
+    <attstr name="label-ru" val="Угол переднего крыла"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <!-- Rear Wing angle -->
+  <section name="RearWing">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Rear Wing"/>
+    <attstr name="param" val="angle"/>
+    <attstr name="unit" val="deg"/>
+    <attnum name="page" val="0"/>
+    <attnum name="index" val="9"/>
+    <attstr name="label" val="Rear Wing Angle"/>
+    <attstr name="label-fra" val="Angle aileron arrière"/>
+    <attstr name="label-spa" val="Ángulo alerón posterior"/>
+    <attstr name="label-cat" val="Angle posterior de l'aleró"/>
+    <attstr name="label-ru" val="Угол заднего крыла"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <!-- Front wheel steer lock angle -->
+  <section name="SteerLock">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Steer"/>
+    <attstr name="param" val="steer lock"/>
+    <attstr name="unit" val="deg"/>
+    <attnum name="page" val="0"/>
+    <attnum name="index" val="10"/>
+    <attstr name="label" val="Steering Lock"/>
+    <attstr name="label-fra" val="Verr. de direction"/>
+    <attstr name="label-spa" val="Bloqueo de la dirección"/>
+    <attstr name="label-cat" val="Bloqueig de la direcció"/>
+    <attstr name="label-ru" val="Угол поворота колес"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <!-- Steering wheel rotation angle -->
+  <section name="SteerRotation">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Steer"/>
+    <attstr name="param" val="steering wheel rotation"/>
+    <attstr name="unit" val="deg"/>
+    <attnum name="page" val="0"/>
+    <attnum name="index" val="11"/>
+    <attstr name="label" val="Steering Wheel Rotation"/>
+    <attstr name="label-fra" val="Rotation du volant"/>
+    <attstr name="label-spa" val="Rotación del volante"/>
+    <attstr name="label-cat" val="Rotació del volant"/>
+    <attstr name="label-ru" val="Угол поворота рулевого колеса"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <!-- Front Differential ratio -->
+  <section name="FrontDiffRatio">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Front Differential"/>
+    <attstr name="param" val="ratio"/>
+    <attstr name="unit" val=""/>
+    <attnum name="page" val="1"/>
+    <attnum name="index" val="0"/>
+    <attstr name="label" val="Front Diff Ratio"/>
+    <attstr name="label-fra" val="Ratio du différentiel avant"/>
+    <attstr name="label-spa" val="Relación del diferencial frontal"/>
+    <attstr name="label-cat" val="Ràtio del diferencial frontal"/>
+    <attstr name="label-ru" val="Передаточное число пер. дифф."/>
+    <attnum name="precision" val="3"/>
+  </section>
+  <!-- Front Differential type -->
+  <section name="FrontDiffType">
+    <attstr name="type" val="combo"/>
+    <attstr name="section" val="Front Differential"/>
+    <attstr name="param" val="type"/>
+    <attnum name="page" val="1"/>
+    <attnum name="index" val="1"/>
+    <attstr name="label" val="Front Diff Type"/>
+    <attstr name="label-fra" val="Type de différentiel avant"/>
+    <attstr name="label-spa" val="Tipo de diferencial frontal"/>
+    <attstr name="label-cat" val="Tipus de diferencial frontal"/>
+    <attstr name="label-ru" val="Тип переднего дифференциала"/>
+  </section>
+  <!-- Front Differential max slip bias -->
+  <section name="FrontDiffSlip">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Front Differential"/>
+    <attstr name="param" val="max slip bias"/>
+    <attstr name="unit" val="%"/>
+    <attnum name="page" val="1"/>
+    <attnum name="index" val="2"/>
+    <attstr name="label" val="Front Diff Max Slip Bias"/>
+    <attstr name="label-fra" val="Biais de glissement max. diff. av."/>
+    <attstr name="label-spa" val="Máximo desliz. diferencial frontal"/>
+    <attstr name="label-cat" val="Màxim lliscament diferencial frontal"/>
+    <attstr name="label-ru" val="Макс. сдвиг скольжения пер. дифф."/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <!-- Front Differential coast max slip bias -->
+  <section name="FrontDiffCoastSlip">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Front Differential"/>
+    <attstr name="param" val="coast max slip bias"/>
+    <attstr name="unit" val="%"/>
+    <attnum name="page" val="1"/>
+    <attnum name="index" val="3"/>
+    <attstr name="label" val="Front Diff Coast Max Slip Bias"/>
+    <attstr name="label-fra" val="Biais de gliss. max. diff. av. décel."/>
+    <attstr name="label-spa" val="Máximo desliz. costal difer. frontal"/>
+    <attstr name="label-cat" val="Màxim llisc. costal diferencial frontal"/>
+    <attstr name="label-ru" val="Макс. сдвиг инерц. скольж. п. дифф."/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <!-- Front Differential min torque bias -->
+  <section name="FrontDiffMinTQBias">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Front Differential"/>
+    <attstr name="param" val="min torque bias"/>
+    <attstr name="unit" val="%"/>
+    <attnum name="page" val="1"/>
+    <attnum name="index" val="4"/>
+    <attstr name="label" val="Front Diff Min Torque Bias"/>
+    <attstr name="label-fra" val="Biais min. différentiel av."/>
+    <attstr name="label-spa" val="Reparto par mínimo difer. frontal"/>
+    <attstr name="label-cat" val="Repartiment parell mínim dif. frontal"/>
+    <attstr name="label-ru" val="Мин. сдвиг момента пер. дифф."/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <!-- Front Differential max torque bias -->
+  <section name="FrontDiffMaxTQBias">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Front Differential"/>
+    <attstr name="param" val="max torque bias"/>
+    <attstr name="unit" val="%"/>
+    <attnum name="page" val="1"/>
+    <attnum name="index" val="5"/>
+    <attstr name="label" val="Front Diff Max Torque Bias"/>
+    <attstr name="label-fra" val="Biais max. différentiel av."/>
+    <attstr name="label-spa" val="Máximo reparto par difer. frontal"/>
+    <attstr name="label-cat" val="Màxim repart. parell dif. frontal"/>
+    <attstr name="label-ru" val="Макс. сдвиг момента пер. дифф."/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <!-- Front Differential locking input torque -->
+  <section name="FrontDiffLockingInputTorque">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Front Differential"/>
+    <attstr name="param" val="locking input torque"/>
+    <attstr name="unit" val="N.m"/>
+    <attnum name="page" val="1"/>
+    <attnum name="index" val="6"/>
+    <attstr name="label" val="Front Diff Locking Input Torque"/>
+    <attstr name="label-fra" val="Couple entrant blocage diff. av."/>
+    <attstr name="label-spa" val="Par de entrada blocante dif. frontal"/>
+    <attstr name="label-cat" val="Parell d'entrada blocant dif. frontal"/>
+    <attstr name="label-ru" val="Преднатяг переднего дифф."/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <!-- Front Differential viscosity factor -->
+  <section name="FrontDiffViscosityFactor">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Front Differential"/>
+    <attstr name="param" val="viscosity factor"/>
+    <attstr name="unit" val=""/>
+    <attnum name="page" val="1"/>
+    <attnum name="index" val="7"/>
+    <attstr name="label" val="Front Diff Viscosity Factor"/>
+    <attstr name="label-fra" val="Facteur de viscosité diff. av."/>
+    <attstr name="label-spa" val="Factor de viscosidad diferencial frontal"/>
+    <attstr name="label-cat" val="Factor de viscositat del diferencial frontal"/>
+    <attstr name="label-ru" val="Фактор вязкости пер. дифференциала"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <!-- Central Differential ratio -->
+  <section name="CentralDiffRatio">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Central Differential"/>
+    <attstr name="param" val="ratio"/>
+    <attstr name="unit" val=""/>
+    <attnum name="page" val="2"/>
+    <attnum name="index" val="0"/>
+    <attstr name="label" val="Central Diff Ratio"/>
+    <attstr name="label-fra" val="Ratio différentiel central"/>
+    <attstr name="label-spa" val="Relación del diferencial central"/>
+    <attstr name="label-cat" val="Ràtio del diferencial central"/>
+    <attstr name="label-ru" val="Передаточное число центр. дифф."/>
+    <attnum name="precision" val="3"/>
+  </section>
+  <!-- Central Differential type -->
+  <section name="CentralDiffType">
+    <attstr name="type" val="combo"/>
+    <attstr name="section" val="Central Differential"/>
+    <attstr name="param" val="type"/>
+    <attnum name="page" val="2"/>
+    <attnum name="index" val="1"/>
+    <attstr name="label" val="Central Diff Type"/>
+    <attstr name="label-fra" val="Type de différentiel central"/>
+    <attstr name="label-spa" val="Tipo de diferencial central"/>
+    <attstr name="label-cat" val="Tipus de diferencial central"/>
+    <attstr name="label-ru" val="Тип центрального дифференциала"/>
+  </section>
+  <!-- Central Differential max slip bias -->
+  <section name="CentralDiffSlip">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Central Differential"/>
+    <attstr name="param" val="max slip bias"/>
+    <attstr name="unit" val="%"/>
+    <attnum name="page" val="2"/>
+    <attnum name="index" val="2"/>
+    <attstr name="label" val="Central Diff Max Slip Bias"/>
+    <attstr name="label-fra" val="Biais max. gliss. diff. central"/>
+    <attstr name="label-spa" val="Máximo desliz. diferencial central"/>
+    <attstr name="label-cat" val="Màxim lliscament diferencial central"/>
+    <attstr name="label-ru" val="Макс. сдвиг скольж. центр. дифф."/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <!-- Central Differential coast max slip bias -->
+  <section name="CentralDiffCoastSlip">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Central Differential"/>
+    <attstr name="param" val="coast max slip bias"/>
+    <attstr name="unit" val="%"/>
+    <attnum name="page" val="2"/>
+    <attnum name="index" val="3"/>
+    <attstr name="label" val="Central Diff Coast Max Slip Bias"/>
+    <attstr name="label-fra" val="Biais gliss. max. diff. cent. décel."/>
+    <attstr name="label-spa" val="Máximo desliz. costal difer. central"/>
+    <attstr name="label-cat" val="Màxim llisc. costal diferencial central"/>
+    <attstr name="label-ru" val="Макс. сдвиг инерц. скольж. ц. дифф."/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <!-- Central Differential min torque bias -->
+  <section name="CentralDiffMinTQBias">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Central Differential"/>
+    <attstr name="param" val="min torque bias"/>
+    <attstr name="unit" val="%"/>
+    <attnum name="page" val="2"/>
+    <attnum name="index" val="4"/>
+    <attstr name="label" val="Central Diff Min Torque Bias"/>
+    <attstr name="label-fra" val="Biais couple min. diff. central"/>
+    <attstr name="label-spa" val="Reparto part mínimo difer. central"/>
+    <attstr name="label-cat" val="Repartiment parell mínim dif. central"/>
+    <attstr name="label-ru" val="Мин. сдвиг момента центр. дифф."/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <!-- Central Differential max torque bias -->
+  <section name="CentralDiffMaxTQBias">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Central Differential"/>
+    <attstr name="param" val="max torque bias"/>
+    <attstr name="unit" val="%"/>
+    <attnum name="page" val="2"/>
+    <attnum name="index" val="5"/>
+    <attstr name="label" val="Central Diff Max Torque Bias"/>
+    <attstr name="label-fra" val="Biais couple max. diff. central"/>
+    <attstr name="label-spa" val="Máximo reparto par difer. central"/>
+    <attstr name="label-cat" val="Màxim repart. parell dif. central"/>
+    <attstr name="label-ru" val="Макс. сдвиг момента центр. дифф."/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <!-- Central Differential locking input torque -->
+  <section name="CentralDiffLockingInputTorque">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Central Differential"/>
+    <attstr name="param" val="locking input torque"/>
+    <attstr name="unit" val="N.m"/>
+    <attnum name="page" val="2"/>
+    <attnum name="index" val="6"/>
+    <attstr name="label" val="Central Diff Locking Input Torque"/>
+    <attstr name="label-fra" val="Couple entrant blocage diff. central"/>
+    <attstr name="label-spa" val="Par de entrada blocante dif. central"/>
+    <attstr name="label-cat" val="Parell d'entrada blocant dif. central"/>
+    <attstr name="label-ru" val="Преднатяг центр. дифф."/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <!-- Central Differential viscosity factor -->
+  <section name="CentralDiffViscosityFactor">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Central Differential"/>
+    <attstr name="param" val="viscosity factor"/>
+    <attstr name="unit" val=""/>
+    <attnum name="page" val="2"/>
+    <attnum name="index" val="7"/>
+    <attstr name="label" val="Central Diff Viscosity Factor"/>
+    <attstr name="label-fra" val="Facteur de viscosité diff. central"/>
+    <attstr name="label-spa" val="Factor de viscosidad diferencial central"/>
+    <attstr name="label-cat" val="Factor de viscositat del diferencial central"/>
+    <attstr name="label-ru" val="Фактор вязкости центр. дифф."/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <!-- Rear Differential ratio -->
+  <section name="RearDiffRatio">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Rear Differential"/>
+    <attstr name="param" val="ratio"/>
+    <attstr name="unit" val=""/>
+    <attnum name="page" val="3"/>
+    <attnum name="index" val="0"/>
+    <attstr name="label" val="Rear Diff Ratio"/>
+    <attstr name="label-fra" val="Ratio du différentiel arrière"/>
+    <attstr name="label-spa" val="Relación del diferencial posterior"/>
+    <attstr name="label-cat" val="Ràtio del diferencial posterior"/>
+    <attstr name="label-ru" val="Передаточное число заднего дифф."/>
+    <attnum name="precision" val="3"/>
+  </section>
+  <!-- Rear Differential type -->
+  <section name="RearDiffType">
+    <attstr name="type" val="combo"/>
+    <attstr name="section" val="Rear Differential"/>
+    <attstr name="param" val="type"/>
+    <attnum name="page" val="3"/>
+    <attnum name="index" val="1"/>
+    <attstr name="label" val="Rear Diff Type"/>
+    <attstr name="label-fra" val="Type de différentiel arrière"/>
+    <attstr name="label-spa" val="Tipo de diferencial posterior"/>
+    <attstr name="label-cat" val="Tipus de diferencial posterior"/>
+    <attstr name="label-ru" val="Тип заднего дифференциала"/>
+  </section>
+  <!-- Rear Differential max slip bias -->
+  <section name="RearDiffSlip">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Rear Differential"/>
+    <attstr name="param" val="max slip bias"/>
+    <attstr name="unit" val="%"/>
+    <attnum name="page" val="3"/>
+    <attnum name="index" val="2"/>
+    <attstr name="label" val="Rear Diff Max Slip Bias"/>
+    <attstr name="label-fra" val="Biais de glissement max. diff. arr."/>
+    <attstr name="label-spa" val="Máximo desliz. diferencial post."/>
+    <attstr name="label-cat" val="Màxim lliscament diferencial post."/>
+    <attstr name="label-ru" val="Макс. сдвиг скольжения задн. дифф."/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <!-- Rear Differential coast max slip bias -->
+  <section name="RearDiffCoastSlip">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Rear Differential"/>
+    <attstr name="param" val="coast max slip bias"/>
+    <attstr name="unit" val="%"/>
+    <attnum name="page" val="3"/>
+    <attnum name="index" val="3"/>
+    <attstr name="label" val="Rear Diff Coast Max Slip Bias"/>
+    <attstr name="label-fra" val="Biais de gliss. max. diff. arr. décel."/>
+    <attstr name="label-spa" val="Máximo desliz. costal dif. posterior"/>
+    <attstr name="label-cat" val="Màxim llisc. costal diferencial post."/>
+    <attstr name="label-ru" val="Макс. сдвиг инерц. скольж. з. дифф."/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <!-- Rear Differential min torque bias -->
+  <section name="RearDiffMinTQBias">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Rear Differential"/>
+    <attstr name="param" val="min torque bias"/>
+    <attstr name="unit" val="%"/>
+    <attnum name="page" val="3"/>
+    <attnum name="index" val="4"/>
+    <attstr name="label" val="Rear Diff Min Torque Bias"/>
+    <attstr name="label-fra" val="Biais min. différentiel arr."/>
+    <attstr name="label-spa" val="Reparto part mínimo dif. posterior"/>
+    <attstr name="label-cat" val="Repartiment parell mínim dif. post."/>
+    <attstr name="label-ru" val="Мин. сдвиг момента задн. дифф."/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <!-- Rear Differential max torque bias -->
+  <section name="RearDiffMaxTQBias">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Rear Differential"/>
+    <attstr name="param" val="max torque bias"/>
+    <attstr name="unit" val="%"/>
+    <attnum name="page" val="3"/>
+    <attnum name="index" val="5"/>
+    <attstr name="label" val="Rear Diff Max Torque Bias"/>
+    <attstr name="label-fra" val="Biais couple max. diff. arr."/>
+    <attstr name="label-spa" val="Máxim reparto par dif. posterior"/>
+    <attstr name="label-cat" val="Màxim repart. parell dif. post."/>
+    <attstr name="label-ru" val="Макс. сдвиг момента задн. дифф."/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <!-- Rear Differential locking input torque -->
+  <section name="RearDiffLockingInputTorque">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Rear Differential"/>
+    <attstr name="param" val="locking input torque"/>
+    <attstr name="unit" val="N.m"/>
+    <attnum name="page" val="3"/>
+    <attnum name="index" val="6"/>
+    <attstr name="label" val="Rear Diff Locking Input Torque"/>
+    <attstr name="label-spa" val="Par de entrada blocante dif. post."/>
+    <attstr name="label-cat" val="Parell d'entrada blocant dif. post."/>
+    <attstr name="label-ru" val="Преднатяг заднего дифф."/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <!-- Rear Differential viscosity factor -->
+  <section name="RearDiffViscosityFactor">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Rear Differential"/>
+    <attstr name="param" val="viscosity factor"/>
+    <attstr name="unit" val=""/>
+    <attnum name="page" val="3"/>
+    <attnum name="index" val="7"/>
+    <attstr name="label" val="Rear Diff Viscosity Factor"/>
+    <attstr name="label-fra" val="Facteur de viscosité diff. arrière"/>
+    <attstr name="label-spa" val="Factor de viscosidad diferencial posterior"/>
+    <attstr name="label-cat" val="Factor de viscositat del diferencial post."/>
+    <attstr name="label-ru" val="Фактор вязкости заднего дифф."/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <!-- Gearbox gear ratios -->
+  <section name="ReverseGearRatio">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Gearbox/gears/r"/>
+    <attstr name="param" val="ratio"/>
+    <attstr name="unit" val=""/>
+    <attnum name="page" val="4"/>
+    <attnum name="index" val="0"/>
+    <attstr name="label" val="Reverse Gear Ratio"/>
+    <attstr name="label-fra" val="Ratio marche arrière"/>
+    <attstr name="label-spa" val="Relación marcha atrás"/>
+    <attstr name="label-cat" val="Ràtio marxa enrere"/>
+    <attstr name="label-ru" val="Передаточное число заднего хода"/>
+    <attnum name="precision" val="3"/>
+  </section>
+  <section name="FirstGearRatio">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Gearbox/gears/1"/>
+    <attstr name="param" val="ratio"/>
+    <attstr name="unit" val=""/>
+    <attnum name="page" val="4"/>
+    <attnum name="index" val="1"/>
+    <attstr name="label" val="First Gear Ratio"/>
+    <attstr name="label-fra" val="Ratio première vitesse"/>
+    <attstr name="label-spa" val="Relación primera marcha"/>
+    <attstr name="label-cat" val="Ràtio primera marxa"/>
+    <attstr name="label-ru" val="1-я передача"/>
+    <attnum name="precision" val="3"/>
+  </section>
+  <section name="SecondGearRatio">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Gearbox/gears/2"/>
+    <attstr name="param" val="ratio"/>
+    <attstr name="unit" val=""/>
+    <attnum name="page" val="4"/>
+    <attnum name="index" val="2"/>
+    <attstr name="label" val="Second Gear Ratio"/>
+    <attstr name="label-fra" val="Ratio deuxième vitesse"/>
+    <attstr name="label-spa" val="Relación segunda marcha"/>
+    <attstr name="label-cat" val="Ràtio segona marxa"/>
+    <attstr name="label-ru" val="2-я передача"/>
+    <attnum name="precision" val="3"/>
+  </section>
+  <section name="ThirdGearRatio">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Gearbox/gears/3"/>
+    <attstr name="param" val="ratio"/>
+    <attstr name="unit" val=""/>
+    <attnum name="page" val="4"/>
+    <attnum name="index" val="3"/>
+    <attstr name="label" val="Third Gear Ratio"/>
+    <attstr name="label-fra" val="Ratio troisième vitesse"/>
+    <attstr name="label-spa" val="Relación tercera marcha"/>
+    <attstr name="label-cat" val="Ràtio tercera marxa"/>
+    <attstr name="label-ru" val="3-я передача"/>
+    <attnum name="precision" val="3"/>
+  </section>
+  <section name="ForthGearRatio">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Gearbox/gears/4"/>
+    <attstr name="param" val="ratio"/>
+    <attstr name="unit" val=""/>
+    <attnum name="page" val="4"/>
+    <attnum name="index" val="4"/>
+    <attstr name="label" val="Forth Gear Ratio"/>
+    <attstr name="label-fra" val="Ratio quatrième vitesse"/>
+    <attstr name="label-spa" val="Relación cuarta marcha"/>
+    <attstr name="label-cat" val="Ràtio quarta marxa"/>
+    <attstr name="label-ru" val="4-я передача"/>
+    <attnum name="precision" val="3"/>
+  </section>
+  <section name="FifthGearRatio">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Gearbox/gears/5"/>
+    <attstr name="param" val="ratio"/>
+    <attstr name="unit" val=""/>
+    <attnum name="page" val="4"/>
+    <attnum name="index" val="5"/>
+    <attstr name="label" val="Fifth Gear Ratio"/>
+    <attstr name="label-fra" val="Ratio cinquième vitesse"/>
+    <attstr name="label-spa" val="Relación quinta marcha"/>
+    <attstr name="label-cat" val="Ràtio cinquena marxa"/>
+    <attstr name="label-ru" val="5-я передача"/>
+    <attnum name="precision" val="3"/>
+  </section>
+  <section name="SixthGearRatio">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Gearbox/gears/6"/>
+    <attstr name="param" val="ratio"/>
+    <attstr name="unit" val=""/>
+    <attnum name="page" val="4"/>
+    <attnum name="index" val="6"/>
+    <attstr name="label" val="Sixth Gear Ratio"/>
+    <attstr name="label-fra" val="Ratio sixième vitesse"/>
+    <attstr name="label-spa" val="Relación sexta marcha"/>
+    <attstr name="label-cat" val="Ràtio sisena marxa"/>
+    <attstr name="label-ru" val="6-я передача"/>
+    <attnum name="precision" val="3"/>
+  </section>
+  <section name="SeventhGearRatio">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Gearbox/gears/7"/>
+    <attstr name="param" val="ratio"/>
+    <attstr name="unit" val=""/>
+    <attnum name="page" val="4"/>
+    <attnum name="index" val="7"/>
+    <attstr name="label" val="Seventh Gear Ratio"/>
+    <attstr name="label-fra" val="Ratio septième vitesse"/>
+    <attstr name="label-spa" val="Relación séptima marcha"/>
+    <attstr name="label-cat" val="Ràtio setena marxa"/>
+    <attstr name="label-ru" val="7-я передача"/>
+    <attnum name="precision" val="3"/>
+  </section>
+  <section name="EighthGearRatio">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Gearbox/gears/8"/>
+    <attstr name="param" val="ratio"/>
+    <attstr name="unit" val=""/>
+    <attnum name="page" val="4"/>
+    <attnum name="index" val="8"/>
+    <attstr name="label" val="Eighth Gear Ratio"/>
+    <attstr name="label-fra" val="Ratio huitième vitesse"/>
+    <attstr name="label-spa" val="Relación octava marcha"/>
+    <attstr name="label-cat" val="Ràtio vuitena marxa"/>
+    <attstr name="label-ru" val="8-я передача"/>
+    <attnum name="precision" val="3"/>
+  </section>
+  <!-- Front Right Wheel-->
+  <section name="RightFrontRideHeight">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Front Right Wheel"/>
+    <attstr name="param" val="ride height"/>
+    <attstr name="unit" val="mm"/>
+    <attnum name="page" val="5"/>
+    <attnum name="index" val="7"/>
+    <attstr name="label" val="Right Front Ride Height"/>
+    <attstr name="label-fra" val="Hauteur suspension av. droit"/>
+    <attstr name="label-spa" val="Altura rueda delantera derecha"/>
+    <attstr name="label-cat" val="Alçada roda frontal dreta"/>
+    <attstr name="label-ru" val="Дор. просвет справа спереди"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <section name="RightFrontToe">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Front Right Wheel"/>
+    <attstr name="param" val="toe"/>
+    <attstr name="unit" val="deg"/>
+    <attnum name="page" val="5"/>
+    <attnum name="index" val="8"/>
+    <attstr name="label" val="Right Front Toe"/>
+    <attstr name="label-fra" val="Parallélisme roue avant droit"/>
+    <attstr name="label-spa" val="Alineación rueda frontal derecha"/>
+    <attstr name="label-cat" val="Alineació roda frontal dreta"/>
+    <attstr name="label-ru" val="Схождение прав. переднего колеса"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <section name="RightFrontCamber">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Front Right Wheel"/>
+    <attstr name="param" val="camber"/>
+    <attstr name="unit" val="deg"/>
+    <attnum name="page" val="5"/>
+    <attnum name="index" val="9"/>
+    <attstr name="label" val="Right Front Camber"/>
+    <attstr name="label-fra" val="Carossage roue avant droite"/>
+    <attstr name="label-spa" val="Ángulo caída rueda frontal derecha"/>
+    <attstr name="label-cat" val="Angle caiguda frontal dreta"/>
+    <attstr name="label-ru" val="Развал прав. переднего колеса"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <section name="RightFrontTirePressure">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Front Right Wheel"/>
+    <attstr name="param" val="pressure"/>
+    <attstr name="unit" val="PSI"/>
+    <attnum name="page" val="5"/>
+    <attnum name="index" val="10"/>
+    <attstr name="label" val="Right Front Tire Pressure"/>
+    <attstr name="label-fra" val="Pression pneu avant droit"/>
+    <attstr name="label-spa" val="Presión rueda delantera derecha"/>
+    <attstr name="label-cat" val="Pressió roda frontal dreta"/>
+    <attstr name="label-ru" val="Давление в прав. передней шине"/>
+    <attnum name="precision" val="3"/>
+  </section>
+  <!-- Front Left Wheel-->
+  <section name="LeftFrontRideHeight">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Front Left Wheel"/>
+    <attstr name="param" val="ride height"/>
+    <attstr name="unit" val="mm"/>
+    <attnum name="page" val="5"/>
+    <attnum name="index" val="2"/>
+    <attstr name="label" val="Left Front Ride Height"/>
+    <attstr name="label-fra" val="Hauteur suspension av. gauche"/>
+    <attstr name="label-spa" val="Altura rueda delantera izquierda"/>
+    <attstr name="label-cat" val="Alçada roda frontal esquerra"/>
+    <attstr name="label-ru" val="Дор. просвет слева спереди"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <section name="LeftFrontToe">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Front Left Wheel"/>
+    <attstr name="param" val="toe"/>
+    <attstr name="unit" val="deg"/>
+    <attnum name="page" val="5"/>
+    <attnum name="index" val="3"/>
+    <attstr name="label" val="Left Front Toe"/>
+    <attstr name="label-fra" val="Parallélisme roue avant gauche"/>
+    <attstr name="label-spa" val="Alineación rueda frontal izquierda"/>
+    <attstr name="label-cat" val="Alineació roda frontal esquerra"/>
+    <attstr name="label-ru" val="Схождение лев. переднего колеса"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <section name="LeftFrontCamber">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Front Left Wheel"/>
+    <attstr name="param" val="camber"/>
+    <attstr name="unit" val="deg"/>
+    <attnum name="page" val="5"/>
+    <attnum name="index" val="4"/>
+    <attstr name="label" val="Left Front Camber"/>
+    <attstr name="label-fra" val="Carossage roue avant gauche"/>
+    <attstr name="label-spa" val="Ángulo caída rueda frontal izq."/>
+    <attstr name="label-cat" val="Angle caiguda frontal esquerra"/>
+    <attstr name="label-ru" val="Развал лев. переднего колеса"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <section name="LeftFrontTirePressure">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Front Left Wheel"/>
+    <attstr name="param" val="pressure"/>
+    <attstr name="unit" val="PSI"/>
+    <attnum name="page" val="5"/>
+    <attnum name="index" val="5"/>
+    <attstr name="label" val="Left Front Tire Pressure"/>
+    <attstr name="label-fra" val="Pression pneu avant gauche"/>
+    <attstr name="label-spa" val="Presión rueda delantera izquierda"/>
+    <attstr name="label-cat" val="Pressió roda frontal esquerra"/>
+    <attstr name="label-ru" val="Давление в левой передней шине"/>
+    <attnum name="precision" val="3"/>
+  </section>
+  <!-- Rear Right Wheel-->
+  <section name="RightRearRideHeight">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Rear Right Wheel"/>
+    <attstr name="param" val="ride height"/>
+    <attstr name="unit" val="mm"/>
+    <attnum name="page" val="6"/>
+    <attnum name="index" val="6"/>
+    <attstr name="label" val="Right Rear Ride Height"/>
+    <attstr name="label-fra" val="Hauteur suspension arr. droit"/>
+    <attstr name="label-spa" val="Altura rueda posterior derecha"/>
+    <attstr name="label-cat" val="Alçada roda posterior dreta"/>
+    <attstr name="label-ru" val="Дор. просвет справа сзади"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <section name="RightRearToe">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Rear Right Wheel"/>
+    <attstr name="param" val="toe"/>
+    <attstr name="unit" val="deg"/>
+    <attnum name="page" val="6"/>
+    <attnum name="index" val="7"/>
+    <attstr name="label" val="Right Rear Toe"/>
+    <attstr name="label-fra" val="Parallélisme roue arrière droit"/>
+    <attstr name="label-spa" val="Alineación rueda posterior derecha"/>
+    <attstr name="label-cat" val="Alineació roda posterior dreta"/>
+    <attstr name="label-ru" val="Схождение прав. заднего колеса"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <section name="RightRearCamber">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Rear Right Wheel"/>
+    <attstr name="param" val="camber"/>
+    <attstr name="unit" val="deg"/>
+    <attnum name="page" val="6"/>
+    <attnum name="index" val="8"/>
+    <attstr name="label" val="Right Rear Camber"/>
+    <attstr name="label-fra" val="Carossage roue arrière droite"/>
+    <attstr name="label-spa" val="Ángulo caída rueda posterior der."/>
+    <attstr name="label-cat" val="Angle caiguda roda posterior dreta"/>
+    <attstr name="label-ru" val="Развал прав. заднего колеса"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <section name="RightRearTirePressure">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Rear Right Wheel"/>
+    <attstr name="param" val="pressure"/>
+    <attstr name="unit" val="PSI"/>
+    <attnum name="page" val="6"/>
+    <attnum name="index" val="9"/>
+    <attstr name="label" val="Right Rear Tire Pressure"/>
+    <attstr name="label-fra" val="Pression pneu arrière droit"/>
+    <attstr name="label-spa" val="Presión rueda posterior derecha"/>
+    <attstr name="label-cat" val="Pressió roda posterior dreta"/>
+    <attstr name="label-ru" val="Давление в прав. задней шине"/>
+    <attnum name="precision" val="3"/>
+  </section>
+  <!-- Rear Left Wheel-->
+  <section name="LeftRearRideHeight">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Rear Left Wheel"/>
+    <attstr name="param" val="ride height"/>
+    <attstr name="unit" val="mm"/>
+    <attnum name="page" val="6"/>
+    <attnum name="index" val="0"/>
+    <attstr name="label" val="Left Rear Ride Height"/>
+    <attstr name="label-fra" val="Hauteur suspension arr. gauche"/>
+    <attstr name="label-spa" val="Altura rueda posterior izquierda"/>
+    <attstr name="label-cat" val="Alçada roda posterior esquerra"/>
+    <attstr name="label-ru" val="Дор. просвет слева сзади"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <section name="LeftRearToe">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Rear Left Wheel"/>
+    <attstr name="param" val="toe"/>
+    <attstr name="unit" val="deg"/>
+    <attnum name="page" val="6"/>
+    <attnum name="index" val="1"/>
+    <attstr name="label" val="Left Rear Toe"/>
+    <attstr name="label-fra" val="Parallélisme roue arr. gauche"/>
+    <attstr name="label-spa" val="Alineación rueda posterior izq."/>
+    <attstr name="label-cat" val="Alineació roda posterior esquerra"/>
+    <attstr name="label-ru" val="Схождение лев. заднего колеса"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <section name="LeftRearCamber">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Rear Left Wheel"/>
+    <attstr name="param" val="camber"/>
+    <attstr name="unit" val="deg"/>
+    <attnum name="page" val="6"/>
+    <attnum name="index" val="2"/>
+    <attstr name="label" val="Left Rear Camber"/>
+    <attstr name="label-fra" val="Carossage roue arrière gauche"/>
+    <attstr name="label-spa" val="Ángulo caída rueda posterior izq."/>
+    <attstr name="label-cat" val="Angle caiguda roda postrior esq."/>
+    <attstr name="label-ru" val="Развал лев. заднего колеса"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <section name="LeftRearTirePressure">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Rear Left Wheel"/>
+    <attstr name="param" val="pressure"/>
+    <attstr name="unit" val="PSI"/>
+    <attnum name="page" val="6"/>
+    <attnum name="index" val="3"/>
+    <attstr name="label" val="Left Rear Tire Pressure"/>
+    <attstr name="label-fra" val="Pression pneu arrière gauche"/>
+    <attstr name="label-spa" val="Presión rueda posterior izquierda"/>
+    <attstr name="label-cat" val="Pressió roda posterior esquerra"/>
+    <attstr name="label-ru" val="Давление в лев. задней шине"/>
+    <attnum name="precision" val="3"/>
+  </section>
+  <!-- Front Left Suspension -->
+  <section name="LeftFrontSuspensionSpring">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Front Left Suspension"/>
+    <attstr name="param" val="spring"/>
+    <attstr name="unit" val="kN/M"/>
+    <attnum name="page" val="7"/>
+    <attnum name="index" val="0"/>
+    <attstr name="label" val="Left Front Spring"/>
+    <attstr name="label-fra" val="Force ressort avant gauche"/>
+    <attstr name="label-spa" val="Muelle frontal izquierdo"/>
+    <attstr name="label-cat" val="Molla frontal esquerra"/>
+    <attstr name="label-ru" val="Левая передняя пружина"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <section name="LeftFrontSuspensionCourse">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Front Left Suspension"/>
+    <attstr name="param" val="suspension course"/>
+    <attstr name="unit" val="mm"/>
+    <attnum name="page" val="7"/>
+    <attnum name="index" val="1"/>
+    <attstr name="label" val="Left Front Suspension Course"/>
+    <attstr name="label-fra" val="Course ressort avant gauche"/>
+    <attstr name="label-spa" val="Recorrido suspensión frontal izq."/>
+    <attstr name="label-cat" val="Recorregut suspensió frontal esq."/>
+    <attstr name="label-ru" val="Ход подвески слева спереди"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <section name="LeftFrontSuspensionBellcrank">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Front Left Suspension"/>
+    <attstr name="param" val="bellcrank"/>
+    <attstr name="unit" val=""/>
+    <attnum name="page" val="7"/>
+    <attnum name="index" val="2"/>
+    <attstr name="label" val="Left Front Bellcrank"/>
+    <attstr name="label-spa" val="Balancín frontal izquierdo"/>
+    <attstr name="label-cat" val="Balancí frontal esquerre"/>
+    <attstr name="label-ru" val="Коэф. передачи движ. слева спереди"/>
+    <attnum name="precision" val="2"/>
+  </section>
+  <section name="LeftFrontSuspensionPackers">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Front Left Suspension"/>
+    <attstr name="param" val="packers"/>
+    <attstr name="unit" val="mm"/>
+    <attnum name="page" val="7"/>
+    <attnum name="index" val="3"/>
+    <attstr name="label" val="Left Front Packers"/>
+    <attstr name="label-spa" val="Packers frontal izquierdo"/>
+    <attstr name="label-cat" val="Packers frontal esquerre"/>
+    <attstr name="label-ru" val="Ограничитель хода слева спереди"/>
+    <attnum name="precision" val="2"/>
+  </section>
+  <!-- Front Right Suspension -->
+  <section name="RightFrontSuspensionSpring">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Front Right Suspension"/>
+    <attstr name="param" val="spring"/>
+    <attstr name="unit" val="kN/M"/>
+    <attnum name="page" val="7"/>
+    <attnum name="index" val="6"/>
+    <attstr name="label" val="Right Front Spring"/>
+    <attstr name="label-fra" val="Force ressort avant droit"/>
+    <attstr name="label-spa" val="Muelle frontal derecho"/>
+    <attstr name="label-cat" val="Molla frontal dreta"/>
+    <attstr name="label-ru" val="Правая передняя пружина"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <section name="RightFrontSuspensionCourse">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Front Right Suspension"/>
+    <attstr name="param" val="suspension course"/>
+    <attstr name="unit" val="mm"/>
+    <attnum name="page" val="7"/>
+    <attnum name="index" val="7"/>
+    <attstr name="label" val="Right Front Suspension Course"/>
+    <attstr name="label-fra" val="Course ressort avant droit"/>
+    <attstr name="label-spa" val="Recorrido suspensión frontal der."/>
+    <attstr name="label-cat" val="Recorregut suspensió frontal dreta"/>
+    <attstr name="label-ru" val="Ход подвески справа спереди"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <section name="RightFrontSuspensionBellcrank">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Front Right Suspension"/>
+    <attstr name="param" val="bellcrank"/>
+    <attstr name="unit" val=""/>
+    <attnum name="page" val="7"/>
+    <attnum name="index" val="8"/>
+    <attstr name="label" val="Right Front Bellcrank"/>
+    <attstr name="label-spa" val="Balancín frontal derecho"/>
+    <attstr name="label-cat" val="Balancí frontal dret"/>
+    <attstr name="label-ru" val="Коэф. передачи движ. справа спереди"/>
+    <attnum name="precision" val="2"/>
+  </section>
+  <section name="RightFrontSuspensionPackers">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Front Right Suspension"/>
+    <attstr name="param" val="packers"/>
+    <attstr name="unit" val="mm"/>
+    <attnum name="page" val="7"/>
+    <attnum name="index" val="9"/>
+    <attstr name="label" val="Right Front Packers"/>
+    <attstr name="label-spa" val="Packers frontal derecho"/>
+    <attstr name="label-cat" val="Packers frontal dret"/>
+    <attstr name="label-ru" val="Ограничитель хода спр. спереди"/>
+    <attnum name="precision" val="2"/>
+  </section>
+  <!-- Rear Left Suspension -->
+  <section name="LeftRearSuspensionSpring">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Rear Left Suspension"/>
+    <attstr name="param" val="spring"/>
+    <attstr name="unit" val="kN/M"/>
+    <attnum name="page" val="8"/>
+    <attnum name="index" val="0"/>
+    <attstr name="label" val="Left Rear Spring"/>
+    <attstr name="label-fra" val="Force ressort arrière gauche"/>
+    <attstr name="label-spa" val="Muelle posterior izquierda"/>
+    <attstr name="label-cat" val="Molla posterior esquerra"/>
+    <attstr name="label-ru" val="Левая задняя пружина"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <section name="LeftRearSuspensionCourse">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Rear Left Suspension"/>
+    <attstr name="param" val="suspension course"/>
+    <attstr name="unit" val="mm"/>
+    <attnum name="page" val="8"/>
+    <attnum name="index" val="1"/>
+    <attstr name="label" val="Left Rear Suspension Course"/>
+    <attstr name="label-fra" val="Course ressort arrière gauche"/>
+    <attstr name="label-spa" val="Recorrido suspensión posterior izq."/>
+    <attstr name="label-cat" val="Recorregut suspensió posterior esq."/>
+    <attstr name="label-ru" val="Ход подвески слева сзади"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <section name="LeftRearSuspensionBellcrank">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Rear Left Suspension"/>
+    <attstr name="param" val="bellcrank"/>
+    <attstr name="unit" val=""/>
+    <attnum name="page" val="8"/>
+    <attnum name="index" val="2"/>
+    <attstr name="label" val="Left Rear Bellcrank"/>
+    <attstr name="label-spa" val="Balancín posterior izquierda"/>
+    <attstr name="label-cat" val="Balancí posterior esquerra"/>
+    <attstr name="label-ru" val="Коэф. передачи движ. слева сзади"/>
+    <attnum name="precision" val="2"/>
+  </section>
+  <section name="LeftRearSuspensionPackers">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Rear Left Suspension"/>
+    <attstr name="param" val="packers"/>
+    <attstr name="unit" val="mm"/>
+    <attnum name="page" val="8"/>
+    <attnum name="index" val="3"/>
+    <attstr name="label" val="Left Rear Packers"/>
+    <attstr name="label-spa" val="Packers posterior izquerda"/>
+    <attstr name="label-cat" val="Packers posterior esquerre"/>
+    <attstr name="label-ru" val="Ограничитель хода слева сзади"/>
+    <attnum name="precision" val="2"/>
+  </section>
+  <!-- Rear Right Suspension -->
+  <section name="RightRearSuspensionSpring">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Rear Right Suspension"/>
+    <attstr name="param" val="spring"/>
+    <attstr name="unit" val="kN/M"/>
+    <attnum name="page" val="8"/>
+    <attnum name="index" val="6"/>
+    <attstr name="label" val="Right Rear Spring"/>
+    <attstr name="label-fra" val="Force ressort arrière droit"/>
+    <attstr name="label-spa" val="Muelle posterior derecha"/>
+    <attstr name="label-cat" val="Molla posterior dreta"/>
+    <attstr name="label-ru" val="Правая задняя пружина"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <section name="RightRearSuspensionCourse">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Rear Right Suspension"/>
+    <attstr name="param" val="suspension course"/>
+    <attstr name="unit" val="mm"/>
+    <attnum name="page" val="8"/>
+    <attnum name="index" val="7"/>
+    <attstr name="label" val="Right Rear Suspension Course"/>
+    <attstr name="label-fra" val="Course ressort arrière droit"/>
+    <attstr name="label-spa" val="Recorrido suspensión pos. derecha"/>
+    <attstr name="label-cat" val="Recorregut suspensió post. dreta"/>
+    <attstr name="label-ru" val="Ход подвески справа сзади"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <section name="RightRearSuspensionBellcrank">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Rear Right Suspension"/>
+    <attstr name="param" val="bellcrank"/>
+    <attstr name="unit" val=""/>
+    <attnum name="page" val="8"/>
+    <attnum name="index" val="8"/>
+    <attstr name="label" val="Right Rear Bellcrank"/>
+    <attstr name="label-spa" val="Balancín posterior derecha"/>
+    <attstr name="label-cat" val="Balancí posterior dret"/>
+    <attstr name="label-ru" val="Коэф. передачи движ. справа сзади"/>
+    <attnum name="precision" val="2"/>
+  </section>
+  <section name="RightRearSuspensionPackers">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Rear Right Suspension"/>
+    <attstr name="param" val="packers"/>
+    <attstr name="unit" val="mm"/>
+    <attnum name="page" val="8"/>
+    <attnum name="index" val="9"/>
+    <attstr name="label" val="Right Rear Packers"/>
+    <attstr name="label-spa" val="Packers posterior derecha"/>
+    <attstr name="label-cat" val="Packers posterior dret"/>
+    <attstr name="label-ru" val="Ограничитель хода справа сзади"/>
+    <attnum name="precision" val="2"/>
+  </section>
+  <!-- Front Left Damper-->
+  <section name="LeftFrontDamperSlowBump">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Front Left Suspension"/>
+    <attstr name="param" val="slow bump"/>
+    <attstr name="unit" val="kN/M"/>
+    <attnum name="page" val="9"/>
+    <attnum name="index" val="0"/>
+    <attstr name="label" val="Left Front Slow Bump"/>
+    <attstr name="label-spa" val="Impacto lento frontal izquierdo"/>
+    <attstr name="label-cat" val="Impacte lent frontal esquerre"/>
+    <attstr name="label-ru" val="Медл. сжатие слева спереди"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <section name="LeftFrontDamperSlowRebound">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Front Left Suspension"/>
+    <attstr name="param" val="slow rebound"/>
+    <attstr name="unit" val="kN/m"/>
+    <attnum name="page" val="9"/>
+    <attnum name="index" val="1"/>
+    <attstr name="label" val="Left Front Slow Rebound"/>
+    <attstr name="label-spa" val="Rebote lento frontal izquierdo"/>
+    <attstr name="label-cat" val="Rebot lent frontal esquerre"/>
+    <attstr name="label-ru" val="Медл. отбой слева спереди"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <section name="LeftFrontDamperFastBump">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Front Left Suspension"/>
+    <attstr name="param" val="fast bump"/>
+    <attstr name="unit" val="kN/m"/>
+    <attnum name="page" val="9"/>
+    <attnum name="index" val="2"/>
+    <attstr name="label" val="Left Front Fast Bump"/>
+    <attstr name="label-spa" val="Impacto rápido frontal izquierdo"/>
+    <attstr name="label-cat" val="Impacte ràpid frontal esquerre"/>
+    <attstr name="label-ru" val="Быстрое сжатие слева спереди"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <section name="LeftFrontDamperFastRebound">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Front Left Suspension"/>
+    <attstr name="param" val="fast rebound"/>
+    <attstr name="unit" val="kN/m"/>
+    <attnum name="page" val="9"/>
+    <attnum name="index" val="3"/>
+    <attstr name="label" val="Left Front Fast Rebound"/>
+    <attstr name="label-spa" val="Rebote rápido delantero izq."/>
+    <attstr name="label-cat" val="Rebot ràpid frontal esquerre"/>
+    <attstr name="label-ru" val="Быстрый отбой слева спереди"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <section name="LeftFrontDamperBumpLimitVelocity">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Front Left Suspension"/>
+    <attstr name="param" val="bump limit velocity"/>
+    <attstr name="unit" val="m/s"/>
+    <attnum name="page" val="9"/>
+    <attnum name="index" val="4"/>
+    <attstr name="label" val="Left Front Bump Limit Velocity"/>
+    <attstr name="label-spa" val="Velocidad límite impacto frontal izq."/>
+    <attstr name="label-cat" val="Velocitat límit impacte frontal esq."/>
+    <attstr name="label-ru" val="Пред. скор. отбоя слева спереди"/>
+    <attnum name="precision" val="3"/>
+  </section>
+  <section name="LeftFrontDamperReboundLimitVelocity">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Front Left Suspension"/>
+    <attstr name="param" val="rebound limit velocity"/>
+    <attstr name="unit" val="m/s"/>
+    <attnum name="page" val="9"/>
+    <attnum name="index" val="5"/>
+    <attstr name="label" val="Left Front Rebound Limit Velocity"/>
+    <attstr name="label-spa" val="Velocidad límit rebote frontal izq."/>
+    <attstr name="label-cat" val="Velocitat límit rebot frontal esq."/>
+    <attstr name="label-ru" val="Пред. скор. отскока слева спереди"/>
+    <attnum name="precision" val="3"/>
+  </section>
+  <!-- Front Right Damper-->
+  <section name="RightFrontDamperSlowBump">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Front Right Suspension"/>
+    <attstr name="param" val="slow bump"/>
+    <attstr name="unit" val="kN/M"/>
+    <attnum name="page" val="9"/>
+    <attnum name="index" val="6"/>
+    <attstr name="label" val="Right Front Slow Bump"/>
+    <attstr name="label-spa" val="Impacto lento frontal derecho"/>
+    <attstr name="label-cat" val="Impacte lent frontal dret"/>
+    <attstr name="label-ru" val="Медл. сжатие справа спереди"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <section name="RightFrontDamperSlowRebound">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Front Right Suspension"/>
+    <attstr name="param" val="slow rebound"/>
+    <attstr name="unit" val="kN/m"/>
+    <attnum name="page" val="9"/>
+    <attnum name="index" val="7"/>
+    <attstr name="label" val="Right Front Slow Rebound"/>
+    <attstr name="label-spa" val="Rebote lento frontal derecho"/>
+    <attstr name="label-cat" val="Rebot lent frontal dret"/>
+    <attstr name="label-ru" val="Медл. отбой справа спереди"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <section name="RightFrontDamperFastBump">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Front Right Suspension"/>
+    <attstr name="param" val="fast bump"/>
+    <attstr name="unit" val="kN/m"/>
+    <attnum name="page" val="9"/>
+    <attnum name="index" val="8"/>
+    <attstr name="label" val="Right Front Fast Bump"/>
+    <attstr name="label-spa" val="Impacte rápido frontal derecho"/>
+    <attstr name="label-cat" val="Impacte ràpid frontal dret"/>
+    <attstr name="label-ru" val="Быстрое сжатие справа спереди"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <section name="RightFrontDamperFastRebound">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Front Right Suspension"/>
+    <attstr name="param" val="fast rebound"/>
+    <attstr name="unit" val="kN/m"/>
+    <attnum name="page" val="9"/>
+    <attnum name="index" val="9"/>
+    <attstr name="label" val="Right Front Fast Rebound"/>
+    <attstr name="label-spa" val="Rebote rápido delantero derecho"/>
+    <attstr name="label-cat" val="Rebot ràpid frontal dret"/>
+    <attstr name="label-ru" val="Быстрый отбой справа спереди"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <section name="RightFrontDamperBumpLimitVelocity">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Front Right Suspension"/>
+    <attstr name="param" val="bump limit velocity"/>
+    <attstr name="unit" val="m/s"/>
+    <attnum name="page" val="9"/>
+    <attnum name="index" val="10"/>
+    <attstr name="label" val="Right Front Bump Limit Velocity"/>
+    <attstr name="label-spa" val="Velocidad límite impacto frontal der."/>
+    <attstr name="label-cat" val="Velocitat límit impacte frontal dret"/>
+    <attstr name="label-ru" val="Пред. скор. отбоя справа спереди"/>
+    <attnum name="precision" val="3"/>
+  </section>
+  <section name="RightFrontDamperReboundLimitVelocity">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Front Right Suspension"/>
+    <attstr name="param" val="rebound limit velocity"/>
+    <attstr name="unit" val="m/s"/>
+    <attnum name="page" val="9"/>
+    <attnum name="index" val="11"/>
+    <attstr name="label" val="Right Front Rebound Limit Velocity"/>
+    <attstr name="label-spa" val="Velocidad límite rebote frontal der."/>
+    <attstr name="label-cat" val="Velocitat límit rebot frontal dret"/>
+    <attstr name="label-ru" val="Пред. скор. отскока спр. спереди"/>
+    <attnum name="precision" val="3"/>
+  </section>
+  <!-- Rear Left Damper-->
+  <section name="LeftRearDamperSlowBump">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Rear Left Suspension"/>
+    <attstr name="param" val="slow bump"/>
+    <attstr name="unit" val="kN/M"/>
+    <attnum name="page" val="10"/>
+    <attnum name="index" val="0"/>
+    <attstr name="label" val="Left Rear Slow Bump"/>
+    <attstr name="label-spa" val="Impacto lento posterior izquierda"/>
+    <attstr name="label-cat" val="Impacte lent posterior esquerre"/>
+    <attstr name="label-ru" val="Медл. сжатие слева сзади"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <section name="LeftRearDamperSlowRebound">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Rear Left Suspension"/>
+    <attstr name="param" val="slow rebound"/>
+    <attstr name="unit" val="kN/m"/>
+    <attnum name="page" val="10"/>
+    <attnum name="index" val="1"/>
+    <attstr name="label" val="Left Rear Slow Rebound"/>
+    <attstr name="label-spa" val="Rebote lento posterior izquierda"/>
+    <attstr name="label-cat" val="Rebot lent posterior esquerre"/>
+    <attstr name="label-ru" val="Медл. отбой слева сзади"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <section name="LeftRearDamperFastBump">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Rear Left Suspension"/>
+    <attstr name="param" val="fast bump"/>
+    <attstr name="unit" val="kN/m"/>
+    <attnum name="page" val="10"/>
+    <attnum name="index" val="2"/>
+    <attstr name="label" val="Left Rear Fast Bump"/>
+    <attstr name="label-spa" val="Impacto rápido posterior derecho"/>
+    <attstr name="label-cat" val="Impacte ràpid posterior esquerre"/>
+    <attstr name="label-ru" val="Быстрое сжатие слева сзади"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <section name="LeftRearDamperFastRebound">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Rear Left Suspension"/>
+    <attstr name="param" val="fast rebound"/>
+    <attstr name="unit" val="kN/m"/>
+    <attnum name="page" val="10"/>
+    <attnum name="index" val="3"/>
+    <attstr name="label" val="Left Rear Fast Rebound"/>
+    <attstr name="label-spa" val="Rebote rápido posterior izquierda"/>
+    <attstr name="label-cat" val="Rebot ràpid posterior esquerre"/>
+    <attstr name="label-ru" val="Быстрый отбой слева сзади"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <section name="LeftRearDamperBumpLimitVelocity">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Rear Left Suspension"/>
+    <attstr name="param" val="bump limit velocity"/>
+    <attstr name="unit" val="m/s"/>
+    <attnum name="page" val="10"/>
+    <attnum name="index" val="4"/>
+    <attstr name="label" val="Left Rear Bump Limit Velocity"/>
+    <attstr name="label-spa" val="Velocidad límite impacto post. der."/>
+    <attstr name="label-cat" val="Velocitat límit impacte post. esq."/>
+    <attstr name="label-ru" val="Пред. скор. отбоя слева сзади"/>
+    <attnum name="precision" val="3"/>
+  </section>
+  <section name="LeftRearDamperReboundLimitVelocity">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Rear Left Suspension"/>
+    <attstr name="param" val="rebound limit velocity"/>
+    <attstr name="unit" val="m/s"/>
+    <attnum name="page" val="10"/>
+    <attnum name="index" val="5"/>
+    <attstr name="label" val="Left Rear Rebound Limit Velocity"/>
+    <attstr name="label-spa" val="Velocidad límite rebote pos. izq."/>
+    <attstr name="label-cat" val="Velocitat límit rebot post. esq."/>
+    <attstr name="label-ru" val="Пред. скор. отскока слева сзади"/>
+    <attnum name="precision" val="3"/>
+  </section>
+  <!-- Rear Right Damper-->
+  <section name="RightRearDamperSlowBump">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Rear Right Suspension"/>
+    <attstr name="param" val="slow bump"/>
+    <attstr name="unit" val="kN/M"/>
+    <attnum name="page" val="10"/>
+    <attnum name="index" val="6"/>
+    <attstr name="label" val="Right Rear Slow Bump"/>
+    <attstr name="label-spa" val="Impacto lento posterior derecha"/>
+    <attstr name="label-cat" val="Impacte lent posterior dret"/>
+    <attstr name="label-ru" val="Медл. сжатие справа сзади"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <section name="RightRearDamperSlowRebound">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Rear Right Suspension"/>
+    <attstr name="param" val="slow rebound"/>
+    <attstr name="unit" val="kN/m"/>
+    <attnum name="page" val="10"/>
+    <attnum name="index" val="7"/>
+    <attstr name="label" val="Right Rear Slow Rebound"/>
+    <attstr name="label-spa" val="Rebote lento posterior derecha"/>
+    <attstr name="label-cat" val="Rebot lent posterior dret"/>
+    <attstr name="label-ru" val="Медл. отбой справа сзади"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <section name="RightRearDamperFastBump">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Rear Right Suspension"/>
+    <attstr name="param" val="fast bump"/>
+    <attstr name="unit" val="kN/m"/>
+    <attnum name="page" val="10"/>
+    <attnum name="index" val="8"/>
+    <attstr name="label" val="Right Rear Fast Bump"/>
+    <attstr name="label-spa" val="Impacto rápido posterior derecha"/>
+    <attstr name="label-cat" val="Impacte ràpid posterior dret"/>
+    <attstr name="label-ru" val="Быстрое сжатие справа сзади"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <section name="RightRearDamperFastRebound">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Rear Right Suspension"/>
+    <attstr name="param" val="fast rebound"/>
+    <attstr name="unit" val="kN/m"/>
+    <attnum name="page" val="10"/>
+    <attnum name="index" val="9"/>
+    <attstr name="label" val="Right Rear Fast Rebound"/>
+    <attstr name="label-spa" val="Rebote rápido posterior derecha"/>
+    <attstr name="label-cat" val="Rebot ràpid posterior dret"/>
+    <attstr name="label-ru" val="Быстрый отбой справа сзади"/>
+    <attnum name="precision" val="1"/>
+  </section>
+  <section name="RightRearDamperBumpLimitVelocity">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Rear Right Suspension"/>
+    <attstr name="param" val="bump limit velocity"/>
+    <attstr name="unit" val="m/s"/>
+    <attnum name="page" val="10"/>
+    <attnum name="index" val="10"/>
+    <attstr name="label" val="Right Rear Bump Limit Velocity"/>
+    <attstr name="label-spa" val="Velocidad límite impacto post. der."/>
+    <attstr name="label-cat" val="Velocitat límit impacte post. dret"/>
+    <attstr name="label-ru" val="Пред. скор. отбоя справа сзади"/>
+    <attnum name="precision" val="3"/>
+  </section>
+  <section name="RightRearDamperReboundLimitVelocity">
+    <attstr name="type" val="edit"/>
+    <attstr name="section" val="Rear Right Suspension"/>
+    <attstr name="param" val="rebound limit velocity"/>
+    <attstr name="unit" val="m/s"/>
+    <attnum name="page" val="10"/>
+    <attnum name="index" val="11"/>
+    <attstr name="label" val="Right Rear Rebound Limit Velocity"/>
+    <attstr name="label-spa" val="Velocidad límite rebote pos. der."/>
+    <attstr name="label-cat" val="Velocitat límit rebot post. dret"/>
+    <attstr name="label-ru" val="Пред. скор. отскока справа сзади"/>
+    <attnum name="precision" val="3"/>
+  </section>
+</params>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    file                 : loadingscreen.xml
+    created              : 2009
+    copyright            : (C) 2009 by Brian Gavin, Eckhard M. Jaeger
+    web                  : speed-dreams.sourceforge.net
+-->
+<!--    This program is free software; you can redistribute it and/or modify  -->
+<!--    it under the terms of the GNU General Public License as published by  -->
+<!--    the Free Software Foundation; either version 2 of the License, or     -->
+<!--    (at your option) any later version.                                   -->
+<!--
+
+	Race loading screen (to help the user stay patient)
+
+-->
+<!DOCTYPE params SYSTEM "../tgf/params.dtd">
+<params name="loadingscreen">
+  <section name="tips">
+    <attstr name="text" val="Tip"/>
+    <attstr name="text-fra" val="Conseil"/>
+    <attstr name="text-spa" val="Consejo"/>
+    <attstr name="text-cat" val="Consell"/>
+    <attstr name="text-ru" val="Совет"/>
+    <section name="strings">
+      <section name="1">
+        <attstr name="text" val="The Help menu is available by pressing F1."/>
+        <attstr name="text-fra" val="Le menu d'aide est diponible en appuyant sur F1."/>
+        <attstr name="text-spa" val="El menú Ayuda está disponible pulsando F1."/>
+        <attstr name="text-cat" val="El menú d'ajuda pot obrir-se amb la tecla F1."/>
+        <attstr name="text-ru" val="Справка доступна по нажатию F1."/>
+      </section>
+      <section name="2">
+        <attstr name="text" val="Change cameras with keys F2-F11."/>
+        <attstr name="text-spa" val="Cambia la cámara con las teclas F2-F11."/>
+        <attstr name="text-cat" val="Canvieu la càmera amb les tecles F2-F11."/>
+        <attstr name="text-ru" val="Переключайте камеры кнопками F2-F11."/>
+      </section>
+      <section name="3">
+        <attstr name="text" val="Toggle HUD elements with keys 1-8."/>
+        <attstr name="text-spa" val="Habilita/deshabilita elementos del HUD con las teclas 1-8."/>
+        <attstr name="text-cat" val="Canvieu elements del HUD amb les tecles 1-8."/>
+        <attstr name="text-ru" val="Переключайте элементы HUD кнопками 1-8."/>
+      </section>
+      <section name="4">
+        <attstr name="text" val="Find more cars and tracks in the Downloads menu."/>
+        <attstr name="text-fra" val="Trouver plus de voitures et de circuits dans le menu téléchargements."/>
+        <attstr name="text-spa" val="Encuentra más coches y pistas en el menú Descargas."/>
+        <attstr name="text-cat" val="Trobareu més cotxes i circuits al menu Descàrregues."/>
+        <attstr name="text-ru" val="Больше автомобилей и треков вы можете найти в разделе Загрузки."/>
+      </section>
+      <section name="5">
+        <attstr name="text" val="Configure display and graphic settings to your preferences for best results."/>
+        <attstr name="text-spa" val="Configura la pantalla y gráficos a tu gusto para los mejores resultados."/>
+        <attstr name="text-cat" val="Ajusteu configuració de pantalla i gràfics al vostre gust per a millors resultats."/>
+        <attstr name="text-ru" val="Настройте экран и графику под свои предпочтения для наилучших результатов."/>
+      </section>
+      <section name="6">
+        <attstr name="text" val="Toggle mirror camera with key 9 (interior view only)."/>
+        <attstr name="text-spa" val="Habilita el retrovisor con la tecla 9 (sólo en vista interior)."/>
+        <attstr name="text-cat" val="Habiliteu el retrovisor amb la tecla 9 (només a vista interior)."/>
+        <attstr name="text-ru" val="Переключайте камеру зеркала кнопкой 9 (доступно только из кабины)."/>
+      </section>
+      <section name="7">
+        <attstr name="text" val="Speed Dreams supports many peripherals: keyboard, wheel, gamepad, mouse..."/>
+        <attstr name="text-spa" val="Speed Dreams admite muchos periféricos: teclado, volante, joystick, ratón..."/>
+        <attstr name="text-cat" val="L'Speed Dreams suporta molts perifèrics: teclat, volant, joystick, ratolí..."/>
+        <attstr name="text-ru" val="Игра поддерживает периферию: клавиатуру, руль, геймпад, мышь..."/>
+      </section>
+      <section name="8">
+        <attstr name="text" val="Setup your car for maximum performance in Garage->Setup."/>
+        <attstr name="text-spa" val="Configura tu coche para el mejor rendimiento en Garaje->Configurar."/>
+        <attstr name="text-cat" val="Ajusteu el vostre cotxe per al millor rendiment a Garatge->Configuració."/>
+        <attstr name="text-ru" val="Настройте автомобиль для наилучших результатов в Гараже->Настройки."/>
+      </section>
+      <section name="9">
+        <attstr name="text" val="Several robot types are available to choose from, with different behaviours."/>
+        <attstr name="text-spa" val="Hay varios tipos de robots disponibles para elegir, con diferentes comportamientos."/>
+        <attstr name="text-cat" val="Existeixen diversos tipus de robots a escollir, amb diferents comportaments."/>
+        <attstr name="text-ru" val="Для выбора доступны несколько типов роботов с различным поведением."/>
+      </section>
+      <section name="10">
+        <attstr name="text" val="Every new car category will include at least 5 robots will be generated by default."/>
+        <attstr name="text-spa" val="Cada nueva categoría de coche incluirá por defecto al menos 5 robots."/>
+        <attstr name="text-cat" val="Cada nova categoria de cotxes disposa almenys de 5 robots."/>
+        <attstr name="text-ru" val="Каждая новая категория авто включает в себя не менее 5 роботов."/>
+      </section>
+      <section name="11">
+        <attstr name="text" val="Speed Dreams is free software. Come and join us!"/>
+        <attstr name="text-spa" val="Speed Dreams es software libre. ¡Ven y únete a nosotros!"/>
+        <attstr name="text-cat" val="L'Speed Dreams és programari lliure. Apunteu-vos-hi!"/>
+        <attstr name="text-ru" val="Speed Dreams - свободное ПО. Присоединяйтесь к нам!"/>
+      </section>
+      <section name="12">
+        <attstr name="text" val="Osggraph has better visual fidelity, while Ssggraph has better performance."/>
+        <attstr name="text-spa" val="Osggraph tiene mejores gráficos, mientras que Ssggraph tiene mejor rendimiento."/>
+        <attstr name="text-cat" val="L'Osggraph té millors gràfics, mentre que l'Ssggraph té millor rendiment."/>
+        <attstr name="text-ru" val="Osggraph имеет улучшенную графику, у Ssggraph - лучше производительность."/>
+      </section>
+      <section name="13">
+        <attstr name="text" val="Enable the WebServer to compete against other drivers asynchronously."/>
+        <attstr name="text-spa" val="Habilita el servidor web para competir contra otros conductores en diferido."/>
+        <attstr name="text-cat" val="Habiliteu el servidor web per competir amb altres pilots en diferit."/>
+        <attstr name="text-ru" val="Включите веб-сервер, чтобы соревноваться с другими пилотами в отложенном режиме."/>
+      </section>
+      <section name="14">
+        <attstr name="text" val="The download manager can be configured for third-party repositories."/>
+        <attstr name="text-spa" val="El gestor de descargas puede configurarse para repositorios de terceros."/>
+        <attstr name="text-cat" val="El gestor de descàrregues pot configurar-se per a repositoris de tercers."/>
+        <attstr name="text-ru" val="Менеджер загрузок может быть настроен для сторонних репозиториев."/>
+      </section>
+      <section name="15">
+        <attstr name="text" val="The Ssggraph engine supports multiple players on a single screen."/>
+        <attstr name="text-spa" val="El motor Ssggraph admite varios jugadores en una sola pantalla."/>
+        <attstr name="text-cat" val="El motor Ssggraph permet diversos jugadors a una única pantalla."/>
+        <attstr name="text-ru" val="Движок Ssggraph поддерживает несколько игроков на одном экране."/>
+      </section>
+      <section name="16">
+        <attstr name="text" val="Customize your driver name and nationality in the Players &amp; Controls menu."/>
+        <attstr name="text-spa" val="Personaliza tu nombre de conductor y nacionalidad en el menú Jugadores &amp; controles."/>
+        <attstr name="text-cat" val="Personalitzeu el nom i nacionalitat del vostre pilot al menú Jugadors i Controls."/>
+        <attstr name="text-ru" val="Установите ваши имя пилота и страну в разделе Игроки и Управление."/>
+      </section>
+      <section name="17">
+        <attstr name="text" val="The dashboard allows changing in-race settings, such as tyre compounds."/>
+        <attstr name="text-spa" val="El panel del HUD permite hacer ajustes de carrera, como los neumáticos."/>
+        <attstr name="text-cat" val="El panell del HUD permet fer ajustos de cursa, com el tipus de pneumàtics."/>
+        <attstr name="text-ru" val="Панель управления позволяет менять настройки гонки, например, тип шин."/>
+      </section>
+      <section name="18">
+        <attstr name="text" val="Time of day can be configured when sky dome is activated."/>
+        <attstr name="text-spa" val="La hora del día se puede configurar cuando se activa el cielo dinámico."/>
+        <attstr name="text-cat" val="L'hora del dia pot configurar-se quan el cel dinàmic és activat."/>
+        <attstr name="text-ru" val="Время дня может быть настроено при активном куполе неба."/>
+      </section>
+      <section name="19">
+        <attstr name="text" val="Low FPS? Try the Ssggraph engine in Options->Graphics."/>
+        <attstr name="text-spa" val="¿Pocos FPS? Prueba el motor Ssggraph en Ociones->Gráficos."/>
+        <attstr name="text-cat" val="Pocs FPS? Proveu el motor Ssggraph a Opcions->Gràfics."/>
+        <attstr name="text-ru" val="Низкий FPS? Попробуйте движок Ssggraph в Настройки->Графика."/>
+      </section>
+      <section name="20">
+        <attstr name="text" val="Increase skill in Player &amp; controls for more challenging physics."/>
+        <attstr name="text-spa" val="Aumenta la habilidad en Jugadores &amp; controles para físicas más desafiantes."/>
+        <attstr name="text-cat" val="Incrementeu el nivell a Jugadors i Controls per a unes físiques més desafiants."/>
+        <attstr name="text-ru" val="Увеличьте навык в разделе Игроки и управление для более сложной физики."/>
+      </section>
+      <section name="21">
+        <attstr name="text" val="In Osggraph, customize HUD elements by pressing Ctrl+8."/>
+        <attstr name="text-spa" val="En Osggraph, personaliza elementos del HUD pulsando Ctrl+8."/>
+        <attstr name="text-cat" val="A l'Osggraph, personalitzeu elements del HUD amb Ctrl+8."/>
+        <attstr name="text-ru" val="Настраивайте элементы HUD в Osggraph по нажатию Ctrl+8."/>
+      </section>
+    </section>
+  </section>
+  <section name="properties">
+    <!-- Number of lines -->
+    <attnum name="nLines" val="15"/>
+    <!-- Y coordinate of the top line, and number of pixels separating the lines-->
+    <attnum name="yTopLine" val="275"/>
+    <attnum name="yLineShift" val="16"/>
+    <!-- for each line i, from 0 (top) to nLines-1 (bottom),
+         alpha color field = alpha0 + alphaSlope * i -->
+    <attnum name="alpha0" val="0.2"/>
+    <attnum name="alphaSlope" val="0.0533"/>
+  </section>
+  <section name="template controls">
+    <!-- Each line -->
+    <section name="line">
+      <attstr name="type" val="label"/>
+      <attnum name="max len" val="100"/>
+      <attnum name="x" val="100"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="font" val="small_t"/>
+    </section>
+  </section>
+  <section name="dynamic controls">
+    <section name="titlelabel">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val=""/>
+      <attnum name="x" val="300"/>
+      <attnum name="y" val="430"/>
+      <attnum name="width" val="400"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium_t"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="bg image" val="data/img/header-background.png"/>
+      <attnum name="bg image padding top" val="15"/>
+      <attnum name="bg image padding bottom" val="15"/>
+      <attnum name="bg image padding left" val="30"/>
+      <attnum name="bg image padding right" val="15"/>
+    </section>
+    <section name="tiplabel">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="0"/>
+      <attnum name="y" val="300"/>
+      <attstr name="text" val=""/>
+      <attstr name="h align" val="center"/>
+      <attnum name="width" val="640"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xFFFFFF"/>
+    </section>
+  </section>
+  <section name="static controls">
+    <section name="1">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="-10"/>
+      <attnum name="y" val="375"/>
+      <attnum name="width" val="130"/>
+      <attnum name="height" val="95"/>
+      <attstr name="image" val="data/img/sd-logo-big.png"/>
+    </section>
+  </section>
+</params>

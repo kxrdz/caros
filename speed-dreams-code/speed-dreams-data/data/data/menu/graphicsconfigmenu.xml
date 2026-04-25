@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Speed Dreams, a free and open source motorsport simulator.            -->
+<!-- Copyright (C) 2025-2026 Xavier Del Campo Romero                       -->
+<!-- This program is free software; you can redistribute it and/or modify  -->
+<!-- it under the terms of the GNU General Public License as published by  -->
+<!-- the Free Software Foundation; either version 2 of the License, or     -->
+<!-- (at your option) any later version.                                   -->
+<!DOCTYPE params SYSTEM "../tgf/params.dtd">
+<params name="graphconfigmenu">
+	<section name="translatable">
+		<section name="unsupported">
+			<attstr name="text" val="Unsupported"/>
+			<attstr name="text-spa" val="Sin apoyo"/>
+			<attstr name="text-cat" val="No suportat"/>
+			<attstr name="text-ru" val="Не поддерживается"/>
+		</section>
+		<section name="off">
+			<attstr name="text" val="Off"/>
+			<attstr name="text-spa" val="Fuera."/>
+			<attstr name="text-cat" val="Deshabilitat"/>
+			<attstr name="text-ru" val="Выкл"/>
+		</section>
+		<section name="on">
+			<attstr name="text" val="On"/>
+			<attstr name="text-spa" val="On"/>
+			<attstr name="text-cat" val="Habilitat"/>
+			<attstr name="text-ru" val="Вкл"/>
+		</section>
+		<section name="none">
+			<attstr name="text" val="None"/>
+			<attstr name="text-spa" val="Ninguno"/>
+			<attstr name="text-cat" val="Cap"/>
+			<attstr name="text-ru" val="Отсутствует"/>
+		</section>
+		<section name="balanced">
+			<attstr name="text" val="Balanced"/>
+			<attstr name="text-fra" val="Équilibré"/>
+			<attstr name="text-spa" val="Equilibrado"/>
+			<attstr name="text-cat" val="Equilibrat"/>
+			<attstr name="text-ru" val="Сбалансированные"/>
+		</section>
+		<section name="custom">
+			<attstr name="text" val="Custom"/>
+			<attstr name="text-spa" val="Personalizado"/>
+			<attstr name="text-cat" val="Personalitzat"/>
+			<attstr name="text-ru" val="Пользовательские"/>
+		</section>
+		<section name="low">
+			<attstr name="text" val="Low"/>
+			<attstr name="text-fra" val="Basse"/>
+			<attstr name="text-spa" val="Bajo"/>
+			<attstr name="text-cat" val="Baix"/>
+			<attstr name="text-ru" val="Низкие"/>
+		</section>
+		<section name="mid">
+			<attstr name="text" val="Mid"/>
+			<attstr name="text-spa" val="Medio"/>
+			<attstr name="text-cat" val="Mig"/>
+			<attstr name="text-ru" val="Средние"/>
+		</section>
+		<section name="high">
+			<attstr name="text" val="High"/>
+			<attstr name="text-fra" val="Haute"/>
+			<attstr name="text-spa" val="Alto"/>
+			<attstr name="text-cat" val="Alt"/>
+			<attstr name="text-ru" val="Высокие"/>
+		</section>
+		<section name="bilinear">
+			<attstr name="text" val="Bilinear"/>
+			<attstr name="text-spa" val="Bilineal"/>
+			<attstr name="text-cat" val="Bilineal"/>
+			<attstr name="text-ru" val="Билинейный"/>
+		</section>
+		<section name="trilinear">
+			<attstr name="text" val="Trilinear"/>
+			<attstr name="text-spa" val="Trilineal"/>
+			<attstr name="text-cat" val="Trilineal"/>
+			<attstr name="text-ru" val="Трехлинейный"/>
+		</section>
+		<section name="ssggraph">
+			<attstr name="text" val="Ssggraph (lightweight)"/>
+			<attstr name="text-spa" val="Ssggraph (ligero)"/>
+			<attstr name="text-cat" val="Ssggraph (lleuger)"/>
+			<attstr name="text-ru" val="Ssggraph (легковесный)"/>
+		</section>
+		<section name="osggraph">
+			<attstr name="text" val="Osggraph (modern)"/>
+			<attstr name="text-spa" val="Osggraph (moderno)"/>
+			<attstr name="text-cat" val="Osggraph (modern)"/>
+			<attstr name="text-ru" val="Osggraph (современный)"/>
+		</section>
+		<section name="carsonly">
+			<attstr name="text" val="Cars only"/>
+			<attstr name="text-fra" val="Voitures seulement"/>
+			<attstr name="text-spa" val="Sólo coches"/>
+			<attstr name="text-cat" val="Només cotxes"/>
+			<attstr name="text-ru" val="Только авто"/>
+		</section>
+		<section name="carstrack">
+			<attstr name="text" val="Cars + track (unstable)"/>
+			<attstr name="text-fra" val="Voitures et circuits (instable)"/>
+			<attstr name="text-spa" val="Coches y circuito (inestable)"/>
+			<attstr name="text-cat" val="Cotxes i circuit (inestable)"/>
+			<attstr name="text-ru" val="Авто и трасса (нестабильно)"/>
+		</section>
+	</section>
+	<section name="dynamic controls">
+		<!-- Common GUI elements -->
+		<section name="preset">
+			<attstr name="type" val="combo box"/>
+			<attnum name="max len" val="15"/>
+			<attstr name="tip" val="Select graphics preset level"/>
+			<attstr name="tip-spa" val="Seleccione el nivel predeterminado de gráficos"/>
+			<attstr name="tip-cat" val="Escolliu el nivell predeterminat de gràfics"/>
+			<attstr name="tip-ru" val="Выберите пресет уровня графики"/>
+			<attnum name="x" val="270"/>
+			<attnum name="y" val="350"/>
+			<attnum name="width" val="240"/>
+			<attnum name="arrows width" val="24"/>
+			<attnum name="arrows height" val="24"/>
+			<attstr name="color" val="0xFFFFFF"/>
+			<attstr name="focused color" val="0xFFFFFF"/>
+			<attstr name="pushed color" val="0xFFCC00"/>
+			<attstr name="font" val="medium"/>
+			<attnum name="image width" val="24"/>
+			<attnum name="image height" val="24"/>
+		</section>
+		<section name="graphicsengine">
+			<attstr name="type" val="combo box"/>
+			<attnum name="max len" val="15"/>
+			<attstr name="tip" val="Select graphics engine"/>
+			<attstr name="tip-spa" val="Seleccione el motor gráfico"/>
+			<attstr name="tip-cat" val="Escolliu el motor gràfic"/>
+			<attstr name="tip-ru" val="Выберите графический движок"/>
+			<attnum name="x" val="270"/>
+			<attnum name="y" val="320"/>
+			<attnum name="width" val="240"/>
+			<attnum name="arrows width" val="24"/>
+			<attnum name="arrows height" val="24"/>
+			<attstr name="color" val="0xFFFFFF"/>
+			<attstr name="focused color" val="0xFFFFFF"/>
+			<attstr name="pushed color" val="0xFFCC00"/>
+			<attstr name="font" val="medium"/>
+			<attnum name="image width" val="24"/>
+			<attnum name="image height" val="24"/>
+		</section>
+		<section name="graphicsengine_info">
+			<attstr name="type" val="image button"/>
+			<attstr name="tip" val="Show more information about the selected graphics engine"/>
+			<attstr name="tip-spa" val="Mostrar más información sobre el motor gráfico seleccionado"/>
+			<attstr name="tip-cat" val="Mostreu més informació sobre el motor gràfic seleccionat"/>
+			<attstr name="tip-ru" val="Показать больше информации о выбранном графическом движке"/>
+			<attnum name="x" val="510"/>
+			<attnum name="y" val="322"/>
+			<attnum name="width" val="30"/>
+			<attnum name="height" val="20"/>
+			<attstr name="disabled image" val="data/img/icon-info-disabled.png"/>
+			<attstr name="enabled image" val="data/img/icon-info.png"/>
+			<attstr name="focused image" val="data/img/icon-info-focused.png"/>
+			<attstr name="pushed image" val="data/img/icon-info-pushed.png"/>
+		</section>
+		<section name="antialiasing">
+			<attstr name="type" val="combo box"/>
+			<attnum name="max len" val="15"/>
+			<attstr name="tip" val="Select antialiasing multiplier"/>
+			<attstr name="tip-spa" val="Seleccione el multiplicador antialiasing"/>
+			<attstr name="tip-cat" val="Escolliu el multiplicador de l'antialiàsing"/>
+			<attstr name="tip-ru" val="Выберите мультипликатор сглаживания"/>
+			<attnum name="x" val="270"/>
+			<attnum name="y" val="290"/>
+			<attnum name="width" val="240"/>
+			<attnum name="arrows width" val="24"/>
+			<attnum name="arrows height" val="24"/>
+			<attstr name="color" val="0xFFFFFF"/>
+			<attstr name="focused color" val="0xFFFFFF"/>
+			<attstr name="pushed color" val="0xFFCC00"/>
+			<attstr name="font" val="medium"/>
+			<attnum name="image width" val="24"/>
+			<attnum name="image height" val="24"/>
+		</section>
+		<section name="anisotropicfilter_bg">
+			<attstr name="type" val="static image"/>
+			<attnum name="x" val="70"/>
+			<attnum name="y" val="169"/>
+			<attnum name="width" val="200"/>
+			<attnum name="height" val="24"/>
+			<attstr name="image" val="data/img/bg-button-big-normal.png"/>
+		</section>
+		<section name="cancel">
+			<attstr name="type" val="text button"/>
+			<attstr name="show box" val="no"/>
+			<attstr name="text" val="Cancel"/>
+			<attstr name="text-fra" val="Annuler"/>
+			<attstr name="text-spa" val="Cancelar"/>
+			<attstr name="text-cat" val="Cancel·lar"/>
+			<attstr name="text-ru" val="Отменить"/>
+			<attstr name="tip" val="Cancel changes"/>
+			<attstr name="tip-spa" val="Cancela los cambios"/>
+			<attstr name="tip-cat" val="Cancel·leu els canvis"/>
+			<attstr name="tip-ru" val="Отменить изменения"/>
+			<attstr name="h align" val="left"/>
+			<attnum name="x" val="400"/>
+			<attnum name="y" val="44"/>
+			<attnum name="width" val="80"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xa6a6a6"/>
+			<attstr name="focused color" val="0xFFFFFF"/>
+			<attstr name="pushed color" val="0xFFFFFF"/>
+			<attnum name="image x" val="-10"/>
+			<attnum name="image y" val="-2"/>
+			<attnum name="image width" val="100"/>
+			<attnum name="image height" val="30"/>
+			<attstr name="focused image" val="data/img/button-left-focused.png"/>
+			<attstr name="enabled image" val="data/img/button-left.png"/>
+			<attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+		</section>
+		<section name="apply">
+			<attstr name="type" val="text button"/>
+			<attstr name="show box" val="no"/>
+			<attstr name="text" val="Apply"/>
+			<attstr name="text-fra" val="Appliquer"/>
+			<attstr name="text-spa" val="Aplicar"/>
+			<attstr name="text-cat" val="Aplicar"/>
+			<attstr name="text-ru" val="Применить"/>
+			<attstr name="tip" val="Accept and save changes"/>
+			<attstr name="tip-spa" val="Aceptar y guardar cambios"/>
+			<attstr name="tip-cat" val="Accepteu i deseu els canvis"/>
+			<attstr name="tip-ru" val="Принять и сохранить изменения"/>
+			<attstr name="h align" val="left"/>
+			<attnum name="x" val="500"/>
+			<attnum name="y" val="44"/>
+			<attnum name="width" val="80"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xa6a6a6"/>
+			<attstr name="focused color" val="0xFFFFFF"/>
+			<attstr name="pushed color" val="0xFFFFFF"/>
+			<attnum name="image x" val="-10"/>
+			<attnum name="image y" val="-2"/>
+			<attnum name="image width" val="100"/>
+			<attnum name="image height" val="30"/>
+			<attstr name="focused image" val="data/img/button-left-focused.png"/>
+			<attstr name="enabled image" val="data/img/button-left.png"/>
+			<attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+		</section>
+		<!-- Ssggraph-specific GUI elements -->
+		<section name="visibility">
+			<attstr name="type" val="combo box"/>
+			<attnum name="max len" val="15"/>
+			<attstr name="tip" val="Set rendering distance. Lower values give better performance."/>
+			<attstr name="tip-spa" val="Establecer distancia de renderización. Los valores inferiores dan mejor rendimiento."/>
+			<attstr name="tip-cat" val="Determineu la distància de visualització. Els valors més baixos proporcionen millor rendiment."/>
+			<attstr name="tip-ru" val="Установить дистанцию рендеринга. Чем ниже значение, тем выше производительность."/>
+			<attnum name="x" val="270"/>
+			<attnum name="y" val="200"/>
+			<attnum name="width" val="240"/>
+			<attnum name="arrows width" val="24"/>
+			<attnum name="arrows height" val="24"/>
+			<attstr name="color" val="0xFFFFFF"/>
+			<attstr name="focused color" val="0xFFFFFF"/>
+			<attstr name="pushed color" val="0xFFCC00"/>
+			<attstr name="font" val="medium"/>
+			<attnum name="image width" val="24"/>
+			<attnum name="image height" val="24"/>
+		</section>
+		<section name="visibility_lbl">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="20"/>
+			<attnum name="y" val="202"/>
+			<attstr name="text" val="Visibility:"/>
+			<attstr name="text-fra" val="Visibilité:"/>
+			<attstr name="text-spa" val="Visibilidad:"/>
+			<attstr name="text-cat" val="Visibilitat:"/>
+			<attstr name="text-ru" val="Видимость:"/>
+			<attstr name="tip" val="Set rendering distance. Lower values give better performance."/>
+			<attstr name="tip-spa" val="Establecer distancia de renderización. Los valores inferiores dan mejor rendimiento."/>
+			<attstr name="tip-cat" val="Determineu la distància de visualització. Els valors més baixos proporcionen millor rendiment."/>
+			<attstr name="tip-ru" val="Установить дистанцию рендеринга. Чем ниже значение, тем выше производительность."/>
+			<attstr name="h align" val="right"/>
+			<attnum name="width" val="220"/>
+			<attstr name="font" val="small_t"/>
+			<attstr name="color" val="0xa6a6a6"/>
+		</section>
+		<section name="anisotropicfilter">
+			<attstr name="type" val="combo box"/>
+			<attnum name="max len" val="15"/>
+			<attstr name="tip" val="Set anisotropic filter quality. Higher values make far textures look sharper."/>
+			<attstr name="tip-spa" val="Establece el filtro anisotrópico. Los valores más altos hacen que las texturas lejanas se vean más nítidas."/>
+			<attstr name="tip-cat" val="Determineu el filtre anisotròpic. Amb valors més alts, les textures llunyanes es veuran més nítides."/>
+			<attstr name="tip-ru" val="Установить качество анизотропного фильтра. Высокие значения делают отдаленные текстуры более резкими."/>
+			<attnum name="x" val="270"/>
+			<attnum name="y" val="260"/>
+			<attnum name="width" val="240"/>
+			<attnum name="arrows width" val="24"/>
+			<attnum name="arrows height" val="24"/>
+			<attstr name="color" val="0xFFFFFF"/>
+			<attstr name="focused color" val="0xFFFFFF"/>
+			<attstr name="pushed color" val="0xFFCC00"/>
+			<attstr name="font" val="medium"/>
+			<attnum name="image width" val="24"/>
+			<attnum name="image height" val="24"/>
+		</section>
+		<section name="maxtexturesize">
+			<attstr name="type" val="combo box"/>
+			<attnum name="max len" val="15"/>
+			<attstr name="tip" val="Set maximum texture size. Higher values mean higher quality textures."/>
+			<attstr name="tip-spa" val="Establece el tamaño máximo de la textura. Los valores superiores significan texturas de mayor calidad."/>
+			<attstr name="tip-cat" val="Determineu la mida màxima de les textures. Els valors més alts suposen millor qualitat."/>
+			<attstr name="tip-ru" val="Установить максимальный размер текстуры. Более высокие значения означают повышенное качество текстур."/>
+			<attnum name="x" val="270"/>
+			<attnum name="y" val="170"/>
+			<attnum name="width" val="240"/>
+			<attnum name="arrows width" val="24"/>
+			<attnum name="arrows height" val="24"/>
+			<attstr name="color" val="0xFFFFFF"/>
+			<attstr name="focused color" val="0xFFFFFF"/>
+			<attstr name="pushed color" val="0xFFCC00"/>
+			<attstr name="font" val="medium"/>
+			<attnum name="image width" val="24"/>
+			<attnum name="image height" val="24"/>
+		</section>
+		<section name="maxtexturesize_lbl">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="20"/>
+			<attnum name="y" val="172"/>
+			<attstr name="text" val="Maximum texture size:"/>
+			<attstr name="text-fra" val="Taille maximale de textures:"/>
+			<attstr name="text-spa" val="Tamaño máximo de la textura:"/>
+			<attstr name="text-cat" val="Mida màxima textures:"/>
+			<attstr name="text-ru" val="Макс. размер текстуры:"/>
+			<attstr name="tip" val="Set maximum texture size. Lower values will result in stretched textures, with smaller memory footprint."/>
+			<attstr name="tip-spa" val="Establece el tamaño máximo de la textura. Los valores inferiores resultarán en texturas estiradas, con menor huella de memoria."/>
+			<attstr name="tip-cat" val="Determineu la mida màxima de les textures. Els valors més baixos resulten en textures estirades, però amb menor consum de memòria gràfica."/>
+			<attstr name="tip-ru" val="Установить максимальный размер текстуры. Низкие значения приводят к растянутым текстурам и меньшему использованию памяти."/>
+			<attstr name="h align" val="right"/>
+			<attnum name="width" val="220"/>
+			<attstr name="font" val="small_t"/>
+			<attstr name="color" val="0xa6a6a6"/>
+		</section>
+		<section name="skydome">
+			<attstr name="type" val="combo box"/>
+			<attnum name="max len" val="15"/>
+			<attstr name="tip" val="Enable realistic sky dome. Required for day-night cycles."/>
+			<attstr name="tip-spa" val="Habilitar cielo realista. Se requiere para ciclos día-noche."/>
+			<attstr name="tip-cat" val="Habiliteu el cel realista. Requerit per habilitar els cicles dia-nit."/>
+			<attstr name="tip-ru" val="Включить реалистичный небесный купол. Необходим для смены времени суток."/>
+			<attnum name="x" val="270"/>
+			<attnum name="y" val="230"/>
+			<attnum name="width" val="240"/>
+			<attnum name="arrows width" val="24"/>
+			<attnum name="arrows height" val="24"/>
+			<attstr name="color" val="0xFFFFFF"/>
+			<attstr name="focused color" val="0xFFFFFF"/>
+			<attstr name="pushed color" val="0xFFCC00"/>
+			<attstr name="font" val="medium"/>
+			<attnum name="image width" val="24"/>
+			<attnum name="image height" val="24"/>
+		</section>
+		<section name="skydome_lbl">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="20"/>
+			<attnum name="y" val="232"/>
+			<attstr name="text" val="Dynamic sky dome:"/>
+			<attstr name="text-spa" val="Dinámica cúpula del cielo:"/>
+			<attstr name="text-cat" val="Cel dinàmic:"/>
+			<attstr name="text-ru" val="Динамичное небо:"/>
+			<attstr name="tip" val="Enable realistic sky dome. Required for day-night cycles."/>
+			<attstr name="tip-spa" val="Hábleme realista del cielo. Se requiere para ciclos nocturnos."/>
+			<attstr name="tip-cat" val="Habiliteu el cel realista. Requerit per habilitar els cicles dia-nit."/>
+			<attstr name="tip-ru" val="Включить реалистичный небесный купол. Необходим для смены времени суток."/>
+			<attstr name="h align" val="right"/>
+			<attnum name="width" val="220"/>
+			<attstr name="font" val="small_t"/>
+			<attstr name="color" val="0xa6a6a6"/>
+		</section>
+		<section name="texturecompression">
+			<attstr name="type" val="combo box"/>
+			<attnum name="max len" val="15"/>
+			<attstr name="tip" val="Enable compression texture to reduce graphics memory usage if the file format supports it"/>
+			<attstr name="tip-spa" val="Permitir textura de compresión para reducir el uso de memoria gráfica si el formato de archivo lo soporta"/>
+			<attstr name="tip-cat" val="Habiliteu la compressió de textures per reduir l'ús de memòria gràfica si el format ho suporta"/>
+			<attstr name="tip-ru" val="Включить сжатие текстур для снижения расхода графической памяти, если формат файла поддерживает сжатие"/>
+			<attnum name="x" val="270"/>
+			<attnum name="y" val="140"/>
+			<attnum name="width" val="240"/>
+			<attnum name="arrows width" val="24"/>
+			<attnum name="arrows height" val="24"/>
+			<attstr name="color" val="0xFFFFFF"/>
+			<attstr name="focused color" val="0xFFFFFF"/>
+			<attstr name="pushed color" val="0xFFCC00"/>
+			<attstr name="font" val="medium"/>
+			<attnum name="image width" val="24"/>
+			<attnum name="image height" val="24"/>
+		</section>
+		<section name="texturecompression_lbl">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="20"/>
+			<attnum name="y" val="142"/>
+			<attstr name="text" val="Texture compresion:"/>
+			<attstr name="text-fra" val="Compression des textures:"/>
+			<attstr name="text-spa" val="Compresión de textura:"/>
+			<attstr name="text-cat" val="Compressió de textures:"/>
+			<attstr name="text-ru" val="Сжатие текстур:"/>
+			<attstr name="tip" val="Enable compression texture to reduce graphics memory usage if the file format supports it"/>
+			<attstr name="tip-spa" val="Permitir textura de compresión para reducir el uso de memoria gráfica si el formato de archivo lo soporta"/>
+			<attstr name="tip-cat" val="Habiliteu la compressió de textures per reduir l'ús de memòria gràfica si el format ho suporta"/>
+			<attstr name="tip-ru" val="Включить сжатие текстур для снижения расхода графической памяти, если формат файла поддерживает сжатие"/>
+			<attstr name="h align" val="right"/>
+			<attnum name="width" val="220"/>
+			<attstr name="font" val="small_t"/>
+			<attstr name="color" val="0xa6a6a6"/>
+		</section>
+		<section name="multitexturing">
+			<attstr name="type" val="combo box"/>
+			<attnum name="max len" val="15"/>
+			<attstr name="tip" val="Enable multitexturing. Required for some effects, such as track shadows."/>
+			<attstr name="tip-spa" val="Permite la multitextura. Se requiere para algunos efectos, como sombras de pista."/>
+			<attstr name="tip-cat" val="Habiliteu el multi-texturat. Requerit per a alguns efectes, com les ombres a pista."/>
+			<attstr name="tip-ru" val="Включить мультитекстурирование. Необходимо для некоторых эффектов, например, теней трассы."/>
+			<attnum name="x" val="270"/>
+			<attnum name="y" val="110"/>
+			<attnum name="width" val="240"/>
+			<attnum name="arrows width" val="24"/>
+			<attnum name="arrows height" val="24"/>
+			<attstr name="color" val="0xFFFFFF"/>
+			<attstr name="focused color" val="0xFFFFFF"/>
+			<attstr name="pushed color" val="0xFFCC00"/>
+			<attstr name="font" val="medium"/>
+			<attnum name="image width" val="24"/>
+			<attnum name="image height" val="24"/>
+		</section>
+		<section name="multitexturing_bg">
+			<attstr name="type" val="static image"/>
+			<attnum name="x" val="70"/>
+			<attnum name="y" val="109"/>
+			<attnum name="width" val="200"/>
+			<attnum name="height" val="24"/>
+			<attstr name="image" val="data/img/bg-button-big-normal.png"/>
+		</section>
+		<section name="multitexturing_lbl">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="20"/>
+			<attnum name="y" val="112"/>
+			<attstr name="text" val="Multitexturing:"/>
+			<attstr name="text-spa" val="Multitextura:"/>
+			<attstr name="text-cat" val="Multi-texturat:"/>
+			<attstr name="text-ru" val="Мультитекстурирование:"/>
+			<attstr name="tip" val="Enable multitexturing."/>
+			<attstr name="tip-cat" val=""/>
+			<attstr name="tip-ru" val="Включить мультитекстурирование"/>
+			<attstr name="h align" val="right"/>
+			<attnum name="width" val="220"/>
+			<attstr name="font" val="small_t"/>
+			<attstr name="color" val="0xa6a6a6"/>
+		</section>
+		<!-- Osggraph-specific GUI elements -->
+		<section name="dynamicshadows">
+			<attstr name="type" val="combo box"/>
+			<attnum name="max len" val="15"/>
+			<attstr name="tip" val="Set dynamic shadow quality"/>
+			<attstr name="tip-spa" val="Establecer la calidad de las sombras dinámicas"/>
+			<attstr name="tip-cat" val="Determineu la qualitat de les ombres dinàmiques"/>
+			<attstr name="tip-ru" val="Установить качество динамических теней"/>
+			<attnum name="x" val="270"/>
+			<attnum name="y" val="200"/>
+			<attnum name="width" val="240"/>
+			<attnum name="arrows width" val="24"/>
+			<attnum name="arrows height" val="24"/>
+			<attstr name="color" val="0xFFFFFF"/>
+			<attstr name="focused color" val="0xFFFFFF"/>
+			<attstr name="pushed color" val="0xFFCC00"/>
+			<attstr name="font" val="medium"/>
+			<attnum name="image width" val="24"/>
+			<attnum name="image height" val="24"/>
+		</section>
+		<section name="dynamicshadows_lbl">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="20"/>
+			<attnum name="y" val="202"/>
+			<attstr name="text" val="Dynamic shadows:"/>
+			<attstr name="text-spa" val="Sombras dinámicas:"/>
+			<attstr name="text-cat" val="Ombres dinàmiques:"/>
+			<attstr name="text-ru" val="Динамические тени:"/>
+			<attstr name="tip" val="Set dynamic shadow quality"/>
+			<attstr name="tip-spa" val="Establecer la calidad de sombra dinámica"/>
+			<attstr name="tip-cat" val="Determineu la qualitat de les ombres dinàmiques"/>
+			<attstr name="tip-ru" val="Установить качество динамических теней"/>
+			<attstr name="h align" val="right"/>
+			<attnum name="width" val="220"/>
+			<attstr name="font" val="small_t"/>
+			<attstr name="color" val="0xa6a6a6"/>
+		</section>
+		<section name="shaders">
+			<attstr name="type" val="combo box"/>
+			<attnum name="max len" val="15"/>
+			<attstr name="tip" val="Set shader quality (cars and water only)"/>
+			<attstr name="tip-spa" val="Establece la calidad del tono (sólo coches y agua)"/>
+			<attstr name="tip-cat" val="Determineu la qualitat dels shaders (només cotxes i aigua)"/>
+			<attstr name="tip-ru" val="Установить качество шейдеров (только для автомобилей и воды)"/>
+			<attnum name="x" val="270"/>
+			<attnum name="y" val="230"/>
+			<attnum name="width" val="240"/>
+			<attnum name="arrows width" val="24"/>
+			<attnum name="arrows height" val="24"/>
+			<attstr name="color" val="0xFFFFFF"/>
+			<attstr name="focused color" val="0xFFFFFF"/>
+			<attstr name="pushed color" val="0xFFCC00"/>
+			<attstr name="font" val="medium"/>
+			<attnum name="image width" val="24"/>
+			<attnum name="image height" val="24"/>
+		</section>
+		<section name="shaders_lbl">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="20"/>
+			<attnum name="y" val="232"/>
+			<attstr name="text" val="Shaders:"/>
+			<attstr name="text-spa" val="Shaders:"/>
+			<attstr name="text-cat" val="Shaders:"/>
+			<attstr name="text-ru" val="Шейдеры:"/>
+			<attstr name="tip" val="Set shader quality (cars and water only)"/>
+			<attstr name="tip-spa" val="Establece la calidad del tono (sólo coches y agua)"/>
+			<attstr name="tip-cat" val="Determineu la qualitat dels shaders (només cotxes i aigua)"/>
+			<attstr name="tip-ru" val="Установить качество шейдеров (только для автомобилей и воды)"/>
+			<attstr name="h align" val="right"/>
+			<attnum name="width" val="220"/>
+			<attstr name="font" val="small_t"/>
+			<attstr name="color" val="0xa6a6a6"/>
+		</section>
+		<section name="shadowsize">
+			<attstr name="type" val="combo box"/>
+			<attnum name="max len" val="15"/>
+			<attstr name="tip" val="Set shadow texture size, in pixels. With lower values, shadows might look blurry."/>
+			<attstr name="tip-spa" val="Establece el tamaño de la textura sombra, en píxeles. Con valores inferiores, las sombras pueden parecer borrosas."/>
+			<attstr name="tip-cat" val="Determineu la mida, amb píxels, de les ombres. Amb valors baixos, poden veure's-hi borroses. "/>
+			<attstr name="tip-ru" val="Установить размер текстуры тени в пикселях. При низких значениях, тени могут выглядеть размытыми."/>
+			<attnum name="x" val="270"/>
+			<attnum name="y" val="170"/>
+			<attnum name="width" val="240"/>
+			<attnum name="arrows width" val="24"/>
+			<attnum name="arrows height" val="24"/>
+			<attstr name="color" val="0xFFFFFF"/>
+			<attstr name="focused color" val="0xFFFFFF"/>
+			<attstr name="pushed color" val="0xFFCC00"/>
+			<attstr name="font" val="medium"/>
+			<attnum name="image width" val="24"/>
+			<attnum name="image height" val="24"/>
+		</section>
+		<section name="shadowsize_lbl">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="20"/>
+			<attnum name="y" val="172"/>
+			<attstr name="text" val="Shadow texture size:"/>
+			<attstr name="text-spa" val="Tamaño textura sombras:"/>
+			<attstr name="text-cat" val="Mida textura ombres:"/>
+			<attstr name="text-ru" val="Размер текстуры тени:"/>
+			<attstr name="tip" val="Set shadow texture size, in pixels. With lower values, shadows might look blurry."/>
+			<attstr name="tip-spa" val="Establece el tamaño de la textura sombra, en píxeles. Con valores bajos, las sombras pueden verse borrosas."/>
+			<attstr name="tip-cat" val="Determineu la mida, amb píxels, de les ombres. Amb valors baixos, poden veure's-hi borroses. "/>
+			<attstr name="tip-ru" val="Установить размер текстуры тени в пикселях. При низких значениях, тени могут выглядеть размытыми."/>
+			<attstr name="h align" val="right"/>
+			<attnum name="width" val="220"/>
+			<attstr name="font" val="small_t"/>
+			<attstr name="color" val="0xa6a6a6"/>
+		</section>
+		<section name="speedunit">
+			<attstr name="type" val="combo box"/>
+			<attnum name="max len" val="15"/>
+			<attstr name="tip" val="Select speed unit as displayed by the tachometer."/>
+			<attstr name="tip-ru" val="Выберите единицу измерения скорости, отображаемую на спидометре."/>
+			<attstr name="tip-spa" val="Escoge la unidad de velocidad mostrada por el tacómetro."/>
+			<attstr name="tip-cat" val="Seleccioneu la unitat de velocitat mostrada pel tacòmetre."/>
+			<attnum name="x" val="270"/>
+			<attnum name="y" val="140"/>
+			<attnum name="width" val="240"/>
+			<attnum name="arrows width" val="24"/>
+			<attnum name="arrows height" val="24"/>
+			<attstr name="color" val="0xFFFFFF"/>
+			<attstr name="focused color" val="0xFFFFFF"/>
+			<attstr name="pushed color" val="0xFFCC00"/>
+			<attstr name="font" val="medium"/>
+			<attnum name="image width" val="24"/>
+			<attnum name="image height" val="24"/>
+		</section>
+		<section name="speedunit_lbl">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="20"/>
+			<attnum name="y" val="142"/>
+			<attstr name="text" val="Speed unit:"/>
+			<attstr name="text-fra" val="Unité de vitesse:"/>
+			<attstr name="text-ru" val="Ед. изм. скорости:"/>
+			<attstr name="text-cat" val="Unitat de velocitat:"/>
+			<attstr name="tip" val="Select speed unit as displayed by the tachometer."/>
+			<attstr name="tip-ru" val="Выберите единицу измерения скорости, отображаемую на спидометре."/>
+			<attstr name="tip-spa" val="Escoge la unidad de velocidad mostrada por el tacómetro."/>
+			<attstr name="tip-cat" val="Seleccioneu la unitat de velocitat mostrada pel tacòmetre."/>
+			<attstr name="h align" val="right"/>
+			<attnum name="width" val="220"/>
+			<attstr name="font" val="small_t"/>
+			<attstr name="color" val="0xa6a6a6"/>
+		</section>
+	</section>
+	<section name="static controls">
+		<section name="1">
+			<attstr name="type" val="gallery"/>
+			<attstr name="directory" val="data/gallery/"/>
+		</section>
+		<section name="2">
+			<attstr name="type" val="static image"/>
+			<attnum name="x" val="-10"/>
+			<attnum name="y" val="375"/>
+			<attnum name="width" val="130"/>
+			<attnum name="height" val="95"/>
+			<attstr name="image" val="data/img/sd-logo-big.png"/>
+		</section>
+		<section name="3">
+			<attstr name="type" val="label"/>
+			<attstr name="text" val="Graphics configuration"/>
+			<attstr name="text-fra" val="Configuration graphique"/>
+			<attstr name="text-spa" val="Configuración gráfica"/>
+			<attstr name="text-cat" val="Configuració dels gràfics"/>
+			<attstr name="text-ru" val="Настройки графики"/>
+			<attnum name="x" val="300"/>
+			<attnum name="y" val="430"/>
+			<attnum name="width" val="400"/>
+			<attstr name="color" val="0xFFFFFF"/>
+			<attstr name="font" val="medium_t"/>
+			<attstr name="h align" val="left"/>
+			<attstr name="bg image" val="data/img/header-background.png"/>
+			<attnum name="bg image padding top" val="15"/>
+			<attnum name="bg image padding bottom" val="15"/>
+			<attnum name="bg image padding left" val="30"/>
+			<attnum name="bg image padding right" val="15"/>
+		</section>
+		<section name="4">
+			<attstr name="type" val="static image"/>
+			<attnum name="x" val="70"/>
+			<attnum name="y" val="349"/>
+			<attnum name="width" val="200"/>
+			<attnum name="height" val="24"/>
+			<attstr name="image" val="data/img/bg-button-big-normal.png"/>
+		</section>
+		<section name="5">
+			<attstr name="type" val="static image"/>
+			<attnum name="x" val="70"/>
+			<attnum name="y" val="319"/>
+			<attnum name="width" val="200"/>
+			<attnum name="height" val="24"/>
+			<attstr name="image" val="data/img/bg-button-big-normal.png"/>
+		</section>
+		<section name="6">
+			<attstr name="type" val="static image"/>
+			<attnum name="x" val="70"/>
+			<attnum name="y" val="289"/>
+			<attnum name="width" val="200"/>
+			<attnum name="height" val="24"/>
+			<attstr name="image" val="data/img/bg-button-big-normal.png"/>
+		</section>
+		<section name="7">
+			<attstr name="type" val="static image"/>
+			<attnum name="x" val="70"/>
+			<attnum name="y" val="259"/>
+			<attnum name="width" val="200"/>
+			<attnum name="height" val="24"/>
+			<attstr name="image" val="data/img/bg-button-big-normal.png"/>
+		</section>
+		<section name="8">
+			<attstr name="type" val="static image"/>
+			<attnum name="x" val="70"/>
+			<attnum name="y" val="229"/>
+			<attnum name="width" val="200"/>
+			<attnum name="height" val="24"/>
+			<attstr name="image" val="data/img/bg-button-big-normal.png"/>
+		</section>
+		<section name="9">
+			<attstr name="type" val="static image"/>
+			<attnum name="x" val="70"/>
+			<attnum name="y" val="199"/>
+			<attnum name="width" val="200"/>
+			<attnum name="height" val="24"/>
+			<attstr name="image" val="data/img/bg-button-big-normal.png"/>
+		</section>
+		<section name="10">
+			<attstr name="type" val="static image"/>
+			<attnum name="x" val="70"/>
+			<attnum name="y" val="169"/>
+			<attnum name="width" val="200"/>
+			<attnum name="height" val="24"/>
+			<attstr name="image" val="data/img/bg-button-big-normal.png"/>
+		</section>
+		<section name="11">
+			<attstr name="type" val="static image"/>
+			<attnum name="x" val="70"/>
+			<attnum name="y" val="139"/>
+			<attnum name="width" val="200"/>
+			<attnum name="height" val="24"/>
+			<attstr name="image" val="data/img/bg-button-big-normal.png"/>
+		</section>
+		<section name="12">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="20"/>
+			<attnum name="y" val="352"/>
+			<attstr name="text" val="Preset:"/>
+			<attstr name="text-spa" val="Preajuste:"/>
+			<attstr name="text-cat" val="Preajust:"/>
+			<attstr name="text-ru" val="Пресет:"/>
+			<attstr name="tip" val="Select graphics preset level"/>
+			<attstr name="tip-spa" val="Seleccione el nivel predeterminado de gráficos"/>
+			<attstr name="tip-cat" val="Escolliu el nivell predeterminat de gràfics"/>
+			<attstr name="tip-ru" val="Выберите пресет уровня графики"/>
+			<attstr name="h align" val="right"/>
+			<attnum name="width" val="220"/>
+			<attstr name="font" val="small_t"/>
+			<attstr name="color" val="0xa6a6a6"/>
+		</section>
+		<section name="13">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="20"/>
+			<attnum name="y" val="322"/>
+			<attstr name="text" val="Graphics engine:"/>
+			<attstr name="text-spa" val="Motor gráfico:"/>
+			<attstr name="text-cat" val="Motor gràfic:"/>
+			<attstr name="text-ru" val="Графический движок:"/>
+			<attstr name="tip" val="Select graphics engine"/>
+			<attstr name="tip-spa" val="Seleccione el motor gráfico"/>
+			<attstr name="tip-cat" val="Escolliu el motor gràfic"/>
+			<attstr name="tip-ru" val="Выберите графический движок"/>
+			<attstr name="h align" val="right"/>
+			<attnum name="width" val="220"/>
+			<attstr name="font" val="small_t"/>
+			<attstr name="color" val="0xa6a6a6"/>
+		</section>
+		<section name="14">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="20"/>
+			<attnum name="y" val="292"/>
+			<attstr name="text" val="Anti-aliasing:"/>
+			<attstr name="text-spa" val="Anti-aliasing:"/>
+			<attstr name="text-cat" val="Antialiàsing:"/>
+			<attstr name="text-ru" val="Сглаживание:"/>
+			<attstr name="tip" val="Set anti-aliasing multiplier. Higher values provide better visual fidelity, but worse performance."/>
+			<attstr name="tip-spa" val="Establecer anti-aliasing. Los valores más altos proporcionan una mejor fidelidad visual, pero peor rendimiento."/>
+			<attstr name="tip-cat" val="Determineu el multiplicador de antialiàsing. Els valors més alts proporcionen millors gràfics, però pitjor rendiment"/>
+			<attstr name="tip-ru" val="Установите мультипликатор сглаживания. Высокие значения улучшают качество отображения, но снижают производительность."/>
+			<attstr name="h align" val="right"/>
+			<attnum name="width" val="220"/>
+			<attstr name="font" val="small_t"/>
+			<attstr name="color" val="0xa6a6a6"/>
+		</section>
+		<section name="15">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="20"/>
+			<attnum name="y" val="262"/>
+			<attstr name="text" val="Anisotropic filter:"/>
+			<attstr name="text-spa" val="Filtro anisotrópico:"/>
+			<attstr name="text-cat" val="Filtre anisotròpic:"/>
+			<attstr name="text-ru" val="Анизотропный фильтр:"/>
+			<attstr name="tip" val="Set anisotropic filter quality. Higher values make far textures look sharper."/>
+			<attstr name="tip-spa" val="Establece el filtro anisotrópico. Los valores más altos hacen que las texturas lejanas se vean más nítidas."/>
+			<attstr name="tip-cat" val="Determineu el filtre anisotròpic. Amb valors més alts, les textures llunyanes es veuran més nítides."/>
+			<attstr name="tip-ru" val="Установить качество анизотропного фильтра. Высокие значения делают отдаленные текстуры более резкими."/>
+			<attstr name="h align" val="right"/>
+			<attnum name="width" val="220"/>
+			<attstr name="font" val="small_t"/>
+			<attstr name="color" val="0xa6a6a6"/>
+		</section>
+	</section>
+</params>

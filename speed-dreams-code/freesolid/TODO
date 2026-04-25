@@ -1,0 +1,11 @@
+GvdB	Fix linkage against qhull. Uncomment '#include <config.h>' in
+		Polyhedron.cpp
+
+		Fix automake/autoconf files such that 'make dist' works.
+
+		NB: libmoto can not be mixed with the 3D classes from SOLID
+		2.0, since SOLID 2.0 GJK relies on 64-bit float accuracy.
+
+		Update headers to reflect the LGPL status of the new files.
+
+   

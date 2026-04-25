@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Speed Dreams, a free and open source motorsport simulator.            -->
+<!-- Copyright (C) 2026 Xavier Del Campo Romero                            -->
+<!-- This program is free software; you can redistribute it and/or modify  -->
+<!-- it under the terms of the GNU General Public License as published by  -->
+<!-- the Free Software Foundation; either version 2 of the License, or     -->
+<!-- (at your option) any later version.                                   -->
+<!DOCTYPE params SYSTEM "../tgf/params.dtd">
+<params name="grboard">
+    <section name="translatable">
+        <section name="yes">
+            <attstr name="text" val="YES"/>
+            <attstr name="text-fra" val="Oui"/>
+            <attstr name="text-spa" val="Sí."/>
+            <attstr name="text-cat" val="SÍ"/>
+            <attstr name="text-ru" val="ДА"/>
+        </section>
+        <section name="no">
+            <attstr name="text" val="NO"/>
+            <attstr name="text-fra" val="NON"/>
+            <attstr name="text-spa" val="NO"/>
+            <attstr name="text-cat" val="NO"/>
+            <attstr name="text-ru" val="НЕТ"/>
+        </section>
+        <section name="topspeed">
+            <attstr name="text" val="Top Speed"/>
+            <attstr name="text-fra" val="Vitesse maximale"/>
+            <attstr name="text-spa" val="Top Velocidad"/>
+            <attstr name="text-cat" val="Vel. màx."/>
+            <attstr name="text-ru" val="Макс. скорость"/>
+        </section>
+        <section name="best">
+            <attstr name="text" val="Best"/>
+            <attstr name="text-spa" val="Mejor"/>
+            <attstr name="text-cat" val="Millor"/>
+            <attstr name="text-ru" val="Лучший"/>
+        </section>
+        <section name="time">
+            <attstr name="text" val="Time"/>
+            <attstr name="text-spa" val="Tiempo"/>
+            <attstr name="text-cat" val="Temps"/>
+            <attstr name="text-ru" val="Время"/>
+        </section>
+        <section name="seg">
+            <attstr name="text" val="Seg"/>
+            <attstr name="text-ru" val="Сегм."/>
+            <attstr name="text-spa" val="Seg"/>
+            <attstr name="text-cat" val="Seg"/>
+        </section>
+        <section name="cam">
+            <attstr name="text" val="Cam"/>
+            <attstr name="text-spa" val="Cam"/>
+            <attstr name="text-cat" val="Càm"/>
+        </section>
+        <section name="dfs">
+            <attstr name="text" val="DfS"/>
+            <attstr name="text-spa" val="DfS"/>
+            <attstr name="text-cat" val="Dis"/>
+        </section>
+        <section name="timeleft">
+            <attstr name="text" val="Time left"/>
+            <attstr name="text-spa" val="Hora izquierda"/>
+            <attstr name="text-cat" val="Temps rest."/>
+            <attstr name="text-ru" val="Ост. вр."/>
+        </section>
+        <section name="laps">
+            <attstr name="text" val="Laps"/>
+            <attstr name="text-spa" val="Cambios"/>
+            <attstr name="text-cat" val="Voltes"/>
+            <attstr name="text-ru" val="Круги"/>
+        </section>
+        <section name="lap">
+            <attstr name="text" val="Lap"/>
+            <attstr name="text-spa" val="Lap"/>
+            <attstr name="text-cat" val="Volta"/>
+            <attstr name="text-ru" val="Круг"/>
+        </section>
+        <section name="brakerep">
+            <attstr name="text" val="F/R Brake Rep."/>
+            <attstr name="text-spa" val="F/R Brake Rep."/>
+            <attstr name="text-cat" val="Rep. Frens F/R"/>
+            <attstr name="text-ru" val="П/З торм. баланс"/>
+        </section>
+        <section name="frontARB">
+            <attstr name="text" val="Front ARB"/>
+            <attstr name="text-spa" val="Front ARB"/>
+            <attstr name="text-cat" val="ARB Frontal"/>
+            <attstr name="text-ru" val="Пер. стабилизатор"/>
+        </section>
+        <section name="rearARB">
+            <attstr name="text" val="Rear ARB"/>
+            <attstr name="text-spa" val="Rear ARB"/>
+            <attstr name="text-cat" val="ARB Post."/>
+            <attstr name="text-ru" val="Задн. стабилизатор"/>
+        </section>
+        <section name="FdiffMSB">
+            <attstr name="text" val="F Pow Max Slip"/>
+        </section>
+        <section name="FdiffCMSB">
+            <attstr name="text" val="F Coa Max Slip"/>
+        </section>
+        <section name="RdiffMSB">
+            <attstr name="text" val="R Pow Max Slip"/>
+        </section>
+        <section name="RdiffCMSB">
+            <attstr name="text" val="R Coa Max Slip"/>
+        </section>
+        <section name="CdiffMSB">
+            <attstr name="text" val="C Pow Max Slip"/>
+        </section>
+        <section name="CdiffCMSB">
+            <attstr name="text" val="C Coa Max Slip"/>
+        </section>
+        <section name="curr">
+            <attstr name="text" val="Curr"/>
+            <attstr name="text-spa" val="Curr"/>
+            <attstr name="text-cat" val="Act."/>
+            <attstr name="text-ru" val="Текущ."/>
+        </section>
+        <section name="last">
+            <attstr name="text" val="Last"/>
+            <attstr name="text-spa" val="Último"/>
+            <attstr name="text-cat" val="Última"/>
+            <attstr name="text-ru" val="Посл."/>
+        </section>
+        <section name="total">
+            <attstr name="text" val="Total"/>
+            <attstr name="text-spa" val="Total"/>
+            <attstr name="text-cat" val="Total"/>
+            <attstr name="text-ru" val="Общее"/>
+        </section>
+        <section name="damage">
+            <attstr name="text" val="Damage"/>
+            <attstr name="text-spa" val="Daños"/>
+            <attstr name="text-cat" val="Danys"/>
+            <attstr name="text-ru" val="Повреждение"/>
+        </section>
+        <section name="fuel">
+            <attstr name="text" val="Fuel"/>
+            <attstr name="text-spa" val="Fuel"/>
+            <attstr name="text-cat" val="Combustible"/>
+            <attstr name="text-ru" val="Топливо"/>
+        </section>
+        <section name="repair">
+            <attstr name="text" val="Repair"/>
+            <attstr name="text-spa" val="Reparación"/>
+            <attstr name="text-cat" val="Reparar"/>
+            <attstr name="text-ru" val="Ремонт"/>
+        </section>
+        <section name="tireset">
+            <attstr name="text" val="New tires"/>
+            <attstr name="text-spa" val="Nuevos neumáticos"/>
+            <attstr name="text-cat" val="Pneumàtics nous"/>
+            <attstr name="text-ru" val="Новые шины"/>
+        </section>
+        <section name="out">
+            <attstr name="text" val="out"/>
+            <attstr name="text-spa" val="Fuera."/>
+            <attstr name="text-cat" val="fora"/>
+        </section>
+        <section name="pit">
+            <attstr name="text" val="PIT"/>
+            <attstr name="text-spa" val="PIT"/>
+            <attstr name="text-cat" val="BOX"/>
+        </section>
+        <section name="airtemp">
+            <attstr name="text" val="Air Temperature"/>
+            <attstr name="text-spa" val="Temperatura de aire"/>
+            <attstr name="text-cat" val="Temperatura amb."/>
+            <attstr name="text-ru" val="Температура воздуха"/>
+        </section>
+        <section name="waitingvalidlap">
+            <attstr name="text" val="Waiting for valid lap"/>
+            <attstr name="text-spa" val="Esperando una vuelta válida"/>
+            <attstr name="text-cat" val="Esperant volta vàlida"/>
+            <attstr name="text-ru" val="Ожидание выполнения круга"/>
+        </section>
+        <section name="compounds">
+            <attstr name="text" val="Compounds"/>
+            <attstr name="text-spa" val="Compuestos"/>
+            <attstr name="text-cat" val="Compost"/>
+            <attstr name="text-ru" val="Состав шин"/>
+            <section name="soft">
+                <attstr name="text" val="SOFT"/>
+                <attstr name="text-spa" val="SOFT"/>
+                <attstr name="text-cat" val="TOUS"/>
+                <attstr name="text-ru" val="МЯГКИЕ"/>
+            </section>
+            <section name="medium">
+                <attstr name="text" val="MEDIUM"/>
+                <attstr name="text-spa" val="MEDIO"/>
+                <attstr name="text-cat" val="MITJOS"/>
+                <attstr name="text-ru" val="СРЕДНИЕ"/>
+            </section>
+            <section name="hard">
+                <attstr name="text" val="HARD"/>
+                <attstr name="text-spa" val="HARD"/>
+                <attstr name="text-cat" val="DURS"/>
+                <attstr name="text-ru" val="ЖЕСТКИЕ"/>
+            </section>
+            <section name="wet">
+                <attstr name="text" val="WET"/>
+                <attstr name="text-spa" val="WET"/>
+                <attstr name="text-cat" val="PLUJA"/>
+                <attstr name="text-ru" val="ПРОМЕЖУТОЧНЫЕ"/>
+            </section>
+            <section name="extwet">
+                <attstr name="text" val="EXT WET"/>
+                <attstr name="text-spa" val="EXT WET"/>
+                <attstr name="text-cat" val="PLUJA EXT"/>
+                <attstr name="text-ru" val="ДОЖДЕВЫЕ"/>
+            </section>
+        </section>
+        <section name="frontwing">
+            <attstr name="text" val="Front wing"/>
+            <attstr name="text-spa" val="Ala frontal"/>
+            <attstr name="text-cat" val="Aleró frontal"/>
+            <attstr name="text-ru" val="Переднее крыло"/>
+        </section>
+        <section name="rearwing">
+            <attstr name="text" val="Rear wing"/>
+            <attstr name="text-spa" val="Ala trasera"/>
+            <attstr name="text-cat" val="Aleró posterior"/>
+            <attstr name="text-ru" val="Заднее крыло"/>
+        </section>
+        <section name="boxtype">
+            <attstr name="text" val="Next pit type"/>
+            <attstr name="text-spa" val="Siguiente tipo de foso"/>
+            <attstr name="text-cat" val="Pròxims boxes"/>
+            <attstr name="text-ru" val="Cлед. пит-стоп"/>
+            <section name="penalty">
+                <attstr name="text" val="PENALTY"/>
+                <attstr name="text-spa" val="PENALTY"/>
+                <attstr name="text-cat" val="PENALITZACIÓ"/>
+                <attstr name="text-ru" val="ШТРАФ"/>
+            </section>
+            <section name="repair">
+                <attstr name="text" val="REPAIR"/>
+                <attstr name="text-spa" val="REPAIR"/>
+                <attstr name="text-cat" val="REPARAR"/>
+                <attstr name="text-ru" val="РЕМОНТ"/>
+            </section>
+        </section>
+    </section>
+</params>

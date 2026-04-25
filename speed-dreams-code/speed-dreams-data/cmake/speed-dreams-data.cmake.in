@@ -1,0 +1,5 @@
+@PACKAGE_INIT@
+set_and_check(SD_DATADIR_ABS "@PACKAGE_datadir@")
+set(SD_DATADIR_INSTALL_PREFIX "${SD_DATADIR_ABS}")
+set(SD_DATADIR "@datadir@")
+check_required_components(speed-dreams-data)

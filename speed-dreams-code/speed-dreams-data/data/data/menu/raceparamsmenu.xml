@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    file                 : raceoptmenu.xml
+    created              : 2009
+    copyright            : (C) 2009 by Brian Gavin, Eckhard M. Jaeger
+    web                  : speed-dreams.sourceforge.net
+-->
+<!--    This program is free software; you can redistribute it and/or modify  -->
+<!--    it under the terms of the GNU General Public License as published by  -->
+<!--    the Free Software Foundation; either version 2 of the License, or     -->
+<!--    (at your option) any later version.                                   -->
+<!--
+
+	Race options menu
+
+-->
+<!DOCTYPE params SYSTEM "../tgf/params.dtd">
+<params name="racemenu">
+  <section name="translatable">
+    <section name="options">
+      <attstr name="text" val="Options"/>
+      <attstr name="text-fra" val="Options"/>
+      <attstr name="text-spa" val="Opciones"/>
+      <attstr name="text-cat" val="Opcions"/>
+      <attstr name="text-ru" val="Опции"/>
+    </section>
+    <section name="results only">
+      <attstr name="text" val="Results only"/>
+      <attstr name="text-fra" val="Résultats seulement"/>
+      <attstr name="text-spa" val="Sólo resultados"/>
+      <attstr name="text-cat" val="Només resultats"/>
+      <attstr name="text-ru" val="Только результаты"/>
+    </section>
+    <section name="normal">
+      <attstr name="text" val="Normal"/>
+      <attstr name="text-spa" val="Normal"/>
+      <attstr name="text-cat" val="Normal"/>
+      <attstr name="text-ru" val="Нормальная"/>
+    </section>
+    <section name="dawn">
+      <attstr name="text" val="Dawn"/>
+      <attstr name="text-fra" val="Aube"/>
+      <attstr name="text-spa" val="Amanecer"/>
+      <attstr name="text-cat" val="Alba"/>
+      <attstr name="text-ru" val="Рассвет"/>
+    </section>
+    <section name="morning">
+      <attstr name="text" val="Morning"/>
+      <attstr name="text-fra" val="Avant-midi"/>
+      <attstr name="text-spa" val="Mañana"/>
+      <attstr name="text-cat" val="Matí"/>
+      <attstr name="text-ru" val="Утро"/>
+    </section>
+    <section name="noon">
+      <attstr name="text" val="Noon"/>
+      <attstr name="text-fra" val="Mi-Journée"/>
+      <attstr name="text-spa" val="Mediodía"/>
+      <attstr name="text-cat" val="Migdia"/>
+      <attstr name="text-ru" val="Полдень"/>
+    </section>
+    <section name="afternoon">
+      <attstr name="text" val="Afternoon"/>
+      <attstr name="text-fra" val="Après-midi"/>
+      <attstr name="text-spa" val="Tarde"/>
+      <attstr name="text-cat" val="Tarda"/>
+      <attstr name="text-ru" val="После полудня"/>
+    </section>
+    <section name="dusk">
+      <attstr name="text" val="Dusk"/>
+      <attstr name="text-fra" val="Crépuscule"/>
+      <attstr name="text-spa" val="Ocaso"/>
+      <attstr name="text-cat" val="Vespre"/>
+      <attstr name="text-ru" val="Сумерки"/>
+    </section>
+    <section name="night">
+      <attstr name="text" val="Night"/>
+      <attstr name="text-fra" val="Nuit"/>
+      <attstr name="text-spa" val="Noche"/>
+      <attstr name="text-cat" val="Nit"/>
+      <attstr name="text-ru" val="Ночь"/>
+    </section>
+    <section name="from track">
+      <attstr name="text" val="From track"/>
+      <attstr name="text-fra" val="Selon le circuit"/>
+      <attstr name="text-spa" val="Según circuito"/>
+      <attstr name="text-cat" val="Segons circuit"/>
+      <attstr name="text-ru" val="Как на трассе"/>
+    </section>
+    <section name="24 hour">
+      <attstr name="text" val="24 hours"/>
+      <attstr name="text-fra" val="24 heures"/>
+      <attstr name="text-spa" val="24 horas"/>
+      <attstr name="text-cat" val="24 hores"/>
+      <attstr name="text-ru" val="24 часа"/>
+    </section>
+    <section name="config">
+      <attstr name="text" val="User-configured"/>
+      <attstr name="text-fra" val="Personnalisée"/>
+      <attstr name="text-spa" val="Personalizado"/>
+      <attstr name="text-cat" val="Configurat per l'usuari"/>
+      <attstr name="text-ru" val="Настройки пользователя"/>
+    </section>
+    <section name="real">
+      <attstr name="text" val="Real-time"/>
+      <attstr name="text-fra" val="Temps réel"/>
+      <attstr name="text-spa" val="Hora real"/>
+      <attstr name="text-cat" val="Temps real"/>
+      <attstr name="text-ru" val="В реальном времени"/>
+    </section>
+    <section name="spring">
+      <attstr name="text" val="Spring"/>
+      <attstr name="text-fra" val="Printemps"/>
+      <attstr name="text-spa" val="Primavera"/>
+      <attstr name="text-cat" val="Primavera"/>
+      <attstr name="text-ru" val="Весна"/>
+    </section>
+    <section name="summer">
+      <attstr name="text" val="Summer"/>
+      <attstr name="text-fra" val="Été"/>
+      <attstr name="text-spa" val="Verano"/>
+      <attstr name="text-cat" val="Estiu"/>
+      <attstr name="text-ru" val="Лето"/>
+    </section>
+    <section name="autumn">
+      <attstr name="text" val="Autumn"/>
+      <attstr name="text-fra" val="Automne"/>
+      <attstr name="text-spa" val="Otoño"/>
+      <attstr name="text-cat" val="Tardor"/>
+      <attstr name="text-ru" val="Осень"/>
+    </section>
+    <section name="winter">
+      <attstr name="text" val="Winter"/>
+      <attstr name="text-fra" val="Hiver"/>
+      <attstr name="text-spa" val="Invierno"/>
+      <attstr name="text-cat" val="Hivern"/>
+      <attstr name="text-ru" val="Зима"/>
+    </section>
+    <section name="now">
+      <attstr name="text" val="Now"/>
+      <attstr name="text-fra" val="Actuel"/>
+      <attstr name="text-spa" val="Actual"/>
+      <attstr name="text-cat" val="Actual"/>
+      <attstr name="text-ru" val="Текущее"/>
+    </section>
+    <section name="none">
+      <attstr name="text" val="None"/>
+      <attstr name="text-fra" val="Aucune"/>
+      <attstr name="text-spa" val="No"/>
+      <attstr name="text-cat" val="Cap"/>
+      <attstr name="text-ru" val="Нет"/>
+    </section>
+    <section name="little">
+      <attstr name="text" val="Little"/>
+      <attstr name="text-fra" val="Faible"/>
+      <attstr name="text-spa" val="Poca"/>
+      <attstr name="text-cat" val="Poca"/>
+      <attstr name="text-ru" val="Небольшой"/>
+    </section>
+    <section name="medium">
+      <attstr name="text" val="Medium"/>
+      <attstr name="text-fra" val="Modérée"/>
+      <attstr name="text-spa" val="Medio"/>
+      <attstr name="text-cat" val="Mig"/>
+      <attstr name="text-ru" val="Средний"/>
+    </section>
+    <section name="heavy">
+      <attstr name="text" val="Heavy"/>
+      <attstr name="text-fra" val="Forte"/>
+      <attstr name="text-spa" val="Fuerte"/>
+      <attstr name="text-cat" val="Forta"/>
+      <attstr name="text-ru" val="Сильный"/>
+    </section>
+    <section name="no cloud">
+      <attstr name="text" val="No clouds"/>
+      <attstr name="text-fra" val="Ciel dégagé"/>
+      <attstr name="text-spa" val="Sin nubes"/>
+      <attstr name="text-cat" val="Assolellat"/>
+      <attstr name="text-ru" val="Безоблачно"/>
+    </section>
+    <section name="cirrus">
+      <attstr name="text" val="Cirrus"/>
+      <attstr name="text-spa" val="Cirrus"/>
+      <attstr name="text-cat" val="Cirrus"/>
+      <attstr name="text-ru" val="Перистые"/>
+    </section>
+    <section name="few clouds">
+      <attstr name="text" val="Few clouds"/>
+      <attstr name="text-fra" val="Peu de nuages"/>
+      <attstr name="text-spa" val="Pocas nubes"/>
+      <attstr name="text-cat" val="Pocs núvols"/>
+      <attstr name="text-ru" val="Мало"/>
+    </section>
+    <section name="many clouds">
+      <attstr name="text" val="Many clouds"/>
+      <attstr name="text-fra" val="Beaucoup de nuages"/>
+      <attstr name="text-spa" val="Muchas nubes"/>
+      <attstr name="text-cat" val="Ennuvolat"/>
+      <attstr name="text-ru" val="Много"/>
+    </section>
+    <section name="cumulus">
+      <attstr name="text" val="Cumulus"/>
+      <attstr name="text-spa" val="Cumulus"/>
+      <attstr name="text-cat" val="Cumulus"/>
+      <attstr name="text-ru" val="Кучевые"/>
+    </section>
+    <section name="scarce clouds">
+      <attstr name="text" val="Scarce clouds"/>
+      <attstr name="text-fra" val="Épars"/>
+      <attstr name="text-spa" val="Algunas nubes"/>
+      <attstr name="text-cat" val="Alguns núvols"/>
+      <attstr name="text-ru" val="Редкие"/>
+    </section>
+    <section name="broken">
+      <attstr name="text" val="Broken"/>
+      <attstr name="text-fra" val="Fragmenté"/>
+      <attstr name="text-spa" val="Cielo roto"/>
+      <attstr name="text-cat" val="Núvols escampats"/>
+      <attstr name="text-ru" val="Рассеянные"/>
+    </section>
+    <section name="full cover">
+      <attstr name="text" val="Full cover"/>
+      <attstr name="text-fra" val="Couvert"/>
+      <attstr name="text-spa" val="Cielo cubierto"/>
+      <attstr name="text-cat" val="Cel cobert"/>
+      <attstr name="text-ru" val="Пасмурно"/>
+    </section>
+    <section name="random">
+      <attstr name="text" val="Random"/>
+      <attstr name="text-fra" val="Aléatoire"/>
+      <attstr name="text-spa" val="Aleatorio"/>
+      <attstr name="text-cat" val="Aleatori"/>
+      <attstr name="text-ru" val="Случайно"/>
+    </section>
+  </section>
+  <section name="dynamic controls">
+    <!-- Title -->
+    <section name="titlelabel">
+      <attstr name="type" val="label"/>
+      <attnum name="max len" val="40"/>
+      <attnum name="x" val="300"/>
+      <attnum name="y" val="430"/>
+      <attnum name="width" val="400"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium_t"/>
+      <attstr name="h align" val="left"/>
+    </section>
+    <section name="nooptionlabel">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val="No option to configure; please, go on"/>
+      <attstr name="text-spa" val="No hay opciones a configurar; por favor, continúe"/>
+      <attstr name="text-cat" val="No hi ha opcions a configurar; si us plau, continueu"/>
+      <attstr name="text-ru" val="Нет опций для настройки; переходите далее"/>
+      <attnum name="x" val="20"/>
+      <attnum name="y" val="240"/>
+      <attnum name="width" val="600"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="bg image" val="data/img/bg-button-big-normal.png"/>
+      <attnum name="bg image padding top" val="8"/>
+      <attnum name="bg image padding bottom" val="5"/>
+      <attnum name="bg image padding left" val="-39"/>
+      <attnum name="bg image padding right" val="20"/>
+    </section>
+    <!-- Distance -->
+    <section name="distanceedit">
+      <attstr name="type" val="edit box"/>
+      <attnum name="max len" val="5"/>
+      <attnum name="x" val="270"/>
+      <attnum name="y" val="356"/>
+      <attnum name="width" val="210"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="font" val="medium"/>
+    </section>
+    <section name="distancelabel">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="20"/>
+      <attnum name="y" val="356"/>
+      <attstr name="text" val="Distance (km):"/>
+      <attstr name="text-spa" val="Distancia (km):"/>
+      <attstr name="text-cat" val="Distància (km):"/>
+      <attstr name="text-ru" val="Дистанция (км):"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="220"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="bg image" val="data/img/bg-button-big-normal.png"/>
+      <attnum name="bg image padding top" val="8"/>
+      <attnum name="bg image padding bottom" val="5"/>
+      <attnum name="bg image padding left" val="-39"/>
+      <attnum name="bg image padding right" val="20"/>
+    </section>
+    <!-- Laps -->
+    <section name="lapsedit">
+      <attstr name="type" val="edit box"/>
+      <attnum name="max len" val="4"/>
+      <attnum name="x" val="270"/>
+      <attnum name="y" val="326"/>
+      <attnum name="width" val="210"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="font" val="medium"/>
+    </section>
+    <section name="lapslabel">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="20"/>
+      <attnum name="y" val="328"/>
+      <attstr name="text" val="Number of laps:"/>
+      <attstr name="text-fra" val="Nombre de tours:"/>
+      <attstr name="text-spa" val="Vueltas:"/>
+      <attstr name="text-cat" val="Voltes:"/>
+      <attstr name="text-ru" val="Количество кругов:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="220"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="bg image" val="data/img/bg-button-big-normal.png"/>
+      <attnum name="bg image padding top" val="8"/>
+      <attnum name="bg image padding bottom" val="5"/>
+      <attnum name="bg image padding left" val="-39"/>
+      <attnum name="bg image padding right" val="20"/>
+    </section>
+    <!-- Timed -->
+    <section name="durationedit">
+      <attstr name="type" val="edit box"/>
+      <attnum name="max len" val="8"/>
+      <attnum name="x" val="270"/>
+      <attnum name="y" val="296"/>
+      <attnum name="width" val="210"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="font" val="medium"/>
+    </section>
+    <section name="durationlabel">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="20"/>
+      <attnum name="y" val="300"/>
+      <attstr name="text" val="Duration (hh:mm:ss):"/>
+      <attstr name="text-fra" val="Durée (hh:mm:ss):"/>
+      <attstr name="text-spa" val="Duración (hh:mm:ss):"/>
+      <attstr name="text-cat" val="Duració (hh:mm:ss):"/>
+      <attstr name="text-ru" val="Длительность (чч:мм:сс):"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="220"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="bg image" val="data/img/bg-button-big-normal.png"/>
+      <attnum name="bg image padding top" val="8"/>
+      <attnum name="bg image padding bottom" val="5"/>
+      <attnum name="bg image padding left" val="-39"/>
+      <attnum name="bg image padding right" val="20"/>
+    </section>
+    <!-- Daytime -->
+    <section name="timeofdaylabel">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="20"/>
+      <attnum name="y" val="212"/>
+      <attstr name="text" val="Time of day:"/>
+      <attstr name="text-fra" val="Heure de la journée:"/>
+      <attstr name="text-spa" val="Hora del día:"/>
+      <attstr name="text-cat" val="Hora del dia:"/>
+      <attstr name="text-ru" val="Время дня:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="220"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="bg image" val="data/img/bg-button-big-normal.png"/>
+      <attnum name="bg image padding top" val="8"/>
+      <attnum name="bg image padding bottom" val="5"/>
+      <attnum name="bg image padding left" val="-39"/>
+      <attnum name="bg image padding right" val="20"/>
+    </section>
+    <section name="timeofdayleftarrow">
+      <attstr name="type" val="image button"/>
+      <attnum name="x" val="265"/>
+      <attnum name="y" val="208"/>
+      <attnum name="width" val="24"/>
+      <attnum name="height" val="25"/>
+      <attstr name="disabled image" val="data/img/arrowleft-disabled.png"/>
+      <attstr name="enabled image" val="data/img/arrowleft-normal.png"/>
+      <attstr name="focused image" val="data/img/arrowleft-focused.png"/>
+      <attstr name="pushed image" val="data/img/arrowleft-pushed.png"/>
+    </section>
+    <section name="timeofdayrightarrow">
+      <attstr name="type" val="image button"/>
+      <attnum name="x" val="465"/>
+      <attnum name="y" val="208"/>
+      <attnum name="width" val="24"/>
+      <attnum name="height" val="25"/>
+      <attstr name="disabled image" val="data/img/arrowright-disabled.png"/>
+      <attstr name="enabled image" val="data/img/arrowright-normal.png"/>
+      <attstr name="focused image" val="data/img/arrowright-focused.png"/>
+      <attstr name="pushed image" val="data/img/arrowright-pushed.png"/>
+    </section>
+    <section name="timeofdayedit">
+      <attstr name="type" val="label"/>
+      <attnum name="max len" val="15"/>
+      <attnum name="x" val="295"/>
+      <attnum name="y" val="212"/>
+      <attnum name="width" val="205"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="bg image" val="data/img/label-background.png"/>
+      <attnum name="bg image padding top" val="5"/>
+      <attnum name="bg image padding bottom" val="4"/>
+      <attnum name="bg image padding left" val="6"/>
+      <attnum name="bg image padding right" val="-35"/>
+    </section>
+    <!-- Clouds -->
+    <section name="cloudslabel">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="20"/>
+      <attnum name="y" val="182"/>
+      <attstr name="text" val="Cloud cover:"/>
+      <attstr name="text-fra" val="État du ciel:"/>
+      <attstr name="text-spa" val="Nubes:"/>
+      <attstr name="text-cat" val="Núvols:"/>
+      <attstr name="text-ru" val="Облака:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="220"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="bg image" val="data/img/bg-button-big-normal.png"/>
+      <attnum name="bg image padding top" val="8"/>
+      <attnum name="bg image padding bottom" val="5"/>
+      <attnum name="bg image padding left" val="-39"/>
+      <attnum name="bg image padding right" val="20"/>
+    </section>
+    <section name="cloudsleftarrow">
+      <attstr name="type" val="image button"/>
+      <attnum name="x" val="265"/>
+      <attnum name="y" val="178"/>
+      <attnum name="width" val="24"/>
+      <attnum name="height" val="25"/>
+      <attstr name="disabled image" val="data/img/arrowleft-disabled.png"/>
+      <attstr name="enabled image" val="data/img/arrowleft-normal.png"/>
+      <attstr name="focused image" val="data/img/arrowleft-focused.png"/>
+      <attstr name="pushed image" val="data/img/arrowleft-pushed.png"/>
+    </section>
+    <section name="cloudsrightarrow">
+      <attstr name="type" val="image button"/>
+      <attnum name="x" val="465"/>
+      <attnum name="y" val="178"/>
+      <attnum name="width" val="24"/>
+      <attnum name="height" val="25"/>
+      <attstr name="disabled image" val="data/img/arrowright-disabled.png"/>
+      <attstr name="enabled image" val="data/img/arrowright-normal.png"/>
+      <attstr name="focused image" val="data/img/arrowright-focused.png"/>
+      <attstr name="pushed image" val="data/img/arrowright-pushed.png"/>
+    </section>
+    <section name="cloudsedit">
+      <attstr name="type" val="label"/>
+      <attnum name="max len" val="15"/>
+      <attnum name="x" val="295"/>
+      <attnum name="y" val="182"/>
+      <attnum name="width" val="205"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="bg image" val="data/img/label-background.png"/>
+      <attnum name="bg image padding top" val="5"/>
+      <attnum name="bg image padding bottom" val="4"/>
+      <attnum name="bg image padding left" val="6"/>
+      <attnum name="bg image padding right" val="-35"/>
+    </section>
+    <!-- Rain -->
+    <section name="rainlabel">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="20"/>
+      <attnum name="y" val="152"/>
+      <attstr name="text" val="Rain:"/>
+      <attstr name="text-fra" val="Pluie:"/>
+      <attstr name="text-spa" val="Lluvia:"/>
+      <attstr name="text-cat" val="Pluja:"/>
+      <attstr name="text-ru" val="Дождь:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="220"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="bg image" val="data/img/bg-button-big-normal.png"/>
+      <attnum name="bg image padding top" val="8"/>
+      <attnum name="bg image padding bottom" val="5"/>
+      <attnum name="bg image padding left" val="-39"/>
+      <attnum name="bg image padding right" val="20"/>
+    </section>
+    <section name="rainleftarrow">
+      <attstr name="type" val="image button"/>
+      <attnum name="x" val="265"/>
+      <attnum name="y" val="148"/>
+      <attnum name="width" val="24"/>
+      <attnum name="height" val="25"/>
+      <attstr name="disabled image" val="data/img/arrowleft-disabled.png"/>
+      <attstr name="enabled image" val="data/img/arrowleft-normal.png"/>
+      <attstr name="focused image" val="data/img/arrowleft-focused.png"/>
+      <attstr name="pushed image" val="data/img/arrowleft-pushed.png"/>
+    </section>
+    <section name="rainrightarrow">
+      <attstr name="type" val="image button"/>
+      <attnum name="x" val="465"/>
+      <attnum name="y" val="148"/>
+      <attnum name="width" val="24"/>
+      <attnum name="height" val="25"/>
+      <attstr name="disabled image" val="data/img/arrowright-disabled.png"/>
+      <attstr name="enabled image" val="data/img/arrowright-normal.png"/>
+      <attstr name="focused image" val="data/img/arrowright-focused.png"/>
+      <attstr name="pushed image" val="data/img/arrowright-pushed.png"/>
+    </section>
+    <section name="rainedit">
+      <attstr name="type" val="label"/>
+      <attnum name="max len" val="15"/>
+      <attnum name="x" val="295"/>
+      <attnum name="y" val="152"/>
+      <attnum name="width" val="205"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="bg image" val="data/img/label-background.png"/>
+      <attnum name="bg image padding top" val="5"/>
+      <attnum name="bg image padding bottom" val="4"/>
+      <attnum name="bg image padding left" val="6"/>
+      <attnum name="bg image padding right" val="-35"/>
+    </section>
+    <!-- Month Start Championship -->
+    <section name="seasonlabel">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="20"/>
+      <attnum name="y" val="122"/>
+      <attstr name="text" val="Season:"/>
+      <attstr name="text-fra" val="Saison:"/>
+      <attstr name="text-spa" val="Estación:"/>
+      <attstr name="text-cat" val="Estació:"/>
+      <attstr name="text-ru" val="Время года:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="220"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="bg image" val="data/img/bg-button-big-normal.png"/>
+      <attnum name="bg image padding top" val="8"/>
+      <attnum name="bg image padding bottom" val="5"/>
+      <attnum name="bg image padding left" val="-39"/>
+      <attnum name="bg image padding right" val="20"/>
+    </section>
+    <section name="seasonleftarrow">
+      <attstr name="type" val="image button"/>
+      <attnum name="x" val="265"/>
+      <attnum name="y" val="118"/>
+      <attnum name="width" val="24"/>
+      <attnum name="height" val="25"/>
+      <attstr name="disabled image" val="data/img/arrowleft-disabled.png"/>
+      <attstr name="enabled image" val="data/img/arrowleft-normal.png"/>
+      <attstr name="focused image" val="data/img/arrowleft-focused.png"/>
+      <attstr name="pushed image" val="data/img/arrowleft-pushed.png"/>
+    </section>
+    <section name="seasonrightarrow">
+      <attstr name="type" val="image button"/>
+      <attnum name="x" val="465"/>
+      <attnum name="y" val="118"/>
+      <attnum name="width" val="24"/>
+      <attnum name="height" val="25"/>
+      <attstr name="disabled image" val="data/img/arrowright-disabled.png"/>
+      <attstr name="enabled image" val="data/img/arrowright-normal.png"/>
+      <attstr name="focused image" val="data/img/arrowright-focused.png"/>
+      <attstr name="pushed image" val="data/img/arrowright-pushed.png"/>
+    </section>
+    <section name="seasonedit">
+      <attstr name="type" val="label"/>
+      <attnum name="max len" val="15"/>
+      <attnum name="x" val="295"/>
+      <attnum name="y" val="122"/>
+      <attnum name="width" val="205"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="bg image" val="data/img/label-background.png"/>
+      <attnum name="bg image padding top" val="5"/>
+      <attnum name="bg image padding bottom" val="4"/>
+      <attnum name="bg image padding left" val="6"/>
+      <attnum name="bg image padding right" val="-35"/>
+    </section>
+    <!-- Month Start Championship -->
+    <section name="weatherlabel">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="20"/>
+      <attnum name="y" val="242"/>
+      <attstr name="text" val="Weather:"/>
+      <attstr name="text-fra" val="Météo:"/>
+      <attstr name="text-spa" val="Clima:"/>
+      <attstr name="text-cat" val="Clima:"/>
+      <attstr name="text-ru" val="Погода:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="220"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="bg image" val="data/img/bg-button-big-normal.png"/>
+      <attnum name="bg image padding top" val="8"/>
+      <attnum name="bg image padding bottom" val="5"/>
+      <attnum name="bg image padding left" val="-39"/>
+      <attnum name="bg image padding right" val="20"/>
+    </section>
+    <section name="weatherleftarrow">
+      <attstr name="type" val="image button"/>
+      <attnum name="x" val="265"/>
+      <attnum name="y" val="238"/>
+      <attnum name="width" val="24"/>
+      <attnum name="height" val="25"/>
+      <attstr name="disabled image" val="data/img/arrowleft-disabled.png"/>
+      <attstr name="enabled image" val="data/img/arrowleft-normal.png"/>
+      <attstr name="focused image" val="data/img/arrowleft-focused.png"/>
+      <attstr name="pushed image" val="data/img/arrowleft-pushed.png"/>
+    </section>
+    <section name="weatherrightarrow">
+      <attstr name="type" val="image button"/>
+      <attnum name="x" val="465"/>
+      <attnum name="y" val="238"/>
+      <attnum name="width" val="24"/>
+      <attnum name="height" val="25"/>
+      <attstr name="disabled image" val="data/img/arrowright-disabled.png"/>
+      <attstr name="enabled image" val="data/img/arrowright-normal.png"/>
+      <attstr name="focused image" val="data/img/arrowright-focused.png"/>
+      <attstr name="pushed image" val="data/img/arrowright-pushed.png"/>
+    </section>
+    <section name="weatheredit">
+      <attstr name="type" val="label"/>
+      <attnum name="max len" val="15"/>
+      <attnum name="x" val="295"/>
+      <attnum name="y" val="242"/>
+      <attnum name="width" val="205"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="bg image" val="data/img/label-background.png"/>
+      <attnum name="bg image padding top" val="5"/>
+      <attnum name="bg image padding bottom" val="4"/>
+      <attnum name="bg image padding left" val="6"/>
+      <attnum name="bg image padding right" val="-35"/>
+    </section>
+    <!-- Display -->
+    <section name="displaylabel">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="20"/>
+      <attnum name="y" val="92"/>
+      <attstr name="text" val="Display mode:"/>
+      <attstr name="text-spa" val="Modo de visualización:"/>
+      <attstr name="text-cat" val="Mode de visualització:"/>
+      <attstr name="text-ru" val="Режим отображения:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="220"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="bg image" val="data/img/bg-button-big-normal.png"/>
+      <attnum name="bg image padding top" val="8"/>
+      <attnum name="bg image padding bottom" val="5"/>
+      <attnum name="bg image padding left" val="-39"/>
+      <attnum name="bg image padding right" val="20"/>
+    </section>
+    <section name="displayleftarrow">
+      <attstr name="type" val="image button"/>
+      <attnum name="x" val="265"/>
+      <attnum name="y" val="88"/>
+      <attnum name="width" val="24"/>
+      <attnum name="height" val="25"/>
+      <attstr name="disabled image" val="data/img/arrowleft-disabled.png"/>
+      <attstr name="enabled image" val="data/img/arrowleft-normal.png"/>
+      <attstr name="focused image" val="data/img/arrowleft-focused.png"/>
+      <attstr name="pushed image" val="data/img/arrowleft-pushed.png"/>
+    </section>
+    <section name="displayrightarrow">
+      <attstr name="type" val="image button"/>
+      <attnum name="x" val="465"/>
+      <attnum name="y" val="88"/>
+      <attnum name="width" val="24"/>
+      <attnum name="height" val="25"/>
+      <attstr name="disabled image" val="data/img/arrowright-disabled.png"/>
+      <attstr name="enabled image" val="data/img/arrowright-normal.png"/>
+      <attstr name="focused image" val="data/img/arrowright-focused.png"/>
+      <attstr name="pushed image" val="data/img/arrowright-pushed.png"/>
+    </section>
+    <section name="displayedit">
+      <attstr name="type" val="label"/>
+      <attnum name="max len" val="15"/>
+      <attnum name="x" val="295"/>
+      <attnum name="y" val="92"/>
+      <attnum name="width" val="205"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="bg image" val="data/img/label-background.png"/>
+      <attnum name="bg image padding top" val="5"/>
+      <attnum name="bg image padding bottom" val="4"/>
+      <attnum name="bg image padding left" val="6"/>
+      <attnum name="bg image padding right" val="-35"/>
+    </section>
+    <!-- Back button -->
+    <section name="backbutton">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Back"/>
+      <attstr name="text-fra" val="Retour"/>
+      <attstr name="text-spa" val="Atrás"/>
+      <attstr name="text-cat" val="Tornar"/>
+      <attstr name="text-ru" val="Назад"/>
+      <attstr name="tip" val="Cancel changes and get back to the competitors selection menu"/>
+      <attstr name="tip-spa" val="Cancelar cambios y volver al menú de selección de competidores"/>
+      <attstr name="tip-cat" val="Cancel·leu els canvis i torneu al menú de selecció de competidors"/>
+      <attstr name="tip-ru" val="Отменить изменения и вернуться в меню выбора участников"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="x" val="400"/>
+      <attnum name="y" val="44"/>
+      <attnum name="width" val="120"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xa6a6a6"/>
+      <attstr name="pushed color" val="0xa6a6a6"/>
+      <attnum name="image x" val="-10"/>
+      <attnum name="image y" val="-2"/>
+      <attnum name="image width" val="100"/>
+      <attnum name="image height" val="30"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <!-- Next button -->
+    <section name="nextbutton">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Next"/>
+      <attstr name="text-spa" val="Siguiente"/>
+      <attstr name="text-cat" val="Següent"/>
+      <attstr name="text-ru" val="Далее"/>
+      <attstr name="tip" val="Apply changes and prepare for the race"/>
+      <attstr name="tip-spa" val="Aplicar cambios y prepararse para la carrera"/>
+      <attstr name="tip-cat" val="Apliqueu els canvis i prepareu-vos per a la cursa"/>
+      <attstr name="tip-ru" val="Применить изменения и готовиться к гонке"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="x" val="500"/>
+      <attnum name="y" val="44"/>
+      <attnum name="width" val="120"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xa6a6a6"/>
+      <attstr name="pushed color" val="0xa6a6a6"/>
+      <attnum name="image x" val="-10"/>
+      <attnum name="image y" val="-2"/>
+      <attnum name="image width" val="100"/>
+      <attnum name="image height" val="30"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+  </section>
+  <section name="static controls">
+    <section name="1">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="-10"/>
+      <attnum name="y" val="375"/>
+      <attnum name="width" val="130"/>
+      <attnum name="height" val="95"/>
+      <attstr name="image" val="data/img/sd-logo-big.png"/>
+    </section>
+    <section name="2">
+      <attstr name="type" val="gallery"/>
+      <attstr name="directory" val="data/gallery/"/>
+    </section>
+    <section name="3">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val=""/>
+      <attnum name="x" val="300"/>
+      <attnum name="y" val="430"/>
+      <attnum name="width" val="400"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium_t"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="bg image" val="data/img/header-background.png"/>
+      <attnum name="bg image padding top" val="15"/>
+      <attnum name="bg image padding bottom" val="15"/>
+      <attnum name="bg image padding left" val="30"/>
+      <attnum name="bg image padding right" val="15"/>
+    </section>
+  </section>
+</params>

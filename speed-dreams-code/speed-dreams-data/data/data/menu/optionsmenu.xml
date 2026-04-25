@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    file                 : optionsmenu.xml
+    created              : 2009
+    copyright            : (C) 2009 by Brian Gavin, Eckhard M. Jaeger
+    web                  : speed-dreams.sourceforge.net
+-->
+<!--    This program is free software; you can redistribute it and/or modify  -->
+<!--    it under the terms of the GNU General Public License as published by  -->
+<!--    the Free Software Foundation; either version 2 of the License, or     -->
+<!--    (at your option) any later version.                                   -->
+<!--
+
+	Options menu
+
+-->
+<!DOCTYPE params SYSTEM "../tgf/params.dtd">
+<params name="optionsmenu">
+  <section name="dynamic controls">
+    <section name="display">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Display"/>
+      <attstr name="text-fra" val="Affichage"/>
+      <attstr name="text-spa" val="Pantalla"/>
+      <attstr name="text-cat" val="Pantalla"/>
+      <attstr name="text-ru" val="Экран"/>
+      <attstr name="tip" val="Setup the display and video modes"/>
+      <attstr name="tip-fra" val="Configurer l'affichage et les modes vidéo"/>
+      <attstr name="tip-spa" val="Configura la pantalla y modos de vídeo"/>
+      <attstr name="tip-cat" val="Configureu la pantalla i els modes de vídeo"/>
+      <attstr name="tip-ru" val="Настройка экрана и видеорежимов"/>
+      <attnum name="x" val="200"/>
+      <attnum name="y" val="340"/>
+      <attnum name="width" val="320"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="font" val="big"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-48"/>
+      <attnum name="image y" val="-3"/>
+      <attnum name="image width" val="320"/>
+      <attnum name="image height" val="44"/>
+      <attstr name="focused image" val="data/img/bg-button-big-focused.png"/>
+      <attstr name="enabled image" val="data/img/bg-button-big.png"/>
+      <attstr name="pushed image" val="data/img/bg-button-big-pushed.png"/>
+    </section>
+    <section name="graphic">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Graphics"/>
+      <attstr name="text-fra" val="Graphisme"/>
+      <attstr name="text-spa" val="Gráficos"/>
+      <attstr name="text-cat" val="Gràfics"/>
+      <attstr name="text-ru" val="Графика"/>
+      <attstr name="tip" val="Configure graphics settings"/>
+      <attstr name="tip-fra" val="Configurer le graphisme"/>
+      <attstr name="tip-spa" val="Configuración gráfica"/>
+      <attstr name="tip-cat" val="Configureu paràmetres gràfics"/>
+      <attstr name="tip-ru" val="Настройки графики"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="x" val="200"/>
+      <attnum name="y" val="290"/>
+      <attnum name="width" val="320"/>
+      <attstr name="font" val="big"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-48"/>
+      <attnum name="image y" val="-3"/>
+      <attnum name="image width" val="320"/>
+      <attnum name="image height" val="44"/>
+      <attstr name="focused image" val="data/img/bg-button-big-focused.png"/>
+      <attstr name="enabled image" val="data/img/bg-button-big.png"/>
+      <attstr name="pushed image" val="data/img/bg-button-big-pushed.png"/>
+    </section>
+    <section name="sound">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Sound"/>
+      <attstr name="text-fra" val="Audio"/>
+      <attstr name="text-spa" val="Sonido"/>
+      <attstr name="text-cat" val="Àudio"/>
+      <attstr name="text-ru" val="Звук"/>
+      <attstr name="tip" val="Setup sound volume and sound system"/>
+      <attstr name="tip-fra" val="Configuration du volume et du système audio"/>
+      <attstr name="tip-spa" val="Configuración de volumen de sonido y sistema de sonido"/>
+      <attstr name="tip-cat" val="Configureu el volum de l'àudio i el sistema d'àudio"/>
+      <attstr name="tip-ru" val="Настройка громкости и звуковой системы"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="x" val="200"/>
+      <attnum name="y" val="240"/>
+      <attnum name="width" val="320"/>
+      <attstr name="font" val="big"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-48"/>
+      <attnum name="image y" val="-3"/>
+      <attnum name="image width" val="320"/>
+      <attnum name="image height" val="44"/>
+      <attstr name="focused image" val="data/img/bg-button-big-focused.png"/>
+      <attstr name="enabled image" val="data/img/bg-button-big.png"/>
+      <attstr name="pushed image" val="data/img/bg-button-big-pushed.png"/>
+    </section>
+    <section name="simulation">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Simulation"/>
+      <attstr name="text-fra" val="Simulation"/>
+      <attstr name="text-spa" val="Simulación"/>
+      <attstr name="text-cat" val="Simul·lació"/>
+      <attstr name="text-ru" val="Симуляция"/>
+      <attstr name="tip" val="Configure simulation parameters"/>
+      <attstr name="tip-fra" val="Configurer les paramètres de simulation"/>
+      <attstr name="tip-spa" val="Configurar parámetros de simulación"/>
+      <attstr name="tip-cat" val="Configureu els paràmetres de la simul·lació"/>
+      <attstr name="tip-ru" val="Настройка параметров симуляции"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="x" val="200"/>
+      <attnum name="y" val="190"/>
+      <attnum name="width" val="320"/>
+      <attstr name="font" val="big"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-48"/>
+      <attnum name="image y" val="-3"/>
+      <attnum name="image width" val="320"/>
+      <attnum name="image height" val="44"/>
+      <attstr name="focused image" val="data/img/bg-button-big-focused.png"/>
+      <attstr name="enabled image" val="data/img/bg-button-big.png"/>
+      <attstr name="pushed image" val="data/img/bg-button-big-pushed.png"/>
+    </section>
+    <section name="language">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Language"/>
+      <attstr name="text-fra" val="Langue"/>
+      <attstr name="text-spa" val="Idioma"/>
+      <attstr name="text-cat" val="Idioma"/>
+      <attstr name="text-ru" val="Язык"/>
+      <attstr name="tip" val="Choose your language"/>
+      <attstr name="tip-fra" val="Choisir la langue"/>
+      <attstr name="tip-spa" val="Elija su idioma"/>
+      <attstr name="tip-cat" val="Escolliu el vostre idioma"/>
+      <attstr name="tip-ru" val="Выбор языка"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="x" val="200"/>
+      <attnum name="y" val="140"/>
+      <attnum name="width" val="320"/>
+      <attstr name="font" val="big"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-48"/>
+      <attnum name="image y" val="-3"/>
+      <attnum name="image width" val="320"/>
+      <attnum name="image height" val="44"/>
+      <attstr name="focused image" val="data/img/bg-button-big-focused.png"/>
+      <attstr name="enabled image" val="data/img/bg-button-big.png"/>
+      <attstr name="pushed image" val="data/img/bg-button-big-pushed.png"/>
+    </section>
+    <section name="back">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Back"/>
+      <attstr name="text-fra" val="Retour"/>
+      <attstr name="text-spa" val="Atrás"/>
+      <attstr name="text-cat" val="Tornar"/>
+      <attstr name="text-ru" val="Назад"/>
+      <attstr name="tip" val="Back to main menu"/>
+      <attstr name="tip-fra" val="Retourner au menu principal"/>
+      <attstr name="tip-spa" val="Volver al menú principal"/>
+      <attstr name="tip-cat" val="Torneu al menú principal"/>
+      <attstr name="tip-ru" val="Вернуться в главное меню"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="x" val="200"/>
+      <attnum name="y" val="90"/>
+      <attnum name="width" val="320"/>
+      <attstr name="font" val="big"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-48"/>
+      <attnum name="image y" val="-3"/>
+      <attnum name="image width" val="320"/>
+      <attnum name="image height" val="44"/>
+      <attstr name="focused image" val="data/img/bg-button-big-focused.png"/>
+      <attstr name="enabled image" val="data/img/bg-button-big.png"/>
+      <attstr name="pushed image" val="data/img/bg-button-big-pushed.png"/>
+    </section>
+  </section>
+  <section name="static controls">
+    <section name="1">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="-10"/>
+      <attnum name="y" val="375"/>
+      <attnum name="width" val="130"/>
+      <attnum name="height" val="95"/>
+      <attstr name="image" val="data/img/sd-logo-big.png"/>
+    </section>
+    <section name="2">
+      <attstr name="type" val="gallery"/>
+      <attstr name="directory" val="data/gallery/"/>
+    </section>
+    <section name="3">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val="Options"/>
+      <attstr name="text-fra" val="Options"/>
+      <attstr name="text-spa" val="Opciones"/>
+      <attstr name="text-cat" val="Opcions"/>
+      <attstr name="text-ru" val="Настройки"/>
+      <attnum name="x" val="300"/>
+      <attnum name="y" val="430"/>
+      <attnum name="width" val="400"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium_t"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="bg image" val="data/img/header-background.png"/>
+      <attnum name="bg image padding top" val="15"/>
+      <attnum name="bg image padding bottom" val="15"/>
+      <attnum name="bg image padding left" val="30"/>
+      <attnum name="bg image padding right" val="15"/>
+    </section>
+  </section>
+</params>

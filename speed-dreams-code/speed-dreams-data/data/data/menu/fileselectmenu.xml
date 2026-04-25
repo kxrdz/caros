@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    file                 : fileselectmenu.xml
+    created              : 2009
+    copyright            : (C) 2009 by Brian Gavin, Eckhard M. Jaeger
+    web                  : speed-dreams.sourceforge.net
+-->
+<!--    This program is free software; you can redistribute it and/or modify  -->
+<!--    it under the terms of the GNU General Public License as published by  -->
+<!--    the Free Software Foundation; either version 2 of the License, or     -->
+<!--    (at your option) any later version.                                   -->
+<!--
+
+	File selection menu
+
+-->
+<!DOCTYPE params SYSTEM "../tgf/params.dtd">
+<params name="fileselectmenu" version="1.0">
+  <section name="dynamic controls">
+    <section name="TitleLabel">
+      <attstr name="type" val="label"/>
+      <attnum name="max len" val="100"/>
+      <attnum name="x" val="300"/>
+      <attnum name="y" val="430"/>
+      <attnum name="width" val="400"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium_t"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="bg image" val="data/img/header-background.png"/>
+      <attnum name="bg image padding top" val="15"/>
+      <attnum name="bg image padding bottom" val="15"/>
+      <attnum name="bg image padding left" val="30"/>
+      <attnum name="bg image padding right" val="15"/>
+    </section>
+    <section name="FilesScrollList">
+      <attstr name="type" val="scroll list"/>
+      <attstr name="tip" val="List of available files"/>
+      <attstr name="tip-ru" val="Список доступных файлов"/>
+      <attnum name="x" val="262"/>
+      <attnum name="y" val="130"/>
+      <attnum name="width" val="316"/>
+      <attnum name="height" val="238"/>
+      <attstr name="font" val="small"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="selected color" val="0xFFCC00"/>
+      <attstr name="scrollbar pos" val="right"/>
+    </section>
+    <section name="SelectedFileNameEdit">
+      <attstr name="type" val="edit box"/>
+      <attnum name="max len" val="100"/>
+      <attnum name="x" val="324"/>
+      <attnum name="y" val="98"/>
+      <attnum name="width" val="254"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="disabled color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium"/>
+    </section>
+    <section name="CancelButton">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Cancel"/>
+      <attstr name="text-fra" val="Annuler"/>
+      <attstr name="text-ru" val="Отменить"/>
+      <attstr name="tip" val="Cancel changes"/>
+      <attstr name="tip-ru" val="Отменить изменения"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="x" val="400"/>
+      <attnum name="y" val="44"/>
+      <attnum name="width" val="80"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-10"/>
+      <attnum name="image y" val="-2"/>
+      <attnum name="image width" val="100"/>
+      <attnum name="image height" val="30"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="LoadButton">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Load"/>
+      <attstr name="text-fra" val="Charger"/>
+      <attstr name="text-ru" val="Загрузить"/>
+      <attstr name="tip" val="Load race, event or career from selected file"/>
+      <attstr name="tip-ru" val="Загрузить гонку, событие или карьеру из выбранного файла"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="x" val="500"/>
+      <attnum name="y" val="44"/>
+      <attnum name="width" val="80"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-10"/>
+      <attnum name="image y" val="-2"/>
+      <attnum name="image width" val="100"/>
+      <attnum name="image height" val="30"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="SaveButton">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Save"/>
+      <attstr name="text-fra" val="Sauvegarder"/>
+      <attstr name="text-ru" val="Сохранить"/>
+      <attstr name="tip" val="Save race, event or career to selected file"/>
+      <attstr name="tip-ru" val="Сохранить гонку, событие или карьеру в выбранный файл"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="x" val="500"/>
+      <attnum name="y" val="44"/>
+      <attnum name="width" val="80"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-10"/>
+      <attnum name="image y" val="-2"/>
+      <attnum name="image width" val="100"/>
+      <attnum name="image height" val="30"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+  </section>
+  <section name="static controls">
+    <section name="1">
+      <attstr name="type" val="gallery"/>
+      <attstr name="directory" val="data/gallery/"/>
+    </section>
+    <section name="2">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="-10"/>
+      <attnum name="y" val="375"/>
+      <attnum name="width" val="130"/>
+      <attnum name="height" val="95"/>
+      <attstr name="image" val="data/img/sd-logo-big.png"/>
+    </section>
+    <section name="3">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val="Selection:"/>
+      <attstr name="text-fra" val="Sélection:"/>
+      <attstr name="text-ru" val="Выборка:"/>
+      <attnum name="x" val="260"/>
+      <attnum name="y" val="102"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="small"/>
+    </section>
+  </section>
+</params>

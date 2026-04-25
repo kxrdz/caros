@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    file                 : networking.xml
+    created              : 07/11/2016
+    copyright            : (C) 2016 Joe Thompson
+    email                : beaglejoe@users.sourceforge.net
+-->
+
+<!--    This program is free software; you can redistribute it and/or modify  -->
+<!--    it under the terms of the GNU General Public License as published by  -->
+<!--    the Free Software Foundation; either version 2 of the License, or     -->
+<!--    (at your option) any later version.                                   -->
+
+<!DOCTYPE params SYSTEM "../../libs/tgf/params.dtd">
+
+<params name="networking" type="param" mode="mw" version="1.0">
+    <section name="Network Server Settings">
+       <attnum name="port" val="28500"/>
+    </section>
+
+    <section name="Network Client Settings">
+      <attstr name="ip4" val="127.0.0.1"/>
+       <attnum name="port" val="28500"/>
+    </section>
+</params>

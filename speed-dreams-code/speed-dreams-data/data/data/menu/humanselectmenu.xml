@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Speed Dreams, a free and open source motorsport simulator.            -->
+<!-- Copyright (C) 2026 Xavier Del Campo Romero                            -->
+<!-- This program is free software; you can redistribute it and/or modify  -->
+<!-- it under the terms of the GNU General Public License as published by  -->
+<!-- the Free Software Foundation; either version 2 of the License, or     -->
+<!-- (at your option) any later version.                                   -->
+<!DOCTYPE params SYSTEM "../tgf/params.dtd">
+<params name="humanselectmenu">
+	<section name="translatable">
+		<section name="info">
+			<section name="nohumans">
+				<section name="1">
+					<attstr name="text" val="No human players selected."/>
+					<attstr name="text-fra" val="Aucun pilote humain sélectionné."/>
+					<attstr name="text-ru" val="Не выбраны игроки-люди."/>
+					<attstr name="text-cat" val="No s'hi ha seleccionat cap jugador humà."/>
+					<attstr name="text-spa" val="No se han seleccionado jugadores humanos."/>
+				</section>
+				<section name="2">
+					<attstr name="text" val="Press &quot;Next&quot; to configure a bot-only race."/>
+					<attstr name="text-ru" val="Нажмите &quot;Далее&quot;, чтобы настроить гонку только с ботами."/>
+					<attstr name="text-cat" val="Cliqueu &quot;Següent&quot; per fer una cursa de només bots."/>
+					<attstr name="text-spa" val="Pulsa &quot;Siguiente&quot; para hacer una carrera de únicamente bots."/>
+				</section>
+			</section>
+			<section name="onlybots">
+				<section name="1">
+					<attstr name="text" val="Human players not allowed for this race mode."/>
+					<attstr name="text-ru" val="Игроки-люди не допущены к этому виду гонки."/>
+					<attstr name="text-cat" val="No es permeten jugadors humans a aquest tipus de cursa."/>
+					<attstr name="text-spa" val="No se permiten jugadores humanos para este tipo de carrera."/>
+				</section>
+				<section name="2">
+					<attstr name="text" val="Press &quot;Next&quot; to continue, or select another race mode."/>
+					<attstr name="text-ru" val="Нажмите &quot;Далее&quot;, чтобы продолжить, или выберите другой тип гонки."/>
+					<attstr name="text-cat" val="Cliqueu &quot;Següent&quot; per continuar, o seleccioneu un altre mode de cursa."/>
+					<attstr name="text-spa" val="Pulsa &quot;Siguiente&quot; para continuar, o selecciona otro modo de carrera."/>
+				</section>
+			</section>
+		</section>
+		<section name="error">
+			<section name="playercfg">
+				<attstr name="text" val="Failed to open player configuration menu"/>
+				<attstr name="text-fra" val="Impossible d'ouvrir le menu de configuration des joueurs"/>
+				<attstr name="text-ru" val="Не получилось открыть меню настройки игрока"/>
+				<attstr name="text-cat" val="No s'ha pogut obrir el menú de configuració de jugadors"/>
+				<attstr name="text-spa" val="No se ha podido abrir el menú de configuración de jugadores"/>
+			</section>
+			<section name="nohumans">
+				<section name="1">
+					<attstr name="text" val="Please define at least one human player to continue."/>
+					<attstr name="text-fra" val="Veuillez définir au moins un joueur humain."/>
+					<attstr name="text-ru" val="Пожалуйста, укажите хотя бы одного человека, чтобы продолжить."/>
+					<attstr name="text-cat" val="Si us plau, definiu almenys un jugador humà per continuar."/>
+					<attstr name="text-spa" val="Por favor, elija al menos un jugador humano para continuar."/>
+				</section>
+				<section name="2">
+					<attstr name="text" val="Press the &quot;Configure&quot; button to add new players."/>
+					<attstr name="text-ru" val="Нажмите &quot;Настроить&quot; для добавления новых игроков."/>
+					<attstr name="text-cat" val="Cliqueu el botó &quot;Configurar&quot; per crear nous jugadors."/>
+					<attstr name="text-spa" val="Pulse &quot;Configurar&quot; para crear nuevos jugadores."/>
+				</section>
+			</section>
+			<section name="unsupported">
+				<section name="1">
+					<attstr name="text" val="Currently, multiple human players are not supported by Osggraph."/>
+					<attstr name="text-ru" val="На данный момент в Osggraph нет поддержки нескольких игроков-людей."/>
+					<attstr name="text-cat" val="Actualment, l'Osggraph no suporta múltiples jugadors a pantalla."/>
+					<attstr name="text-spa" val="Actualmente, Osggraph soporta múltiples jugadores en pantalla."/>
+				</section>
+				<section name="2">
+					<attstr name="text" val="Alternatively, select the Ssggraph engine from the &quot;Graphics&quot; menu."/>
+					<attstr name="text-ru" val="Вы также можете выбрать движок Ssggraph в меню &quot;Графика&quot;."/>
+					<attstr name="text-cat" val="Com a alternativa, seleccioneu el motor Ssggraph des del menú &quot;Opcions&quot;."/>
+					<attstr name="text-spa" val="Como alternativa, seleccione el motor Ssggraph desde el menú &quot;Opciones&quot;."/>
+				</section>
+			</section>
+			<section name="toomanyplayers">
+				<section name="1">
+					<attstr name="text" val="Too many active players."/>
+					<attstr name="text-fra" val="Trop de joueurs actifs."/>
+					<attstr name="text-ru" val="Слишком много активных игроков."/>
+					<attstr name="text-cat" val="Hi ha massa jugadors actius."/>
+					<attstr name="text-spa" val="Hay demasiadores jugadores activos."/>
+				</section>
+				<section name="2">
+					<attstr name="text" val="The selected race mode only supports up to %u players."/>
+					<attstr name="text-fra" val="Le mode de course sélectionné ne supporte qu'au plus %u joueurs."/>
+					<attstr name="text-ru" val="Выбранный тип гонки поддерживает не более %u игроков."/>
+					<attstr name="text-cat" val="El mode de cursa seleccionat només suporta fins a %u jugadors."/>
+					<attstr name="text-spa" val="El modo de carrera seleccionado solo soporta hasta %u jugadores."/>
+				</section>
+			</section>
+		</section>
+	</section>
+	<section name="dynamic controls">
+		<section name="available">
+			<attstr name="type" val="scroll list"/>
+			<attstr name="tip" val="Available players list"/>
+			<attstr name="tip-ru" val="Список доступных игроков"/>
+			<attstr name="tip-cat" val="Llistat de jugadores disponibles"/>
+			<attstr name="tip-spa" val="Lista de jugadores disponibles"/>
+			<attnum name="x" val="80"/>
+			<attnum name="y" val="140"/>
+			<attnum name="width" val="200"/>
+			<attnum name="height" val="200"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xFFFFFF"/>
+			<attstr name="selected color" val="0xFF0000"/>
+			<attstr name="scrollbar pos" val="right"/>
+			<attnum name="image width" val="16"/>
+			<attnum name="image height" val="16"/>
+		</section>
+		<section name="active">
+			<attstr name="type" val="scroll list"/>
+			<attstr name="tip" val="Active players list"/>
+			<attstr name="tip-ru" val="Список активных игроков"/>
+			<attstr name="tip-cat" val="Llistat de jugadors actius"/>
+			<attstr name="tip-spa" val="Lista de jugadores activos"/>
+			<attnum name="x" val="350"/>
+			<attnum name="y" val="140"/>
+			<attnum name="width" val="200"/>
+			<attnum name="height" val="200"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xFFFFFF"/>
+			<attstr name="selected color" val="0xFF0000"/>
+			<attstr name="scrollbar pos" val="right"/>
+			<attnum name="image width" val="16"/>
+			<attnum name="image height" val="16"/>
+		</section>
+		<section name="add">
+			<attstr name="type" val="image button"/>
+			<attstr name="tip" val="Add the selected player to the active players list"/>
+			<attstr name="tip-ru" val="Добавить выбранного игрока в список активных игроков"/>
+			<attstr name="tip-cat" val="Afegiu el jugador seleccionat al llistat de jugadors actius"/>
+			<attstr name="tip-spa" val="Añade el jugador seleccionado a la lista de jugadores activos"/>
+			<attnum name="x" val="300"/>
+			<attnum name="y" val="220"/>
+			<attnum name="width" val="32"/>
+			<attnum name="height" val="28"/>
+			<attstr name="disabled image" val="data/img/icon-new-disabled.png"/>
+			<attstr name="enabled image" val="data/img/icon-new.png"/>
+			<attstr name="focused image" val="data/img/icon-new-focused.png"/>
+			<attstr name="pushed image" val="data/img/icon-new-pushed.png"/>
+		</section>
+		<section name="rm">
+			<attstr name="type" val="image button"/>
+			<attstr name="tip" val="Remove the selected player from the active players list"/>
+			<attstr name="tip-ru" val="Удалить выбранного игрока из списка активных игроков"/>
+			<attstr name="tip-cat" val="Elimineu el jugador seleccionat del llistat de jugadors actius"/>
+			<attstr name="tip-spa" val="Elimina el jugador seleccionado de la lista de jugadores activos"/>
+			<attnum name="x" val="300"/>
+			<attnum name="y" val="170"/>
+			<attnum name="width" val="32"/>
+			<attnum name="height" val="28"/>
+			<attstr name="disabled image" val="data/img/icon-delete-disabled.png"/>
+			<attstr name="enabled image" val="data/img/icon-delete.png"/>
+			<attstr name="focused image" val="data/img/icon-delete-focused.png"/>
+			<attstr name="pushed image" val="data/img/icon-delete-pushed.png"/>
+		</section>
+		<section name="cfg">
+			<attstr name="type" val="text button"/>
+			<attstr name="show box" val="no"/>
+			<attstr name="text" val="Configure"/>
+			<attstr name="text-fra" val="Configurer"/>
+			<attstr name="text-cat" val="Configurar"/>
+			<attstr name="text-spa" val="Configurar"/>
+			<attstr name="text-ru" val="Настроить"/>
+			<attstr name="tip" val="Configure human players and their controls"/>
+			<attstr name="tip-ru" val="Настроить игроков и их управление"/>
+			<attstr name="tip-cat" val="Configureu els jugadors humans i els seus controls"/>
+			<attstr name="tip-spa" val="Configura los jugadores humanos y sus controles"/>
+			<attstr name="h align" val="center"/>
+			<attnum name="x" val="250"/>
+			<attnum name="y" val="45"/>
+			<attnum name="width" val="110"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xa6a6a6"/>
+			<attstr name="focused color" val="0xFFFFFF"/>
+			<attstr name="pushed color" val="0xFFFFFF"/>
+			<attnum name="image x" val="0"/>
+			<attnum name="image y" val="0"/>
+			<attnum name="image width" val="110"/>
+			<attnum name="image height" val="25"/>
+			<attstr name="focused image" val="data/img/bg-button-big-focused.png"/>
+			<attstr name="enabled image" val="data/img/bg-button-big.png"/>
+			<attstr name="pushed image" val="data/img/bg-button-big-pushed.png"/>
+		</section>
+		<section name="apply">
+			<attstr name="type" val="text button"/>
+			<attstr name="show box" val="no"/>
+			<attstr name="text" val="Next"/>
+			<attstr name="text-fra" val="Suivant"/>
+			<attstr name="text-cat" val="Següent"/>
+			<attstr name="text-spa" val="Siguiente"/>
+			<attstr name="text-ru" val="Далее"/>
+			<attstr name="tip" val="Proceed to the next player configuration page"/>
+			<attstr name="tip-ru" val="Перейти к следующей странице настройки игрока"/>
+			<attstr name="tip-cat" val="Procediu a la següent pàgina de configuració de jugadors"/>
+			<attstr name="tip-spa" val="Procede a la siguiente página de configuración de jugadores"/>
+			<attstr name="h align" val="center"/>
+			<attnum name="x" val="375"/>
+			<attnum name="y" val="45"/>
+			<attnum name="width" val="110"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xa6a6a6"/>
+			<attstr name="focused color" val="0xFFFFFF"/>
+			<attstr name="pushed color" val="0xFFFFFF"/>
+			<attnum name="image x" val="0"/>
+			<attnum name="image y" val="0"/>
+			<attnum name="image width" val="110"/>
+			<attnum name="image height" val="25"/>
+			<attstr name="focused image" val="data/img/bg-button-big-focused.png"/>
+			<attstr name="enabled image" val="data/img/bg-button-big.png"/>
+			<attstr name="pushed image" val="data/img/bg-button-big-pushed.png"/>
+		</section>
+		<section name="back">
+			<attstr name="type" val="text button"/>
+			<attstr name="show box" val="no"/>
+			<attstr name="text" val="Back"/>
+			<attstr name="text-fra" val="Retour"/>
+			<attstr name="text-cat" val="Tornar"/>
+			<attstr name="text-spa" val="Volver"/>
+			<attstr name="text-ru" val="Назад"/>
+			<attstr name="tip" val="Go back to previous menu"/>
+			<attstr name="tip-ru" val="Вернуться в предыдущее меню"/>
+			<attstr name="tip-cat" val="Torneu al menú anterior"/>
+			<attstr name="tip-spa" val="Volver al menú anterior"/>
+			<attstr name="h align" val="center"/>
+			<attnum name="x" val="125"/>
+			<attnum name="y" val="45"/>
+			<attnum name="width" val="110"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xa6a6a6"/>
+			<attstr name="focused color" val="0xFFFFFF"/>
+			<attstr name="pushed color" val="0xFFFFFF"/>
+			<attnum name="image x" val="0"/>
+			<attnum name="image y" val="0"/>
+			<attnum name="image width" val="110"/>
+			<attnum name="image height" val="25"/>
+			<attstr name="focused image" val="data/img/bg-button-big-focused.png"/>
+			<attstr name="enabled image" val="data/img/bg-button-big.png"/>
+			<attstr name="pushed image" val="data/img/bg-button-big-pushed.png"/>
+		</section>
+		<section name="bg">
+			<attstr name="type" val="static image"/>
+			<attnum name="x" val="50"/>
+			<attnum name="y" val="80"/>
+			<attnum name="width" val="540"/>
+			<attnum name="height" val="55"/>
+			<attstr name="image" val="data/img/black-square.png"/>
+		</section>
+		<section name="error">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="0"/>
+			<attnum name="y" val="110"/>
+			<attstr name="text" val=""/>
+			<attstr name="h align" val="center"/>
+			<attnum name="width" val="640"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="errorl2">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="0"/>
+			<attnum name="y" val="90"/>
+			<attstr name="text" val=""/>
+			<attstr name="h align" val="center"/>
+			<attnum name="width" val="640"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+	</section>
+	<section name="static controls">
+		<section name="1">
+			<attstr name="type" val="static image"/>
+			<attnum name="x" val="-10"/>
+			<attnum name="y" val="375"/>
+			<attnum name="width" val="130"/>
+			<attnum name="height" val="95"/>
+			<attstr name="image" val="data/img/sd-logo-big.png"/>
+		</section>
+		<section name="2">
+			<attstr name="type" val="gallery"/>
+			<attstr name="directory" val="data/gallery/"/>
+		</section>
+		<section name="3">
+			<attstr name="type" val="label"/>
+			<attstr name="text" val="Select human players for the race"/>
+			<attstr name="text-fra" val="Sélectionner les joueurs humains pour la course"/>
+			<attstr name="text-ru" val="Выберите игроков-людей для гонки"/>
+			<attstr name="text-cat" val="Seleccioneu els jugadors humans per a la cursa"/>
+			<attstr name="text-spa" val="Selecciona los jugadores humanos para la carrera"/>
+			<attnum name="x" val="300"/>
+			<attnum name="y" val="430"/>
+			<attnum name="width" val="400"/>
+			<attstr name="color" val="0xFFFFFF"/>
+			<attstr name="font" val="medium_t"/>
+			<attstr name="h align" val="left"/>
+			<attstr name="bg image" val="data/img/header-background.png"/>
+			<attnum name="bg image padding top" val="15"/>
+			<attnum name="bg image padding bottom" val="15"/>
+			<attnum name="bg image padding left" val="30"/>
+			<attnum name="bg image padding right" val="15"/>
+		</section>
+		<section name="4">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="80"/>
+			<attnum name="y" val="350"/>
+			<attstr name="text" val="Available players:"/>
+			<attstr name="text-ru" val="Доступные игроки:"/>
+			<attstr name="text-cat" val="Jugadors disponibles:"/>
+			<attstr name="text-spa" val="Jugadores disponibles:"/>
+			<attstr name="h align" val="center"/>
+			<attnum name="width" val="200"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="5">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="350"/>
+			<attnum name="y" val="350"/>
+			<attstr name="text" val="Active players:"/>
+			<attstr name="text-ru" val="Активные игроки:"/>
+			<attstr name="text-cat" val="Jugadors actius:"/>
+			<attstr name="text-spa" val="Jugadores activos:"/>
+			<attstr name="h align" val="center"/>
+			<attnum name="width" val="200"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+	</section>
+</params>

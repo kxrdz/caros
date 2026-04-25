@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    file                 : creditsmenu.xml
+    created              : 2009
+    copyright            : (C) 2009 by Brian Gavin, Jean-Philippe Meuret, Eckhard M. Jaeger
+    web                  : speed-dreams.sourceforge.net
+-->
+<!--    This program is free software; you can redistribute it and/or modify  -->
+<!--    it under the terms of the GNU General Public License as published by  -->
+<!--    the Free Software Foundation; either version 2 of the License, or     -->
+<!--    (at your option) any later version.                                   -->
+<!--
+
+	Credits screen
+
+-->
+<!DOCTYPE params SYSTEM "../tgf/params.dtd">
+<params name="creditsmenu">
+  <section name="translatable">
+    <section name="title">
+      <attstr name="text" val="Credits - %s"/>
+      <attstr name="text-fra" val="Crédits - %s"/>
+      <attstr name="text-spa" val="Créditos - %s"/>
+      <attstr name="text-cat" val="Crèdits - %s"/>
+      <attstr name="text-ru" val="Титры - %s"/>
+    </section>
+  </section>
+  <section name="properties">
+    <attnum name="nMaxLinesPerPage" val="14"/>
+    <attnum name="yBottom1stLine" val="366"/>
+    <attnum name="xLeft1stCol" val="70"/>
+    <attnum name="xRecordLineShift" val="0"/>
+    <attnum name="yLineShift" val="14"/>
+    <attnum name="yRecordShift" val="24"/>
+  </section>
+  <section name="template controls">
+    <!-- Dev. team (chapter 0) pages -->
+    <section name="0.name">
+      <attstr name="type" val="label"/>
+      <attstr name="tip" val="Name of the team member"/>
+      <attstr name="tip-spa" val="Nombre del miembro de equipo"/>
+      <attstr name="tip-ru" val="Имя члена команды"/>
+      <attnum name="max len" val="30"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="160"/>
+      <attstr name="font" val="small"/>
+      <attstr name="color" val="0xFFFFFF"/>
+    </section>
+    <section name="0.contribs">
+      <attstr name="type" val="label"/>
+      <attstr name="tip" val="Main contributions"/>
+      <attstr name="tip-spa" val="Contribuciones principales"/>
+      <attstr name="tip-ru" val="Основной вклад"/>
+      <attnum name="max len" val="100"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xFFFFFF"/>
+    </section>
+    <section name="0.role">
+      <attstr name="type" val="label"/>
+      <attstr name="tip" val="Role in the team"/>
+      <attstr name="tip-spa" val="Rol en el equipo"/>
+      <attstr name="tip-ru" val="Роль в команде"/>
+      <attnum name="max len" val="30"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="160"/>
+      <attstr name="font" val="small"/>
+      <attstr name="color" val="0xFFFFFF"/>
+    </section>
+    <section name="0.web">
+      <attstr name="type" val="label"/>
+      <attstr name="tip" val="Website"/>
+      <attstr name="tip-spa" val="Página web"/>
+      <attstr name="tip-ru" val="Веб-сайт"/>
+      <attnum name="max len" val="100"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xFFFFFF"/>
+    </section>
+    <!-- Contributors (chapter 1) pages -->
+    <section name="1.name">
+      <attstr name="type" val="label"/>
+      <attstr name="tip" val="Name of the contributor"/>
+      <attstr name="tip-spa" val="Nombre del contribuyente"/>
+      <attstr name="tip-ru" val="Имя участника"/>
+      <attnum name="max len" val="30"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="160"/>
+      <attstr name="font" val="small"/>
+      <attstr name="color" val="0xFFFFFF"/>
+    </section>
+    <section name="1.contribs">
+      <attstr name="type" val="label"/>
+      <attstr name="tip" val="Main contributions"/>
+      <attstr name="tip-spa" val="Contribuciones principales"/>
+      <attstr name="tip-ru" val="Основной вклад"/>
+      <attnum name="max len" val="100"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xFFFFFF"/>
+    </section>
+    <section name="1.role">
+      <attstr name="type" val="label"/>
+      <attstr name="tip" val="Role"/>
+      <attstr name="tip-spa" val="Rol"/>
+      <attstr name="tip-ru" val="Роль"/>
+      <attnum name="max len" val="30"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="160"/>
+      <attstr name="font" val="small"/>
+      <attstr name="color" val="0xFFFFFF"/>
+    </section>
+    <section name="1.web">
+      <attstr name="type" val="label"/>
+      <attstr name="tip" val="Website"/>
+      <attstr name="tip-spa" val="Página web"/>
+      <attstr name="tip-ru" val="Веб-сайт"/>
+      <attnum name="max len" val="100"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xFFFFFF"/>
+    </section>
+    <!-- 3rd party libs and code (chapter 2) pages -->
+    <section name="2.name">
+      <attstr name="type" val="label"/>
+      <attstr name="tip" val="Name"/>
+      <attstr name="tip-spa" val="Nombre"/>
+      <attstr name="tip-ru" val="Имя"/>
+      <attnum name="max len" val="20"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="80"/>
+      <attstr name="font" val="small"/>
+      <attstr name="color" val="0xFFFFFF"/>
+    </section>
+    <section name="2.maintaineer">
+      <attstr name="type" val="label"/>
+      <attstr name="tip" val="Maintaineer"/>
+      <attstr name="tip-spa" val="Mantenedor"/>
+      <attstr name="tip-ru" val="Сопровождающий"/>
+      <attnum name="max len" val="30"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="font" val="small"/>
+      <attstr name="color" val="0xFFFFFF"/>
+    </section>
+    <section name="2.web">
+      <attstr name="type" val="label"/>
+      <attstr name="tip" val="Website"/>
+      <attstr name="tip-spa" val="Página web"/>
+      <attstr name="tip-ru" val="Веб-сайт"/>
+      <attnum name="max len" val="40"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xFFFFFF"/>
+    </section>
+    <!-- 3rd party tools (chapter 3) pages -->
+    <section name="3.name">
+      <attstr name="type" val="label"/>
+      <attstr name="tip" val="Name"/>
+      <attstr name="tip-spa" val="Nombre"/>
+      <attstr name="tip-ru" val="Имя"/>
+      <attnum name="max len" val="30"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="180"/>
+      <attstr name="font" val="small"/>
+      <attstr name="color" val="0xFFFFFF"/>
+    </section>
+    <section name="3.use">
+      <attstr name="type" val="label"/>
+      <attstr name="tip" val="Use in the game code"/>
+      <attstr name="tip-spa" val="Uso en el código del juego"/>
+      <attstr name="tip-ru" val="Использование в коде игры"/>
+      <attnum name="max len" val="100"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xFFFFFF"/>
+    </section>
+    <section name="3.maintaineer">
+      <attstr name="type" val="label"/>
+      <attstr name="tip" val="Maintaineer"/>
+      <attstr name="tip-spa" val="Mantenedor"/>
+      <attstr name="tip-ru" val="Сопровождающий"/>
+      <attnum name="max len" val="30"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="180"/>
+      <attstr name="font" val="small"/>
+      <attstr name="color" val="0xFFFFFF"/>
+    </section>
+    <section name="3.web">
+      <attstr name="type" val="label"/>
+      <attstr name="tip" val="Website"/>
+      <attstr name="tip-spa" val="Página web"/>
+      <attstr name="tip-ru" val="Веб-сайт"/>
+      <attnum name="max len" val="100"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xFFFFFF"/>
+    </section>
+    <!-- Pre-fork contributors (chapter 4) pages -->
+    <section name="4.name">
+      <attstr name="type" val="label"/>
+      <attstr name="tip" val="Name of the contributor"/>
+      <attstr name="tip-spa" val="Nombre del contribuyente"/>
+      <attstr name="tip-ru" val="Имя участника"/>
+      <attnum name="max len" val="30"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="160"/>
+      <attstr name="font" val="small"/>
+      <attstr name="color" val="0xFFFFFF"/>
+    </section>
+    <section name="4.contribs">
+      <attstr name="type" val="label"/>
+      <attstr name="tip" val="Main contributions"/>
+      <attstr name="tip-spa" val="Contribuciones principales"/>
+      <attstr name="tip-ru" val="Основной вклад"/>
+      <attnum name="max len" val="100"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xFFFFFF"/>
+    </section>
+    <section name="4.role">
+      <attstr name="type" val="label"/>
+      <attstr name="tip" val="Role"/>
+      <attstr name="tip-spa" val="Rol"/>
+      <attstr name="tip-ru" val="Роль"/>
+      <attnum name="max len" val="30"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="160"/>
+      <attstr name="font" val="small"/>
+      <attstr name="color" val="0xFFFFFF"/>
+    </section>
+    <section name="4.web">
+      <attstr name="type" val="label"/>
+      <attstr name="tip" val="Website"/>
+      <attstr name="tip-spa" val="Página web"/>
+      <attstr name="tip-ru" val="Веб-сайт"/>
+      <attnum name="max len" val="100"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xFFFFFF"/>
+    </section>
+  </section>
+  <section name="dynamic controls">
+    <section name="subtitle">
+      <attstr name="type" val="label"/>
+      <attnum name="max len" val="50"/>
+      <attnum name="x" val="300"/>
+      <attnum name="y" val="430"/>
+      <attnum name="width" val="400"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium_t"/>
+      <attstr name="h align" val="left"/>
+    </section>
+    <section name="next page arrow">
+      <attstr name="type" val="image button"/>
+      <attstr name="tip" val="Next page"/>
+      <attstr name="tip-spa" val="Página siguiente"/>
+      <attstr name="tip-ru" val="Следующая страница"/>
+      <attnum name="x" val="600"/>
+      <attnum name="y" val="118"/>
+      <attnum name="width" val="24"/>
+      <attnum name="height" val="24"/>
+      <attstr name="disabled image" val="data/img/arrow-down-disabled.png"/>
+      <attstr name="enabled image" val="data/img/arrow-down.png"/>
+      <attstr name="focused image" val="data/img/arrow-down-focused.png"/>
+      <attstr name="pushed image" val="data/img/arrow-down-pushed.png"/>
+    </section>
+    <section name="previous page arrow">
+      <attstr name="type" val="image button"/>
+      <attstr name="tip" val="Previous page"/>
+      <attstr name="tip-spa" val="Página anterior"/>
+      <attstr name="tip-ru" val="Предыдущая страница"/>
+      <attnum name="x" val="600"/>
+      <attnum name="y" val="146"/>
+      <attnum name="width" val="24"/>
+      <attnum name="height" val="24"/>
+      <attstr name="disabled image" val="data/img/arrow-up-disabled.png"/>
+      <attstr name="enabled image" val="data/img/arrow-up.png"/>
+      <attstr name="focused image" val="data/img/arrow-up-focused.png"/>
+      <attstr name="pushed image" val="data/img/arrow-up-pushed.png"/>
+    </section>
+    <!-- Back button -->
+    <section name="back button">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Back"/>
+      <attstr name="text-fra" val="Retour"/>
+      <attstr name="text-spa" val="Atrás"/>
+      <attstr name="text-ru" val="Назад"/>
+      <attstr name="tip" val="Return to previous menu"/>
+      <attstr name="tip-spa" val="Volver al menú anterior"/>
+      <attstr name="tip-ru" val="Вернуться к предыдущему меню"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="x" val="500"/>
+      <attnum name="y" val="44"/>
+      <attnum name="width" val="80"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-10"/>
+      <attnum name="image y" val="-2"/>
+      <attnum name="image width" val="100"/>
+      <attnum name="image height" val="30"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+  </section>
+  <section name="static controls">
+    <section name="1">
+      <attstr name="type" val="gallery"/>
+      <attstr name="directory" val="data/gallery/credits/"/>
+    </section>
+    <section name="2">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="-10"/>
+      <attnum name="y" val="375"/>
+      <attnum name="width" val="130"/>
+      <attnum name="height" val="95"/>
+      <attstr name="image" val="data/img/sd-logo-big.png"/>
+    </section>
+    <section name="3">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="300"/>
+      <attnum name="y" val="430"/>
+      <attnum name="width" val="400"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium_t"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="bg image" val="data/img/header-background.png"/>
+      <attnum name="bg image padding top" val="15"/>
+      <attnum name="bg image padding bottom" val="15"/>
+      <attnum name="bg image padding left" val="30"/>
+      <attnum name="bg image padding right" val="15"/>
+    </section>
+  </section>
+  <section name="music">
+    <attstr name="music file" val="data/music/SoDoesHope.ogg"/>
+    <attstr name="name" val="So Does Hope (SD edit)"/>
+    <attstr name="author" val="Nihilore"/>
+    <attstr name="license" val="CC-BY 4.0"/>
+  </section>
+  <section name="track metadata">
+    <section name="artist">
+      <attstr name="text" val="Artist(s)"/>
+      <attstr name="text-fra" val="Artiste(s)"/>
+      <attstr name="text-spa" val="Artistas(s)"/>
+      <attstr name="text-cat" val="Artista/es"/>
+      <attstr name="text-ru" val="Автор(ы)"/>
+    </section>
+    <section name="title">
+      <attstr name="text" val="Title"/>
+      <attstr name="text-fra" val="Titre"/>
+      <attstr name="text-spa" val="Título"/>
+      <attstr name="text-cat" val="Títol"/>
+      <attstr name="text-ru" val="Название"/>
+    </section>
+    <section name="license">
+      <attstr name="text" val="License(s)"/>
+      <attstr name="text-fra" val="Licence(s)"/>
+      <attstr name="text-spa" val="Licencia/s"/>
+      <attstr name="text-cat" val="Llicència/es"/>
+      <attstr name="text-ru" val="Лицензии"/>
+    </section>
+  </section>
+</params>

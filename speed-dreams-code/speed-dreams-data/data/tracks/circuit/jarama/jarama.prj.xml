@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="17.0.6" class="java.beans.XMLDecoder">
+ <object class="utils.Properties" id="Properties0">
+  <void property="currentA">
+   <double>-6.283185115616205</double>
+  </void>
+  <void property="currentX">
+   <double>-0.014730428311452215</double>
+  </void>
+  <void property="currentY">
+   <double>0.004475495702590883</double>
+  </void>
+  <void property="curveNameCount">
+   <int>78</int>
+  </void>
+  <void property="image">
+   <string>JaramaSat.png</string>
+  </void>
+  <void property="imageScale">
+   <double>1.145</double>
+  </void>
+  <void property="imgOffset">
+   <void property="x">
+    <double>-875.0</double>
+   </void>
+   <void property="y">
+    <double>64.0</double>
+   </void>
+  </void>
+  <void property="path">
+   <string>C:\Users\Leo\Desktop\SD\code\data\tracks\circuit\jarama</string>
+  </void>
+  <void property="straightNameCount">
+   <int>95</int>
+  </void>
+ </object>
+</java>

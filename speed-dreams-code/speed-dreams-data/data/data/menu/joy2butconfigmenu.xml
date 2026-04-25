@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    file                 : joystickconfigmenu.xml
+    created              : 2009
+    copyright            : (C) 2009 by Brian Gavin, Eckhard M. Jaeger
+    web                  : speed-dreams.sourceforge.net
+-->
+<!--    This program is free software; you can redistribute it and/or modify  -->
+<!--    it under the terms of the GNU General Public License as published by  -->
+<!--    the Free Software Foundation; either version 2 of the License, or     -->
+<!--    (at your option) any later version.                                   -->
+<!--
+
+	Joystick / gamepad / wheel / pedals calibration screen
+
+-->
+<!DOCTYPE params SYSTEM "../tgf/params.dtd">
+<params name="joy2butconfigmenu">
+  <section name="translatable">
+    <section name="centerpos">
+      <attstr name="text" val="Center the axis and then press a button"/>
+      <attstr name="text-spa" val="Centrar el eje y luego presionar un botón"/>
+      <attstr name="text-cat" val="Deixeu l'eix en repòs i pitgeu un botó"/>
+      <attstr name="text-ru" val="Отцентруйте оси и нажмите кнопку"/>
+    </section>
+    <section name="apply">
+      <attstr name="text" val="Apply the command above and press a button"/>
+      <attstr name="text-spa" val="Aplica el comando arriba y pulsa un botón"/>
+      <attstr name="text-cat" val="Apliqueu la comanda de dalt i pitgeu un botó"/>
+      <attstr name="text-ru" val="Примените команду выше и нажмите кнопку"/>
+    </section>
+    <section name="complete">
+      <attstr name="text" val="Calibration completed"/>
+      <attstr name="text-spa" val="Calibración completada"/>
+      <attstr name="text-cat" val="Cal·libració finalitzada"/>
+      <attstr name="text-ru" val="Калибровка выполнена"/>
+    </section>
+    <section name="failed">
+      <attstr name="text" val="Calibration failed"/>
+      <attstr name="text-spa" val="Falló la calibración"/>
+      <attstr name="text-cat" val="La cal·libració ha fallat"/>
+      <attstr name="text-ru" val="Не удалось откалибровать"/>
+    </section>
+  </section>
+  <section name="dynamic controls">
+    <section name="AtobAxisID">
+      <attstr name="type" val="label"/>
+      <attnum name="max len" val="30"/>
+      <attstr name="tip" val=""/>
+      <attnum name="x" val="185"/>
+      <attnum name="y" val="294"/>
+      <attnum name="width" val="150"/>
+      <attstr name="h align" val="center"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium"/>
+    </section>
+    <section name="AtobCommandID">
+      <attstr name="type" val="label"/>
+      <attnum name="max len" val="30"/>
+      <attstr name="tip" val=""/>
+      <attnum name="x" val="185"/>
+      <attnum name="y" val="264"/>
+      <attnum name="width" val="150"/>
+      <attstr name="h align" val="center"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium"/>
+    </section>
+    <section name="instructionlabel">
+      <attstr name="type" val="label"/>
+      <attnum name="max len" val="60"/>
+      <attnum name="x" val="185"/>
+      <attnum name="y" val="200"/>
+      <attnum name="width" val="300"/>
+      <attstr name="h align" val="center"/>
+      <attstr name="color" val="0x00CCFF"/>
+      <attstr name="font" val="big"/>
+    </section>
+    <!-- Buttons -->
+    <section name="cancelbutton">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Cancel"/>
+      <attstr name="text-spa" val="Cancelar"/>
+      <attstr name="text-cat" val="Cancel·lar"/>
+      <attstr name="text-ru" val="Отменить"/>
+      <attstr name="tip" val="Cancel changes"/>
+      <attstr name="tip-spa" val="Cancela los cambios"/>
+      <attstr name="tip-cat" val="Cancel·leu els canvis"/>
+      <attstr name="tip-ru" val="Отменить изменения"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="x" val="130"/>
+      <attnum name="y" val="44"/>
+      <attnum name="width" val="120"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-10"/>
+      <attnum name="image y" val="-2"/>
+      <attnum name="image width" val="100"/>
+      <attnum name="image height" val="30"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="resetbutton">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Reset"/>
+      <attstr name="text-spa" val="Reset"/>
+      <attstr name="text-cat" val="Reiniciar"/>
+      <attstr name="text-ru" val="Сбросить"/>
+      <attstr name="tip" val="Restart calibration procedure"/>
+      <attstr name="tip-spa" val="Procedimiento de calibración reiniciar"/>
+      <attstr name="tip-cat" val="Reinicieu el procediment de cal·libració"/>
+      <attstr name="tip-ru" val="Перезапустить процесс калибровки"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="x" val="288"/>
+      <attnum name="y" val="44"/>
+      <attnum name="width" val="80"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-10"/>
+      <attnum name="image y" val="-2"/>
+      <attnum name="image width" val="100"/>
+      <attnum name="image height" val="30"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="nextbutton">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Next"/>
+      <attstr name="text-spa" val="Siguiente"/>
+      <attstr name="text-cat" val="Següent"/>
+      <attstr name="text-ru" val="След."/>
+      <attstr name="tip" val="Proceed to the next calibration page"/>
+      <attstr name="tip-spa" val="Procedido a la siguiente página de calibración"/>
+      <attstr name="tip-cat" val="Procediu a la següent pàgina de cal·libració"/>
+      <attstr name="tip-ru" val="Перейти к следующей странице калибровки"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="x" val="460"/>
+      <attnum name="y" val="44"/>
+      <attnum name="width" val="120"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-10"/>
+      <attnum name="image y" val="-2"/>
+      <attnum name="image width" val="100"/>
+      <attnum name="image height" val="30"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="donebutton">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Done"/>
+      <attstr name="text-spa" val="Hecho"/>
+      <attstr name="text-cat" val="Fet"/>
+      <attstr name="text-ru" val="Выполнено"/>
+      <attstr name="tip" val="Done, return to control config"/>
+      <attstr name="tip-spa" val="Hecho, volver a controlar config"/>
+      <attstr name="tip-cat" val="Fet, torneu al menú de configuració dels controls"/>
+      <attstr name="tip-ru" val="Выполнено, перейти к настройке управления"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="x" val="460"/>
+      <attnum name="y" val="44"/>
+      <attnum name="width" val="120"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-10"/>
+      <attnum name="image y" val="-2"/>
+      <attnum name="image width" val="100"/>
+      <attnum name="image height" val="30"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+  </section>
+  <section name="static controls">
+    <section name="1">
+      <attstr name="type" val="gallery"/>
+      <attstr name="directory" val="data/gallery/"/>
+    </section>
+    <section name="2">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="-10"/>
+      <attnum name="y" val="375"/>
+      <attnum name="width" val="130"/>
+      <attnum name="height" val="95"/>
+      <attstr name="image" val="data/img/sd-logo-big.png"/>
+    </section>
+    <section name="3">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val="Joy-to-button configuration"/>
+      <attstr name="text-spa" val="Configuración Joy-to-button"/>
+      <attstr name="text-cat" val="Configuració de joystick a botons"/>
+      <attnum name="x" val="300"/>
+      <attnum name="y" val="430"/>
+      <attnum name="width" val="400"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium_t"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="bg image" val="data/img/header-background.png"/>
+      <attnum name="bg image padding top" val="15"/>
+      <attnum name="bg image padding bottom" val="15"/>
+      <attnum name="bg image padding left" val="30"/>
+      <attnum name="bg image padding right" val="15"/>
+    </section>
+    <section name="4">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val="Joystick:"/>
+      <attstr name="text-ru" val="Джойстик:"/>
+      <attnum name="x" val="20"/>
+      <attnum name="y" val="294"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="110"/>
+      <attstr name="font" val="small_t"/>
+    </section>
+  </section>
+</params>

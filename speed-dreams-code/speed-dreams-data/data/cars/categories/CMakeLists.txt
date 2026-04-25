@@ -1,0 +1,36 @@
+install(FILES
+    22MP1.xml
+    23MP1.xml
+    36GP.xml
+    67GP.xml
+    86MP1.xml
+    92MP1.xml
+    Fun-Racer.xml
+    LS-GT1v41.xml
+    LS-GT1.xml
+    LS-GT2.xml
+    LS-P1.xml
+    LS-P2.xml
+    MP10.xml
+    MP1.xml
+    MP3.xml
+    MP5.xml
+    MPA11.xml
+    MPA12.xml
+    MPA1.xml
+    MPE.xml
+    Nascar.xml
+    Preview.xml
+    Raid-T1.xml
+    References.xml
+    RS.xml
+    SD-GTP.xml
+    SRW.xml
+    Stock.xml
+    Supercars.xml
+    SuperCup.xml
+    SuperTour2.xml
+    TA50.xml
+    TRB1.xml
+    DESTINATION ${datadir}/cars/categories
+)

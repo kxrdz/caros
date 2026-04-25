@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    file                 : sound.xml
+    created              : Thu Dec 12 15:11:55 CET 2004
+    copyright            : (C) 2004 Bernhard Wymann
+    email                : Berniw@bluewin.ch
+-->
+
+<!--    This program is free software; you can redistribute it and/or modify  -->
+<!--    it under the terms of the GNU General Public License as published by  -->
+<!--    the Free Software Foundation; either version 2 of the License, or     -->
+<!--    (at your option) any later version.                                   -->
+
+<!DOCTYPE params SYSTEM "../../../libs/tgf/params.dtd">
+
+<params name="sound" type="param" mode="mw" version="1.4">
+	<section name="Sound Settings">
+		<attstr name="state" val="openal"/>
+		<attnum name="volume" unit="%" val="100"/>
+	</section>
+	<section name="Music Settings">
+		<attstr name="music state" val="enabled"/>
+		<attstr name="default music" val="data/music/main.ogg"/>
+		<attnum name="music volume" unit="%" val="40"/>
+		<section name="Tracks">
+			<section name="1">
+				<attstr name="name" val="Building Nests in the Ruins"/>
+				<attstr name="author" val="Nihilore"/>
+				<attstr name="license" val="CC-BY 4.0"/>
+				<attstr name="path" val="data/music/BuildingNestsintheRuins.ogg"/>
+			</section>
+			<section name="2">
+				<attstr name="name" val="Control"/>
+				<attstr name="author" val="Nihilore"/>
+				<attstr name="license" val="CC-BY 4.0"/>
+				<attstr name="path" val="data/music/Control.ogg"/>
+			</section>
+			<section name="3">
+				<attstr name="name" val="No One Made A Sound"/>
+				<attstr name="author" val="Nihilore"/>
+				<attstr name="license" val="CC-BY 4.0"/>
+				<attstr name="path" val="data/music/NoOneMadeASound.ogg"/>
+			</section>
+			<section name="4">
+				<attstr name="name" val="Send Help"/>
+				<attstr name="author" val="Nihilore"/>
+				<attstr name="license" val="CC-BY 4.0"/>
+				<attstr name="path" val="data/music/SendHelp.ogg"/>
+			</section>
+			<section name="5">
+				<attstr name="name" val="Everything Shaped By..."/>
+				<attstr name="author" val="Nihilore"/>
+				<attstr name="license" val="CC-BY 4.0"/>
+				<attstr name="path" val="data/music/EverythingShapedByEverythingElse.ogg"/>
+			</section>
+		</section>
+	</section>
+   <section name="Menu SFX Settings">
+      <attstr name="menusfx state" val="enabled"/>
+      <attnum name="menusfx volume" unit="%" val="50"/>
+   </section>
+</params>

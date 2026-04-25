@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FreeSOLID", "FreeSOLID.vcproj", "{A8809DA4-2ADE-4948-80CD-CB766119CE5C}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Walk", "Walk.vcproj", "{328CC121-0DA2-44B4-93A7-3ED6ECD31B5E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A8809DA4-2ADE-4948-80CD-CB766119CE5C} = {A8809DA4-2ADE-4948-80CD-CB766119CE5C}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{A8809DA4-2ADE-4948-80CD-CB766119CE5C}.Debug.ActiveCfg = Debug|Win32
+		{A8809DA4-2ADE-4948-80CD-CB766119CE5C}.Debug.Build.0 = Debug|Win32
+		{A8809DA4-2ADE-4948-80CD-CB766119CE5C}.Release.ActiveCfg = Release|Win32
+		{A8809DA4-2ADE-4948-80CD-CB766119CE5C}.Release.Build.0 = Release|Win32
+		{328CC121-0DA2-44B4-93A7-3ED6ECD31B5E}.Debug.ActiveCfg = Debug|Win32
+		{328CC121-0DA2-44B4-93A7-3ED6ECD31B5E}.Debug.Build.0 = Debug|Win32
+		{328CC121-0DA2-44B4-93A7-3ED6ECD31B5E}.Release.ActiveCfg = Release|Win32
+		{328CC121-0DA2-44B4-93A7-3ED6ECD31B5E}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

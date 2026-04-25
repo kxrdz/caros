@@ -1,0 +1,37 @@
+install(FILES
+    36GP.xml
+    default.xml
+    logo.rgb
+    LS-GT1.xml
+    LS-P1.xml
+    LS-P2.xml
+    MPA11.xml
+    RS.xml
+    SRW.xml
+    TRB1.xml
+    DESTINATION ${datadir}/drivers/dandroid
+)
+
+add_subdirectory(67gp-cavallo-123)
+add_subdirectory(67gp-guthrie-eagle)
+add_subdirectory(67gp-kuiper-t81)
+add_subdirectory(67gp-upping-ut19)
+add_subdirectory(ls1-archer-r9)
+add_subdirectory(ls1-cavallo-570s1)
+add_subdirectory(ls1-marisatech-gt4r)
+add_subdirectory(ls1-newcastle-fury)
+add_subdirectory(ls1-taipan-ltsr)
+add_subdirectory(ls1-toro-rgt)
+add_subdirectory(ls1-vulture-v5r)
+add_subdirectory(ls1-vulture-v6r)
+add_subdirectory(ls1-zentek-z7r)
+add_subdirectory(mpa12-murasama)
+add_subdirectory(sc-boxer-96)
+add_subdirectory(sc-cavallo-360)
+add_subdirectory(sc-deckard-conejo)
+add_subdirectory(sc-fmc-gt4)
+add_subdirectory(sc-kanagawa-z35gts)
+add_subdirectory(sc-kongei-kk8s)
+add_subdirectory(sc-lynx-220)
+add_subdirectory(sc-murasama-nsx)
+add_subdirectory(sc-spirit-300)

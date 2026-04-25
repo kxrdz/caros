@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    file                 : raceblindscreen.xml
+    created              : 2009
+    copyright            : (C) 2009 by Brian Gavin, Eckhard M. Jaeger
+    web                  : speed-dreams.sourceforge.net
+-->
+<!--    This program is free software; you can redistribute it and/or modify  -->
+<!--    it under the terms of the GNU General Public License as published by  -->
+<!--    the Free Software Foundation; either version 2 of the License, or     -->
+<!--    (at your option) any later version.                                   -->
+<!--
+
+	Blind-mode (results only) race menu
+
+-->
+<!DOCTYPE params SYSTEM "../tgf/params.dtd">
+<params name="raceblindscreen">
+  <section name="properties">
+    <!-- Number of rows in the results table -->
+    <attnum name="nMaxResultRows" val="15"/>
+    <!-- Y coordinate of the top row of the table,
+         and number of pixels separating the rows -->
+    <attnum name="yTopRow" val="320"/>
+    <attnum name="yRowShift" val="16"/>
+    <!-- Color list for the result rows (Only 2 supported by the code as for now) -->
+    <attstr name="rowColorNormal" val="0xFFFFFFFF"/>
+    <!-- White = normal result -->
+    <attstr name="rowColorHighlighted" val="0xFFFFFF00"/>
+    <!-- Yellow = highlighted result -->
+  </section>
+  <section name="template controls">
+    <!-- Each column of the results header -->
+    <section name="Header">
+      <attstr name="type" val="label"/>
+      <attnum name="y" val="340"/>
+      <attstr name="h align" val="center"/>
+      <attstr name="color" val="0xFFFFFFFF"/>
+      <attstr name="font" val="small_t"/>
+    </section>
+    <!-- Each column of each row of the results list -->
+    <section name="Row">
+      <attstr name="type" val="label"/>
+      <attnum name="max len" val="80"/>
+      <attnum name="x" val="120"/>
+      <attstr name="color" val="0xFFFFFFFF"/>
+      <attstr name="h align" val="center"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="bg image" val="data/img/label-background.png"/>
+    </section>
+  </section>
+  <section name="dynamic controls">
+    <section name="Title">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val="Results"/>
+      <attstr name="text-ru" val="Результаты"/>
+      <attnum name="max len" val="40"/>
+      <attnum name="x" val="300"/>
+      <attnum name="y" val="430"/>
+      <attnum name="width" val="400"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium_t"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="bg image" val="data/img/header-background.png"/>
+      <attnum name="bg image padding top" val="15"/>
+      <attnum name="bg image padding bottom" val="15"/>
+      <attnum name="bg image padding left" val="30"/>
+      <attnum name="bg image padding right" val="15"/>
+    </section>
+    <section name="SubTitle">
+      <attstr name="type" val="label"/>
+      <attnum name="max len" val="64"/>
+      <attnum name="x" val="300"/>
+      <attnum name="y" val="420"/>
+      <attstr name="h align" val="lef"/>
+      <attstr name="font" val="small"/>
+      <attstr name="color" val="0xFFFFFFFF"/>
+    </section>
+  </section>
+  <section name="static controls">
+    <section name="1">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="-10"/>
+      <attnum name="y" val="375"/>
+      <attnum name="width" val="130"/>
+      <attnum name="height" val="95"/>
+      <attstr name="image" val="data/img/sd-logo-big.png"/>
+    </section>
+    <section name="2">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val="Race is being simulated at maximum speed, please stand by."/>
+      <attstr name="text-spa" val="La carrera está siendo simulada a máxima velocidad, por favor espere."/>
+      <attstr name="text-cat" val="La cursa s'està simulant a velocitat màxima; si us plau, espereu."/>
+      <attstr name="text-ru" val="Гонка симулируется с максимальной скоростью. Пожалуйста, ожидайте."/>
+      <attnum name="x" val="0"/>
+      <attnum name="y" val="20"/>
+      <attnum name="width" val="640"/>
+      <attstr name="h align" val="center"/>
+      <attstr name="color" val="0xFFFFFFFF"/>
+      <attstr name="font" val="medium_t"/>
+    </section>
+  </section>
+  <section name="music">
+    <attstr name="music file" val="data/music/qualifications.ogg"/>
+  </section>
+</params>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Speed Dreams, a free and open source motorsport simulator.            -->
+<!-- Copyright (C) 2026 Xavier Del Campo Romero                            -->
+<!-- This program is free software; you can redistribute it and/or modify  -->
+<!-- it under the terms of the GNU General Public License as published by  -->
+<!-- the Free Software Foundation; either version 2 of the License, or     -->
+<!-- (at your option) any later version.                                   -->
+<!DOCTYPE params SYSTEM "../tgf/params.dtd">
+<params name="ssggraphinfo">
+	<section name="dynamic controls">
+		<section name="back">
+			<attstr name="type" val="text button"/>
+			<attstr name="show box" val="no"/>
+			<attstr name="text" val="Back"/>
+			<attstr name="text-spa" val="Atrás"/>
+			<attstr name="text-cat" val="Tornar"/>
+			<attstr name="text-ru" val="Назад"/>
+			<attstr name="tip" val="Go back to previous menu"/>
+			<attstr name="tip-spa" val="Volver al menú anterior"/>
+			<attstr name="tip-cat" val="Torneu al menú anterior"/>
+			<attstr name="tip-ru" val="Вернуться к предыдущему меню"/>
+			<attstr name="h align" val="left"/>
+			<attnum name="x" val="500"/>
+			<attnum name="y" val="44"/>
+			<attnum name="width" val="80"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xa6a6a6"/>
+			<attstr name="focused color" val="0xFFFFFF"/>
+			<attstr name="pushed color" val="0xFFFFFF"/>
+			<attnum name="image x" val="-10"/>
+			<attnum name="image y" val="-2"/>
+			<attnum name="image width" val="100"/>
+			<attnum name="image height" val="30"/>
+			<attstr name="focused image" val="data/img/button-left-focused.png"/>
+			<attstr name="enabled image" val="data/img/button-left.png"/>
+			<attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+		</section>
+	</section>
+	<section name="static controls">
+		<section name="1">
+			<attstr name="type" val="gallery"/>
+			<attstr name="directory" val="data/gallery/"/>
+		</section>
+		<section name="2">
+			<attstr name="type" val="static image"/>
+			<attnum name="x" val="190"/>
+			<attnum name="y" val="140"/>
+			<attnum name="width" val="415"/>
+			<attnum name="height" val="200"/>
+			<attstr name="image" val="data/img/black-square.png"/>
+		</section>
+		<section name="3">
+			<attstr name="type" val="static image"/>
+			<attnum name="x" val="-10"/>
+			<attnum name="y" val="375"/>
+			<attnum name="width" val="130"/>
+			<attnum name="height" val="95"/>
+			<attstr name="image" val="data/img/sd-logo-big.png"/>
+		</section>
+		<section name="4">
+			<attstr name="type" val="label"/>
+			<attstr name="text" val="Ssggraph engine information"/>
+			<attstr name="text-spa" val="Información del motor gráfico Ssggraph"/>
+			<attstr name="text-cat" val="Informació del motor gràfic Ssggraph"/>
+			<attstr name="text-ru" val="Информация о графическом движке Ssggraph"/>
+			<attnum name="x" val="300"/>
+			<attnum name="y" val="430"/>
+			<attnum name="width" val="400"/>
+			<attstr name="color" val="0xFFFFFF"/>
+			<attstr name="font" val="medium_t"/>
+			<attstr name="h align" val="left"/>
+			<attstr name="bg image" val="data/img/header-background.png"/>
+			<attnum name="bg image padding top" val="15"/>
+			<attnum name="bg image padding bottom" val="15"/>
+			<attnum name="bg image padding left" val="30"/>
+			<attnum name="bg image padding right" val="15"/>
+		</section>
+		<section name="5">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="200"/>
+			<attnum name="y" val="315"/>
+			<attstr name="text" val="Ssggraph is Speed Dreams' original graphics engine, inherited from"/>
+			<attstr name="text-ru" val="Ssggraph - оригинальный графический движок Speed Dreams,"/>
+			<attstr name="text-spa" val="Ssggraph es el motor gráfico original de Speed Dreams, heredado de"/>
+			<attstr name="text-cat" val="L'Ssggraph és el motor gràfic original de l'Speed Dreams,"/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="400"/>
+			<attstr name="font" val="small"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="6">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="200"/>
+			<attnum name="y" val="300"/>
+			<attstr name="text" val="its parent project, TORCS. It is based on PLib's &quot;simple scene graph&quot; (SSG),"/>
+			<attstr name="text-ru" val=" унаследованный от родительского проекта TORCS. Основан на"/>
+			<attstr name="text-spa" val="su proyecto padre, TORCS. Está basado en el &quot;simple scene graph&quot; (SSG)"/>
+			<attstr name="text-cat" val="heredat del seu projecte pare, el TORCS. És basat en el &quot;simple scene"/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="400"/>
+			<attstr name="font" val="small"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="7">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="200"/>
+			<attnum name="y" val="285"/>
+			<attstr name="text" val="an old suite of game libraries under the LGPL license."/>
+			<attstr name="text-ru" val="&quot;простом графе сцены&quot;(SSG) Plib, наборе библиотек с LGPL лицензией."/>
+			<attstr name="text-spa" val="de PLib, una antigua suite de software bajo la licencia LGPL."/>
+			<attstr name="text-cat" val="graph&quot; (SSG) del PLib, un antic programari sota la llicència LGPL."/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="400"/>
+			<attstr name="font" val="small"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="8">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="200"/>
+			<attnum name="y" val="255"/>
+			<attstr name="text" val="Despite its age, Ssggraph is stable and provides good performance on"/>
+			<attstr name="text-ru" val="Несмотря на возраст, Ssggraph стабилен, имеет хорошую "/>
+			<attstr name="text-spa" val="A pesar de su edad, Ssggraph es estable y ofrece un buen rendimiento"/>
+			<attstr name="text-cat" val="Malgrat els anys, l'Ssgraph és estable i proporciona bon rendiment a"/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="400"/>
+			<attstr name="font" val="small"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="9">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="200"/>
+			<attnum name="y" val="240"/>
+			<attstr name="text" val="lower-end computers, has a low memory footprint and has features"/>
+			<attstr name="text-ru" val="производительность на слабых компьютерах, расходует мало ОЗУ и"/>
+			<attstr name="text-spa" val="en equipos de gama baja, con menor consumo de memoria y caracterís-"/>
+			<attstr name="text-cat" val="ordinadors menys potents, té menor consum de memòria i"/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="400"/>
+			<attstr name="font" val="small"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="10">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="200"/>
+			<attnum name="y" val="225"/>
+			<attstr name="text" val="still not available in Osggraph, such as visibility distance, map outlines"/>
+			<attstr name="text-ru" val="имеет свойства, пока недоступные в Osggraph, например, дальность "/>
+			<attstr name="text-spa" val="ticas todavía no disponibles en Osggraph, como distancia de visibilidad,"/>
+			<attstr name="text-cat" val="característiques no disponibles a l'Osggraph, com distància de visibilitat,"/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="400"/>
+			<attstr name="font" val="small"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="11">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="200"/>
+			<attnum name="y" val="210"/>
+			<attstr name="text" val="and split-screen multi-player support."/>
+			<attstr name="text-ru" val="видимости, очертания карт и мультиплеер с разделенным экраном."/>
+			<attstr name="text-spa" val="minimapas y soporte multijugador en pantalla dividida."/>
+			<attstr name="text-cat" val="minimapes i multi-jugador amb pantalla partida."/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="400"/>
+			<attstr name="font" val="small"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="12">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="200"/>
+			<attnum name="y" val="180"/>
+			<attstr name="text" val="Choose Ssggraph for best performance at the expense of visual fidelity."/>
+			<attstr name="text-ru" val="Выбирайте Ssggraph для лучшей производительности в ущерб"/>
+			<attstr name="text-spa" val="Elija Ssggraph para un mejor rendimiento a cambio de menor fidelidad"/>
+			<attstr name="text-cat" val="Escolliu l'Ssggraph per a millor rendiment, a canvi de menor fidelitat"/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="400"/>
+			<attstr name="font" val="small"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="13">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="200"/>
+			<attnum name="y" val="165"/>
+			<attstr name="text" val=""/>
+			<attstr name="text-ru" val="качеству изображения."/>
+			<attstr name="text-cat" val="visual."/>
+			<attstr name="text-spa" val="visual."/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="400"/>
+			<attstr name="font" val="small"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="14">
+			<attstr name="type" val="static image"/>
+			<attnum name="x" val="30"/>
+			<attnum name="y" val="140"/>
+			<attnum name="width" val="130"/>
+			<attnum name="height" val="90"/>
+			<attstr name="image" val="data/img/ssggraph-multiscreen.jpg"/>
+		</section>
+		<section name="15">
+			<attstr name="type" val="static image"/>
+			<attnum name="x" val="30"/>
+			<attnum name="y" val="250"/>
+			<attnum name="width" val="130"/>
+			<attnum name="height" val="90"/>
+			<attstr name="image" val="data/img/ssggraph-demo.jpg"/>
+		</section>
+	</section>
+</params>

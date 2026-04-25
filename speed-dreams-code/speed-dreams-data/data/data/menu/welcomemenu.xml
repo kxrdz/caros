@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--    Speed Dreams, a free and open source motorsport simulator.            -->
+<!--    Copyright (C) 2026 Xavier Del Campo Romero                            -->
+<!--    This program is free software; you can redistribute it and/or modify  -->
+<!--    it under the terms of the GNU General Public License as published by  -->
+<!--    the Free Software Foundation; either version 2 of the License, or     -->
+<!--    (at your option) any later version.                                   -->
+
+<!DOCTYPE params SYSTEM "../../../libs/tgf/params.dtd">
+
+<params name="welcomemenu">
+	<section name="translatable">
+		<section name="welcome">
+			<attstr name="text" val="Welcome"/>
+			<attstr name="text-spa" val="Bienvenido"/>
+			<attstr name="text-cat" val="Benvinguts"/>
+			<attstr name="text-ru" val="Добро пожаловать"/>
+		</section>
+		<section name="apply">
+			<attstr name="text" val="Apply"/>
+			<attstr name="text-spa" val="Aplicar"/>
+			<attstr name="text-cat" val="Aplicar"/>
+			<attstr name="text-ru" val="Применить"/>
+		</section>
+		<section name="line1">
+			<attstr name="text" val="Welcome to Speed Dreams!"/>
+			<attstr name="text-spa" val="¡Bienvenido a Speed Dreams!"/>
+			<attstr name="text-cat" val="Benvinguts a l'Speed Dreams!"/>
+			<attstr name="text-ru" val="Добро пожаловать в Speed Dreams!"/>
+		</section>
+		<section name="line2">
+			<attstr name="text" val="Please select your language:"/>
+			<attstr name="text-spa" val="Por favor, seleccione su idioma:"/>
+			<attstr name="text-cat" val="Si us plau, escolliu el vostre idioma:"/>
+			<attstr name="text-ru" val="Пожалуйста, выберите ваш язык:"/>
+		</section>
+		<section name="line3">
+			<attstr name="text" val="By default, Speed Dreams only includes 1 car and 1 track."/>
+			<attstr name="text-spa" val="Por defecto, Speed Dreams sólo incluye 1 coche y 1 circuito."/>
+			<attstr name="text-cat" val="Per defecte, l'Speed Dreams només inclou 1 cotxe i 1 pista."/>
+			<attstr name="text-ru" val="По умолчанию, Speed Dreams включает в себя 1 автомобиль и 1 трассу."/>
+		</section>
+		<section name="line4">
+			<attstr name="text" val="For more content, please visit the Downloads menu."/>
+			<attstr name="text-spa" val="Para más contenido, visite el menú Descargas."/>
+			<attstr name="text-cat" val="Per a més contingut, si us plau entreu al menú Descàrregues."/>
+			<attstr name="text-ru" val="Чтобы получить больше контента, посетите раздел Загрузки."/>
+		</section>
+		<section name="line5">
+			<attstr name="text" val="Language can also be changed from Options->Language."/>
+			<attstr name="text-spa" val="El idioma también puede cambiarse desde Opciones->Idioma."/>
+			<attstr name="text-cat" val="L'idioma també pot canviar-se des d'Opcions->Idioma."/>
+			<attstr name="text-ru" val="Язык может быть также изменен в разделе Настройки->Язык."/>
+		</section>
+	</section>
+	<section name="dynamic controls">
+		<section name="welcome">
+			<attstr name="type" val="label"/>
+			<attstr name="text" val=""/>
+			<attnum name="x" val="300"/>
+			<attnum name="y" val="430"/>
+			<attnum name="width" val="400"/>
+			<attstr name="color" val="0xFFFFFF"/>
+			<attstr name="font" val="medium_t"/>
+			<attstr name="h align" val="left"/>
+			<attstr name="bg image" val="data/img/header-background.png"/>
+			<attnum name="bg image padding top" val="15"/>
+			<attnum name="bg image padding bottom" val="15"/>
+			<attnum name="bg image padding left" val="30"/>
+			<attnum name="bg image padding right" val="15"/>
+		</section>
+		<section name="line1">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="0"/>
+			<attnum name="y" val="280"/>
+			<attstr name="text" val=""/>
+			<attstr name="h align" val="center"/>
+			<attnum name="width" val="640"/>
+			<attstr name="font" val="large"/>
+			<attstr name="color" val="0xffffff"/>
+		</section>
+		<section name="line2">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="0"/>
+			<attnum name="y" val="260"/>
+			<attstr name="text" val=""/>
+			<attstr name="h align" val="center"/>
+			<attnum name="width" val="640"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xffffff"/>
+		</section>
+		<section name="line3">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="0"/>
+			<attnum name="y" val="200"/>
+			<attstr name="text" val=""/>
+			<attstr name="h align" val="center"/>
+			<attnum name="width" val="640"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xffffff"/>
+		</section>
+		<section name="line4">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="0"/>
+			<attnum name="y" val="180"/>
+			<attstr name="text" val=""/>
+			<attstr name="h align" val="center"/>
+			<attnum name="width" val="640"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xffffff"/>
+		</section>
+		<section name="line5">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="0"/>
+			<attnum name="y" val="140"/>
+			<attstr name="text" val=""/>
+			<attstr name="h align" val="center"/>
+			<attnum name="width" val="640"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xffffff"/>
+		</section>
+		<section name="language">
+            <attstr name="type" val="combo box"/>
+            <attstr name="tip" val="Choose your language"/>
+            <attstr name="tip-spa" val="Elija su idioma"/>
+            <attstr name="tip-cat" val="Escolliu el vostre idioma"/>
+            <attstr name="tip-ru" val="Выберите язык"/>
+            <attnum name="x" val="210"/>
+            <attnum name="y" val="225"/>
+            <attnum name="width" val="220"/>
+            <attnum name="arrows width" val="24"/>
+            <attnum name="arrows height" val="24"/>
+            <attstr name="color" val="0xFFFFFF"/>
+            <attstr name="focused color" val="0xFFFFFF"/>
+            <attstr name="pushed color" val="00xFFCC00"/>
+            <attstr name="font" val="large"/>
+        </section>
+		<section name="apply">
+			<attstr name="type" val="text button"/>
+			<attstr name="show box" val="no"/>
+			<attstr name="text" val="Apply"/>
+			<attstr name="text-spa" val="Aplicar"/>
+			<attstr name="text-cat" val="Aplicar"/>
+			<attstr name="text-ru" val="Применить"/>
+			<attstr name="tip" val="Accept and save changes"/>
+			<attstr name="tip-spa" val="Aceptar y guardar cambios"/>
+			<attstr name="tip-cat" val="Accepteu i deseu els canvis"/>
+			<attstr name="tip-ru" val="Принять и сохранить изменения"/>
+			<attstr name="h align" val="left"/>
+			<attnum name="x" val="500"/>
+			<attnum name="y" val="44"/>
+			<attnum name="width" val="80"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xffffff"/>
+			<attstr name="focused color" val="0xFFFFFF"/>
+			<attstr name="pushed color" val="0xFFFFFF"/>
+			<attnum name="image x" val="-10"/>
+			<attnum name="image y" val="-2"/>
+			<attnum name="image width" val="100"/>
+			<attnum name="image height" val="30"/>
+			<attstr name="focused image" val="data/img/button-left-focused.png"/>
+			<attstr name="enabled image" val="data/img/button-left.png"/>
+			<attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+		</section>
+	</section>
+	<section name="static controls">
+		<section name="1">
+			<attstr name="type" val="gallery"/>
+			<attstr name="directory" val="data/gallery/"/>
+		</section>
+		<section name="2">
+			<attstr name="type" val="static image"/>
+			<attnum name="x" val="-10"/>
+			<attnum name="y" val="375"/>
+			<attnum name="width" val="130"/>
+			<attnum name="height" val="95"/>
+			<attstr name="image" val="data/img/sd-logo-big.png"/>
+		</section>
+	</section>
+</params>

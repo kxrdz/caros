@@ -1,0 +1,1198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Speed Dreams, a free and open source motorsport simulator.            -->
+<!-- Copyright (C) 2024-2026 Xavier Del Campo Romero                            -->
+<!-- This program is free software; you can redistribute it and/or modify  -->
+<!-- it under the terms of the GNU General Public License as published by  -->
+<!-- the Free Software Foundation; either version 2 of the License, or     -->
+<!-- (at your option) any later version.                                   -->
+<!DOCTYPE params SYSTEM "../tgf/params.dtd">
+<params name="downloadsmenu">
+	<section name="translatable">
+		<section name="unsupportedhashtype">
+			<attstr name="text" val="Unsupported hash type"/>
+			<attstr name="text-spa" val="Tipo de hach sin soporte"/>
+			<attstr name="text-cat" val="Tipus de hash no suportat"/>
+			<attstr name="text-ru" val="Неподдерживаемый тип хэша"/>
+		</section>
+		<section name="failedhash">
+			<attstr name="text" val="Failed to calculate hash"/>
+			<attstr name="text-spa" val="Failed to calculate hash"/>
+			<attstr name="text-cat" val="No ha pogut calcular-se el hash"/>
+			<attstr name="text-ru" val="Не удалось вычислить хэш"/>
+		</section>
+		<section name="hashmismatch">
+			<attstr name="text" val="Hash mismatch"/>
+			<attstr name="text-spa" val="Hash desajusttch"/>
+			<attstr name="text-cat" val="Els hashes no coincideixen"/>
+			<attstr name="text-ru" val="Несовпадение хэша"/>
+		</section>
+		<section name="missingcontenttype">
+			<attstr name="text" val="Missing Content-Type"/>
+			<attstr name="text-spa" val="Tipo de contenido perdido"/>
+			<attstr name="text-cat" val="No s'hi ha trobat el Content-Type"/>
+			<attstr name="text-ru" val="Отсутствует атрибут Content-Type"/>
+		</section>
+		<section name="expectedcontenttype">
+			<attstr name="text" val="Expected Content-Type"/>
+			<attstr name="text-spa" val="Tipo de contenido esperado"/>
+			<attstr name="text-cat" val="S'hi esperava el Content-Type"/>
+			<attstr name="text-ru" val="Ожидался Content-Type"/>
+		</section>
+		<section name="failedrm">
+			<attstr name="text" val="Failed to remove file"/>
+			<attstr name="text-spa" val="Failed to remove file"/>
+			<attstr name="text-cat" val="No s'ha pogut eliminar l'arxiu"/>
+			<attstr name="text-ru" val="Не удалось удалить файл"/>
+		</section>
+		<section name="failedrename">
+			<attstr name="text" val="Failed to rename directory"/>
+			<attstr name="text-spa" val="Failed to rename directory"/>
+			<attstr name="text-cat" val="No s'ha pogut reanomenar el directori"/>
+			<attstr name="text-ru" val="Не удалось переименовать директорию"/>
+		</section>
+		<section name="failedrmdir">
+			<attstr name="text" val="Failed to remove directory"/>
+			<attstr name="text-spa" val="Failed to remove directory"/>
+			<attstr name="text-cat" val="No s'ha pogut eliminar el directori"/>
+			<attstr name="text-ru" val="Не удалось удалить директорию"/>
+		</section>
+		<section name="failedrevision">
+			<attstr name="text" val="Failed to write revision"/>
+			<attstr name="text-spa" val="Failed to write revision"/>
+			<attstr name="text-cat" val="No s'hi ha pogut escriure'n la versió"/>
+			<attstr name="text-ru" val="Не удалось записать ревизию"/>
+		</section>
+		<section name="failedextract">
+			<attstr name="text" val="Failed to extract file"/>
+			<attstr name="text-spa" val="Failed to extract file"/>
+			<attstr name="text-cat" val="No s'ha pogut extreure l'arxiu"/>
+			<attstr name="text-ru" val="Не удалось извлечь файл"/>
+		</section>
+		<section name="failedranddir">
+			<attstr name="text" val="Failed to generate random directory name"/>
+			<attstr name="text-spa" val="Failed to generate random directory name"/>
+			<attstr name="text-cat" val="No s'ha pogut generar el nom aleatori del directori"/>
+			<attstr name="text-ru" val="Не удалось сгенерировать случайное имя директории"/>
+		</section>
+		<section name="failedfetch">
+			<attstr name="text" val="Fetch failed"/>
+			<attstr name="text-spa" val="Fetch falló"/>
+			<attstr name="text-cat" val="No s'ha pogut descarregar"/>
+			<attstr name="text-ru" val="Не удалось загрузить"/>
+		</section>
+		<section name="failedparse">
+			<attstr name="text" val="Failed to parse assets list"/>
+			<attstr name="text-spa" val="Failed to parse assets list"/>
+			<attstr name="text-cat" val="No s'ha pogut interpretar el llistat de continguts"/>
+			<attstr name="text-ru" val="Не удалось прочитать список ассетов"/>
+		</section>
+		<section name="failedresp">
+			<attstr name="text" val="Failed to retrieve response code"/>
+			<attstr name="text-spa" val="Fallado para recuperar el código de respuesta"/>
+			<attstr name="text-cat" val="No se n'ha pogut extreure la URL efectiva"/>
+			<attstr name="text-ru" val="Не удалось получить код ответа"/>
+		</section>
+		<section name="failedurl">
+			<attstr name="text" val="Failed to retrieve effective URL"/>
+			<attstr name="text-spa" val="Fallado para recuperar URL efectiva"/>
+			<attstr name="text-cat" val="No se n'ha pogut extreure la URL efectiva"/>
+			<attstr name="text-ru" val="Не удалось получить действующий URL-адрес"/>
+		</section>
+		<section name="unexpectedhttp">
+			<attstr name="text" val="unexpected HTTP status"/>
+			<attstr name="text-spa" val="estado inesperado HTTP"/>
+			<attstr name="text-cat" val="estat HTTP inesperat"/>
+			<attstr name="text-ru" val="Неожиданный статус HTTP"/>
+		</section>
+		<section name="alltypes">
+			<attstr name="text" val="All types"/>
+			<attstr name="text-spa" val="Todos los tipos"/>
+			<attstr name="text-cat" val="Tots els tipus"/>
+			<attstr name="text-ru" val="Все типы"/>
+		</section>
+		<section name="updates">
+			<attstr name="text" val="Updates"/>
+			<attstr name="text-spa" val="Novedades"/>
+			<attstr name="text-cat" val="Novetats"/>
+			<attstr name="text-ru" val="Обновления"/>
+		</section>
+		<section name="selectfilter">
+			<attstr name="text" val="Choose a filter"/>
+			<attstr name="text-spa" val="Elija un filtro"/>
+			<attstr name="text-cat" val="Escolliu un filtre"/>
+			<attstr name="text-ru" val="Выберите фильтр"/>
+		</section>
+		<section name="allcategories">
+			<attstr name="text" val="All categories"/>
+			<attstr name="text-spa" val="Todas las categorías"/>
+			<attstr name="text-cat" val="Totes les categories"/>
+			<attstr name="text-ru" val="Все категории"/>
+		</section>
+		<section name="cars">
+			<attstr name="text" val="Cars"/>
+			<attstr name="text-spa" val="Coches"/>
+			<attstr name="text-cat" val="Cotxes"/>
+			<attstr name="text-ru" val="Автомобили"/>
+		</section>
+		<section name="tracks">
+			<attstr name="text" val="Tracks"/>
+			<attstr name="text-spa" val="Circuitos"/>
+			<attstr name="text-cat" val="Circuits"/>
+			<attstr name="text-ru" val="Трассы"/>
+		</section>
+		<section name="drivers">
+			<attstr name="text" val="Drivers"/>
+			<attstr name="text-spa" val="Pilotos"/>
+			<attstr name="text-cat" val="Pilots"/>
+			<attstr name="text-ru" val="Пилоты"/>
+		</section>
+	</section>
+	<section name="dynamic controls">
+		<section name="filter">
+			<attstr name="type" val="combo box"/>
+			<attnum name="max len" val="15"/>
+			<attstr name="tip" val="Select filter mode"/>
+			<attstr name="tip-fra" val="Sélectionner le contenu à filtrer"/>
+			<attstr name="tip-spa" val="Seleccione el contenido a filtrar"/>
+			<attstr name="tip-cat" val="Escolliu el contigut a filtrar"/>
+			<attstr name="tip-ru" val="Выберите режим фильтра"/>
+			<attnum name="x" val="175"/>
+			<attnum name="y" val="380"/>
+			<attnum name="width" val="140"/>
+			<attnum name="arrows width" val="24"/>
+			<attnum name="arrows height" val="24"/>
+			<attstr name="color" val="0xFFFFFF"/>
+			<attstr name="focused color" val="0xFFFFFF"/>
+			<attstr name="pushed color" val="0xFFCC00"/>
+			<attstr name="font" val="medium"/>
+			<attnum name="image width" val="24"/>
+			<attnum name="image height" val="24"/>
+		</section>
+		<section name="category">
+			<attstr name="type" val="combo box"/>
+			<attnum name="max len" val="15"/>
+			<attstr name="tip" val="Select category filter"/>
+			<attstr name="tip-fra" val="Sélectionner le filtre de catégorie"/>
+			<attstr name="tip-spa" val="Seleccione el filtro de categoría"/>
+			<attstr name="tip-cat" val="Escolliu la categoria a filtrar"/>
+			<attstr name="tip-ru" val="Выберите фильтр категорий"/>
+			<attnum name="x" val="395"/>
+			<attnum name="y" val="380"/>
+			<attnum name="width" val="220"/>
+			<attnum name="arrows width" val="24"/>
+			<attnum name="arrows height" val="24"/>
+			<attstr name="color" val="0xFFFFFF"/>
+			<attstr name="focused color" val="0xFFFFFF"/>
+			<attstr name="pushed color" val="0xFFCC00"/>
+			<attstr name="font" val="medium"/>
+			<attnum name="image width" val="24"/>
+			<attnum name="image height" val="24"/>
+		</section>
+		<section name="error">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="0"/>
+			<attnum name="y" val="10"/>
+			<attstr name="text" val=""/>
+			<attstr name="h align" val="center"/>
+			<attnum name="width" val="640"/>
+			<attstr name="font" val="small"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="back">
+			<attstr name="type" val="text button"/>
+			<attstr name="show box" val="no"/>
+			<attstr name="text" val="Back"/>
+			<attstr name="text-fra" val="Retour"/>
+			<attstr name="text-spa" val="Atrás"/>
+			<attstr name="text-cat" val="Tornar"/>
+			<attstr name="text-ru" val="Назад"/>
+			<attstr name="tip" val="Back to main menu"/>
+			<attstr name="tip-fra" val="Retour au menu principal"/>
+			<attstr name="tip-spa" val="Volver al menú principal"/>
+			<attstr name="tip-cat" val="Torneu al menú principal"/>
+			<attstr name="tip-ru" val="Вернуться в главное меню"/>
+			<attstr name="h align" val="left"/>
+			<attnum name="x" val="50"/>
+			<attnum name="y" val="45"/>
+			<attnum name="width" val="65"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xa6a6a6"/>
+			<attstr name="focused color" val="0xFFFFFF"/>
+			<attstr name="pushed color" val="0xFFFFFF"/>
+			<attnum name="image x" val="-10"/>
+			<attnum name="image y" val="0"/>
+			<attnum name="image width" val="80"/>
+			<attnum name="image height" val="25"/>
+			<attstr name="focused image" val="data/img/bg-button-big-focused.png"/>
+			<attstr name="enabled image" val="data/img/bg-button-big.png"/>
+			<attstr name="pushed image" val="data/img/bg-button-big-pushed.png"/>
+		</section>
+		<section name="config">
+			<attstr name="type" val="text button"/>
+			<attstr name="show box" val="no"/>
+			<attstr name="text" val="Configure"/>
+			<attstr name="text-fra" val="Configurer"/>
+			<attstr name="text-spa" val="Configurar"/>
+			<attstr name="text-cat" val="Configurar"/>
+			<attstr name="text-ru" val="Настроить"/>
+			<attstr name="tip" val="Configure repositories"/>
+			<attstr name="tip-fra" val="Configurer les dépôts"/>
+			<attstr name="tip-spa" val="Configurar repositorios"/>
+			<attstr name="tip-cat" val="Configureu els repositoris"/>
+			<attstr name="tip-ru" val="Настроить репозитории"/>
+			<attstr name="h align" val="left"/>
+			<attnum name="x" val="130"/>
+			<attnum name="y" val="45"/>
+			<attnum name="width" val="80"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xa6a6a6"/>
+			<attstr name="focused color" val="0xFFFFFF"/>
+			<attstr name="pushed color" val="0xFFFFFF"/>
+			<attnum name="image x" val="-5"/>
+			<attnum name="image y" val="0"/>
+			<attnum name="image width" val="100"/>
+			<attnum name="image height" val="25"/>
+			<attstr name="focused image" val="data/img/bg-button-big-focused.png"/>
+			<attstr name="enabled image" val="data/img/bg-button-big.png"/>
+			<attstr name="pushed image" val="data/img/bg-button-big-pushed.png"/>
+		</section>
+		<section name="download all">
+			<attstr name="type" val="text button"/>
+			<attstr name="show box" val="no"/>
+			<attstr name="text" val="Download all"/>
+			<attstr name="text-fra" val="Tt. téléch."/>
+			<attstr name="text-spa" val="Desc. todo"/>
+			<attstr name="text-cat" val="Baixar tot"/>
+			<attstr name="text-ru" val="Загр. все"/>
+			<attstr name="tip" val="Download all assets from the selected category"/>
+			<attstr name="tip-fra" val="Télécharger tous les contenus de la catégorie sélectionnée"/>
+			<attstr name="tip-spa" val="Descargar todos los contenidos de la categoría seleccionada"/>
+			<attstr name="tip-cat" val="Baixeu tot el contigut de la categoria seleccionada"/>
+			<attstr name="tip-ru" val="Загрузить все ассеты из выбранной категории"/>
+			<attstr name="h align" val="left"/>
+			<attnum name="x" val="240"/>
+			<attnum name="y" val="45"/>
+			<attnum name="width" val="90"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xa6a6a6"/>
+			<attstr name="focused color" val="0xFFFFFF"/>
+			<attstr name="pushed color" val="0xFFFFFF"/>
+			<attnum name="image x" val="-10"/>
+			<attnum name="image y" val="0"/>
+			<attnum name="image width" val="110"/>
+			<attnum name="image height" val="25"/>
+			<attstr name="focused image" val="data/img/bg-button-big-focused.png"/>
+			<attstr name="enabled image" val="data/img/bg-button-big.png"/>
+			<attstr name="pushed image" val="data/img/bg-button-big-pushed.png"/>
+		</section>
+		<section name="next page arrow">
+			<attstr name="type" val="image button"/>
+			<attstr name="tip" val="Next page"/>
+			<attstr name="tip-fra" val="Page suivante"/>
+			<attstr name="tip-spa" val="Página siguiente"/>
+			<attstr name="tip-cat" val="Pàgina següent"/>
+			<attstr name="tip-ru" val="Следующая страница"/>
+			<attnum name="x" val="600"/>
+			<attnum name="y" val="118"/>
+			<attnum name="width" val="24"/>
+			<attnum name="height" val="24"/>
+			<attstr name="disabled image" val="data/img/arrow-down-disabled.png"/>
+			<attstr name="enabled image" val="data/img/arrow-down.png"/>
+			<attstr name="focused image" val="data/img/arrow-down-focused.png"/>
+			<attstr name="pushed image" val="data/img/arrow-down-pushed.png"/>
+		</section>
+		<section name="previous page arrow">
+			<attstr name="type" val="image button"/>
+			<attstr name="tip" val="Previous page"/>
+			<attstr name="tip-fra" val="Page précédente"/>
+			<attstr name="tip-spa" val="Página anterior"/>
+			<attstr name="tip-cat" val="Pàgina anterior"/>
+			<attstr name="tip-ru" val="Предыдущая страница"/>
+			<attnum name="x" val="600"/>
+			<attnum name="y" val="146"/>
+			<attnum name="width" val="24"/>
+			<attnum name="height" val="24"/>
+			<attstr name="disabled image" val="data/img/arrow-up-disabled.png"/>
+			<attstr name="enabled image" val="data/img/arrow-up.png"/>
+			<attstr name="focused image" val="data/img/arrow-up-focused.png"/>
+			<attstr name="pushed image" val="data/img/arrow-up-pushed.png"/>
+		</section>
+		<section name="current page">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="555"/>
+			<attnum name="y" val="100"/>
+			<attnum name="width" val="40"/>
+			<attstr name="text" val=""/>
+			<attstr name="h align" val="right"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="total pages">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="610"/>
+			<attnum name="y" val="100"/>
+			<attnum name="width" val="40"/>
+			<attstr name="text" val=""/>
+			<attstr name="h align" val="left"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="search">
+			<attstr name="type" val="edit box"/>
+			<attnum name="max len" val="30"/>
+			<attnum name="x" val="405"/>
+			<attnum name="y" val="50"/>
+			<attnum name="width" val="195"/>
+			<attstr name="h align" val="left"/>
+			<attstr name="font" val="medium"/>
+		</section>
+		<section name="searchclr">
+			<attstr name="type" val="image button"/>
+			<attstr name="tip" val="Clear the search input string"/>
+			<attstr name="tip-fra" val="Vider le contenu du champ de recherche"/>
+			<attstr name="tip-ru" val="Очистить строку поиска"/>
+			<attstr name="tip-spa" val="Borra la entrada de búsqueda"/>
+			<attstr name="tip-cat" val="Esborreu l'entrada de cerca"/>
+			<attnum name="x" val="605"/>
+			<attnum name="y" val="50"/>
+			<attnum name="width" val="24"/>
+			<attnum name="height" val="18"/>
+			<attstr name="disabled image" val="data/img/icon-delete-disabled.png"/>
+			<attstr name="enabled image" val="data/img/icon-delete.png"/>
+			<attstr name="focused image" val="data/img/icon-delete-focused.png"/>
+			<attstr name="pushed image" val="data/img/icon-delete-pushed.png"/>
+		</section>
+		<!-- Thumbnail #0 -->
+		<section name="thumbnail0img">
+			<attstr name="type" val="static image"/>
+			<attnum name="x" val="30"/>
+			<attnum name="y" val="300"/>
+			<attnum name="width" val="128"/>
+			<attnum name="height" val="72"/>
+			<attstr name="image" val="data/img/notready.png"/>
+		</section>
+		<section name="thumbnail0name">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="170"/>
+			<attnum name="y" val="350"/>
+			<attstr name="text" val=""/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="200"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="thumbnail0size">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="170"/>
+			<attnum name="y" val="335"/>
+			<attstr name="text" val=""/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="200"/>
+			<attstr name="font" val="small"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="thumbnail0btn">
+			<attstr name="type" val="image button"/>
+			<attstr name="tip" val="Download the selected asset"/>
+			<attstr name="tip-fra" val="Télécharger le contenu sélectionné"/>
+			<attstr name="tip-spa" val="Descargar el contenido seleccionado"/>
+			<attstr name="tip-cat" val="Baixeu el contingut seleccionat"/>
+			<attstr name="tip-ru" val="Загрузить выбранный ассет"/>
+			<attnum name="x" val="168"/>
+			<attnum name="y" val="298"/>
+			<attnum name="width" val="30"/>
+			<attnum name="height" val="20"/>
+			<attstr name="disabled image" val="data/img/icon-movedown-disabled.png"/>
+			<attstr name="enabled image" val="data/img/icon-movedown.png"/>
+			<attstr name="focused image" val="data/img/icon-movedown-focused.png"/>
+			<attstr name="pushed image" val="data/img/icon-movedown-pushed.png"/>
+		</section>
+		<section name="thumbnail0info">
+			<attstr name="type" val="image button"/>
+			<attstr name="tip" val="Show more information about the selected asset"/>
+			<attstr name="tip-fra" val="Montrer d'avantage d'information sur le contenu sélectionné"/>
+			<attstr name="tip-spa" val="Mostrar más información sobre el contenido seleccionado"/>
+			<attstr name="tip-cat" val="Mostreu més informació sobre el contigut seleccionat"/>
+			<attstr name="tip-ru" val="Показать больше информации о выбранном ассете"/>
+			<attnum name="x" val="203"/>
+			<attnum name="y" val="298"/>
+			<attnum name="width" val="30"/>
+			<attnum name="height" val="20"/>
+			<attstr name="disabled image" val="data/img/icon-info-disabled.png"/>
+			<attstr name="enabled image" val="data/img/icon-info.png"/>
+			<attstr name="focused image" val="data/img/icon-info-focused.png"/>
+			<attstr name="pushed image" val="data/img/icon-info-pushed.png"/>
+		</section>
+		<section name="thumbnail0progress">
+			<attstr name="type" val="progress bar"/>
+			<attstr name="tip" val="Progress-bar"/>
+			<attstr name="tip-fra" val="Barre de progression"/>
+			<attstr name="tip-spa" val="Progress-bar"/>
+			<attstr name="tip-cat" val="Barra de progrés de la baixada"/>
+			<attstr name="tip-ru" val="Прогресс-бар"/>
+			<attstr name="image" val="data/img/progressbar.png"/>
+			<attstr name="bg image" val="data/img/progressbar-bg.png"/>
+			<attnum name="x" val="172"/>
+			<attnum name="y" val="322"/>
+			<attnum name="width" val="140"/>
+			<attnum name="height" val="10"/>
+			<attnum name="min" val="0"/>
+			<attnum name="max" val="100"/>
+			<attnum name="value" val="0"/>
+		</section>
+		<section name="thumbnail0delete">
+			<attstr name="type" val="image button"/>
+			<attstr name="tip" val="Delete the selected asset"/>
+			<attstr name="tip-spa" val="Suprimir el contenido seleccionado"/>
+			<attstr name="tip-cat" val="Esborreu el contingut seleccionat"/>
+			<attstr name="tip-ru" val="Удалить выбранный ассет"/>
+			<attnum name="x" val="238"/>
+			<attnum name="y" val="298"/>
+			<attnum name="width" val="24"/>
+			<attnum name="height" val="24"/>
+			<attstr name="disabled image" val="data/img/icon-remove-disabled.png"/>
+			<attstr name="enabled image" val="data/img/icon-remove.png"/>
+			<attstr name="focused image" val="data/img/icon-remove-focused.png"/>
+			<attstr name="pushed image" val="data/img/icon-remove-pushed.png"/>
+		</section>
+		<!-- Thumbnail #1 -->
+		<section name="thumbnail1img">
+			<attstr name="type" val="static image"/>
+			<attnum name="x" val="30"/>
+			<attnum name="y" val="225"/>
+			<attnum name="width" val="128"/>
+			<attnum name="height" val="72"/>
+			<attstr name="image" val="data/img/notready.png"/>
+		</section>
+		<section name="thumbnail1name">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="170"/>
+			<attnum name="y" val="275"/>
+			<attstr name="text" val=""/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="200"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="thumbnail1size">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="170"/>
+			<attnum name="y" val="260"/>
+			<attstr name="text" val=""/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="200"/>
+			<attstr name="font" val="small"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="thumbnail1btn">
+			<attstr name="type" val="image button"/>
+			<attstr name="tip" val="Download the selected asset"/>
+			<attstr name="tip-fra" val="Télécharger le contenu sélectionné"/>
+			<attstr name="tip-spa" val="Descargar el contenido seleccionado"/>
+			<attstr name="tip-cat" val="Baixeu el contingut seleccionat"/>
+			<attstr name="tip-ru" val="Загрузить выбранный ассет"/>
+			<attnum name="x" val="168"/>
+			<attnum name="y" val="223"/>
+			<attnum name="width" val="30"/>
+			<attnum name="height" val="20"/>
+			<attstr name="disabled image" val="data/img/icon-movedown-disabled.png"/>
+			<attstr name="enabled image" val="data/img/icon-movedown.png"/>
+			<attstr name="focused image" val="data/img/icon-movedown-focused.png"/>
+			<attstr name="pushed image" val="data/img/icon-movedown-pushed.png"/>
+		</section>
+		<section name="thumbnail1info">
+			<attstr name="type" val="image button"/>
+			<attstr name="tip" val="Show more information about the selected asset"/>
+			<attstr name="tip-fra" val="Montrer d'avantage d'information sur le contenu sélectionné"/>
+			<attstr name="tip-spa" val="Mostrar más información sobre el contenido seleccionado"/>
+			<attstr name="tip-cat" val="Mostreu més informació sobre el contigut seleccionat"/>
+			<attstr name="tip-ru" val="Показать больше информации о выбранном ассете"/>
+			<attnum name="x" val="203"/>
+			<attnum name="y" val="223"/>
+			<attnum name="width" val="30"/>
+			<attnum name="height" val="20"/>
+			<attstr name="disabled image" val="data/img/icon-info-disabled.png"/>
+			<attstr name="enabled image" val="data/img/icon-info.png"/>
+			<attstr name="focused image" val="data/img/icon-info-focused.png"/>
+			<attstr name="pushed image" val="data/img/icon-info-pushed.png"/>
+		</section>
+		<section name="thumbnail1progress">
+			<attstr name="type" val="progress bar"/>
+			<attstr name="tip" val="Progress-bar"/>
+            <attstr name="tip-fra" val="Barre de progression"/>
+			<attstr name="tip-spa" val="Progress-bar"/>
+			<attstr name="tip-cat" val="Barra de progrés de la baixada"/>
+			<attstr name="tip-ru" val="Прогресс-бар"/>
+			<attstr name="image" val="data/img/progressbar.png"/>
+			<attstr name="bg image" val="data/img/progressbar-bg.png"/>
+			<attnum name="x" val="172"/>
+			<attnum name="y" val="247"/>
+			<attnum name="width" val="140"/>
+			<attnum name="height" val="10"/>
+			<attnum name="min" val="0"/>
+			<attnum name="max" val="100"/>
+			<attnum name="value" val="0"/>
+		</section>
+		<section name="thumbnail1delete">
+			<attstr name="type" val="image button"/>
+			<attstr name="tip" val="Delete the selected asset"/>
+			<attstr name="tip-fra" val="Supprimer le contenu sélectionné"/>
+			<attstr name="tip-spa" val="Suprimir el contenido seleccionado"/>
+			<attstr name="tip-cat" val="Esborreu el contingut seleccionat"/>
+			<attstr name="tip-ru" val="Удалить выбранный ассет"/>
+			<attnum name="x" val="238"/>
+			<attnum name="y" val="223"/>
+			<attnum name="width" val="24"/>
+			<attnum name="height" val="24"/>
+			<attstr name="disabled image" val="data/img/icon-remove-disabled.png"/>
+			<attstr name="enabled image" val="data/img/icon-remove.png"/>
+			<attstr name="focused image" val="data/img/icon-remove-focused.png"/>
+			<attstr name="pushed image" val="data/img/icon-remove-pushed.png"/>
+		</section>
+		<!-- Thumbnail #2 -->
+		<section name="thumbnail2img">
+			<attstr name="type" val="static image"/>
+			<attnum name="x" val="30"/>
+			<attnum name="y" val="150"/>
+			<attnum name="width" val="128"/>
+			<attnum name="height" val="72"/>
+			<attstr name="image" val="data/img/notready.png"/>
+		</section>
+		<section name="thumbnail2name">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="170"/>
+			<attnum name="y" val="200"/>
+			<attstr name="text" val=""/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="200"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="thumbnail2size">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="170"/>
+			<attnum name="y" val="185"/>
+			<attstr name="text" val=""/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="200"/>
+			<attstr name="font" val="small"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="thumbnail2btn">
+			<attstr name="type" val="image button"/>
+			<attstr name="tip" val="Download the selected asset"/>
+            <attstr name="tip-fra" val="Télécharger le contenu sélectionné"/>
+			<attstr name="tip-spa" val="Descargar el contenido seleccionado"/>
+			<attstr name="tip-cat" val="Baixeu el contingut seleccionat"/>
+			<attstr name="tip-ru" val="Загрузить выбранный ассет"/>
+			<attnum name="x" val="168"/>
+			<attnum name="y" val="148"/>
+			<attnum name="width" val="30"/>
+			<attnum name="height" val="20"/>
+			<attstr name="disabled image" val="data/img/icon-movedown-disabled.png"/>
+			<attstr name="enabled image" val="data/img/icon-movedown.png"/>
+			<attstr name="focused image" val="data/img/icon-movedown-focused.png"/>
+			<attstr name="pushed image" val="data/img/icon-movedown-pushed.png"/>
+		</section>
+		<section name="thumbnail2info">
+			<attstr name="type" val="image button"/>
+			<attstr name="tip" val="Show more information about the selected asset"/>
+            <attstr name="tip-fra" val="Montrer d'avantage d'information sur le contenu sélectionné"/>
+			<attstr name="tip-spa" val="Mostrar más información sobre el contenido seleccionado"/>
+			<attstr name="tip-cat" val="Mostreu més informació sobre el contigut seleccionat"/>
+			<attstr name="tip-ru" val="Показать больше информации о выбранном ассете"/>
+			<attnum name="x" val="203"/>
+			<attnum name="y" val="148"/>
+			<attnum name="width" val="30"/>
+			<attnum name="height" val="20"/>
+			<attstr name="disabled image" val="data/img/icon-info-disabled.png"/>
+			<attstr name="enabled image" val="data/img/icon-info.png"/>
+			<attstr name="focused image" val="data/img/icon-info-focused.png"/>
+			<attstr name="pushed image" val="data/img/icon-info-pushed.png"/>
+		</section>
+		<section name="thumbnail2progress">
+			<attstr name="type" val="progress bar"/>
+			<attstr name="tip" val="Progress-bar"/>
+            <attstr name="tip-fra" val="Barre de progression"/>
+			<attstr name="tip-spa" val="Progress-bar"/>
+			<attstr name="tip-cat" val="Barra de progrés de la baixada"/>
+			<attstr name="tip-ru" val="Прогресс-бар"/>
+			<attstr name="image" val="data/img/progressbar.png"/>
+			<attstr name="bg image" val="data/img/progressbar-bg.png"/>
+			<attnum name="x" val="172"/>
+			<attnum name="y" val="172"/>
+			<attnum name="width" val="140"/>
+			<attnum name="height" val="10"/>
+			<attnum name="min" val="0"/>
+			<attnum name="max" val="100"/>
+			<attnum name="value" val="0"/>
+		</section>
+		<section name="thumbnail2delete">
+			<attstr name="type" val="image button"/>
+			<attstr name="tip" val="Delete the selected asset"/>
+            <attstr name="tip-fra" val="Supprimer le contenu sélectionné"/>
+			<attstr name="tip-spa" val="Suprimir el contenido seleccionado"/>
+			<attstr name="tip-cat" val="Esborreu el contingut seleccionat"/>
+			<attnum name="x" val="238"/>
+			<attnum name="y" val="148"/>
+			<attnum name="width" val="24"/>
+			<attnum name="height" val="24"/>
+			<attstr name="disabled image" val="data/img/icon-remove-disabled.png"/>
+			<attstr name="enabled image" val="data/img/icon-remove.png"/>
+			<attstr name="focused image" val="data/img/icon-remove-focused.png"/>
+			<attstr name="pushed image" val="data/img/icon-remove-pushed.png"/>
+		</section>
+		<!-- Thumbnail #3 -->
+		<section name="thumbnail3img">
+			<attstr name="type" val="static image"/>
+			<attnum name="x" val="30"/>
+			<attnum name="y" val="75"/>
+			<attnum name="width" val="128"/>
+			<attnum name="height" val="72"/>
+			<attstr name="image" val="data/img/notready.png"/>
+		</section>
+		<section name="thumbnail3name">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="170"/>
+			<attnum name="y" val="125"/>
+			<attstr name="text" val=""/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="200"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="thumbnail3size">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="170"/>
+			<attnum name="y" val="110"/>
+			<attstr name="text" val=""/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="200"/>
+			<attstr name="font" val="small"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="thumbnail3btn">
+			<attstr name="type" val="image button"/>
+			<attstr name="tip" val="Download the selected asset"/>
+            <attstr name="tip-fra" val="Télécharger le contenu sélectionné"/>
+			<attstr name="tip-spa" val="Descargar el contenido seleccionado"/>
+			<attstr name="tip-cat" val="Baixeu el contingut seleccionat"/>
+			<attstr name="tip-ru" val="Загрузить выбранный ассет"/>
+			<attnum name="x" val="168"/>
+			<attnum name="y" val="72"/>
+			<attnum name="width" val="30"/>
+			<attnum name="height" val="20"/>
+			<attstr name="disabled image" val="data/img/icon-movedown-disabled.png"/>
+			<attstr name="enabled image" val="data/img/icon-movedown.png"/>
+			<attstr name="focused image" val="data/img/icon-movedown-focused.png"/>
+			<attstr name="pushed image" val="data/img/icon-movedown-pushed.png"/>
+		</section>
+		<section name="thumbnail3info">
+			<attstr name="type" val="image button"/>
+			<attstr name="tip" val="Show more information about the selected asset"/>
+            <attstr name="tip-fra" val="Montrer d'avantage d'information sur le contenu sélectionné"/>
+			<attstr name="tip-spa" val="Mostrar más información sobre el contenido seleccionado"/>
+			<attstr name="tip-cat" val="Mostreu més informació sobre el contigut seleccionat"/>
+			<attstr name="tip-ru" val="Показать больше информации о выбранном ассете"/>
+			<attnum name="x" val="203"/>
+			<attnum name="y" val="72"/>
+			<attnum name="width" val="30"/>
+			<attnum name="height" val="20"/>
+			<attstr name="disabled image" val="data/img/icon-info-disabled.png"/>
+			<attstr name="enabled image" val="data/img/icon-info.png"/>
+			<attstr name="focused image" val="data/img/icon-info-focused.png"/>
+			<attstr name="pushed image" val="data/img/icon-info-pushed.png"/>
+		</section>
+		<section name="thumbnail3progress">
+			<attstr name="type" val="progress bar"/>
+			<attstr name="tip" val="Progress-bar"/>
+            <attstr name="tip-fra" val="Barre de progression"/>
+			<attstr name="tip-spa" val="Progress-bar"/>
+			<attstr name="tip-cat" val="Barra de progrés de la baixada"/>
+			<attstr name="tip-ru" val="Прогресс-бар"/>
+			<attstr name="image" val="data/img/progressbar.png"/>
+			<attstr name="bg image" val="data/img/progressbar-bg.png"/>
+			<attnum name="x" val="172"/>
+			<attnum name="y" val="96"/>
+			<attnum name="width" val="140"/>
+			<attnum name="height" val="10"/>
+			<attnum name="min" val="0"/>
+			<attnum name="max" val="100"/>
+			<attnum name="value" val="0"/>
+		</section>
+		<section name="thumbnail3delete">
+			<attstr name="type" val="image button"/>
+			<attstr name="tip" val="Delete the selected asset"/>
+            <attstr name="tip-fra" val="Supprimer le contenu sélectionné"/>
+			<attstr name="tip-spa" val="Suprimir el contenido seleccionado"/>
+			<attstr name="tip-cat" val="Esborreu el contingut seleccionat"/>
+			<attstr name="tip-ru" val="Удалить выбранный ассет"/>
+			<attnum name="x" val="238"/>
+			<attnum name="y" val="72"/>
+			<attnum name="width" val="24"/>
+			<attnum name="height" val="24"/>
+			<attstr name="disabled image" val="data/img/icon-remove-disabled.png"/>
+			<attstr name="enabled image" val="data/img/icon-remove.png"/>
+			<attstr name="focused image" val="data/img/icon-remove-focused.png"/>
+			<attstr name="pushed image" val="data/img/icon-remove-pushed.png"/>
+		</section>
+		<!-- Thumbnail #4 -->
+		<section name="thumbnail4img">
+			<attstr name="type" val="static image"/>
+			<attnum name="x" val="330"/>
+			<attnum name="y" val="300"/>
+			<attnum name="width" val="128"/>
+			<attnum name="height" val="72"/>
+			<attstr name="image" val="data/img/notready.png"/>
+		</section>
+		<section name="thumbnail4name">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="470"/>
+			<attnum name="y" val="350"/>
+			<attstr name="text" val=""/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="200"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="thumbnail4size">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="470"/>
+			<attnum name="y" val="335"/>
+			<attstr name="text" val=""/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="200"/>
+			<attstr name="font" val="small"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="thumbnail4btn">
+			<attstr name="type" val="image button"/>
+			<attstr name="tip" val="Download the selected asset"/>
+            <attstr name="tip-fra" val="Télécharger le contenu sélectionné"/>
+			<attstr name="tip-spa" val="Descargar el contenido seleccionado"/>
+			<attstr name="tip-cat" val="Baixeu el contingut seleccionat"/>
+			<attstr name="tip-ru" val="Загрузить выбранный ассет"/>
+			<attnum name="x" val="468"/>
+			<attnum name="y" val="298"/>
+			<attnum name="width" val="30"/>
+			<attnum name="height" val="20"/>
+			<attstr name="disabled image" val="data/img/icon-movedown-disabled.png"/>
+			<attstr name="enabled image" val="data/img/icon-movedown.png"/>
+			<attstr name="focused image" val="data/img/icon-movedown-focused.png"/>
+			<attstr name="pushed image" val="data/img/icon-movedown-pushed.png"/>
+		</section>
+		<section name="thumbnail4info">
+			<attstr name="type" val="image button"/>
+			<attstr name="tip" val="Show more information about the selected asset"/>
+            <attstr name="tip-fra" val="Montrer d'avantage d'information sur le contenu sélectionné"/>
+			<attstr name="tip-spa" val="Mostrar más información sobre el contenido seleccionado"/>
+			<attstr name="tip-cat" val="Mostreu més informació sobre el contigut seleccionat"/>
+			<attstr name="tip-ru" val="Показать больше информации о выбранном ассете"/>
+			<attnum name="x" val="503"/>
+			<attnum name="y" val="298"/>
+			<attnum name="width" val="30"/>
+			<attnum name="height" val="20"/>
+			<attstr name="disabled image" val="data/img/icon-info-disabled.png"/>
+			<attstr name="enabled image" val="data/img/icon-info.png"/>
+			<attstr name="focused image" val="data/img/icon-info-focused.png"/>
+			<attstr name="pushed image" val="data/img/icon-info-pushed.png"/>
+		</section>
+		<section name="thumbnail4progress">
+			<attstr name="type" val="progress bar"/>
+			<attstr name="tip" val="Progress-bar"/>
+            <attstr name="tip-fra" val="Barre de progression"/>
+			<attstr name="tip-spa" val="Progress-bar"/>
+			<attstr name="tip-cat" val="Barra de progrés de la baixada"/>
+			<attstr name="tip-ru" val="Прогресс-бар"/>
+			<attstr name="image" val="data/img/progressbar.png"/>
+			<attstr name="bg image" val="data/img/progressbar-bg.png"/>
+			<attnum name="x" val="472"/>
+			<attnum name="y" val="322"/>
+			<attnum name="width" val="140"/>
+			<attnum name="height" val="10"/>
+			<attnum name="min" val="0"/>
+			<attnum name="max" val="100"/>
+			<attnum name="value" val="0"/>
+		</section>
+		<section name="thumbnail4delete">
+			<attstr name="type" val="image button"/>
+			<attstr name="tip" val="Delete the selected asset"/>
+            <attstr name="tip-fra" val="Supprimer le contenu sélectionné"/>
+			<attstr name="tip-spa" val="Suprimir el contenido seleccionado"/>
+			<attstr name="tip-cat" val="Esborreu el contingut seleccionat"/>
+			<attstr name="tip-ru" val="Удалить выбранный ассет"/>
+			<attnum name="x" val="538"/>
+			<attnum name="y" val="298"/>
+			<attnum name="width" val="24"/>
+			<attnum name="height" val="24"/>
+			<attstr name="disabled image" val="data/img/icon-remove-disabled.png"/>
+			<attstr name="enabled image" val="data/img/icon-remove.png"/>
+			<attstr name="focused image" val="data/img/icon-remove-focused.png"/>
+			<attstr name="pushed image" val="data/img/icon-remove-pushed.png"/>
+		</section>
+		<!-- Thumbnail #5 -->
+		<section name="thumbnail5img">
+			<attstr name="type" val="static image"/>
+			<attnum name="x" val="330"/>
+			<attnum name="y" val="225"/>
+			<attnum name="width" val="128"/>
+			<attnum name="height" val="72"/>
+			<attstr name="image" val="data/img/notready.png"/>
+		</section>
+		<section name="thumbnail5name">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="470"/>
+			<attnum name="y" val="275"/>
+			<attstr name="text" val=""/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="200"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="thumbnail5size">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="470"/>
+			<attnum name="y" val="260"/>
+			<attstr name="text" val=""/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="200"/>
+			<attstr name="font" val="small"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="thumbnail5btn">
+			<attstr name="type" val="image button"/>
+			<attstr name="tip" val="Download the selected asset"/>
+            <attstr name="tip-fra" val="Télécharger le contenu sélectionné"/>
+			<attstr name="tip-spa" val="Descargar el contenido seleccionado"/>
+			<attstr name="tip-cat" val="Baixeu el contingut seleccionat"/>
+			<attstr name="tip-ru" val="Загрузить выбранный ассет"/>
+			<attnum name="x" val="468"/>
+			<attnum name="y" val="223"/>
+			<attnum name="width" val="30"/>
+			<attnum name="height" val="20"/>
+			<attstr name="disabled image" val="data/img/icon-movedown-disabled.png"/>
+			<attstr name="enabled image" val="data/img/icon-movedown.png"/>
+			<attstr name="focused image" val="data/img/icon-movedown-focused.png"/>
+			<attstr name="pushed image" val="data/img/icon-movedown-pushed.png"/>
+		</section>
+		<section name="thumbnail5info">
+			<attstr name="type" val="image button"/>
+			<attstr name="tip" val="Show more information about the selected asset"/>
+            <attstr name="tip-fra" val="Montrer d'avantage d'information sur le contenu sélectionné"/>
+			<attstr name="tip-spa" val="Mostrar más información sobre el contenido seleccionado"/>
+			<attstr name="tip-cat" val="Mostreu més informació sobre el contigut seleccionat"/>
+			<attstr name="tip-ru" val="Показать больше информации о выбранном ассете"/>
+			<attnum name="x" val="503"/>
+			<attnum name="y" val="223"/>
+			<attnum name="width" val="30"/>
+			<attnum name="height" val="20"/>
+			<attstr name="disabled image" val="data/img/icon-info-disabled.png"/>
+			<attstr name="enabled image" val="data/img/icon-info.png"/>
+			<attstr name="focused image" val="data/img/icon-info-focused.png"/>
+			<attstr name="pushed image" val="data/img/icon-info-pushed.png"/>
+		</section>
+		<section name="thumbnail5progress">
+			<attstr name="type" val="progress bar"/>
+			<attstr name="tip" val="Progress-bar"/>
+            <attstr name="tip-fra" val="Barre de progression"/>
+			<attstr name="tip-spa" val="Progress-bar"/>
+			<attstr name="tip-ru" val="Прогресс-бар"/>
+			<attstr name="tip-cat" val="Barra de progrés de la baixada"/>
+			<attstr name="image" val="data/img/progressbar.png"/>
+			<attstr name="bg image" val="data/img/progressbar-bg.png"/>
+			<attnum name="x" val="472"/>
+			<attnum name="y" val="247"/>
+			<attnum name="width" val="140"/>
+			<attnum name="height" val="10"/>
+			<attnum name="min" val="0"/>
+			<attnum name="max" val="100"/>
+			<attnum name="value" val="0"/>
+		</section>
+		<section name="thumbnail5delete">
+			<attstr name="type" val="image button"/>
+			<attstr name="tip" val="Delete the selected asset"/>
+            <attstr name="tip-fra" val="Supprimer le contenu sélectionné"/>
+			<attstr name="tip-spa" val="Suprimir el contenido seleccionado"/>
+			<attstr name="tip-cat" val="Esborreu el contingut seleccionat"/>
+			<attstr name="tip-ru" val="Удалить выбранный ассет"/>
+			<attnum name="x" val="538"/>
+			<attnum name="y" val="223"/>
+			<attnum name="width" val="24"/>
+			<attnum name="height" val="24"/>
+			<attstr name="disabled image" val="data/img/icon-remove-disabled.png"/>
+			<attstr name="enabled image" val="data/img/icon-remove.png"/>
+			<attstr name="focused image" val="data/img/icon-remove-focused.png"/>
+			<attstr name="pushed image" val="data/img/icon-remove-pushed.png"/>
+		</section>
+		<!-- Thumbnail #6 -->
+		<section name="thumbnail6img">
+			<attstr name="type" val="static image"/>
+			<attnum name="x" val="330"/>
+			<attnum name="y" val="150"/>
+			<attnum name="width" val="128"/>
+			<attnum name="height" val="72"/>
+			<attstr name="image" val="data/img/notready.png"/>
+		</section>
+		<section name="thumbnail6name">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="470"/>
+			<attnum name="y" val="200"/>
+			<attstr name="text" val=""/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="200"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="thumbnail6size">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="470"/>
+			<attnum name="y" val="185"/>
+			<attstr name="text" val=""/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="200"/>
+			<attstr name="font" val="small"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="thumbnail6btn">
+			<attstr name="type" val="image button"/>
+			<attstr name="tip" val="Download the selected asset"/>
+            <attstr name="tip-fra" val="Télécharger le contenu sélectionné"/>
+			<attstr name="tip-spa" val="Descargar el contenido seleccionado"/>
+			<attstr name="tip-cat" val="Baixeu el contingut seleccionat"/>
+			<attstr name="tip-ru" val="Загрузить выбранный ассет"/>
+			<attnum name="x" val="468"/>
+			<attnum name="y" val="148"/>
+			<attnum name="width" val="30"/>
+			<attnum name="height" val="20"/>
+			<attstr name="disabled image" val="data/img/icon-movedown-disabled.png"/>
+			<attstr name="enabled image" val="data/img/icon-movedown.png"/>
+			<attstr name="focused image" val="data/img/icon-movedown-focused.png"/>
+			<attstr name="pushed image" val="data/img/icon-movedown-pushed.png"/>
+		</section>
+		<section name="thumbnail6info">
+			<attstr name="type" val="image button"/>
+			<attstr name="tip" val="Show more information about the selected asset"/>
+            <attstr name="tip-fra" val="Montrer d'avantage d'information sur le contenu sélectionné"/>
+			<attstr name="tip-spa" val="Mostrar más información sobre el contenido seleccionado"/>
+			<attstr name="tip-cat" val="Mostreu més informació sobre el contigut seleccionat"/>
+			<attstr name="tip-ru" val="Показать больше информации о выбранном ассете"/>
+			<attnum name="x" val="503"/>
+			<attnum name="y" val="148"/>
+			<attnum name="width" val="30"/>
+			<attnum name="height" val="20"/>
+			<attstr name="disabled image" val="data/img/icon-info-disabled.png"/>
+			<attstr name="enabled image" val="data/img/icon-info.png"/>
+			<attstr name="focused image" val="data/img/icon-info-focused.png"/>
+			<attstr name="pushed image" val="data/img/icon-info-pushed.png"/>
+		</section>
+		<section name="thumbnail6progress">
+			<attstr name="type" val="progress bar"/>
+			<attstr name="tip" val="Progress-bar"/>
+            <attstr name="tip-fra" val="Barre de progression"/>
+			<attstr name="tip-spa" val="Progress-bar"/>
+			<attstr name="tip-ru" val="Прогресс-бар"/>
+			<attstr name="tip-cat" val="Barra de progrés de la baixada"/>
+			<attstr name="image" val="data/img/progressbar.png"/>
+			<attstr name="bg image" val="data/img/progressbar-bg.png"/>
+			<attnum name="x" val="472"/>
+			<attnum name="y" val="172"/>
+			<attnum name="width" val="140"/>
+			<attnum name="height" val="10"/>
+			<attnum name="min" val="0"/>
+			<attnum name="max" val="100"/>
+			<attnum name="value" val="0"/>
+		</section>
+		<section name="thumbnail6delete">
+			<attstr name="type" val="image button"/>
+			<attstr name="tip" val="Delete the selected asset"/>
+            <attstr name="tip-fra" val="Supprimer le contenu sélectionné"/>
+			<attstr name="tip-spa" val="Suprimir el contenido seleccionado"/>
+			<attstr name="tip-cat" val="Esborreu el contingut seleccionat"/>
+			<attstr name="tip-ru" val="Удалить выбранный ассет"/>
+			<attnum name="x" val="538"/>
+			<attnum name="y" val="148"/>
+			<attnum name="width" val="24"/>
+			<attnum name="height" val="24"/>
+			<attstr name="disabled image" val="data/img/icon-remove-disabled.png"/>
+			<attstr name="enabled image" val="data/img/icon-remove.png"/>
+			<attstr name="focused image" val="data/img/icon-remove-focused.png"/>
+			<attstr name="pushed image" val="data/img/icon-remove-pushed.png"/>
+		</section>
+		<!-- Thumbnail #3 -->
+		<section name="thumbnail7img">
+			<attstr name="type" val="static image"/>
+			<attnum name="x" val="330"/>
+			<attnum name="y" val="75"/>
+			<attnum name="width" val="128"/>
+			<attnum name="height" val="72"/>
+			<attstr name="image" val="data/img/notready.png"/>
+		</section>
+		<section name="thumbnail7name">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="470"/>
+			<attnum name="y" val="125"/>
+			<attstr name="text" val=""/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="200"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="thumbnail7size">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="470"/>
+			<attnum name="y" val="110"/>
+			<attstr name="text" val=""/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="200"/>
+			<attstr name="font" val="small"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="thumbnail7btn">
+			<attstr name="type" val="image button"/>
+			<attstr name="tip" val="Download the selected asset"/>
+            <attstr name="tip-fra" val="Télécharger le contenu sélectionné"/>
+			<attstr name="tip-spa" val="Descargar el contenido seleccionado"/>
+			<attstr name="tip-cat" val="Baixeu el contingut seleccionat"/>
+			<attstr name="tip-ru" val="Загрузить выбранный ассет"/>
+			<attnum name="x" val="468"/>
+			<attnum name="y" val="72"/>
+			<attnum name="width" val="30"/>
+			<attnum name="height" val="20"/>
+			<attstr name="disabled image" val="data/img/icon-movedown-disabled.png"/>
+			<attstr name="enabled image" val="data/img/icon-movedown.png"/>
+			<attstr name="focused image" val="data/img/icon-movedown-focused.png"/>
+			<attstr name="pushed image" val="data/img/icon-movedown-pushed.png"/>
+		</section>
+		<section name="thumbnail7info">
+			<attstr name="type" val="image button"/>
+			<attstr name="tip" val="Show more information about the selected asset"/>
+            <attstr name="tip-fra" val="Montrer d'avantage d'information sur le contenu sélectionné"/>
+			<attstr name="tip-spa" val="Mostrar más información sobre el contenido seleccionado"/>
+			<attstr name="tip-cat" val="Mostreu més informació sobre el contigut seleccionat"/>
+			<attstr name="tip-ru" val="Показать больше информации о выбранном ассете"/>
+			<attnum name="x" val="503"/>
+			<attnum name="y" val="72"/>
+			<attnum name="width" val="30"/>
+			<attnum name="height" val="20"/>
+			<attstr name="disabled image" val="data/img/icon-info-disabled.png"/>
+			<attstr name="enabled image" val="data/img/icon-info.png"/>
+			<attstr name="focused image" val="data/img/icon-info-focused.png"/>
+			<attstr name="pushed image" val="data/img/icon-info-pushed.png"/>
+		</section>
+		<section name="thumbnail7progress">
+			<attstr name="type" val="progress bar"/>
+			<attstr name="tip" val="Progress-bar"/>
+            <attstr name="tip-fra" val="Barre de progression"/>
+			<attstr name="tip-spa" val="Progress-bar"/>
+			<attstr name="tip-ru" val="Прогресс-бар"/>
+			<attstr name="tip-cat" val="Barra de progrés de la baixada"/>
+			<attstr name="image" val="data/img/progressbar.png"/>
+			<attstr name="bg image" val="data/img/progressbar-bg.png"/>
+			<attnum name="x" val="472"/>
+			<attnum name="y" val="96"/>
+			<attnum name="width" val="140"/>
+			<attnum name="height" val="10"/>
+			<attnum name="min" val="0"/>
+			<attnum name="max" val="100"/>
+			<attnum name="value" val="0"/>
+		</section>
+		<section name="thumbnail7delete">
+			<attstr name="type" val="image button"/>
+			<attstr name="tip" val="Delete the selected asset"/>
+            <attstr name="tip-fra" val="Supprimer le contenu sélectionné"/>
+			<attstr name="tip-spa" val="Suprimir el contenido seleccionado"/>
+			<attstr name="tip-cat" val="Esborreu el contingut seleccionat"/>
+			<attstr name="tip-ru" val="Удалить выбранный ассет"/>
+			<attnum name="x" val="538"/>
+			<attnum name="y" val="72"/>
+			<attnum name="width" val="24"/>
+			<attnum name="height" val="24"/>
+			<attstr name="disabled image" val="data/img/icon-remove-disabled.png"/>
+			<attstr name="enabled image" val="data/img/icon-remove.png"/>
+			<attstr name="focused image" val="data/img/icon-remove-focused.png"/>
+			<attstr name="pushed image" val="data/img/icon-remove-pushed.png"/>
+		</section>
+	</section>
+	<section name="static controls">
+		<section name="1">
+			<attstr name="type" val="static image"/>
+			<attnum name="x" val="-10"/>
+			<attnum name="y" val="375"/>
+			<attnum name="width" val="130"/>
+			<attnum name="height" val="95"/>
+			<attstr name="image" val="data/img/sd-logo-big.png"/>
+		</section>
+		<section name="2">
+			<attstr name="type" val="gallery"/>
+			<attstr name="directory" val="data/gallery/"/>
+		</section>
+		<section name="3">
+			<attstr name="type" val="label"/>
+			<attstr name="text" val="Download manager"/>
+			<attstr name="text-fra" val="Gestionnaire de téléchargement"/>
+			<attstr name="text-spa" val="Gestor de descargas"/>
+			<attstr name="text-cat" val="Gestor de baixades"/>
+			<attstr name="text-ru" val="Менеджер загрузок"/>
+			<attnum name="x" val="300"/>
+			<attnum name="y" val="430"/>
+			<attnum name="width" val="400"/>
+			<attstr name="color" val="0xFFFFFF"/>
+			<attstr name="font" val="medium_t"/>
+			<attstr name="h align" val="left"/>
+			<attstr name="bg image" val="data/img/header-background.png"/>
+			<attnum name="bg image padding top" val="15"/>
+			<attnum name="bg image padding bottom" val="15"/>
+			<attnum name="bg image padding left" val="30"/>
+			<attnum name="bg image padding right" val="15"/>
+		</section>
+		<section name="4">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="130"/>
+			<attnum name="y" val="385"/>
+			<attstr name="text" val="Filter:"/>
+			<attstr name="text-fra" val="Filtre:"/>
+			<attstr name="text-spa" val="Filtrar:"/>
+			<attstr name="text-cat" val="Filtrar:"/>
+			<attstr name="text-ru" val="Фильтр:"/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="200"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="5">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="320"/>
+			<attnum name="y" val="385"/>
+			<attstr name="text" val="Category:"/>
+			<attstr name="text-fra" val="Catégorie:"/>
+			<attstr name="text-spa" val="Categoría:"/>
+			<attstr name="text-cat" val="Categoria:"/>
+			<attstr name="text-ru" val="Категория:"/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="200"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="6">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="600"/>
+			<attnum name="y" val="100"/>
+			<attstr name="text" val="/"/>
+			<attstr name="h align" val="left"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="7">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="350"/>
+			<attnum name="y" val="51"/>
+			<attstr name="text" val="Search:"/>
+			<attstr name="text-ru" val="Поиск:"/>
+			<attstr name="text-cat" val="Cercar:"/>
+			<attstr name="text-spa" val="Buscar:"/>
+			<attstr name="h align" val="left"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+	</section>
+</params>

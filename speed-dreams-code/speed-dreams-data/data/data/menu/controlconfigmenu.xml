@@ -1,0 +1,1621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    file                 : controlconfigmenu.xml
+    created              : 2009
+    copyright            : (C) 2009 by Brian Gavin, Eckhard M. Jaeger
+    web                  : speed-dreams.sourceforge.net
+-->
+<!--    This program is free software; you can redistribute it and/or modify  -->
+<!--    it under the terms of the GNU General Public License as published by  -->
+<!--    the Free Software Foundation; either version 2 of the License, or     -->
+<!--    (at your option) any later version.                                   -->
+<!--
+
+	Controls config screen
+
+-->
+<!DOCTYPE params SYSTEM "../tgf/params.dtd">
+<params name="controlconfigmenu" version="1.5">
+  <section name="dynamic controls">
+    <section name="left steer">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="30"/>
+      <attnum name="y" val="358"/>
+      <attstr name="text" val="Left steer:"/>
+      <attstr name="text-fra" val="Vir. gauche:"/>
+      <attstr name="text-spa" val="Girar izq:"/>
+      <attstr name="text-cat" val="Girar esq.:"/>
+      <attstr name="text-ru" val="Руль влево:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="left steer button">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="MOUSE_MIDDLE_BUTTON"/>
+      <attstr name="tip" val="Click to configure"/>
+      <attstr name="tip-spa" val="Haga clic para configurar"/>
+      <attstr name="tip-cat" val="Cliqueu per configurar"/>
+      <attstr name="tip-ru" val="Нажмите для настройки"/>
+      <attnum name="x" val="185"/>
+      <attnum name="y" val="352"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFCC00"/>
+      <attnum name="image x" val="3"/>
+      <attnum name="image y" val="4"/>
+      <attnum name="image width" val="66"/>
+      <attnum name="image height" val="20"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="right steer">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="30"/>
+      <attnum name="y" val="336"/>
+      <attstr name="text" val="Right steer:"/>
+      <attstr name="text-fra" val="Vir. droite:"/>
+      <attstr name="text-spa" val="Girar der.:"/>
+      <attstr name="text-cat" val="Girar dreta:"/>
+      <attstr name="text-ru" val="Руль вправо:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="right steer button">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="MOUSE_MIDDLE_BUTTON"/>
+      <attstr name="tip" val="Click to configure"/>
+      <attstr name="tip-spa" val="Haga clic para configurar"/>
+      <attstr name="tip-cat" val="Cliqueu per configurar"/>
+      <attstr name="tip-ru" val="Нажмите для настройки"/>
+      <attnum name="x" val="185"/>
+      <attnum name="y" val="330"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFCC00"/>
+      <attnum name="image x" val="3"/>
+      <attnum name="image y" val="4"/>
+      <attnum name="image width" val="66"/>
+      <attnum name="image height" val="20"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="throttle">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="30"/>
+      <attnum name="y" val="314"/>
+      <attstr name="text" val="Throttle:"/>
+      <attstr name="text-fra" val="Accélérer:"/>
+      <attstr name="text-spa" val="Acelerar:"/>
+      <attstr name="text-cat" val="Accelerar:"/>
+      <attstr name="text-ru" val="Газ:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="throttle button">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="MOUSE_MIDDLE_BUTTON"/>
+      <attstr name="tip" val="Click to configure"/>
+      <attstr name="tip-spa" val="Haga clic para configurar"/>
+      <attstr name="tip-cat" val="Cliqueu per configurar"/>
+      <attstr name="tip-ru" val="Нажмите для настройки"/>
+      <attnum name="x" val="185"/>
+      <attnum name="y" val="308"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFCC00"/>
+      <attnum name="image x" val="3"/>
+      <attnum name="image y" val="4"/>
+      <attnum name="image width" val="66"/>
+      <attnum name="image height" val="20"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="brake">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="30"/>
+      <attnum name="y" val="292"/>
+      <attstr name="text" val="Brake:"/>
+      <attstr name="text-fra" val="Freiner:"/>
+      <attstr name="text-spa" val="Frenar:"/>
+      <attstr name="text-cat" val="Frenar:"/>
+      <attstr name="text-ru" val="Тормоз:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="brake button">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="MOUSE_MIDDLE_BUTTON"/>
+      <attstr name="tip" val="Click to configure"/>
+      <attstr name="tip-spa" val="Haga clic para configurar"/>
+      <attstr name="tip-cat" val="Cliqueu per configurar"/>
+      <attstr name="tip-ru" val="Нажмите для настройки"/>
+      <attnum name="x" val="185"/>
+      <attnum name="y" val="286"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFCC00"/>
+      <attnum name="image x" val="3"/>
+      <attnum name="image y" val="4"/>
+      <attnum name="image width" val="66"/>
+      <attnum name="image height" val="20"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="ebrake cmd">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="30"/>
+      <attnum name="y" val="270"/>
+      <attstr name="text" val="E-brake:"/>
+      <attstr name="text-fra" val="Fr. à main:"/>
+      <attstr name="text-spa" val="Fr. de mano:"/>
+      <attstr name="text-cat" val="Fre de mà:"/>
+      <attstr name="text-ru" val="Ручник:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="ebrake cmd button">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="MOUSE_MIDDLE_BUTTON"/>
+      <attstr name="tip" val="Click to configure"/>
+      <attstr name="tip-spa" val="Haga clic para configurar"/>
+      <attstr name="tip-cat" val="Cliqueu per configurar"/>
+      <attstr name="tip-ru" val="Нажмите для настройки"/>
+      <attnum name="x" val="185"/>
+      <attnum name="y" val="264"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFCC00"/>
+      <attnum name="image x" val="3"/>
+      <attnum name="image y" val="4"/>
+      <attnum name="image width" val="66"/>
+      <attnum name="image height" val="20"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="Speed Limiter">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="30"/>
+      <attnum name="y" val="248"/>
+      <attstr name="text" val="Speed limiter:"/>
+      <attstr name="text-fra" val="Limit. vit.:"/>
+      <attstr name="text-spa" val="Límit. vel.:"/>
+      <attstr name="text-cat" val="Limit. vel.:"/>
+      <attstr name="text-ru" val="Огран. скор.:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="Speed Limiter button">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="MOUSE_MIDDLE_BUTTON"/>
+      <attstr name="tip" val="Click to configure"/>
+      <attstr name="tip-spa" val="Haga clic para configurar"/>
+      <attstr name="tip-cat" val="Cliqueu per configurar"/>
+      <attstr name="tip-ru" val="Нажмите для настройки"/>
+      <attnum name="x" val="185"/>
+      <attnum name="y" val="242"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFCC00"/>
+      <attnum name="image x" val="3"/>
+      <attnum name="image y" val="4"/>
+      <attnum name="image width" val="66"/>
+      <attnum name="image height" val="20"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="clutch">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="30"/>
+      <attnum name="y" val="226"/>
+      <attstr name="text" val="Clutch:"/>
+      <attstr name="text-fra" val="Embrayage:"/>
+      <attstr name="text-spa" val="Embrague:"/>
+      <attstr name="text-cat" val="Embragatge:"/>
+      <attstr name="text-ru" val="Сцепление:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="clutch button">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="MOUSE_MIDDLE_BUTTON"/>
+      <attstr name="tip" val="Click to configure"/>
+      <attstr name="tip-spa" val="Haga clic para configurar"/>
+      <attstr name="tip-cat" val="Cliqueu per configurar"/>
+      <attstr name="tip-ru" val="Нажмите для настройки"/>
+      <attnum name="x" val="185"/>
+      <attnum name="y" val="220"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFCC00"/>
+      <attnum name="image x" val="3"/>
+      <attnum name="image y" val="4"/>
+      <attnum name="image width" val="66"/>
+      <attnum name="image height" val="20"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="ABS cmd">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="30"/>
+      <attnum name="y" val="204"/>
+      <attstr name="text" val="ABS:"/>
+      <attstr name="text-spa" val="ABS:"/>
+      <attstr name="text-cat" val="ABS:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="ABS cmd button">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="MOUSE_MIDDLE_BUTTON"/>
+      <attstr name="tip" val="Click to configure"/>
+      <attstr name="tip-spa" val="Haga clic para configurar"/>
+      <attstr name="tip-cat" val="Cliqueu per configurar"/>
+      <attstr name="tip-ru" val="Нажмите для настройки"/>
+      <attnum name="x" val="185"/>
+      <attnum name="y" val="198"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFCC00"/>
+      <attnum name="image x" val="3"/>
+      <attnum name="image y" val="4"/>
+      <attnum name="image width" val="66"/>
+      <attnum name="image height" val="20"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="ASR cmd">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="30"/>
+      <attnum name="y" val="184"/>
+      <attstr name="text" val="TCS:"/>
+      <attstr name="text-spa" val="TCS:"/>
+      <attstr name="text-cat" val="Contr. tracció:"/>
+      <attstr name="text-ru" val="Контроль тяги:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="ASR cmd button">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="MOUSE_MIDDLE_BUTTON"/>
+      <attstr name="tip" val="Click to configure"/>
+      <attstr name="tip-spa" val="Haga clic para configurar"/>
+      <attstr name="tip-cat" val="Cliqueu per configurar"/>
+      <attstr name="tip-ru" val="Нажмите для настройки"/>
+      <attnum name="x" val="185"/>
+      <attnum name="y" val="176"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFCC00"/>
+      <attnum name="image x" val="3"/>
+      <attnum name="image y" val="4"/>
+      <attnum name="image width" val="66"/>
+      <attnum name="image height" val="20"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="Light1 cmd">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="30"/>
+      <attnum name="y" val="160"/>
+      <attstr name="text" val="Light:"/>
+      <attstr name="text-fra" val="Phares:"/>
+      <attstr name="text-spa" val="Luces:"/>
+      <attstr name="text-cat" val="Llums:"/>
+      <attstr name="text-ru" val="Фары:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="Light1 cmd button">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="MOUSE_MIDDLE_BUTTON"/>
+      <attstr name="tip" val="Click to configure"/>
+      <attstr name="tip-spa" val="Haga clic para configurar"/>
+      <attstr name="tip-cat" val="Cliqueu per configurar"/>
+      <attstr name="tip-ru" val="Нажмите для настройки"/>
+      <attnum name="x" val="185"/>
+      <attnum name="y" val="154"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFCC00"/>
+      <attnum name="image x" val="3"/>
+      <attnum name="image y" val="4"/>
+      <attnum name="image width" val="66"/>
+      <attnum name="image height" val="20"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="left glance">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="30"/>
+      <attnum name="y" val="138"/>
+      <attstr name="text" val="Left glance:"/>
+      <attstr name="text-fra" val="Regard à g.:"/>
+      <attstr name="text-spa" val="Mirar izq.:"/>
+      <attstr name="text-cat" val="Mirar esq.:"/>
+      <attstr name="text-ru" val="Взгляд влево:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="left glance button">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="MOUSE_MIDDLE_BUTTON"/>
+      <attstr name="tip" val="Click to configure"/>
+      <attstr name="tip-spa" val="Haga clic para configurar"/>
+      <attstr name="tip-cat" val="Cliqueu per configurar"/>
+      <attstr name="tip-ru" val="Нажмите для настройки"/>
+      <attnum name="x" val="185"/>
+      <attnum name="y" val="132"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFCC00"/>
+      <attnum name="image x" val="3"/>
+      <attnum name="image y" val="4"/>
+      <attnum name="image width" val="66"/>
+      <attnum name="image height" val="20"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="right glance">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="30"/>
+      <attnum name="y" val="116"/>
+      <attstr name="text" val="Right glance:"/>
+      <attstr name="text-fra" val="Regard à dr.:"/>
+      <attstr name="text-spa" val="Mirar der.:"/>
+      <attstr name="text-cat" val="Mirar dreta:"/>
+      <attstr name="text-ru" val="Взгляд вправо:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="right glance button">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="MOUSE_MIDDLE_BUTTON"/>
+      <attstr name="tip" val="Click to configure"/>
+      <attstr name="tip-spa" val="Haga clic para configurar"/>
+      <attstr name="tip-cat" val="Cliqueu per configurar"/>
+      <attstr name="tip-ru" val="Нажмите для настройки"/>
+      <attnum name="x" val="185"/>
+      <attnum name="y" val="110"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFCC00"/>
+      <attnum name="image x" val="3"/>
+      <attnum name="image y" val="4"/>
+      <attnum name="image width" val="66"/>
+      <attnum name="image height" val="20"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="camera look back">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="30"/>
+      <attnum name="y" val="94"/>
+      <attstr name="text" val="Look behind:"/>
+      <attstr name="text-fra" val="Regard derr.:"/>
+      <attstr name="text-spa" val="Mirar atrás:"/>
+      <attstr name="text-cat" val="Mirar enrere:"/>
+      <attstr name="text-ru" val="Взгляд назад:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="camera look back button">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="MOUSE_MIDDLE_BUTTON"/>
+      <attstr name="tip" val="Click to configure"/>
+      <attstr name="tip-spa" val="Haga clic para configurar"/>
+      <attstr name="tip-cat" val="Cliqueu per configurar"/>
+      <attstr name="tip-ru" val="Нажмите для настройки"/>
+      <attnum name="x" val="185"/>
+      <attnum name="y" val="88"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFCC00"/>
+      <attnum name="image x" val="3"/>
+      <attnum name="image y" val="4"/>
+      <attnum name="image width" val="66"/>
+      <attnum name="image height" val="20"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <!-- second Column -->
+    <section name="Steer Sensitivity">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val="Steer sens:"/>
+      <attstr name="text-fra" val="Sensib. dir.:"/>
+      <attstr name="text-spa" val="Sensib. giro:"/>
+      <attstr name="text-cat" val="Sensib. gir:"/>
+      <attstr name="text-ru" val="Чувств. руля:"/>
+      <attstr name="tip" val="Configure steer sensitivity to steer command (0 = none, any positive)"/>
+      <attstr name="tip-spa" val="Configurar la sensibilidad de dirección del comando steer (0 = ninguno, positivo)"/>
+      <attstr name="tip-cat" val="Configureu la sensibilitat al gir (0 = cap, qualsevol valor positiu)"/>
+      <attstr name="tip-ru" val="Настройте чувствительность управления (0 = без зависимости)"/>
+      <attnum name="x" val="220"/>
+      <attnum name="y" val="358"/>
+      <attstr name="font" val="small_t"/>
+      <attnum name="width" val="140"/>
+      <attstr name="h align" val="right"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="Steer Sensitivity Edit">
+      <attstr name="type" val="edit box"/>
+      <attstr name="text" val=""/>
+      <attnum name="max len" val="5"/>
+      <attstr name="tip" val="Configure steer sensitivity to steer command (0 = none, any positive)"/>
+      <attstr name="tip-spa" val="Configurar la sensibilidad de dirección del comando steer (0 = ninguno, positivo)"/>
+      <attstr name="tip-cat" val="Configureu la sensibilitat al gir (0 = cap, qualsevol valor positiu)"/>
+      <attstr name="tip-ru" val="Настройте чувствительность управления (0 = без зависимости)"/>
+      <attnum name="x" val="372"/>
+      <attnum name="y" val="356"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="width" val="60"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFCC00"/>
+      <attnum name="image x" val="3"/>
+      <attnum name="image y" val="4"/>
+      <attnum name="image width" val="66"/>
+      <attnum name="image height" val="20"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="Steer Speed Sensitivity">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val="Speed sens:"/>
+      <attstr name="text-fra" val="Sensib. vit.:"/>
+      <attstr name="text-spa" val="Sensib. vel.:"/>
+      <attstr name="text-cat" val="Sensib. vel.:"/>
+      <attstr name="text-ru" val="Чувств. от скор.:"/>
+      <attstr name="tip" val="Configure steer sensitivity to car speed (0 = none, any positive)"/>
+      <attstr name="tip-spa" val="Configurar la sensibilidad de giro a la velocidad del coche (0 = ninguno, cualquier valor positivo)"/>
+      <attstr name="tip-cat" val="Configureu la sensibilitat de gir a la velocitat (0 = cap, qualsevol valor positiu)"/>
+      <attstr name="tip-ru" val="Настройте чувствительность руля в зависимости от скорости (0 = без зависимости)"/>
+      <attnum name="x" val="220"/>
+      <attnum name="y" val="336"/>
+      <attstr name="font" val="small_t"/>
+      <attnum name="width" val="140"/>
+      <attstr name="h align" val="right"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="Steer Speed Sensitivity Edit">
+      <attstr name="type" val="edit box"/>
+      <attstr name="text" val=""/>
+      <attnum name="max len" val="5"/>
+      <attstr name="tip" val="Configure steer sensitivity to car speed (0 = none, any positive)"/>
+      <attstr name="tip-spa" val="Configurar la sensibilidad de giro a la velocidad del coche (0 = ninguno, cualquier valor positivo)"/>
+      <attstr name="tip-cat" val="Configureu la sensibilitat de gir a la velocitat (0 = cap, qualsevol valor positiu)"/>
+      <attstr name="tip-ru" val="Настройте чувствительность руля в зависимости от скорости (0 = без зависимости)"/>
+      <attnum name="x" val="372"/>
+      <attnum name="y" val="334"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="width" val="60"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFCC00"/>
+      <attnum name="image x" val="3"/>
+      <attnum name="image y" val="4"/>
+      <attnum name="image width" val="66"/>
+      <attnum name="image height" val="20"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="Steer Dead Zone">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val="Dead zone:"/>
+      <attstr name="text-fra" val="Zone morte:"/>
+      <attstr name="text-spa" val="Zona muerta:"/>
+      <attstr name="text-cat" val="Zona morta:"/>
+      <attstr name="text-ru" val="Мертв. зона:"/>
+      <attstr name="tip" val="Configure steer dead zone (0 = none, 1 = all)"/>
+      <attstr name="tip-spa" val="Configurar la zona muerta de giro (0 = ninguna, 1 = toda)"/>
+      <attstr name="tip-cat" val="Configureu la zona morta de gir (0 = cap, 1 = tota)"/>
+      <attstr name="tip-ru" val="Настройка мертвой зоны руля (0 = без зоны, 1 = от упора до упора)"/>
+      <attnum name="x" val="220"/>
+      <attnum name="y" val="314"/>
+      <attstr name="font" val="small_t"/>
+      <attnum name="width" val="140"/>
+      <attstr name="h align" val="right"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="Steer Dead Zone Edit">
+      <attstr name="type" val="edit box"/>
+      <attstr name="text" val=""/>
+      <attnum name="max len" val="5"/>
+      <attstr name="tip" val="Configure steer dead zone (0 = none, 1 = all)"/>
+      <attstr name="tip-spa" val="Configurar la zona muerta de giro (0 = ninguna, 1 = toda)"/>
+      <attstr name="tip-cat" val="Configureu la zona morta de gir (0 = cap, 1 = tota)"/>
+      <attstr name="tip-ru" val="Настройка мертвой зоны руля (0 = без зоны, 1 = от упора до упора)"/>
+      <attnum name="x" val="372"/>
+      <attnum name="y" val="312"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="width" val="60"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFCC00"/>
+      <attnum name="image x" val="3"/>
+      <attnum name="image y" val="4"/>
+      <attnum name="image width" val="66"/>
+      <attnum name="image height" val="20"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <!--copy -->
+    <section name="reverse gear">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="220"/>
+      <attnum name="y" val="292"/>
+      <attstr name="text" val="Reverse gear:"/>
+      <attstr name="text-fra" val="Marche arrière:"/>
+      <attstr name="text-spa" val="Marcha atrás:"/>
+      <attstr name="text-cat" val="Marxa enrere:"/>
+      <attstr name="text-ru" val="Задний ход:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="reverse gear button">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="MOUSE_MIDDLE_BUTTON"/>
+      <attstr name="tip" val="Click to configure"/>
+      <attstr name="tip-spa" val="Haga clic para configurar"/>
+      <attstr name="tip-cat" val="Cliqueu per configurar"/>
+      <attstr name="tip-ru" val="Нажмите для настройки"/>
+      <attnum name="x" val="365"/>
+      <attnum name="y" val="286"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFCC00"/>
+      <attnum name="image x" val="3"/>
+      <attnum name="image y" val="4"/>
+      <attnum name="image width" val="66"/>
+      <attnum name="image height" val="20"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="neutral gear">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="220"/>
+      <attnum name="y" val="270"/>
+      <attstr name="text" val="Neutral gear:"/>
+      <attstr name="text-fra" val="Point mort:"/>
+      <attstr name="text-spa" val="Punto muerto:"/>
+      <attstr name="text-cat" val="Punt mort:"/>
+      <attstr name="text-ru" val="Нейтраль:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="neutral gear button">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="MOUSE_MIDDLE_BUTTON"/>
+      <attstr name="tip" val="Click to configure"/>
+      <attstr name="tip-spa" val="Haga clic para configurar"/>
+      <attstr name="tip-cat" val="Cliqueu per configurar"/>
+      <attstr name="tip-ru" val="Нажмите для настройки"/>
+      <attnum name="x" val="365"/>
+      <attnum name="y" val="264"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFCC00"/>
+      <attnum name="image x" val="3"/>
+      <attnum name="image y" val="4"/>
+      <attnum name="image width" val="66"/>
+      <attnum name="image height" val="20"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="down shift">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="220"/>
+      <attnum name="y" val="248"/>
+      <attstr name="text" val="Down shift:"/>
+      <attstr name="text-fra" val="Rapport inf.:"/>
+      <attstr name="text-spa" val="Bajar marcha:"/>
+      <attstr name="text-cat" val="Baixar marxa:"/>
+      <attstr name="text-ru" val="Перекл. вниз:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="down shift button">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="MOUSE_MIDDLE_BUTTON"/>
+      <attstr name="tip" val="Click to configure"/>
+      <attstr name="tip-spa" val="Haga clic para configurar"/>
+      <attstr name="tip-cat" val="Cliqueu per configurar"/>
+      <attstr name="tip-ru" val="Нажмите для настройки"/>
+      <attnum name="x" val="365"/>
+      <attnum name="y" val="242"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFCC00"/>
+      <attnum name="image x" val="3"/>
+      <attnum name="image y" val="4"/>
+      <attnum name="image width" val="66"/>
+      <attnum name="image height" val="20"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="up shift">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="220"/>
+      <attnum name="y" val="226"/>
+      <attstr name="text" val="Up shift:"/>
+      <attstr name="text-fra" val="Rapport sup.:"/>
+      <attstr name="text-spa" val="Subir marcha:"/>
+      <attstr name="text-cat" val="Pujar marxa:"/>
+      <attstr name="text-ru" val="Перекл. вверх:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="up shift button">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="MOUSE_MIDDLE_BUTTON"/>
+      <attstr name="tip" val="Click to configure"/>
+      <attstr name="tip-spa" val="Haga clic para configurar"/>
+      <attstr name="tip-cat" val="Cliqueu per configurar"/>
+      <attstr name="tip-ru" val="Нажмите для настройки"/>
+      <attnum name="x" val="365"/>
+      <attnum name="y" val="220"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFCC00"/>
+      <attnum name="image x" val="3"/>
+      <attnum name="image y" val="4"/>
+      <attnum name="image width" val="66"/>
+      <attnum name="image height" val="20"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="hbox x">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="400"/>
+      <attnum name="y" val="358"/>
+      <attstr name="text" val="HBox X:"/>
+      <attstr name="text-spa" val="HBox X:"/>
+      <attstr name="text-cat" val="X caixa en H:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="hbox x button">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="MOUSE_MIDDLE_BUTTON"/>
+      <attstr name="tip" val="Click to configure"/>
+      <attstr name="tip-spa" val="Haga clic para configurar"/>
+      <attstr name="tip-cat" val="Cliqueu per configurar"/>
+      <attstr name="tip-ru" val="Нажмите для настройки"/>
+      <attnum name="x" val="545"/>
+      <attnum name="y" val="352"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFCC00"/>
+      <attnum name="image x" val="3"/>
+      <attnum name="image y" val="4"/>
+      <attnum name="image width" val="66"/>
+      <attnum name="image height" val="20"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="hbox y">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="400"/>
+      <attnum name="y" val="336"/>
+      <attstr name="text" val="HBox Y:"/>
+      <attstr name="text-spa" val="Y caja en H:"/>
+      <attstr name="text-cat" val="Y caixa en H:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="hbox y button">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="MOUSE_MIDDLE_BUTTON"/>
+      <attstr name="tip" val="Click to configure"/>
+      <attstr name="tip-spa" val="Haga clic para configurar"/>
+      <attstr name="tip-cat" val="Cliqueu per configurar"/>
+      <attstr name="tip-ru" val="Нажмите для настройки"/>
+      <attnum name="x" val="545"/>
+      <attnum name="y" val="330"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFCC00"/>
+      <attnum name="image x" val="3"/>
+      <attnum name="image y" val="4"/>
+      <attnum name="image width" val="66"/>
+      <attnum name="image height" val="20"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="1st gear">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="400"/>
+      <attnum name="y" val="358"/>
+      <attstr name="text" val="1st gear:"/>
+      <attstr name="text-fra" val="Première:"/>
+      <attstr name="text-spa" val="Primera:"/>
+      <attstr name="text-cat" val="1ª marxa:"/>
+      <attstr name="text-ru" val="1-я передача:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="1st gear button">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="MOUSE_MIDDLE_BUTTON"/>
+      <attstr name="tip" val="Click to configure"/>
+      <attstr name="tip-spa" val="Haga clic para configurar"/>
+      <attstr name="tip-cat" val="Cliqueu per configurar"/>
+      <attstr name="tip-ru" val="Нажмите для настройки"/>
+      <attnum name="x" val="545"/>
+      <attnum name="y" val="352"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFCC00"/>
+      <attnum name="image x" val="3"/>
+      <attnum name="image y" val="4"/>
+      <attnum name="image width" val="66"/>
+      <attnum name="image height" val="20"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="2nd gear">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="400"/>
+      <attnum name="y" val="336"/>
+      <attstr name="text" val="2nd gear:"/>
+      <attstr name="text-fra" val="Seconde:"/>
+      <attstr name="text-spa" val="Segunda:"/>
+      <attstr name="text-cat" val="2ª marxa:"/>
+      <attstr name="text-ru" val="2-я передача:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="2nd gear button">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="MOUSE_MIDDLE_BUTTON"/>
+      <attstr name="tip" val="Click to configure"/>
+      <attstr name="tip-spa" val="Haga clic para configurar"/>
+      <attstr name="tip-cat" val="Cliqueu per configurar"/>
+      <attstr name="tip-ru" val="Нажмите для настройки"/>
+      <attnum name="x" val="545"/>
+      <attnum name="y" val="330"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFCC00"/>
+      <attnum name="image x" val="3"/>
+      <attnum name="image y" val="4"/>
+      <attnum name="image width" val="66"/>
+      <attnum name="image height" val="20"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="3rd gear">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="400"/>
+      <attnum name="y" val="314"/>
+      <attstr name="text" val="3rd gear:"/>
+      <attstr name="text-fra" val="Troisième:"/>
+      <attstr name="text-spa" val="Tercera:"/>
+      <attstr name="text-cat" val="3ª marxa:"/>
+      <attstr name="text-ru" val="3-я передача:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="3rd gear button">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="MOUSE_MIDDLE_BUTTON"/>
+      <attstr name="tip" val="Click to configure"/>
+      <attstr name="tip-spa" val="Haga clic para configurar"/>
+      <attstr name="tip-cat" val="Cliqueu per configurar"/>
+      <attstr name="tip-ru" val="Нажмите для настройки"/>
+      <attnum name="x" val="545"/>
+      <attnum name="y" val="308"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFCC00"/>
+      <attnum name="image x" val="3"/>
+      <attnum name="image y" val="4"/>
+      <attnum name="image width" val="66"/>
+      <attnum name="image height" val="20"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="4th gear">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="400"/>
+      <attnum name="y" val="292"/>
+      <attstr name="text" val="4th gear:"/>
+      <attstr name="text-fra" val="Quatrième:"/>
+      <attstr name="text-spa" val="Cuarta:"/>
+      <attstr name="text-cat" val="4ª marxa:"/>
+      <attstr name="text-ru" val="4-я передача:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="4th gear button">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="MOUSE_MIDDLE_BUTTON"/>
+      <attstr name="tip" val="Click to configure"/>
+      <attstr name="tip-spa" val="Haga clic para configurar"/>
+      <attstr name="tip-cat" val="Cliqueu per configurar"/>
+      <attstr name="tip-ru" val="Нажмите для настройки"/>
+      <attnum name="x" val="545"/>
+      <attnum name="y" val="286"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFCC00"/>
+      <attnum name="image x" val="3"/>
+      <attnum name="image y" val="4"/>
+      <attnum name="image width" val="66"/>
+      <attnum name="image height" val="20"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="5th gear">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="400"/>
+      <attnum name="y" val="270"/>
+      <attstr name="text" val="5th gear:"/>
+      <attstr name="text-fra" val="Cinquième:"/>
+      <attstr name="text-spa" val="Quinta:"/>
+      <attstr name="text-cat" val="5ª marxa:"/>
+      <attstr name="text-ru" val="5-я передача:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="5th gear button">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="MOUSE_MIDDLE_BUTTON"/>
+      <attstr name="tip" val="Click to configure"/>
+      <attstr name="tip-spa" val="Haga clic para configurar"/>
+      <attstr name="tip-cat" val="Cliqueu per configurar"/>
+      <attstr name="tip-ru" val="Нажмите для настройки"/>
+      <attnum name="x" val="545"/>
+      <attnum name="y" val="264"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFCC00"/>
+      <attnum name="image x" val="3"/>
+      <attnum name="image y" val="4"/>
+      <attnum name="image width" val="66"/>
+      <attnum name="image height" val="20"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="6th gear">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="400"/>
+      <attnum name="y" val="248"/>
+      <attstr name="text" val="6th gear:"/>
+      <attstr name="text-fra" val="Sixième:"/>
+      <attstr name="text-spa" val="Sexta:"/>
+      <attstr name="text-cat" val="6ª marxa:"/>
+      <attstr name="text-ru" val="6-я передача:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="6th gear button">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="MOUSE_MIDDLE_BUTTON"/>
+      <attstr name="tip" val="Click to configure"/>
+      <attstr name="tip-spa" val="Haga clic para configurar"/>
+      <attstr name="tip-cat" val="Cliqueu per configurar"/>
+      <attstr name="tip-ru" val="Нажмите для настройки"/>
+      <attnum name="x" val="545"/>
+      <attnum name="y" val="242"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFCC00"/>
+      <attnum name="image x" val="3"/>
+      <attnum name="image y" val="4"/>
+      <attnum name="image width" val="66"/>
+      <attnum name="image height" val="20"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="dashboard next item">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="220"/>
+      <attnum name="y" val="182"/>
+      <attstr name="text" val="Dash next:"/>
+      <attstr name="text-fra" val="Tab. bd. suiv.:"/>
+      <attstr name="text-spa" val="Panel siguiente:"/>
+      <attstr name="text-cat" val="Panell següent:"/>
+      <attstr name="text-ru" val="След.панель:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="dashboard next item button">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="MOUSE_MIDDLE_BUTTON"/>
+      <attstr name="tip" val="Click to configure"/>
+      <attstr name="tip-spa" val="Haga clic para configurar"/>
+      <attstr name="tip-cat" val="Cliqueu per configurar"/>
+      <attstr name="tip-ru" val="Нажмите для настройки"/>
+      <attnum name="x" val="365"/>
+      <attnum name="y" val="176"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFCC00"/>
+      <attnum name="image x" val="3"/>
+      <attnum name="image y" val="4"/>
+      <attnum name="image width" val="66"/>
+      <attnum name="image height" val="20"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="dashboard previous item">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="220"/>
+      <attnum name="y" val="160"/>
+      <attstr name="text" val="Dash prev:"/>
+      <attstr name="text-fra" val="Tab. bd. préc.:"/>
+      <attstr name="text-spa" val="Panel anterior:"/>
+      <attstr name="text-cat" val="Panell anterior:"/>
+      <attstr name="text-ru" val="Пред.панель:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="dashboard previous item button">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="MOUSE_MIDDLE_BUTTON"/>
+      <attstr name="tip" val="Click to configure"/>
+      <attstr name="tip-spa" val="Haga clic para configurar"/>
+      <attstr name="tip-cat" val="Cliqueu per configurar"/>
+      <attstr name="tip-ru" val="Нажмите для настройки"/>
+      <attnum name="x" val="365"/>
+      <attnum name="y" val="154"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFCC00"/>
+      <attnum name="image x" val="3"/>
+      <attnum name="image y" val="4"/>
+      <attnum name="image width" val="66"/>
+      <attnum name="image height" val="20"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="dashboard increase">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="220"/>
+      <attnum name="y" val="138"/>
+      <attstr name="text" val="Dash increase:"/>
+      <attstr name="text-fra" val="Tab. bd. aug.:"/>
+      <attstr name="text-spa" val="Subir panel:"/>
+      <attstr name="text-cat" val="Pujar panell:"/>
+      <attstr name="text-ru" val="Увелич. панель:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="dashboard increase button">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="MOUSE_MIDDLE_BUTTON"/>
+      <attstr name="tip" val="Click to configure"/>
+      <attstr name="tip-spa" val="Haga clic para configurar"/>
+      <attstr name="tip-cat" val="Cliqueu per configurar"/>
+      <attstr name="tip-ru" val="Нажмите для настройки"/>
+      <attnum name="x" val="365"/>
+      <attnum name="y" val="132"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFCC00"/>
+      <attnum name="image x" val="3"/>
+      <attnum name="image y" val="4"/>
+      <attnum name="image width" val="66"/>
+      <attnum name="image height" val="20"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="dashboard decrease">
+      <attstr name="type" val="label"/>
+      <attnum name="x" val="220"/>
+      <attnum name="y" val="116"/>
+      <attstr name="text" val="Dash decrease:"/>
+      <attstr name="text-fra" val="Tab. bd. dim.:"/>
+      <attstr name="text-spa" val="Bajar panel:"/>
+      <attstr name="text-cat" val="Baixar panell:"/>
+      <attstr name="text-ru" val="Уменьш. панель:"/>
+      <attstr name="h align" val="right"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+    </section>
+    <section name="dashboard decrease button">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="MOUSE_MIDDLE_BUTTON"/>
+      <attstr name="tip" val="Click to configure"/>
+      <attstr name="tip-spa" val="Haga clic para configurar"/>
+      <attstr name="tip-cat" val="Cliqueu per configurar"/>
+      <attstr name="tip-ru" val="Нажмите для настройки"/>
+      <attnum name="x" val="365"/>
+      <attnum name="y" val="110"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="width" val="140"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFCC00"/>
+      <attnum name="image x" val="3"/>
+      <attnum name="image y" val="4"/>
+      <attnum name="image width" val="66"/>
+      <attnum name="image height" val="20"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <!-- Buttons -->
+    <section name="cancel">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Cancel"/>
+      <attstr name="text-fra" val="Annuler"/>
+      <attstr name="text-spa" val="Cancelar"/>
+      <attstr name="text-cat" val="Cancel·lar"/>
+      <attstr name="text-ru" val="Отменить"/>
+      <attstr name="tip" val="Cancel changes"/>
+      <attstr name="tip-spa" val="Cancela los cambios"/>
+      <attstr name="tip-cat" val="Cancel·leu els canvis"/>
+      <attstr name="tip-ru" val="Отменить изменения"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="x" val="400"/>
+      <attnum name="y" val="44"/>
+      <attnum name="width" val="80"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-10"/>
+      <attnum name="image y" val="-2"/>
+      <attnum name="image width" val="100"/>
+      <attnum name="image height" val="30"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="calibrate">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Calibrate"/>
+      <attstr name="text-fra" val="Calibrer"/>
+      <attstr name="text-spa" val="Calibrar"/>
+      <attstr name="text-cat" val="Calibrar"/>
+      <attstr name="text-ru" val="Калибровать"/>
+      <attstr name="tip" val="Calibrate input device(s)"/>
+      <attstr name="tip-spa" val="Calibrar dispositivo de entrada(s)"/>
+      <attstr name="tip-cat" val="Calibreu els dispositius d'entrada"/>
+      <attstr name="tip-ru" val="Калибровка устройств ввода"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="x" val="288"/>
+      <attnum name="y" val="44"/>
+      <attnum name="width" val="80"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-10"/>
+      <attnum name="image y" val="-2"/>
+      <attnum name="image width" val="100"/>
+      <attnum name="image height" val="30"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="save">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Apply"/>
+      <attstr name="text-fra" val="Appliquer"/>
+      <attstr name="text-spa" val="Aplicar"/>
+      <attstr name="text-cat" val="Aplicar"/>
+      <attstr name="text-ru" val="Применить"/>
+      <attstr name="tip" val="Accept and save changes"/>
+      <attstr name="tip-spa" val="Aceptar y guardar cambios"/>
+      <attstr name="tip-cat" val="Apliqueu i deseu els canvis"/>
+      <attstr name="tip-ru" val="Принять и сохранить изменения"/>
+      <attnum name="x" val="500"/>
+      <attnum name="y" val="44"/>
+      <attnum name="width" val="80"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-10"/>
+      <attnum name="image y" val="-2"/>
+      <attnum name="image width" val="100"/>
+      <attnum name="image height" val="30"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+  </section>
+  <section name="static controls">
+    <section name="1">
+      <attstr name="type" val="gallery"/>
+      <attstr name="directory" val="data/gallery/"/>
+    </section>
+    <section name="2">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="-10"/>
+      <attnum name="y" val="375"/>
+      <attnum name="width" val="130"/>
+      <attnum name="height" val="95"/>
+      <attstr name="image" val="data/img/sd-logo-big.png"/>
+    </section>
+    <section name="3">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val="Controls configuration"/>
+      <attstr name="text-fra" val="Configuration des contrôles"/>
+      <attstr name="text-spa" val="Configuración de controles"/>
+      <attstr name="text-cat" val="Configuració dels controls"/>
+      <attstr name="text-ru" val="Настройки управления"/>
+      <attnum name="x" val="300"/>
+      <attnum name="y" val="430"/>
+      <attnum name="width" val="400"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium_t"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="bg image" val="data/img/header-background.png"/>
+      <attnum name="bg image padding top" val="15"/>
+      <attnum name="bg image padding bottom" val="15"/>
+      <attnum name="bg image padding left" val="30"/>
+      <attnum name="bg image padding right" val="15"/>
+    </section>
+    <!-- labels backgrounds -->
+    <!-- first column -->
+    <section name="4">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="90"/>
+      <attnum name="y" val="356"/>
+      <attnum name="width" val="100"/>
+      <attnum name="height" val="20"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="5">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="90"/>
+      <attnum name="y" val="334"/>
+      <attnum name="width" val="100"/>
+      <attnum name="height" val="20"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="6">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="90"/>
+      <attnum name="y" val="312"/>
+      <attnum name="width" val="100"/>
+      <attnum name="height" val="20"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="7">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="90"/>
+      <attnum name="y" val="290"/>
+      <attnum name="width" val="100"/>
+      <attnum name="height" val="20"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="8">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="90"/>
+      <attnum name="y" val="268"/>
+      <attnum name="width" val="100"/>
+      <attnum name="height" val="20"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="9">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="90"/>
+      <attnum name="y" val="246"/>
+      <attnum name="width" val="100"/>
+      <attnum name="height" val="20"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="10">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="90"/>
+      <attnum name="y" val="224"/>
+      <attnum name="width" val="100"/>
+      <attnum name="height" val="20"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="11">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="90"/>
+      <attnum name="y" val="202"/>
+      <attnum name="width" val="100"/>
+      <attnum name="height" val="20"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="12">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="90"/>
+      <attnum name="y" val="180"/>
+      <attnum name="width" val="100"/>
+      <attnum name="height" val="20"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="13">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="90"/>
+      <attnum name="y" val="158"/>
+      <attnum name="width" val="100"/>
+      <attnum name="height" val="20"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="14">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="90"/>
+      <attnum name="y" val="136"/>
+      <attnum name="width" val="100"/>
+      <attnum name="height" val="20"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="15">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="90"/>
+      <attnum name="y" val="114"/>
+      <attnum name="width" val="100"/>
+      <attnum name="height" val="20"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="16">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="90"/>
+      <attnum name="y" val="92"/>
+      <attnum name="width" val="100"/>
+      <attnum name="height" val="20"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <!-- second column -->
+    <section name="17">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="270"/>
+      <attnum name="y" val="356"/>
+      <attnum name="width" val="100"/>
+      <attnum name="height" val="20"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="18">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="270"/>
+      <attnum name="y" val="334"/>
+      <attnum name="width" val="100"/>
+      <attnum name="height" val="20"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="19">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="270"/>
+      <attnum name="y" val="312"/>
+      <attnum name="width" val="100"/>
+      <attnum name="height" val="20"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="20">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="270"/>
+      <attnum name="y" val="290"/>
+      <attnum name="width" val="100"/>
+      <attnum name="height" val="20"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="21">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="270"/>
+      <attnum name="y" val="268"/>
+      <attnum name="width" val="100"/>
+      <attnum name="height" val="20"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="22">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="270"/>
+      <attnum name="y" val="246"/>
+      <attnum name="width" val="100"/>
+      <attnum name="height" val="20"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="23">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="270"/>
+      <attnum name="y" val="224"/>
+      <attnum name="width" val="100"/>
+      <attnum name="height" val="20"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="24">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="270"/>
+      <attnum name="y" val="202"/>
+      <attnum name="width" val="100"/>
+      <attnum name="height" val="20"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="25">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="270"/>
+      <attnum name="y" val="180"/>
+      <attnum name="width" val="100"/>
+      <attnum name="height" val="20"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="26">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="270"/>
+      <attnum name="y" val="158"/>
+      <attnum name="width" val="100"/>
+      <attnum name="height" val="20"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="27">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="270"/>
+      <attnum name="y" val="136"/>
+      <attnum name="width" val="100"/>
+      <attnum name="height" val="20"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="28">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="270"/>
+      <attnum name="y" val="114"/>
+      <attnum name="width" val="100"/>
+      <attnum name="height" val="20"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="29">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="270"/>
+      <attnum name="y" val="92"/>
+      <attnum name="width" val="100"/>
+      <attnum name="height" val="20"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <!-- third column -->
+    <section name="30">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="450"/>
+      <attnum name="y" val="356"/>
+      <attnum name="width" val="100"/>
+      <attnum name="height" val="20"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="31">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="450"/>
+      <attnum name="y" val="334"/>
+      <attnum name="width" val="100"/>
+      <attnum name="height" val="20"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="32">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="450"/>
+      <attnum name="y" val="312"/>
+      <attnum name="width" val="100"/>
+      <attnum name="height" val="20"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="33">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="450"/>
+      <attnum name="y" val="290"/>
+      <attnum name="width" val="100"/>
+      <attnum name="height" val="20"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="34">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="450"/>
+      <attnum name="y" val="268"/>
+      <attnum name="width" val="100"/>
+      <attnum name="height" val="20"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+    <section name="35">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="450"/>
+      <attnum name="y" val="246"/>
+      <attnum name="width" val="100"/>
+      <attnum name="height" val="20"/>
+      <attstr name="image" val="data/img/bg-button-big-normal.png"/>
+    </section>
+  </section>
+</params>

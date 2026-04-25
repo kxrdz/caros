@@ -1,0 +1,22 @@
+# type "rpm -ba solid.spec" to create the package
+Summary: 3D collision detection library
+Name: FreeSOLID
+Version: @FREESOLID_VERSION@
+Release: 1
+License: LGPL
+Group: Development/Libraries
+Source: FreeSOLID-@FREESOLID_VERSION@.tar.gz
+URL: http://solid.sourceforge.net
+
+%description
+FreeSOLID is a library for collision detection of three-dimensional objects undergoing rigid motion and deformation. SOLID is designed to be used in interactive 3D graphics applications, and is especially suited for collision detection of objects and worlds described in VRML.
+
+%prep
+%setup -q
+%build
+./configure
+make
+%install
+make install
+%files
+%defattr(-,root,root)

@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    file                 : racemanmenu.xml
+    created              : 2009
+    copyright            : (C) 2009 by Brian Gavin, Eckhard M. Jaeger, 2010 Jean-Philippe Meuret
+    web                  : speed-dreams.sourceforge.net
+-->
+<!--    This program is free software; you can redistribute it and/or modify  -->
+<!--    it under the terms of the GNU General Public License as published by  -->
+<!--    the Free Software Foundation; either version 2 of the License, or     -->
+<!--    (at your option) any later version.                                   -->
+<!--
+
+	Race manager menu (where you load, save, configure, start ... a race, whichever its type,
+    and have a preview of the race : type, track, opponents)
+
+-->
+<!DOCTYPE params SYSTEM "../tgf/params.dtd">
+<params name="racemanmenu">
+  <section name="translatable">
+    <section name="modecircuit">
+      <attstr name="text" val="%s at %s"/>
+      <attstr name="text-ru" val="%s: %s"/>
+      <attstr name="text-spa" val="%s en %s"/>
+      <attstr name="text-cat" val="%s a %s"/>
+    </section>
+  </section>
+  <section name="dynamic controls">
+    <section name="RaceModeTitleLabel">
+      <attstr name="type" val="label"/>
+      <attnum name="max len" val="40"/>
+      <attnum name="x" val="300"/>
+      <attnum name="y" val="430"/>
+      <attnum name="width" val="400"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium_t"/>
+      <attstr name="h align" val="left"/>
+    </section>
+    <section name="ConfigurePlayersButton">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Players"/>
+      <attstr name="text-fra" val="Joueurs"/>
+      <attstr name="text-spa" val="Jugadores"/>
+      <attstr name="text-cat" val="Jugadors"/>
+      <attstr name="text-ru" val="Игроки"/>
+      <attstr name="tip" val="Configure players and their controls"/>
+      <attstr name="tip-fra" val="Configurer joueurs et leurs contrôles"/>
+      <attstr name="tip-spa" val="Configurar jugadores y sus controles"/>
+      <attstr name="tip-cat" val="Configureu els jugadors i els seus controls"/>
+      <attstr name="tip-ru" val="Настройте игроков и их управление"/>
+      <attnum name="x" val="90"/>
+      <attnum name="y" val="88"/>
+      <attstr name="h align" val="center"/>
+      <attnum name="width" val="100"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="0"/>
+      <attnum name="image y" val="-2"/>
+      <attnum name="image width" val="100"/>
+      <attnum name="image height" val="30"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="ConfigureRaceButton">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Track &amp; weather"/>
+      <attstr name="text-fra" val="Piste et météo"/>
+      <attstr name="text-ru" val="Трасса и погода"/>
+      <attstr name="text-spa" val="Circuito &amp; clima"/>
+      <attstr name="text-cat" val="Circuit i clima"/>
+      <attstr name="tip" val="Configure the track and weather for the race"/>
+      <attstr name="tip-fra" val="Configurer le circuit et la météo pour la course"/>
+      <attstr name="tip-ru" val="Настройте трассу и погоду для гонки"/>
+      <attstr name="tip-spa" val="Configura el circuito y climatología de la carrera"/>
+      <attstr name="tip-cat" val="Configureu el circuit i climatologia de la cursa"/>
+      <attnum name="x" val="190"/>
+      <attnum name="y" val="88"/>
+      <attnum name="width" val="150"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attstr name="h align" val="center"/>
+      <attnum name="image x" val="0"/>
+      <attnum name="image y" val="-2"/>
+      <attnum name="image width" val="150"/>
+      <attnum name="image height" val="30"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="SaveRaceConfigButton">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Save"/>
+      <attstr name="text-fra" val="Sauvegarder"/>
+      <attstr name="text-spa" val="Guardar"/>
+      <attstr name="text-cat" val="Desar"/>
+      <attstr name="text-ru" val="Сохр."/>
+      <attstr name="tip" val="Save the configured race, event or career"/>
+      <attstr name="tip-fra" val="Sauvegarder la course, évènement ou carrière"/>
+      <attstr name="tip-spa" val="Guardar la carrera configurada, evento o temporada"/>
+      <attstr name="tip-cat" val="Deseu la configuració de la cursa, event o carrera"/>
+      <attstr name="tip-ru" val="Сохранить настроенную гонку, событие или карьеру"/>
+      <attnum name="x" val="340"/>
+      <attnum name="y" val="88"/>
+      <attnum name="width" val="100"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="h align" val="center"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="0"/>
+      <attnum name="image y" val="-2"/>
+      <attnum name="image width" val="100"/>
+      <attnum name="image height" val="30"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="LoadRaceConfigButton">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="h align" val="center"/>
+      <attstr name="text" val="Load"/>
+      <attstr name="text-fra" val="Charger"/>
+      <attstr name="text-spa" val="Cargar"/>
+      <attstr name="text-cat" val="Obrir"/>
+      <attstr name="text-ru" val="Загр."/>
+      <attstr name="tip" val="Load a previously saved race, event or career"/>
+      <attstr name="tip-fra" val="Charger une course, évènement ou carrière"/>
+      <attstr name="tip-spa" val="Cargar una carrera, evento o temporada previamente salvada"/>
+      <attstr name="tip-cat" val="Obriu una cursa, event o carrera prèviament salvats"/>
+      <attstr name="tip-ru" val="Загрузить гонку, событие или карьеру"/>
+      <attnum name="x" val="440"/>
+      <attnum name="y" val="88"/>
+      <attnum name="width" val="100"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="0"/>
+      <attnum name="image y" val="-2"/>
+      <attnum name="image width" val="100"/>
+      <attnum name="image height" val="30"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+      <attstr name="disabled image" val="data/img/button-left.png"/>
+    </section>
+    <section name="LoadRaceResultsButton">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Load"/>
+      <attstr name="text-fra" val="Charger"/>
+      <attstr name="text-spa" val="Cargar"/>
+      <attstr name="text-cat" val="Obrir"/>
+      <attstr name="text-ru" val="Загр."/>
+      <attstr name="tip" val="Load a previously interrupted race, event or career from the results file"/>
+      <attstr name="tip-fra" val="Charger une course, évènement ou carrière précédemment interrompue d'une archive de résultats"/>
+      <attstr name="tip-spa" val="Cargar una carrera, evento o temporada previamente interrumpida del archivo de resultados"/>
+      <attstr name="tip-cat" val="Obriu una cursa, event o carrera prèviament interromputs des d'un arxiu de resultats"/>
+      <attstr name="tip-ru" val="Загрузить прерванную гонку, событие или карьеру"/>
+      <attnum name="x" val="450"/>
+      <attnum name="y" val="88"/>
+      <attnum name="width" val="80"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-10"/>
+      <attnum name="image y" val="-2"/>
+      <attnum name="image width" val="100"/>
+      <attnum name="image height" val="30"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="ResumeRaceButton">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Resume"/>
+      <attstr name="text-fra" val="Reprendre"/>
+      <attstr name="text-spa" val="Resumer"/>
+      <attstr name="text-cat" val="Continuar"/>
+      <attstr name="text-ru" val="Продолж."/>
+      <attstr name="tip" val="Resume the loaded race for the current race, event or career"/>
+      <attstr name="tip-fra" val="Reprendre la course rechargée pour la course courante, évènement ou carrière"/>
+      <attstr name="tip-spa" val="Reanuda la carrera cargada para la carrera actual, evento o temporada"/>
+      <attstr name="tip-cat" val="Continueu la cursa, event o carrera oberts"/>
+      <attstr name="tip-ru" val="Продолжить загруженную гонку для текущей гонки, события или карьеры"/>
+      <attnum name="x" val="650"/>
+      <attnum name="y" val="88"/>
+      <attnum name="width" val="80"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-10"/>
+      <attnum name="image y" val="-2"/>
+      <attnum name="image width" val="100"/>
+      <attnum name="image height" val="30"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="BackButton">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Back"/>
+      <attstr name="text-fra" val="Retour"/>
+      <attstr name="text-spa" val="Atrás"/>
+      <attstr name="text-cat" val="Tornar"/>
+      <attstr name="text-ru" val="Назад"/>
+      <attstr name="tip" val="Return to Racing Mode menu"/>
+      <attstr name="tip-fra" val="Retour au menu de sélection du mode de course"/>
+      <attstr name="tip-spa" val="Volver al menú de selección de modo de carrera"/>
+      <attstr name="tip-cat" val="Torneu al menú de selecció de mode de cursa"/>
+      <attstr name="tip-ru" val="Вернуться в меню выбора режима гонки"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="x" val="400"/>
+      <attnum name="y" val="44"/>
+      <attnum name="width" val="80"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-10"/>
+      <attnum name="image y" val="-2"/>
+      <attnum name="image width" val="100"/>
+      <attnum name="image height" val="30"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="StartNewRaceButton">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Start"/>
+      <attstr name="text-fra" val="Démarrer"/>
+      <attstr name="text-spa" val="Comenzar"/>
+      <attstr name="text-cat" val="Començar"/>
+      <attstr name="text-ru" val="Начать"/>
+      <attstr name="tip" val="Start a brand new race"/>
+      <attstr name="tip-fra" val="Initialiser une nouvelle course"/>
+      <attstr name="tip-spa" val="Iniciar una nueva carrera"/>
+      <attstr name="tip-cat" val="Comenceu una nova cursa"/>
+      <attstr name="tip-ru" val="Начать новую гонку"/>
+      <attnum name="x" val="500"/>
+      <attnum name="y" val="44"/>
+      <attnum name="width" val="80"/>
+      <attstr name="font" val="medium"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-10"/>
+      <attnum name="image y" val="-2"/>
+      <attnum name="image width" val="100"/>
+      <attnum name="image height" val="30"/>
+      <attstr name="focused image" val="data/img/button-left-focused.png"/>
+      <attstr name="enabled image" val="data/img/button-left.png"/>
+      <attstr name="pushed image" val="data/img/button-left-pushed.png"/>
+    </section>
+    <section name="TrackOutlineImage">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="40"/>
+      <attnum name="y" val="114"/>
+      <attnum name="width" val="192"/>
+      <attnum name="height" val="192"/>
+      <attstr name="image" val="data/img/notrackoutline.png"/>
+    </section>
+    <section name="CompetitorsScrollList">
+      <attstr name="type" val="scroll list"/>
+      <attnum name="x" val="262"/>
+      <attnum name="y" val="148"/>
+      <attnum name="width" val="316"/>
+      <attnum name="height" val="220"/>
+      <attstr name="font" val="small_t"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="selected color" val="0x0307fc"/>
+      <attstr name="scrollbar pos" val="right"/>
+    </section>
+  </section>
+  <section name="static controls">
+    <section name="1">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="-10"/>
+      <attnum name="y" val="375"/>
+      <attnum name="width" val="130"/>
+      <attnum name="height" val="95"/>
+      <attstr name="image" val="data/img/sd-logo-big.png"/>
+    </section>
+    <section name="2">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val=""/>
+      <attnum name="x" val="300"/>
+      <attnum name="y" val="430"/>
+      <attnum name="width" val="400"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium_t"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="bg image" val="data/img/header-background.png"/>
+      <attnum name="bg image padding top" val="15"/>
+      <attnum name="bg image padding bottom" val="15"/>
+      <attnum name="bg image padding left" val="30"/>
+      <attnum name="bg image padding right" val="15"/>
+    </section>
+    <section name="3">
+      <attstr name="type" val="gallery"/>
+      <attstr name="directory" val="data/gallery/"/>
+    </section>
+  </section>
+</params>

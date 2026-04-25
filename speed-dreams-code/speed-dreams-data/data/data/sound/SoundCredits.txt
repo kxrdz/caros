@@ -1,0 +1,61 @@
+Updates and Additions - Nov 29 2024
+by June Ravenmoon
+
+Freesound's ToS for CC0/CC-BY works
+https://freesound.org/help/tos_web/
+
+v8_formula/v8_formula2.wav:
+CC0, based on a fly-by of a Japanese GT V8 race car
+https://freesound.org/people/Heigh-hoo/sounds/128611/
+
+v10_raw.wav:
+CC0, based on a distant fly-by of a German V10-powered sports car
+https://freesound.org/people/kevp888/sounds/649889/
+
+v8-ears68.wav:
+CC0, based on a sampling from Australian muscle cars
+https://freesound.org/people/Ears68/sounds/260445/
+
+v8-cr4sht3st.wav:
+CC0, based on a sample of a old American V8 engine revving
+https://freesound.org/people/cr4sht3st/sounds/157144/
+
+v12-raw/v12-smooth/v12-smooth2.wav:
+CC0, based on a capture from various V12 Italian supercars
+https://freesound.org/people/cheesepuff/sounds/112075/
+
+v6-raw:
+CC-BY, sampled and edited from Buildinup6's channel
+https://www.youtube.com/watch?v=XhSwlhMB6os
+
+rotary2.wav:
+CC-BY, sampled and edited from video of rotary rally car by Vitmin
+https://www.youtube.com/watch?v=1U7KhRiMTQM
+
+Updates and Additions - Nov 30 2024
+sampling and mixing by Overshot
+skid_tyres: (https://freesound.org/people/LukaCafuka/sounds/752837/) - CC0  
+
+dirt_skid: (https://freesound.org/people/OBXJohn/sounds/251662/) - CC0    
+
+dirt_ride: (https://freesound.org/people/mpuffenbarger/sounds/683809/) - CC0     
+
+curb_ride: (https://drive.google.com/drive/folders/12YhxZaoVUZ7zI6VunTpDjAAmcaMPp4zr?usp=drive_link) - CC BY-SA 4.0 - "Overshot"
+
+axle: Same as "curb_ride" (See curb_ride) - CC BY-SA 4.0 - "Overshot"
+
+skid_metal: (https://freesound.org/people/tompallant/sounds/208775/)
+
+grass_ride: (https://freesound.org/people/Bidone/sounds/66048/) - CC0
+
+crash1: (https://freesound.org/people/SuperSouper/sounds/681461/) - CC0
+
+crash2: (https://freesound.org/people/Feedbackdesignz/sounds/245714/) - CC0
+
+crash3: (https://freesound.org/people/BehanSean/sounds/422438/) - CC0
+
+crash4: (https://freesound.org/people/fiezewarthog/sounds/504921/) - CC0
+
+crash5: (Same as Crash2) - CC0
+
+snow_ride: (https://freesound.org/people/Bidone/sounds/66048/) - CC0

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Speed Dreams, a free and open source motorsport simulator.            -->
+<!-- Copyright (C) 2025 Xavier Del Campo Romero                            -->
+<!-- This program is free software; you can redistribute it and/or modify  -->
+<!-- it under the terms of the GNU General Public License as published by  -->
+<!-- the Free Software Foundation; either version 2 of the License, or     -->
+<!-- (at your option) any later version.                                   -->
+<!DOCTYPE params SYSTEM "../tgf/params.dtd">
+<params name="infomenu">
+	<section name="dynamic controls">
+		<section name="back">
+			<attstr name="type" val="text button"/>
+			<attstr name="show box" val="no"/>
+			<attstr name="text" val="Back"/>
+			<attstr name="text-fra" val="Retour"/>
+			<attstr name="text-spa" val="Atrás"/>
+			<attstr name="text-cat" val="Tornar"/>
+			<attstr name="text-ru" val="Назад"/>
+			<attstr name="tip" val="Back to downloads menu"/>
+			<attstr name="tip-spa" val="Volver al menú de descargas"/>
+			<attstr name="tip-cat" val="Torneu al menú de baixades"/>
+			<attstr name="tip-ru" val="Вернуться в меню загрузок"/>
+			<attstr name="h align" val="left"/>
+			<attnum name="x" val="290"/>
+			<attnum name="y" val="45"/>
+			<attnum name="width" val="110"/>
+			<attstr name="font" val="big"/>
+			<attstr name="color" val="0xa6a6a6"/>
+			<attstr name="focused color" val="0xFFFFFF"/>
+			<attstr name="pushed color" val="0xFFFFFF"/>
+			<attnum name="image x" val="-48"/>
+			<attnum name="image y" val="0"/>
+			<attnum name="image width" val="160"/>
+			<attnum name="image height" val="33"/>
+			<attstr name="focused image" val="data/img/bg-button-big-focused.png"/>
+			<attstr name="enabled image" val="data/img/bg-button-big.png"/>
+			<attstr name="pushed image" val="data/img/bg-button-big-pushed.png"/>
+		</section>
+		<section name="name">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="40"/>
+			<attnum name="y" val="330"/>
+			<attstr name="text" val=""/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="200"/>
+			<attstr name="font" val="big"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="img">
+			<attstr name="type" val="static image"/>
+			<attnum name="x" val="40"/>
+			<attnum name="y" val="160"/>
+			<attnum name="width" val="246"/>
+			<attnum name="height" val="134"/>
+			<attstr name="image" val="data/img/notready.png"/>
+		</section>
+		<section name="category">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="375"/>
+			<attnum name="y" val="260"/>
+			<attstr name="text" val=""/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="200"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="author">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="375"/>
+			<attnum name="y" val="240"/>
+			<attstr name="text" val=""/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="200"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="license">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="385"/>
+			<attnum name="y" val="220"/>
+			<attstr name="text" val=""/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="200"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="revision">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="370"/>
+			<attnum name="y" val="200"/>
+			<attstr name="text" val=""/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="200"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="hashtype">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="385"/>
+			<attnum name="y" val="180"/>
+			<attstr name="text" val=""/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="200"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="url">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="80"/>
+			<attnum name="y" val="122"/>
+			<attstr name="text" val=""/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="200"/>
+			<attstr name="font" val="small"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="hash">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="90"/>
+			<attnum name="y" val="102"/>
+			<attstr name="text" val=""/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="200"/>
+			<attstr name="font" val="small"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+	</section>
+	<section name="static controls">
+		<section name="1">
+			<attstr name="type" val="static image"/>
+			<attnum name="x" val="-10"/>
+			<attnum name="y" val="375"/>
+			<attnum name="width" val="130"/>
+			<attnum name="height" val="95"/>
+			<attstr name="image" val="data/img/sd-logo-big.png"/>
+		</section>
+		<section name="2">
+			<attstr name="type" val="gallery"/>
+			<attstr name="directory" val="data/gallery/"/>
+		</section>
+		<section name="3">
+			<attstr name="type" val="label"/>
+			<attstr name="text" val="Asset information"/>
+			<attstr name="text-spa" val="Información sobre el contenido"/>
+			<attstr name="text-cat" val="Informació del contingut"/>
+			<attstr name="text-ru" val="Сведения об ассете"/>
+			<attnum name="x" val="300"/>
+			<attnum name="y" val="430"/>
+			<attnum name="width" val="400"/>
+			<attstr name="color" val="0xFFFFFF"/>
+			<attstr name="font" val="medium_t"/>
+			<attstr name="h align" val="left"/>
+			<attstr name="bg image" val="data/img/header-background.png"/>
+			<attnum name="bg image padding top" val="15"/>
+			<attnum name="bg image padding bottom" val="15"/>
+			<attnum name="bg image padding left" val="30"/>
+			<attnum name="bg image padding right" val="15"/>
+		</section>
+		<section name="4">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="300"/>
+			<attnum name="y" val="260"/>
+			<attstr name="text" val="Category:"/>
+			<attstr name="text-fra" val="Catégorie:"/>
+			<attstr name="text-spa" val="Categoría:"/>
+			<attstr name="text-cat" val="Categoria:"/>
+			<attstr name="text-ru" val="Категория:"/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="200"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="5">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="300"/>
+			<attnum name="y" val="240"/>
+			<attstr name="text" val="Author(s):"/>
+			<attstr name="text-spa" val="Autor/es:"/>
+			<attstr name="text-cat" val="Autor(s):"/>
+			<attstr name="text-ru" val="Автор(ы):"/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="200"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="6">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="300"/>
+			<attnum name="y" val="220"/>
+			<attstr name="text" val="License(s):"/>
+			<attstr name="text-spa" val="Licencias:"/>
+			<attstr name="text-cat" val="Llicències:"/>
+			<attstr name="text-ru" val="Лицензии:"/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="200"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="7">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="300"/>
+			<attnum name="y" val="200"/>
+			<attstr name="text" val="Revision:"/>
+			<attstr name="text-spa" val="Versión:"/>
+			<attstr name="text-cat" val="Versió:"/>
+			<attstr name="text-ru" val="Версия:"/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="200"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="8">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="300"/>
+			<attnum name="y" val="180"/>
+			<attstr name="text" val="Hash type:"/>
+			<attstr name="text-spa" val="Hash:"/>
+			<attstr name="text-cat" val="Hash:"/>
+			<attstr name="text-ru" val="Тип хэша:"/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="180"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="9">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="40"/>
+			<attnum name="y" val="100"/>
+			<attstr name="text" val="Hash:"/>
+			<attstr name="text-spa" val="Hash:"/>
+			<attstr name="text-cat" val="Hash:"/>
+			<attstr name="text-ru" val="Хэш:"/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="180"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+		<section name="10">
+			<attstr name="type" val="label"/>
+			<attnum name="x" val="40"/>
+			<attnum name="y" val="120"/>
+			<attstr name="text" val="URL:"/>
+			<attstr name="text-ru" val=""/>
+			<attstr name="text-ru" val=""/>
+			<attstr name="text-spa" val="URL:"/>
+			<attstr name="text-cat" val="URL:"/>
+			<attstr name="h align" val="left"/>
+			<attnum name="width" val="180"/>
+			<attstr name="font" val="medium"/>
+			<attstr name="color" val="0xFFFFFF"/>
+		</section>
+	</section>
+</params>

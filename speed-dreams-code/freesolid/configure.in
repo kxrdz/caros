@@ -1,0 +1,118 @@
+dnl Process this file with autoconf to produce a configure script.
+AC_INIT(sample/sample.cpp)
+
+AC_CANONICAL_SYSTEM
+PACKAGE=FreeSOLID
+VERSION=2.1.2
+FREESOLID_CURRENT=2
+FREESOLID_REVISION=1
+FREESOLID_AGE=2
+FREESOLID_VERSION=[$FREESOLID_CURRENT].[$FREESOLID_REVISION].[$FREESOLID_AGE]
+AC_SUBST(FREESOLID_CURRENT)
+AC_SUBST(FREESOLID_REVISION)
+AC_SUBST(FREESOLID_AGE)
+AC_SUBST(VERSION)
+AC_SUBST(FREESOLID_VERSION)
+AM_INIT_AUTOMAKE($PACKAGE, $VERSION)
+
+AM_CONFIG_HEADER(include/config.h)
+
+dnl Checks for programs.
+AC_LIBTOOL_WIN32_DLL
+AC_LIBTOOL_DLOPEN
+AC_PROG_CXX
+AC_PROG_CC
+AC_PROG_CPP
+AC_PROG_INSTALL
+dnl AC_DISABLE_STATIC
+AC_PROG_LIBTOOL
+
+
+#CPPFLAGS="$CPPFLAGS -I../include -I./include -I. -I../libbroad -I../libmoto"
+AC_SUBST(CPPFLAGS)
+
+dnl Checks for libraries.
+
+dnl Check for SDL
+AM_PATH_SDL(1.2.6,[found_sdl=yes],[found_sdl=no])
+AC_SUBST(SDL_CFLAGS)
+AC_SUBST(SDL_LIBS)
+AC_MSG_RESULT([$found_sdl])
+
+TOPDIR=`cd $srcdir;pwd`
+AC_SUBST(TOPDIR)
+
+dnl Check for OpenGL
+AC_CHECK_HEADERS(GL/gl.h GL/glu.h GL/glext.h,,,
+     [[#if HAVE_GL_GL_H
+       #include <GL/gl.h>
+       #endif
+	   #if HAVE_GL_GLU_H
+       #include <GL/glu.h>
+       #endif
+     ]])
+AC_CHECK_LIB(GL, main,[GL_LIBS="$GL_LIBS -lGL"])
+AC_CHECK_LIB(GLU, main,[GL_LIBS="$GL_LIBS -lGLU"])
+AC_CHECK_LIB(opengl32, main,[GL_LIBS="$GL_LIBS -lopengl32"])
+AC_CHECK_LIB(glu32, main,[GL_LIBS="$GL_LIBS -lglu32"])
+AC_SUBST(GL_LIBS)
+
+dnl Replace `main' with a function in -lm:
+AC_CHECK_LIB(m, main)
+
+AC_ARG_ENABLE(qhull,AC_HELP_STRING([--disable-qhull],
+				   [disable build in qhull (default is NO)]),
+				   use_qhull=$enableval,
+				   use_qhull=yes)
+if test "x${use_qhull}" = xyes; then
+AC_DEFINE(USE_QHULL,1,[Use build in Qhull])
+fi
+AM_CONDITIONAL(QHULL, test "x${use_qhull}" = xyes)
+
+dnl Replace `main' with a function in -lqhull:
+dnl AC_CHECK_LIB(qhull, main, s_have_qhull=yes)
+
+dnl if test "X${s_have_qhull}" = Xyes; then
+dnl  QHULL_LIBS="-lqhull"
+dnl else
+dnl  QHULL_LIBS=""
+dnl fi
+dnl AC_SUBST(QHULL_LIBS)
+
+dnl Checks for header files.
+AC_HEADER_STDC
+dnl AC_CHECK_HEADERS(qhull/qhull_a.h)
+AC_CHECK_HEADERS(limits.h)
+
+dnl Checks for typedefs, structures, and compiler characteristics.
+AC_C_CONST
+AC_C_INLINE
+
+dnl Checks for library functions.
+AC_CHECK_FUNCS(sqrt)
+AC_CHECK_FUNCS(fabs)
+
+AC_OUTPUT([
+ doc/Makefile
+ sample/Makefile
+ Makefile
+ FreeSOLID.spec
+ qhull/Makefile
+ qhull/src/Makefile
+ libbroad/Makefile
+ libmoto/Makefile
+ libsolid/Makefile
+ include/Makefile
+ include/3D/Makefile
+ include/SOLID/Makefile
+ freesolid-config
+ ])
+
+dnl Print some useful information
+echo "Configuration:"
+echo "  Target system type:      $target"
+echo "  Build  system type:      $build"
+echo "  Host   system type:      $host"
+echo "  Using build-in qhull:    $use_qhull"
+echo "  Headers will be installed in $prefix/include/ode"
+echo "  Libraries will be installed in $prefix/lib"

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--
+    file          : default.xml
+    created       : 12 Oct 2009
+    last modified : 24 Oct 2010
+    copyright     : (C) 2010 Wolf-Dieter Beelitz
+
+    SIMPLIX_MPA1 - ALL CARS
+-->
+<!--    This program is free software; you can redistribute it and/or modify  -->
+<!--    it under the terms of the GNU General Public License as published by  -->
+<!--    the Free Software Foundation; either version 2 of the License, or     -->
+<!--    (at your option) any later version.                                   -->
+<!DOCTYPE params SYSTEM "../../../../../src/libs/tgf/params.dtd">
+<params name="mpa1-ffr" type="template" mode="mw">
+      <!-- Car parameters >>> -->
+	<section name="Front Wing">
+		<attnum name="angle" unit="deg" min="0" max="29" val="10"/>
+	</section>
+
+	<section name="Rear Wing">
+	    	<attnum name="angle" unit="deg" min="0" max="29" val="6"/>
+	</section>
+
+	<section name="private">
+  		<attnum name="shift" val="0.98"/>
+		<attnum name="kz scale" val="0.10"/>
+		<attnum name="kv scale" val="1.0"/>
+		<attnum name="offline kz scale" val="0.45"/>
+		<attnum name="mu scale" val="1.01"/>
+		<attnum name="brake mu scale" val="0.95"/>
+		<attnum name="speed factor" val="0.94"/>
+		<attnum name="factor 0" val="1.025"/>
+		<attnum name="steer k acc" val="0"/>
+		<attnum name="steer k dec" val="0"/>
+		<attnum name="spd ctrl normal" val="4"/>
+		<attnum name="spd ctrl traffic" val="2"/>
+		<attnum name="spd ctrl extra" val="2"/>
+		<attnum name="full fuel" val= "0"/>
+	</section>
+</params>

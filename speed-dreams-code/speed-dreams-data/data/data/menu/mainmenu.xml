@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    file                 : helpmenu.xml
+    created              : 2009
+    copyright            : (C) 2009 by Brian Gavin, Eckhard M. Jaeger
+    web                  : speed-dreams.sourceforge.net
+-->
+<!--    This program is free software; you can redistribute it and/or modify  -->
+<!--    it under the terms of the GNU General Public License as published by  -->
+<!--    the Free Software Foundation; either version 2 of the License, or     -->
+<!--    (at your option) any later version.                                   -->
+<!--
+
+	Main / welcome menu
+
+-->
+<!DOCTYPE params SYSTEM "../tgf/params.dtd">
+<params name="mainmenu">
+  <section name="dynamic controls">
+    <section name="race">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Race"/>
+      <attstr name="text-fra" val="Courir"/>
+      <attstr name="text-spa" val="Competir"/>
+      <attstr name="text-cat" val="Competir"/>
+      <attstr name="text-ru" val="Начать гонку"/>
+      <attstr name="tip" val="Setup and start a race, championship or career"/>
+      <attstr name="tip-fra" val="Configurer et démarrer une course, un championat ou une carrière"/>
+      <attstr name="tip-spa" val="Configurar y comenzar una carrera, campeonato o temporada"/>
+      <attstr name="tip-cat" val="Configurar i començar una cursa, campionat o carrera"/>
+      <attstr name="tip-ru" val="Настроить и начать новую гонку, чемпионат или карьеру"/>
+      <attnum name="x" val="200"/>
+      <attnum name="y" val="340"/>
+      <attnum name="width" val="320"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="font" val="big"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-48"/>
+      <attnum name="image y" val="-3"/>
+      <attnum name="image width" val="320"/>
+      <attnum name="image height" val="44"/>
+      <attstr name="focused image" val="data/img/bg-button-big-focused.png"/>
+      <attstr name="enabled image" val="data/img/bg-button-big.png"/>
+      <attstr name="pushed image" val="data/img/bg-button-big-pushed.png"/>
+    </section>
+    <section name="weekend">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Race Weekend"/>
+      <attstr name="text-spa" val="Race Weekend"/>
+      <attstr name="text-cat" val="Cap de setmana"/>
+      <attstr name="text-ru" val="Гоночный уикенд"/>
+      <attstr name="tip" val="Race Weekend mode Career"/>
+      <attstr name="tip-spa" val="Race Weekend mode Carrera"/>
+      <attstr name="tip-cat" val="Mode carrera de cursa de cap de setmana"/>
+      <attstr name="tip-ru" val="Карьера: режим гонок выходного дня"/>
+      <attnum name="x" val="200"/>
+      <attnum name="y" val="290"/>
+      <attnum name="width" val="320"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="font" val="big"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-48"/>
+      <attnum name="image y" val="-3"/>
+      <attnum name="image width" val="320"/>
+      <attnum name="image height" val="44"/>
+      <attstr name="focused image" val="data/img/bg-button-big-focused.png"/>
+      <attstr name="enabled image" val="data/img/bg-button-big.png"/>
+      <attstr name="pushed image" val="data/img/bg-button-big-pushed.png"/>
+    </section>
+    <section name="configure">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Players &amp; Controls"/>
+      <attstr name="text-fra" val="Joueurs et contrôles"/>
+      <attstr name="text-spa" val="Jugadores y controles"/>
+      <attstr name="text-cat" val="Jugadors i controls"/>
+      <attstr name="text-ru" val="Игроки и управление"/>
+      <attstr name="tip" val="Create players and configure their controls"/>
+      <attstr name="tip-fra" val="Créer joueurs et configurer leurs contrôles"/>
+      <attstr name="tip-spa" val="Crear jugadores y configurar sus controles"/>
+      <attstr name="tip-cat" val="Creeu i configureu jugadors i els seus controls"/>
+      <attstr name="tip-ru" val="Создавайте игроков и настраивайте их управление"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="x" val="200"/>
+      <attnum name="y" val="290"/>
+      <attnum name="width" val="320"/>
+      <attstr name="font" val="big"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-48"/>
+      <attnum name="image y" val="-3"/>
+      <attnum name="image width" val="320"/>
+      <attnum name="image height" val="44"/>
+      <attstr name="focused image" val="data/img/bg-button-big-focused.png"/>
+      <attstr name="enabled image" val="data/img/bg-button-big.png"/>
+      <attstr name="pushed image" val="data/img/bg-button-big-pushed.png"/>
+    </section>
+    <section name="options">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Options"/>
+      <attstr name="text-fra" val="Options"/>
+      <attstr name="text-spa" val="Opciones"/>
+      <attstr name="text-cat" val="Opcions"/>
+      <attstr name="text-ru" val="Настройки"/>
+      <attstr name="tip" val="Options for graphics, sound and opponents"/>
+      <attstr name="tip-fra" val="Options d'affichage, son et concurrents"/>
+      <attstr name="tip-spa" val="Opciones para gráficos, sonido y oponentes"/>
+      <attstr name="tip-cat" val="Configureu gràfics, so i oponents"/>
+      <attstr name="tip-ru" val="Настройки графики, звука и оппонентов"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="x" val="200"/>
+      <attnum name="y" val="240"/>
+      <attnum name="width" val="320"/>
+      <attstr name="font" val="big"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-48"/>
+      <attnum name="image y" val="-3"/>
+      <attnum name="image width" val="320"/>
+      <attnum name="image height" val="44"/>
+      <attstr name="focused image" val="data/img/bg-button-big-focused.png"/>
+      <attstr name="enabled image" val="data/img/bg-button-big.png"/>
+      <attstr name="pushed image" val="data/img/bg-button-big-pushed.png"/>
+    </section>
+    <section name="credits">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Credits"/>
+      <attstr name="text-fra" val="Crédits"/>
+      <attstr name="text-spa" val="Créditos"/>
+      <attstr name="text-cat" val="Crèdits"/>
+      <attstr name="text-ru" val="Титры"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="tip" val="All people behind Speed Dreams"/>
+      <attstr name="tip-fra" val="Tous les gens derrière Speed Dreams"/>
+      <attstr name="tip-spa" val="Toda la gente detrás de Speed Dreams"/>
+      <attstr name="tip-cat" val="Tota la gent que ha fet possible l'Speed Dreams"/>
+      <attstr name="tip-ru" val="Все люди, стоящие за проектом Speed Dreams"/>
+      <attnum name="x" val="200"/>
+      <attnum name="y" val="190"/>
+      <attnum name="width" val="320"/>
+      <attstr name="font" val="big"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-48"/>
+      <attnum name="image y" val="-3"/>
+      <attnum name="image width" val="320"/>
+      <attnum name="image height" val="44"/>
+      <attstr name="focused image" val="data/img/bg-button-big-focused.png"/>
+      <attstr name="enabled image" val="data/img/bg-button-big.png"/>
+      <attstr name="pushed image" val="data/img/bg-button-big-pushed.png"/>
+    </section>
+    <section name="downloads">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Downloads"/>
+      <attstr name="text-fra" val="Téléchargements"/>
+      <attstr name="text-spa" val="Descargas"/>
+      <attstr name="text-cat" val="Baixades"/>
+      <attstr name="text-ru" val="Загрузки"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="tip" val="Download new cars and tracks"/>
+      <attstr name="tip-fra" val="Télécharger de nouvelles voitures et circuits"/>
+      <attstr name="tip-spa" val="Descargar nuevos coches y pistas"/>
+      <attstr name="tip-cat" val="Baixeu nous vehicles i pistes"/>
+      <attstr name="tip-ru" val="Скачайте новые автомобили и трассы"/>
+      <attnum name="x" val="200"/>
+      <attnum name="y" val="140"/>
+      <attnum name="width" val="320"/>
+      <attstr name="font" val="big"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-48"/>
+      <attnum name="image y" val="-3"/>
+      <attnum name="image width" val="320"/>
+      <attnum name="image height" val="44"/>
+      <attstr name="focused image" val="data/img/bg-button-big-focused.png"/>
+      <attstr name="enabled image" val="data/img/bg-button-big.png"/>
+      <attstr name="pushed image" val="data/img/bg-button-big-pushed.png"/>
+    </section>
+    <section name="quit">
+      <attstr name="type" val="text button"/>
+      <attstr name="show box" val="no"/>
+      <attstr name="text" val="Quit"/>
+      <attstr name="text-fra" val="Quitter"/>
+      <attstr name="text-spa" val="Salir"/>
+      <attstr name="text-cat" val="Sortir"/>
+      <attstr name="text-ru" val="Выйти"/>
+      <attstr name="tip" val="Quit Speed Dreams"/>
+      <attstr name="tip-fra" val="Quitter Speed Dreams"/>
+      <attstr name="tip-spa" val="Salir de Speed Dreams"/>
+      <attstr name="tip-cat" val="Sortiu de l'Speed Dreams"/>
+      <attstr name="tip-ru" val="Выйти из Speed Dreams"/>
+      <attstr name="h align" val="left"/>
+      <attnum name="x" val="200"/>
+      <attnum name="y" val="90"/>
+      <attnum name="width" val="320"/>
+      <attstr name="font" val="big"/>
+      <attstr name="color" val="0xa6a6a6"/>
+      <attstr name="focused color" val="0xFFFFFF"/>
+      <attstr name="pushed color" val="0xFFFFFF"/>
+      <attnum name="image x" val="-48"/>
+      <attnum name="image y" val="-3"/>
+      <attnum name="image width" val="320"/>
+      <attnum name="image height" val="44"/>
+      <attstr name="focused image" val="data/img/bg-button-big-focused.png"/>
+      <attstr name="enabled image" val="data/img/bg-button-big.png"/>
+      <attstr name="pushed image" val="data/img/bg-button-big-pushed.png"/>
+    </section>
+    <section name="version">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val=""/>
+      <attnum name="x" val="0"/>
+      <attnum name="y" val="8"/>
+      <attnum name="width" val="632"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="small_c"/>
+      <attstr name="h align" val="right"/>
+    </section>
+  </section>
+  <section name="static controls">
+    <section name="1">
+      <attstr name="type" val="static image"/>
+      <attnum name="x" val="-10"/>
+      <attnum name="y" val="375"/>
+      <attnum name="width" val="130"/>
+      <attnum name="height" val="95"/>
+      <attstr name="image" val="data/img/sd-logo-big.png"/>
+    </section>
+    <section name="2">
+      <attstr name="type" val="gallery"/>
+      <attstr name="directory" val="data/gallery/"/>
+    </section>
+    <section name="3">
+      <attstr name="type" val="label"/>
+      <attstr name="text" val="Welcome"/>
+      <attstr name="text-fra" val="Bienvenue"/>
+      <attstr name="text-spa" val="Bienvenido"/>
+      <attstr name="text-cat" val="Benvinguts"/>
+      <attstr name="text-ru" val="Добро пожаловать"/>
+      <attnum name="x" val="300"/>
+      <attnum name="y" val="430"/>
+      <attnum name="width" val="400"/>
+      <attstr name="color" val="0xFFFFFF"/>
+      <attstr name="font" val="medium_t"/>
+      <attstr name="h align" val="left"/>
+      <attstr name="bg image" val="data/img/header-background.png"/>
+      <attnum name="bg image padding top" val="15"/>
+      <attnum name="bg image padding bottom" val="15"/>
+      <attnum name="bg image padding left" val="30"/>
+      <attnum name="bg image padding right" val="15"/>
+    </section>
+  </section>
+  <section name="track metadata">
+    <section name="artist">
+      <attstr name="text" val="Artist(s)"/>
+      <attstr name="text-spa" val="Artista(s)"/>
+      <attstr name="text-cat" val="Artista/es"/>
+      <attstr name="text-ru" val="Автор(ы)"/>
+    </section>
+    <section name="title">
+      <attstr name="text" val="Title"/>
+      <attstr name="text-spa" val="Título"/>
+      <attstr name="text-cat" val="Títol"/>
+      <attstr name="text-ru" val="Название"/>
+    </section>
+    <section name="license">
+      <attstr name="text" val="License(s)"/>
+      <attstr name="text-spa" val="Licencia(s)"/>
+      <attstr name="text-cat" val="Llicència/es"/>
+      <attstr name="text-ru" val="Лицензии"/>
+    </section>
+  </section>
+</params>
