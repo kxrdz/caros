@@ -208,6 +208,21 @@ SimCarConfig(tCar *car)
     car->dimension.z = GfParmGetNum(hdle, SECT_CAR, PRM_HEIGHT, (char*)NULL, 1.2f);
     car->mass        = GfParmGetNum(hdle, SECT_CAR, PRM_MASS, (char*)NULL, 1500);
     car->Minv        = (tdble) (1.0 / car->mass);
+
+    memset(&car->battery, 0, sizeof(tBattery));
+    if (GfParmExistsSection(hdle, "Battery")) {
+        car->battery.isEV        = 1;
+        car->battery.capacity    = GfParmGetNum(hdle, "Battery", "capacity",     "kWh", 60.0f);
+        car->battery.soc         = GfParmGetNum(hdle, "Battery", "initial soc",  (char*)NULL, 1.0f);
+        car->battery.maxPower    = GfParmGetNum(hdle, "Battery", "max power",    "kW",  350.0f);
+        car->battery.maxRegen    = GfParmGetNum(hdle, "Battery", "max regen",    "kW",  150.0f);
+        car->battery.regenFactor = GfParmGetNum(hdle, "Battery", "regen factor", (char*)NULL, 0.7f);
+        car->battery.temperature = 25.0f;
+
+        car->mass += car->battery.capacity * 5.0f;
+        car->Minv  = 1.0f / car->mass;
+    }
+
     car->statGC.y    = (tdble) (- gcrl * car->dimension.y + car->dimension.y / 2.0);
     car->statGC.z    = GfParmGetNum(hdle, SECT_CAR, PRM_GCHEIGHT, (char*)NULL, .5);
     k                = GfParmGetNum(hdle, SECT_CAR, PRM_CENTR, (char*)NULL, 1.0);
