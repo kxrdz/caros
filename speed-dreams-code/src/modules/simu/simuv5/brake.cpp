@@ -77,17 +77,17 @@ SimBrakeUpdate(tCar *car, tWheel *wheel, tBrake *brake)
     }
     // ... Option TCL
 
-    if (car->battery.isEV && brake->pressure > 0.0f && wheel->spinVel > 0.0f) {
+    if (car->battery.isEV && brake->pressure > 1000.0f && wheel->spinVel > 0.0f) {
         tBattery *bat = &car->battery;
 
         tdble theoretical_kW = (fabs(wheel->spinVel) * brake->Tq) / 1000.0f;
 
-        tdble regenPower_kW = MIN(theoretical_kW, bat->maxRegen / 4.0f);
+        tdble regenPower_kW = theoretical_kW * bat->regenFactor;
 
         tdble tempFactor = 1.0f - 0.005f * MAX(0.0f, bat->temperature - 25.0f);
         tdble effective_capacity = bat->capacity * MAX(tempFactor, 0.5f);
         tdble soc_before = bat->soc;
-        bat->soc += (regenPower_kW * bat->regenFactor * SimDeltaTime)
+        bat->soc += (regenPower_kW * SimDeltaTime)
                     / (effective_capacity * 3600.0f);
         bat->soc = MIN(bat->soc, 1.0f);
 

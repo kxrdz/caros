@@ -115,9 +115,10 @@
     <section name="Battery">
         <attnum name="capacity"     unit="kWh" val="100"/>
         <attnum name="initial soc"             val="1.0"/>
-        <attnum name="max power"    unit="kW"  val="250"/>
-        <attnum name="max regen"    unit="kW"  val="100"/>
+        <attnum name="max power"    unit="kW"  val="560"/>
+        <attnum name="max regen"    unit="kW"  val="70"/>
         <attnum name="regen factor"            val="0.7"/>
+        <attnum name="lift-off regen factor"   val="0.30"/>
     </section>
 
     <section name="Engine">
@@ -138,15 +139,15 @@
         <attnum name="turbo lag" val="0.0"/>
         <attnum name="enable tcl" min="0" max="1" val="1"/>
         <section name="data points">
-            <section name="1"><attnum name="rpm" unit="rpm" val="0"/><attnum name="Tq" unit="N.m" val="430.0"/></section>
-            <section name="2"><attnum name="rpm" unit="rpm" val="2000"/><attnum name="Tq" unit="N.m" val="430.0"/></section>
-            <section name="3"><attnum name="rpm" unit="rpm" val="4000"/><attnum name="Tq" unit="N.m" val="430.0"/></section>
-            <section name="4"><attnum name="rpm" unit="rpm" val="6000"/><attnum name="Tq" unit="N.m" val="400.0"/></section>
-            <section name="5"><attnum name="rpm" unit="rpm" val="8000"/><attnum name="Tq" unit="N.m" val="320.0"/></section>
-            <section name="6"><attnum name="rpm" unit="rpm" val="10000"/><attnum name="Tq" unit="N.m" val="260.0"/></section>
-            <section name="7"><attnum name="rpm" unit="rpm" val="12000"/><attnum name="Tq" unit="N.m" val="215.0"/></section>
-            <section name="8"><attnum name="rpm" unit="rpm" val="14000"/><attnum name="Tq" unit="N.m" val="185.0"/></section>
-            <section name="9"><attnum name="rpm" unit="rpm" val="16000"/><attnum name="Tq" unit="N.m" val="160.0"/></section>
+            <section name="1"><attnum name="rpm" unit="rpm" val="0"/><attnum name="Tq" unit="N.m" val="900.0"/></section>
+            <section name="2"><attnum name="rpm" unit="rpm" val="2000"/><attnum name="Tq" unit="N.m" val="900.0"/></section>
+            <section name="3"><attnum name="rpm" unit="rpm" val="4000"/><attnum name="Tq" unit="N.m" val="900.0"/></section>
+            <section name="4"><attnum name="rpm" unit="rpm" val="6000"/><attnum name="Tq" unit="N.m" val="893.0"/></section>
+            <section name="5"><attnum name="rpm" unit="rpm" val="8000"/><attnum name="Tq" unit="N.m" val="670.0"/></section>
+            <section name="6"><attnum name="rpm" unit="rpm" val="10000"/><attnum name="Tq" unit="N.m" val="536.0"/></section>
+            <section name="7"><attnum name="rpm" unit="rpm" val="12000"/><attnum name="Tq" unit="N.m" val="446.0"/></section>
+            <section name="8"><attnum name="rpm" unit="rpm" val="14000"/><attnum name="Tq" unit="N.m" val="382.0"/></section>
+            <section name="9"><attnum name="rpm" unit="rpm" val="16000"/><attnum name="Tq" unit="N.m" val="334.0"/></section>
             <section name="10"><attnum name="rpm" unit="rpm" val="18000"/><attnum name="Tq" unit="N.m" val="0.0"/></section>
         </section>
     </section>
@@ -177,6 +178,11 @@
         <attnum name="steer lock" unit="deg" min="1" max="45" val="40"/>
         <attnum name="steering wheel rotation" unit="deg" min="5.092958" max="229.183121" val="220"/>
         <attnum name="max steer speed" unit="deg/s" val="120"/>
+    </section>
+
+    <section name="ABS">
+        <attnum name="slip threshold" val="0.25"/>
+        <attnum name="brake scale" val="0.3"/>
     </section>
 
     <section name="Brake System">
@@ -231,8 +237,8 @@
         <attnum name="stiffness" val="22.0"/>
         <attnum name="dynamic friction" unit="%" val="35"/>
         <attnum name="elasticity factor" val="0.86"/>
-        <attnum name="operating load" unit="N" val="3300"/>
-        <attnum name="mu" val="1.1"/>
+        <attnum name="operating load" unit="N" val="5300"/>
+        <attnum name="mu" val="1.35"/>
         <attnum name="initial temperature" unit="C" val="30.0"/>
         <attnum name="optimal temperature" unit="C" val="80.0"/>
         <attnum name="hysteresis" val="1.00"/>
@@ -258,8 +264,8 @@
         <attnum name="stiffness" val="22.0"/>
         <attnum name="dynamic friction" unit="%" val="35"/>
         <attnum name="elasticity factor" val="0.86"/>
-        <attnum name="operating load" unit="N" val="3300"/>
-        <attnum name="mu" val="1.1"/>
+        <attnum name="operating load" unit="N" val="5300"/>
+        <attnum name="mu" val="1.35"/>
         <attnum name="initial temperature" unit="C" val="30.0"/>
         <attnum name="optimal temperature" unit="C" val="80.0"/>
         <attnum name="hysteresis" val="1.00"/>
@@ -285,8 +291,8 @@
         <attnum name="stiffness" val="22.0"/>
         <attnum name="dynamic friction" unit="%" val="35"/>
         <attnum name="elasticity factor" val="0.86"/>
-        <attnum name="operating load" unit="N" val="3900"/>
-        <attnum name="mu" val="1.1"/>
+        <attnum name="operating load" unit="N" val="5800"/>
+        <attnum name="mu" val="1.35"/>
         <attnum name="initial temperature" unit="C" val="30.0"/>
         <attnum name="optimal temperature" unit="C" val="80.0"/>
         <attnum name="hysteresis" val="1.00"/>
@@ -312,8 +318,8 @@
         <attnum name="stiffness" val="22.0"/>
         <attnum name="dynamic friction" unit="%" val="35"/>
         <attnum name="elasticity factor" val="0.86"/>
-        <attnum name="operating load" unit="N" val="3900"/>
-        <attnum name="mu" val="1.1"/>
+        <attnum name="operating load" unit="N" val="5800"/>
+        <attnum name="mu" val="1.35"/>
         <attnum name="initial temperature" unit="C" val="30.0"/>
         <attnum name="optimal temperature" unit="C" val="80.0"/>
         <attnum name="hysteresis" val="1.00"/>
@@ -389,28 +395,28 @@
     <section name="Front Right Brake">
         <attnum name="disk diameter" unit="mm" val="380"/>
         <attnum name="piston area" unit="cm2" val="49.13"/>
-        <attnum name="mu" val="0.3"/>
+        <attnum name="mu" val="0.45"/>
         <attnum name="inertia" unit="kg.m2" val="0.074"/>
         <attnum name="enable abs" min="0" max="1" val="1"/>
     </section>
     <section name="Front Left Brake">
         <attnum name="disk diameter" unit="mm" val="380"/>
         <attnum name="piston area" unit="cm2" val="49.13"/>
-        <attnum name="mu" val="0.3"/>
+        <attnum name="mu" val="0.45"/>
         <attnum name="inertia" unit="kg.m2" val="0.074"/>
         <attnum name="enable abs" min="0" max="1" val="1"/>
     </section>
     <section name="Rear Right Brake">
         <attnum name="disk diameter" unit="mm" val="355"/>
         <attnum name="piston area" unit="cm2" val="32.67"/>
-        <attnum name="mu" val="0.3"/>
+        <attnum name="mu" val="0.45"/>
         <attnum name="inertia" unit="kg.m2" val="0.057"/>
         <attnum name="enable abs" min="0" max="1" val="1"/>
     </section>
     <section name="Rear Left Brake">
         <attnum name="disk diameter" unit="mm" val="355"/>
         <attnum name="piston area" unit="cm2" val="32.67"/>
-        <attnum name="mu" val="0.3"/>
+        <attnum name="mu" val="0.45"/>
         <attnum name="inertia" unit="kg.m2" val="0.057"/>
         <attnum name="enable abs" min="0" max="1" val="1"/>
     </section>

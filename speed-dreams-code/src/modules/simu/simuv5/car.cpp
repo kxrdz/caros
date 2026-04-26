@@ -86,8 +86,8 @@ SimCarConfig(tCar *car)
     car->TCL_BrakeScale = 125.0f;;
     car->TCL_AccelScale = 0.9f;
     car->TCL_SlipScale = 1.0f;
-    car->ABS_SlipScale = 0.1f;
-    car->ABS_BrakeScale = 1.0f;
+    car->ABS_SlipScale = GfParmGetNum(hdle, "ABS", "slip threshold", (char*)NULL, 0.1f);
+    car->ABS_BrakeScale = GfParmGetNum(hdle, "ABS", "brake scale", (char*)NULL, 1.0f);
 
     enabling = GfParmGetStr(hdle, SECT_FEATURES, PRM_AEROTOCG, VAL_NO);
     if (strcmp(enabling, VAL_YES) == 0)
@@ -216,8 +216,9 @@ SimCarConfig(tCar *car)
         car->battery.soc         = GfParmGetNum(hdle, "Battery", "initial soc",  (char*)NULL, 1.0f);
         car->battery.maxPower    = GfParmGetNum(hdle, "Battery", "max power",    "kW",  350.0f);
         car->battery.maxRegen    = GfParmGetNum(hdle, "Battery", "max regen",    "kW",  150.0f);
-        car->battery.regenFactor = GfParmGetNum(hdle, "Battery", "regen factor", (char*)NULL, 0.7f);
-        car->battery.temperature = 25.0f;
+        car->battery.regenFactor  = GfParmGetNum(hdle, "Battery", "regen factor",       (char*)NULL, 0.7f);
+        car->battery.liftOffRegen = GfParmGetNum(hdle, "Battery", "lift-off regen factor", (char*)NULL, 0.0f);
+        car->battery.temperature  = 25.0f;
 
         car->mass += car->battery.capacity * 5.0f;
         car->Minv  = 1.0f / car->mass;

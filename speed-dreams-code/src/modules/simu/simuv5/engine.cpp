@@ -278,10 +278,18 @@ SimEngineUpdateTq(tCar *car)
                 car->carElt->_state |= RM_CAR_STATE_OUTOFGAS;
             }
 
+            if (bat->liftOffRegen > 0.0f && alpha < 0.05f && engine->rads > 0.0f && bat->soc < 1.0f) {
+                tdble liftScale = MAX(0.0f, 1.0f - alpha / 0.05f);
+                engine->Tq -= bat->liftOffRegen * Tq_max * liftScale;
+            }
+
             tdble power_kW = engine->Tq * engine->rads / 1000.0f;
             tdble tempFactor = 1.0f - 0.005f * MAX(0.0f, bat->temperature - 25.0f);
             tdble effective_capacity = bat->capacity * MAX(tempFactor, 0.5f);
-            bat->soc -= (power_kW * SimDeltaTime) / (effective_capacity * 3600.0f);
+            if (power_kW < 0.0f)
+                bat->soc -= (power_kW * bat->regenFactor * SimDeltaTime) / (effective_capacity * 3600.0f);
+            else
+                bat->soc -= (power_kW * SimDeltaTime) / (effective_capacity * 3600.0f);
             bat->soc = MAX(bat->soc, 0.0f);
 
             // Throttled console debug: print once per second

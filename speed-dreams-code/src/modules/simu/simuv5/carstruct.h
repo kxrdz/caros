@@ -37,9 +37,10 @@ typedef struct {
     tdble soc;          /* 0.0-1.0 state of charge */
     tdble maxPower;     /* kW -- peak motor output */
     tdble maxRegen;     /* kW -- peak regenerative braking power */
-    tdble regenFactor;  /* 0.0-1.0 -- regen efficiency (e.g. 0.7) */
-    tdble temperature;  /* deg C -- battery temperature */
-    int   isEV;         /* 1 = EV mode, 0 = combustion (default) */
+    tdble regenFactor;   /* 0.0-1.0 -- regen efficiency (e.g. 0.7) */
+    tdble liftOffRegen;  /* 0.0=disabled, 0.0-1.0 -- lift-off regen strength fraction of Tq_max */
+    tdble temperature;   /* deg C -- battery temperature */
+    int   isEV;          /* 1 = EV mode, 0 = combustion (default) */
 } tBattery;
 
 typedef struct
