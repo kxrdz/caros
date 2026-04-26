@@ -3,7 +3,7 @@ services:
     build: .
     container_name: sd-build
     volumes:
-      - ./speed-dreams-code:/workspace/source    # ← dein Repo hier
+      - ./speed-dreams-code:/workspace/source
       - ./build-output:/workspace/build
       - ./install-output:/workspace/install
     environment:
