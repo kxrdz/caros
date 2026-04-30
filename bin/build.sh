@@ -18,4 +18,4 @@ cmake "$SOURCE_DIR" \
 ninja -j$(nproc)
 ninja install
 
-echo "✅ Build fertig!"
+echo "Build fertig!"
