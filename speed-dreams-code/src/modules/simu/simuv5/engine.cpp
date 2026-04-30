@@ -278,7 +278,22 @@ SimEngineUpdateTq(tCar *car)
                 car->carElt->_state |= RM_CAR_STATE_OUTOFGAS;
             }
 
-            if (bat->liftOffRegen > 0.0f && alpha < 0.05f && engine->rads > 0.0f && bat->soc < 1.0f) {
+            if (bat->neutralThrottle > 0.0f && engine->rads > 0.0f) {
+                /* I-Pedal one-pedal driving: T_motor(p,v) piecewise formula from Tesla driver-wish map.
+                 * Below neutral: regen braking scaled by (1 - p/p_neutral), power-limited by maxRegen.
+                 * Above neutral: drive torque scaled by (p - p_neutral)/(1 - p_neutral).
+                 * Speed scale ramps regen to zero below ~9 km/h for smooth stops. */
+                float p_neutral = bat->neutralThrottle;
+                float speed_scale = MIN(1.0f, engine->rads / 100.0f);
+                if (alpha < p_neutral && bat->soc < 1.0f) {
+                    float regen_fraction = (1.0f - alpha / p_neutral) * speed_scale;
+                    float Tq_regen_max = MIN(bat->maxRegen * 1000.0f / MAX(engine->rads, 1.0f), Tq_max);
+                    engine->Tq = -bat->liftOffRegen * Tq_regen_max * regen_fraction;
+                } else if (alpha >= p_neutral) {
+                    float drive_fraction = (alpha - p_neutral) / MAX(1.0f - p_neutral, 1e-6f);
+                    engine->Tq = Tq_max * drive_fraction;
+                }
+            } else if (bat->liftOffRegen > 0.0f && alpha < 0.05f && engine->rads > 0.0f && bat->soc < 1.0f) {
                 tdble liftScale = MAX(0.0f, 1.0f - alpha / 0.05f);
                 engine->Tq -= bat->liftOffRegen * Tq_max * liftScale;
             }

@@ -1,3 +1,4 @@
+add_subdirectory(ev-tesla)
 add_subdirectory(ref-sector-p4)
 add_subdirectory(sc-boxer-96)
 add_subdirectory(sc-cavallo-360)

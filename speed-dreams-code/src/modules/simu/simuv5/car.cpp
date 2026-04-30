@@ -217,8 +217,9 @@ SimCarConfig(tCar *car)
         car->battery.maxPower    = GfParmGetNum(hdle, "Battery", "max power",    "kW",  350.0f);
         car->battery.maxRegen    = GfParmGetNum(hdle, "Battery", "max regen",    "kW",  150.0f);
         car->battery.regenFactor  = GfParmGetNum(hdle, "Battery", "regen factor",       (char*)NULL, 0.7f);
-        car->battery.liftOffRegen = GfParmGetNum(hdle, "Battery", "lift-off regen factor", (char*)NULL, 0.0f);
-        car->battery.temperature  = 25.0f;
+        car->battery.liftOffRegen    = GfParmGetNum(hdle, "Battery", "lift-off regen factor", (char*)NULL, 0.0f);
+        car->battery.neutralThrottle = GfParmGetNum(hdle, "Battery", "neutral throttle",       (char*)NULL, 0.0f);
+        car->battery.temperature     = 25.0f;
 
         car->mass += car->battery.capacity * 5.0f;
         car->Minv  = 1.0f / car->mass;

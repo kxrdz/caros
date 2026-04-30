@@ -38,8 +38,9 @@ typedef struct {
     tdble maxPower;     /* kW -- peak motor output */
     tdble maxRegen;     /* kW -- peak regenerative braking power */
     tdble regenFactor;   /* 0.0-1.0 -- regen efficiency (e.g. 0.7) */
-    tdble liftOffRegen;  /* 0.0=disabled, 0.0-1.0 -- lift-off regen strength fraction of Tq_max */
-    tdble temperature;   /* deg C -- battery temperature */
+    tdble liftOffRegen;    /* 0.0=disabled, 0.0-1.0 -- lift-off regen strength fraction of max regen torque */
+    tdble neutralThrottle; /* I-Pedal neutral point (0=disabled, typical 0.15-0.20): below=regen, above=drive */
+    tdble temperature;     /* deg C -- battery temperature */
     int   isEV;          /* 1 = EV mode, 0 = combustion (default) */
 } tBattery;
 
